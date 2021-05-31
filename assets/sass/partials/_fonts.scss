@@ -1,0 +1,59 @@
+//===========================================
+// -Fonts start
+//===========================================
+
+@include font-face("family", $font-path, "Roboto-Regular", 400, "normal");
+
+/* Fonts stacks */
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "./../fonts" !default;
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "#{$icomoon-font-family}" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Icomoon Icon Font
+
+@font-face {
+    font-family: "#{$icomoon-font-family}";
+    src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?pzi19m") format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?pzi19m") format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?pzi19m##{$icomoon-font-family}") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+$font-types: (dashboard: "\e900",
+    help: "\e901",
+    integration: "\e902",
+    projects: "\e903",
+    settings: "\e904",
+    users: "\e905",
+);
+
+@each $type,
+$value in $font-types {
+    .icon-#{$type} {
+        &:before {
+            content: $value;
+        }
+    }
+}
+
+//===========================================
+// -Fonts  end
+//===========================================

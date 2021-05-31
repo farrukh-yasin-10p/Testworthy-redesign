@@ -1,0 +1,65 @@
+//===========================================
+// -Navbar start
+//===========================================
+
+
+#nav-toggle {
+    display: none;
+
+    &:checked+.sidebar {
+        width: rem(90);
+
+        .sidebar-menu a {
+            padding-left: rem(0);
+        }
+
+        .sidebar-hamburger {
+            padding-left: rem(36);
+        }
+
+        li a span:last-child {
+            display: none;
+        }
+
+        @include mq('xl', max) {
+            display: block;
+            width: rem(280);
+            padding-top: rem(0);
+            overflow-y: auto;
+
+            .sidebar-menu a {
+                padding-left: rem(10);
+            }
+
+            .sidebar-hamburger {
+                display: block;
+            }
+
+            li a span:last-child {
+                display: inline-block;
+            }
+        }
+
+        @include mq('sm', max) {
+            padding-top: rem(130);
+
+            .sidebar-hamburger {
+                display: none;
+            }
+        }
+    }
+
+    &:checked~.main-content {
+        margin-left: rem(90);
+
+        @include mq('sm', max) {
+            margin-left: rem(0);
+        }
+    }
+
+}
+
+
+//===========================================
+// -Navbar end
+//===========================================

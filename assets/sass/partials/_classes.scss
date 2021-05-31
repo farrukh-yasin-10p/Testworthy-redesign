@@ -1,0 +1,76 @@
+//===========================================
+// -Helper Classes start
+//===========================================
+
+.center {
+  margin: auto;
+}
+
+// Search list Class
+
+.search-list {
+  box-shadow: 0 rem(10) rem(49) 0 rgba(0, 0, 0, 0.13);
+  border-radius: rem(12);
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  //width: 100%;
+  display: none;
+  max-height: rem(150);
+  overflow-y: auto;
+
+
+  ul {
+    margin-bottom: rem(0);
+  }
+
+  li {
+    padding: rem(5) rem(17) rem(5) rem(17);
+
+    &:first-child {
+      padding-top: rem(10);
+    }
+
+    &:last-child {
+      padding-bottom: rem(7);
+    }
+
+    &:hover {
+      background-color: #f6f6f6;
+      border-radius: rem(12);
+    }
+  }
+
+  .search-list-items {
+
+    display: flex;
+    align-items: center;
+
+
+    img {
+      width: rem(25);
+    }
+
+    span {
+      font-size: rem(10);
+    }
+
+    .name {
+      font-weight: 600;
+      padding-left: rem(6);
+    }
+
+    .email {
+      margin-left: auto;
+
+    }
+  }
+}
+
+
+// Search list Class End 
+
+
+//===========================================
+// -Helper Classes end
+//===========================================

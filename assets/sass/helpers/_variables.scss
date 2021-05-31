@@ -1,0 +1,68 @@
+//===========================================
+// -Variables start
+//===========================================
+
+// Colors start
+
+// define your vars or override bootstrap vars
+$default: red;
+$primary: #F9F9F9;
+$secondary: #1eaae7;
+$alternate: cyan;
+$grey-light: #bfbfbf;
+$filter : #f1f1f1;
+$success-100 : #2bc16f;
+$danger-100 : #ff2e2e;
+$warning : #f3c214;
+$grey-100 : #aaaaaa;
+$grey-200 : #969ba0;
+$navy-blue : #204f6e;
+$blue : #204496;
+$sky-blue : #108be3;
+$sky-blue-100 : #42c6ff;
+$sky-blue-200 : #1eb6e7;
+$sky-light : #e7f3f8;
+$success-light : #24cc09;
+$success-200 : #2bc155;
+$danger:#e71e1e;
+$danger-light : #feebeb;
+$grey:rgba(255, 255, 255, 0.22);
+
+
+// Compass utilities
+
+// VARS
+$circle-width: 0.09em;
+$circle-width-hover: 0.07em;
+
+// colors customized
+$primary-color-blue: #1eb6e7;
+$primary-color-green: #15c7a8;
+$primary-color-orange: #eb7d4b;
+$primary-color-white: #ffffff;
+$primary-color-span: #3c4761;
+
+
+// box shadow 
+$shadow:2px 2px 5px rgba(192, 192, 192, 0.2);
+
+
+
+// Typography Family
+$font-default: 'Poppins',
+sans-serif;
+$font-primary: 'Poppins',
+sans-serif;
+
+$font-path: "../fonts";
+
+// define your Break Points or override bootstrap Break Points
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px);
+
+// ===========================================
+// -Variables end
+// ===========================================

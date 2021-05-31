@@ -1,0 +1,54 @@
+// Tabs
+
+.header-nav {
+    padding: rem(10) rem(0) rem(0) rem(0);
+
+    ul {
+        display: flex;
+        list-style: none;
+        white-space: nowrap;
+        border-bottom: rem(1) solid #e2e0e0;
+
+        @include mq('sm', max) {
+            white-space: nowrap;
+        }
+
+        @include mq('xl', max) {
+            overflow-x: scroll;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: rem(20);
+            padding-top: rem(20);
+            padding-bottom: rem(4);
+
+            a {
+                text-decoration: none;
+                color: $grey-light;
+                padding: rem(0) rem(20) rem(5) rem(20);
+
+                &:hover {
+                    color: black;
+                }
+
+                &.active {
+                    border-bottom: rem(4) solid $secondary;
+                    font-weight: bold;
+                    color: black !important;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+// .overview,
+// .milestone,
+// .trun,
+// .tsuit,
+// .tplan {
+//     display: none;
+// }

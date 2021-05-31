@@ -1,0 +1,334 @@
+//===========================================
+// -Mixins start
+//===========================================
+
+// conver px to rem
+@function rem($pixels, $context: 16) {
+  @return ($pixels / $context) * 1rem;
+}
+
+// Media Query
+@mixin mq($breakpoint, $type: min) {
+
+  // Checking $breakpoint value in $grid-breakpoints object value
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    // getting $grid-breakpoints object value and asign width
+    $width: map_get($grid-breakpoints, $breakpoint);
+
+    // Decrease 1px from $grid-breakpoints value for max-width $type
+    @if $type==max {
+      $width: $width - 1px;
+    }
+
+    // Print Media query
+    @media (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin mq-only($min-width, $max-width) {
+  @if map_has_key($grid-breakpoints, $min-width) and map_has_key($grid-breakpoints, $max-width) {
+    // define value to relevant$grid-breakpoints
+    $min-width: map_get($grid-breakpoints, $min-width);
+    $max-width: map_get($grid-breakpoints, $max-width) - 1px;
+
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Please Define correct media query breakpoint";
+  }
+}
+
+@mixin font-face($family, $path, $name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: "#{$family}";
+    src: url("#{$path}/#{$name}.ttf") format("truetype"),
+    url("#{$path}/#{$name}.woff") format("woff"),
+    url("#{$path}/#{$name}.svg##{$name}") format("svg");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin circle($size) {
+  @include square($size);
+  border-radius: 50%;
+}
+
+@mixin is-parent($parent-selector) {
+  $current-sequences: &;
+  $new-sequences: ();
+
+  @each $sequence in $current-sequences {
+    $current-selector: nth($sequence, -1);
+    $prepended-selector: join($parent-selector, $current-selector);
+    $new-sequence: set-nth($sequence, -1, $prepended-selector);
+    $new-sequences: append($new-sequences, $new-sequence, comma);
+  }
+
+  @at-root #{$new-sequences} {
+    @content;
+  }
+}
+
+
+
+// Some custom mixins 
+@mixin icon-circle {
+  background-color: $secondary;
+  border-radius: rem(50);
+  box-shadow: $shadow;
+}
+
+@mixin bg-color-sh {
+  background-color: $primary;
+  box-shadow: $shadow;
+  z-index: 100;
+}
+
+@mixin size-color($size, $col) {
+  font-size: $size;
+  color: $col;
+}
+
+@mixin card-box {
+  border: rem(2) solid white;
+  background-color: white;
+  border-radius: rem(20);
+  padding: rem(15) rem(20);
+  box-shadow: rem(0) rem(4) rem(10) rgba(150, 150, 150, 0.25);
+}
+
+@mixin active-status {
+  height: rem(11);
+  width: rem(11);
+  border-radius: rem(15);
+  flex-grow: 0;
+  bottom: rem(0);
+  position: absolute;
+  right: rem(-1);
+  box-shadow: 0 rem(4) rem(9) 0 rgba(30, 170, 231, 0.56);
+}
+
+
+@mixin tab-btn {
+  border: rem(1) solid $primary;
+  background-color: $primary;
+  width: rem(260);
+  border-radius: rem(20);
+
+  .active {
+    background-color: $secondary;
+    color: white !important;
+    font-weight: 500;
+  }
+
+  button {
+    color: black;
+    border-radius: rem(20);
+    padding-left: rem(20);
+    padding-right: rem(20);
+    font-size: rem(16);
+    font-weight: bold;
+  }
+
+  .btn2 {
+    float: right;
+  }
+}
+
+@mixin colored-dots($color) {
+  height: rem(15);
+  width: rem(15);
+  background-color: $color;
+  border-radius: rem(15);
+  // border-radius: 50%;
+  display: inline-block;
+  flex-grow: 0;
+  margin: rem(4) rem(6) rem(-3) 0;
+}
+
+
+@mixin colored-bars($color) {
+  height: rem(15);
+  width: rem(11);
+  background-color: $color;
+  border-radius: rem(15);
+  display: inline-block;
+  flex-grow: 0;
+  margin: rem(4) rem(12) rem(-4) 0;
+  padding: rem(20) rem(0);
+}
+
+// Milestone section in px 
+@mixin milestone-box($bg-box) {
+  width: 160px;
+  height: 150px;
+  flex-grow: 0;
+  border-radius: 25px;
+  background-color: $bg-box;
+  margin-bottom: 10px;
+  padding: 19px 0px 0px 24px;
+}
+
+@mixin tab-filter {
+  display: flex;
+  justify-content: flex-end;
+
+  .tabs-filter {
+    background-color: $filter;
+    border-radius: rem(20);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .nav-link {
+
+      background-color: $filter;
+      color: $grey-light;
+      border-radius: rem(20);
+      font-size: rem(13);
+      font-weight: bold;
+
+      &.active {
+        background-color: $secondary;
+        color: white;
+      }
+    }
+  }
+}
+
+@mixin tags {
+  padding: rem(18) rem(15) rem(0) rem(15);
+  color: white;
+  border: rem(1) solid #b6b9bd;
+  font-size: rem(10);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: rem(6);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: rem(25);
+    margin-right: rem(10);
+  }
+
+  span {
+    background-color: $secondary;
+    display: flex;
+    min-width: rem(130);
+    padding: rem(2) rem(8);
+    border-radius: rem(20);
+    flex-direction: row;
+    align-items: center;
+    margin: rem(0) rem(16) rem(8) rem(0);
+  }
+
+  a {
+    font-size: rem(20);
+  }
+
+  .tag-label {
+    margin-bottom: rem(0);
+    margin-right: rem(10);
+  }
+
+  @include mq('sm', max) {
+
+    img {
+      width: rem(22);
+      margin-right: rem(3);
+    }
+
+    span {
+      min-width: rem(110);
+      padding: rem(1) rem(4);
+      margin: rem(0) rem(8) rem(5) rem(0);
+    }
+
+    a {
+      font-size: rem(18);
+    }
+
+    .tag-label {
+      margin-right: rem(3);
+    }
+
+  }
+
+}
+
+@mixin alert_box($borderCol, $bgCol, $color) {
+  border: rem(3) solid $borderCol;
+  position: absolute;
+  right: rem(0);
+  padding: rem(10) rem(240) rem(10) rem(50);
+  border-right: none;
+  background-color: $bgCol;
+
+  img {
+    margin-right: rem(20);
+    width: rem(30);
+  }
+
+  span {
+    font-size: rem(16);
+    font-weight: 600;
+    color: $color;
+  }
+
+
+  @include mq('sm', max) {
+    top: rem(20);
+    padding: rem(8) rem(30) rem(8) rem(18);
+  }
+}
+
+//===========================================
+// -Mixins end
+//===========================================

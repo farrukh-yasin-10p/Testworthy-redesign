@@ -1,0 +1,99 @@
+.sidebar {
+    @include bg-color-sh;
+    width: rem(280);
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: fixed;
+    color: $grey-light;
+
+    @include mq('xl', max) {
+        width: rem(90);
+
+
+        .sidebar-menu a {
+            padding-left: rem(0);
+        }
+
+        .sidebar-hamburger {
+            padding-left: rem(36);
+        }
+
+        li a span:last-child {
+            display: none;
+        }
+    }
+
+    @include mq('sm', max) {
+        display: none;
+    }
+
+}
+
+.sidebar-hamburger {
+    padding: rem(16) rem(0) rem(16) rem(46);
+
+    span {
+        display: inline-block;
+        cursor: pointer;
+        padding-top: rem(120);
+        margin-bottom: rem(10);
+
+        i {
+            @include size-color(rem(20), $secondary);
+        }
+    }
+}
+
+.sidebar-menu {
+    margin-top: rem(16);
+
+    li {
+        width: 100%;
+        margin-bottom: rem(40);
+        padding-left: 1rem;
+    }
+
+    a {
+        @include size-color(rem(16), $grey-light);
+        display: block;
+        padding-left: rem(15);
+
+        &:hover {
+            color: $secondary;
+        }
+
+        &.active {
+            span {
+                &:first-child {
+                    @include icon-circle;
+                    color: white;
+
+                }
+
+                i {
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        span {
+            &:first-child {
+                font-size: rem(24);
+                // padding: rem(10) rem(15);
+                padding: rem(11) rem(15) rem(7) rem(15);
+                margin-right: rem(20);
+            }
+
+            &:last-child {
+                font-weight: 500;
+            }
+        }
+
+    }
+}

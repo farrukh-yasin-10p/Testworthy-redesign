@@ -81,6 +81,10 @@ header {
             font-weight: 600;
             margin-left: rem(12);
         }
+
+        @include mq('sm', max) {
+            display: none;
+        }
     }
 
     @include mq('sm', max) {

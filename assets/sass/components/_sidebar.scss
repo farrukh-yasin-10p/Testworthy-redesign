@@ -32,13 +32,16 @@
 }
 
 .sidebar-hamburger {
-    padding: rem(16) rem(0) rem(16) rem(46);
+    padding: rem(16) rem(0) rem(16) rem(48);
+
+    label {
+        margin-bottom: 0px;
+    }
 
     span {
         display: inline-block;
         cursor: pointer;
         padding-top: rem(120);
-        margin-bottom: rem(10);
 
         i {
             @include size-color(rem(20), $secondary);
@@ -51,7 +54,7 @@
 
     li {
         width: 100%;
-        margin-bottom: rem(40);
+        margin-bottom: rem(18);
         padding-left: 1rem;
     }
 
@@ -59,8 +62,8 @@
         @include size-color(rem(16), $grey-light);
         display: block;
         padding-left: rem(15);
-        // display: flex;
-        // align-items: center;
+        display: flex;
+        align-items: center;
 
         &:hover {
             color: $secondary;
@@ -88,7 +91,6 @@
         span {
             &:first-child {
                 font-size: rem(24);
-                // padding: rem(10) rem(15);
                 padding: rem(11) rem(15) rem(7) rem(15);
                 margin-right: rem(20);
             }

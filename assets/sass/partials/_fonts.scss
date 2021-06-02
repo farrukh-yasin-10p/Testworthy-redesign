@@ -37,7 +37,10 @@ $icomoon-font-path: "./../fonts" !default;
     font-display: block;
 }
 
-$font-types: (ic_option: "\e909",
+$font-types: (complete-tick: "\e90a",
+    ic_edit: "\e90e",
+    info-icon: "\e910",
+    ic_option: "\e909",
     milestone-icon: "\e90b",
     warning: "\e90c",
     arrow-tab: "\e90d",
@@ -60,6 +63,7 @@ $font-types: (ic_option: "\e909",
     integration: "\e902",
     settings: "\e904",
     users: "\e905",
+    milestone-2: "\e906",
 );
 
 @each $type,

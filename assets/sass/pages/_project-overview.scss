@@ -1,0 +1,1025 @@
+//===========================================
+// -Home Page start
+//===========================================
+
+//main content
+
+.main-content {
+    margin-left: rem(280);
+    padding: rem(0) rem(10);
+
+    @include mq('xl', max) {
+        margin-left: rem(90);
+    }
+
+    @include mq('sm', max) {
+        margin-left: rem(0);
+        padding: rem(0) rem(0);
+    }
+}
+
+
+//Edit Icon Content
+
+.edit-content {
+    display: flex;
+    padding-top: rem(20);
+
+    .dropdown-menu {
+        margin-right: rem(120);
+        margin-bottom: rem(10);
+        padding: rem(10) rem(0);
+        font-size: rem(10);
+        border-radius: rem(10);
+        border: none;
+        box-shadow: $shadow3;
+
+        a {
+            color: black;
+
+            &:hover {
+                background-color: $filter;
+            }
+
+            &:first-child {
+                margin-bottom: rem(10);
+            }
+
+            img {
+                width: rem(17);
+                margin-left: rem(-8);
+                margin-right: rem(5);
+            }
+
+            &:last-child img {
+                width: rem(20);
+                margin-left: rem(-10);
+                margin-right: rem(5);
+            }
+        }
+    }
+
+    @include mq('sm', max) {
+        position: relative;
+        display: block;
+    }
+}
+
+.logo-content img {
+    width: rem(100);
+
+    @include mq('sm', max) {
+        width: rem(70);
+    }
+}
+
+.edit-text {
+    width: rem(700);
+    padding-left: rem(30);
+    padding-right: rem(20);
+
+    p {
+        font-size: rem(14);
+    }
+
+    @include mq('sm', max) {
+        width: 100%;
+        padding: rem(10) rem(0) rem(0) rem(0);
+
+        p {
+            display: block;
+        }
+    }
+}
+
+.edit-btn {
+    padding-top: rem(40);
+    display: flex;
+
+    @include mq('sm', max) {
+        position: absolute;
+        right: rem(0);
+        top: rem(30);
+    }
+
+    @include mq('xl', max) {
+        padding-top: rem(5);
+    }
+
+}
+
+.edit_project button {
+    @include icon-circle;
+    padding: rem(8) rem(10) rem(8) rem(10);
+    box-shadow: none;
+
+    img {
+        width: rem(20);
+    }
+}
+
+.dropup {
+    .ellipsis {
+        padding-top: rem(6);
+        margin-left: rem(10);
+
+        img {
+            width: rem(25);
+        }
+
+    }
+
+    .dropdown-menu {
+        a {
+            color: black;
+        }
+    }
+}
+
+
+//Edit Icon Content Finished
+
+
+
+// Chart & Report Row
+
+.chart-box {
+    @include card-box;
+
+    @include mq('sm', max) {
+        margin-bottom: rem(40);
+    }
+
+    // h6 {
+    //   font-size: rem(18);
+    //   font-weight: bold;
+    // }
+
+    // span {
+    //   font-size: rem(12);
+    // }
+
+}
+
+.chart {
+    canvas {
+        // height: rem(350);
+    }
+}
+
+// Chart 
+.chart-heading {
+    h6 {
+        font-size: rem(18);
+        font-weight: bold;
+        margin-bottom: rem(0);
+    }
+
+    span {
+        font-size: rem(12);
+        color: $grey-200;
+    }
+}
+
+
+.chart-filter {
+    @include tab-filter;
+
+    @include mq('xl', max) {
+        justify-content: center;
+        margin-top: rem(10);
+    }
+
+    @include mq('xl', max) {
+
+        .tabs-filter {
+            .nav-link {
+                font-size: rem(12);
+            }
+        }
+    }
+}
+
+.report-row {
+    .chart-date {
+        display: flex;
+        justify-content: flex-end;
+
+        span {
+
+            background-color: #f4f5f9;
+            padding: rem(5) rem(9) rem(7) rem(9);
+            border-radius: rem(20);
+        }
+
+        img {
+            width: rem(17);
+        }
+    }
+}
+
+
+
+// Chart End
+
+.report-box {
+
+    // align-items: right;
+    // img{
+    //     width: rem(300);
+    // }
+}
+
+
+// Test Cards Row
+
+.test-card {
+    @include card-box;
+    box-shadow: 0 12px 23px 0 rgba(62, 73, 84, 0.04);
+    // height: 90%;
+    margin-bottom: rem(20);
+
+    h6 {
+        font-size: rem(18);
+        font-weight: bold;
+    }
+
+    span {
+        font-size: rem(12);
+    }
+}
+
+.test-row-text {
+    h6 {
+        display: inline-block;
+        padding-right: rem(20);
+        padding-bottom: rem(5);
+    }
+
+    a {
+        color: $secondary;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include mq('sm', max) {
+        margin-bottom: rem(10);
+    }
+
+}
+
+.icon-box {
+    img {
+        width: rem(30);
+    }
+
+    h6 {
+        padding-top: rem(10);
+    }
+
+    span {
+        display: block;
+    }
+
+    @include mq('sm', max) {
+        margin-bottom: rem(15);
+    }
+}
+
+.icon-box2 {
+    display: inline-block;
+
+    img {
+        width: rem(28);
+        margin-top: rem(-40);
+    }
+
+    p {
+        padding-top: rem(15);
+        font-size: rem(12);
+    }
+}
+
+.icon-box2-text {
+    display: inline-block;
+    padding-top: rem(10);
+
+    span {
+        display: block;
+        padding-bottom: rem(30);
+    }
+}
+
+// End Test Cards Row
+
+
+
+// Milestone Section
+
+.milestone {
+    @include card-box;
+    padding-top: 30px;
+
+    h6 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .milestone-head {
+        margin-bottom: 25px;
+    }
+
+    .milestone-text-row {
+        .milestone-bar {
+            .bar1 {
+                @include colored-bars($blue);
+            }
+
+            .bar2 {
+                @include colored-bars($sky-blue);
+            }
+
+            .bar3 {
+                @include colored-bars($sky-blue-100);
+            }
+
+            .bar4 {
+                @include colored-bars($sky-light);
+            }
+        }
+
+        .milestone-text {
+            h6 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            span {
+                display: block;
+                margin-top: -7px;
+                margin-bottom: 28px;
+                font-weight: normal;
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.6)
+            }
+        }
+    }
+}
+
+
+
+.milestone-box1 {
+    @include milestone-box($blue);
+
+    .c100:after {
+        background-color: $blue;
+    }
+}
+
+.milestone-box2 {
+    @include milestone-box($sky-blue);
+
+    .c100:after {
+        background-color: $sky-blue;
+    }
+}
+
+.milestone-box3 {
+    @include milestone-box($sky-blue-100);
+    margin-bottom: 10px;
+
+    .c100:after {
+        background-color: $sky-blue-100;
+    }
+}
+
+.milestone-box4 {
+    @include milestone-box(white);
+    margin-bottom: 0px;
+    border: 2px solid $primary-color-blue;
+
+    .c100 {
+        background-color: #eaeaea;
+
+        &:after {
+            background-color: rgb(255, 255, 255);
+        }
+
+        >span:first-child {
+            color: $primary-color-blue;
+        }
+
+        .text {
+            color: $primary-color-blue;
+        }
+    }
+
+}
+
+.milestone-box {
+    @include mq('lg', max) {
+        max-width: 23%;
+    }
+
+    @include mq('sm', max) {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+
+// Milestones Circle
+// classes 2 extend
+
+.rect-auto {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.pie {
+    position: absolute;
+    border: $circle-width solid black;
+    width: 1 - (2 * $circle-width);
+    height: 1 - (2 * $circle-width);
+    clip: rect(0em, 0.5em, 1em, 0em);
+    border-radius: 50%;
+
+    transform: rotate(0deg);
+}
+
+.pie-fill {
+    transform: rotate(180deg);
+}
+
+.c100 {
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: content-box;
+    }
+
+    position: relative;
+    font-size: 110px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    float: left;
+    background-color: $grey;
+
+    // centered value inside circle
+    >span:first-child {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        left: -50px;
+        top: -56px;
+        width: 5em;
+        line-height: 5em;
+        font-size: rem(42);
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+        transition: all 0.2s ease-out;
+
+        @include mq('xl', max) {
+            left: -44px;
+            top: -50px;
+        }
+
+        @include mq('sm', max) {
+            left: -38px;
+            top: -46px;
+        }
+    }
+
+    .text {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        left: 25px;
+        top: 46px;
+        width: 5em;
+        line-height: 5em;
+        font-size: rem(12);
+        font-weight: 600;
+        color: white;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+        transition: all 0.2s ease-out;
+
+        @include mq('sm', max) {
+            left: 28px;
+            top: 48px;
+        }
+    }
+
+    // background inside the circle
+    &:after {
+        position: absolute;
+        top: $circle-width;
+        left: $circle-width;
+        display: block;
+        content: " ";
+        border-radius: 50%;
+        background-color: white;
+        width: 1 - (2 * $circle-width);
+        height: 1 - (2 * $circle-width);
+        transition: all 0.2s ease-in;
+
+    }
+
+    // the slice (mask)
+    .slice {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        clip: rect(0em, 1em, 1em, 0.5em);
+    }
+
+    // circle to show the status
+    .bar {
+        @extend .pie;
+    }
+
+    // loop to create all needed elements automatically
+    @for $j from 51 through 100 {
+
+        &.p#{$j} .slice {
+            @extend .rect-auto;
+        }
+
+        &.p#{$j} .bar:after {
+            @extend .pie-fill;
+        }
+
+        &.p#{$j} .fill {
+            @extend .pie;
+            @extend .pie-fill;
+        }
+
+    }
+
+    // loop to rotate all 100 circles
+    @for $j from 1 through 100 {
+        &.p#{$j} .bar {
+            transform: rotate((360/100*$j) + deg);
+        }
+    }
+
+    // hover styles
+    // &:hover {
+
+    //     cursor: default;
+
+    //     >span {
+    //         width: 3.33em;
+    //         line-height: 3.33em;
+    //         font-size: 0.3em;
+    //         color: $primary-color-span;
+    //     }
+
+    //     &:after {
+    //         top: $circle-width-hover;
+    //         left: $circle-width-hover;
+    //         width: 1 - (2 * $circle-width-hover);
+    //         height: 1 - (2 * $circle-width-hover);
+    //     }
+
+    // }
+
+    // blue
+    &.blue {
+
+        .bar,
+        .fill {
+            border-color: $primary-color-blue !important;
+        }
+
+        // &:hover {
+        //     >span {
+        //         color: $primary-color-span;
+        //     }
+        // }
+
+    }
+
+
+    // white skin
+    &.white {
+
+        .bar,
+        .fill {
+            border-color: $primary-color-white !important;
+        }
+    }
+
+
+    // green skin
+    &.green {
+
+        .bar,
+        .fill {
+            border-color: $primary-color-green !important;
+        }
+    }
+}
+
+// End Milestones Circle
+
+
+// Test Changes Row
+.test-changes {
+    @include card-box;
+    background-color: white;
+
+    h6 {
+        font-size: rem(18);
+        font-weight: bold;
+    }
+
+    span {
+        font-size: rem(12);
+    }
+}
+
+.btn-tab {
+
+    border: rem(1) solid $primary;
+    background-color: $primary;
+    width: rem(260);
+    border-radius: rem(20);
+
+    a {
+        color: black;
+    }
+
+    .active {
+        background-color: $secondary;
+        font-weight: 500;
+
+        a {
+            color: #fff;
+        }
+
+    }
+
+    button {
+        color: black;
+        border-radius: rem(20);
+        padding-left: rem(20);
+        padding-right: rem(20);
+        font-size: rem(16);
+        font-weight: bold;
+    }
+
+    .btn-tab .active a {
+        color: #fff;
+    }
+
+
+    .btn2 {
+        float: right;
+    }
+}
+
+.filter {
+    padding-top: rem(7);
+
+    @include mq('sm', max) {
+        padding-top: rem(20);
+    }
+}
+
+
+.filter-span {
+    background-color: $filter;
+    padding: rem(10) rem(20);
+    border-radius: rem(20);
+
+    a {
+        &:first-child {
+            img {
+                width: rem(17);
+            }
+        }
+
+        &:last-child {
+            img {
+                width: rem(10);
+            }
+        }
+
+    }
+
+    span {
+        padding: rem(10) rem(5) rem(0) rem(5);
+    }
+
+}
+
+.custom-tabs {
+    .nav-item {
+        margin-right: rem(30);
+    }
+
+    .nav-link {
+
+        background-color: white;
+        color: $grey-light;
+        border-radius: rem(20) rem(20) rem(0) rem(0);
+        font-size: rem(14);
+        font-weight: bold;
+
+        &.active {
+            background-color: $filter;
+            color: black;
+        }
+    }
+}
+
+
+.dot1 {
+    @include colored-dots($success-100);
+}
+
+.dot2 {
+    @include colored-dots($danger-100);
+}
+
+.dot3 {
+    @include colored-dots($warning);
+}
+
+.dot4 {
+    @include colored-dots($grey-100);
+}
+
+
+.dot5 {
+    @include colored-dots($navy-blue);
+}
+
+
+.date-status {
+    margin-bottom: rem(50);
+
+    span {
+        font-size: rem(18);
+        font-weight: bold;
+    }
+}
+
+//============================
+
+
+.user {
+    padding-right: rem(20);
+
+    @include mq('sm', max) {
+        float: right;
+        padding-bottom: rem(0);
+        padding-right: rem(8);
+    }
+}
+
+.user-text {
+    padding: rem(20) rem(10) rem(0) rem(10);
+    font-size: rem(14);
+
+    p {
+        @include size-color(rem(10), $grey-light);
+    }
+
+    @include mq('sm', max) {
+        padding: rem(0) rem(0) rem(0) rem(0);
+        font-size: rem(10);
+        display: inline-block;
+        padding-right: rem(5);
+        margin-top: rem(6);
+
+        p {
+            font-size: rem(8);
+
+        }
+    }
+}
+
+
+.user-icon {
+
+    padding-right: rem(45);
+    padding-left: rem(10);
+
+    span {
+        img {
+            width: rem(44);
+
+
+            @include mq('sm', max) {
+                width: rem(35);
+            }
+        }
+
+    }
+
+
+    @include mq('sm', max) {
+        display: inline-block;
+        padding-right: rem(25);
+        margin-top: rem(-10);
+        padding-left: rem(0);
+    }
+}
+
+.user-group {
+    display: flex;
+    align-items: center;
+}
+
+//================================
+
+.changes-row {
+    display: flex;
+    align-items: center;
+
+    button {
+        color: white;
+        border-radius: rem(20);
+        padding-left: rem(35);
+        padding-right: rem(35);
+        font-size: rem(14);
+        font-weight: 500;
+        margin-right: rem(10);
+    }
+
+    .icon-user-text {
+        display: flex;
+        align-items: center;
+        margin: rem(0);
+
+        p {
+            color: rgba(0, 0, 0, 0.8);
+            padding-top: rem(5);
+        }
+    }
+
+    .text-user {
+        font-size: rem(14);
+        padding-left: rem(10);
+
+        p {
+            @include size-color(rem(10), $grey-light);
+            color: rgba(0, 0, 0, 0.8);
+            padding-top: rem(5);
+            margin: rem(0);
+        }
+
+        @include mq('sm', max) {
+            padding: rem(0) rem(0) rem(0) rem(0);
+            font-size: rem(10);
+            display: inline-block;
+            padding-right: rem(5);
+            margin-top: rem(6);
+
+            p {
+                font-size: rem(8);
+            }
+        }
+    }
+
+    .icon-user {
+        padding-right: rem(0);
+
+        span {
+            img {
+                width: rem(40);
+            }
+        }
+    }
+
+    .tested-time {
+        span {
+            font-size: rem(14);
+        }
+
+        p {
+            font-size: rem(10);
+            margin-top: rem(-5);
+            color: rgba(0, 0, 0, 0.8);
+            margin: rem(0);
+        }
+    }
+
+    .btn-text {
+        span {
+            font-size: rem(14);
+        }
+    }
+
+    @include mq('lg', max) {
+        .btn-text {
+            span {
+                font-size: rem(12);
+            }
+        }
+
+        button {
+            font-size: rem(12);
+        }
+
+        .tested-time {
+            span {
+                font-size: rem(12);
+            }
+
+            p {
+                font-size: rem(10);
+            }
+        }
+
+        .text-user {
+            font-size: rem(12);
+        }
+    }
+
+    @include mq('sm', max) {
+        .btn-text {
+            margin-bottom: rem(10);
+        }
+
+        .icon-user-text {
+            margin-bottom: rem(10);
+        }
+
+        .tested-time {
+            margin-bottom: rem(10);
+        }
+
+        .icon-user {
+            padding-right: rem(10);
+        }
+    }
+}
+
+.tab-pane {
+    height: rem(580);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+// History Tab
+.history-filter {
+    @include tab-filter;
+
+    @include mq('xl', max) {
+        justify-content: center;
+    }
+}
+
+.history-row {
+
+    .changes-row {
+        button {
+            color: $secondary;
+            border-radius: rem(20);
+            padding-left: rem(17);
+            padding-right: rem(17);
+            font-size: rem(12);
+            font-weight: 500;
+            margin-right: rem(10);
+        }
+
+        .tested-time {
+            span {
+                font-size: rem(14);
+            }
+
+            p {
+                font-size: rem(10);
+                margin-top: rem(-5);
+                color: rgba(0, 0, 0, 0.8);
+                margin: rem(0);
+            }
+        }
+
+    }
+
+    .btn-text {
+        img {
+            width: rem(16);
+        }
+
+        span {
+            padding-right: rem(4);
+        }
+    }
+}

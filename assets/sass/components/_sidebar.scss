@@ -6,6 +6,7 @@
     height: 100%;
     position: fixed;
     color: $grey-light;
+    overflow-y: auto;
 
     @include mq('xl', max) {
         width: rem(90);
@@ -58,6 +59,8 @@
         @include size-color(rem(16), $grey-light);
         display: block;
         padding-left: rem(15);
+        // display: flex;
+        // align-items: center;
 
         &:hover {
             color: $secondary;

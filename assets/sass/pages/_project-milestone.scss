@@ -1,0 +1,137 @@
+// Milestone Page CSS 
+
+// Add Milestone Section Start
+.add-milestone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .search-filter {
+        position: relative;
+
+        img {
+            width: 20px;
+        }
+
+        .border-line {
+            border-right: 1px solid $grey-light;
+            margin-right: 10px;
+            margin-left: 6px;
+        }
+
+        input {
+            position: relative;
+            font-size: 16px;
+            padding: 12px 95px 12px 24px;
+            border-radius: 30px;
+            background-color: #eee;
+            border: 1px solid #eee;
+            outline: none;
+            margin-right: 10px;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 232px;
+            top: 12px;
+        }
+
+        button {
+            padding: 12px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            background-color: $secondary;
+            color: white;
+        }
+    }
+
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .sort-by-text {
+        color: $grey-400;
+    }
+
+    .sort-by-filter {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+
+        label {
+            margin-bottom: 0px;
+            margin-right: 40px;
+            margin-left: 3px;
+        }
+
+    }
+
+    .sort-by-date {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .sort-by-tabs {
+        display: flex;
+        align-items: center;
+
+        button {
+            font-size: 12px;
+            padding-right: 0px;
+            margin-left: 50px;
+        }
+
+        .active {
+            color: blue;
+        }
+    }
+
+
+}
+
+.milestone-tabs {
+    margin-top: 20px;
+    margin-left: 10px;
+
+    .nav-link {
+        color: $grey-light;
+        font-size: rem(18);
+        font-weight: bold;
+
+        &.active {
+            background-color: white;
+            color: $secondary;
+        }
+    }
+}
+
+.milestone-tabs-content {
+    .milestone-content-row {
+        .custom-checkbox {
+            label {
+                font-weight: normal;
+                font-size: 16px;
+
+                i {
+                    margin-right: 15px;
+                    font-size: 25px;
+                }
+            }
+
+            .text {
+                white-space: nowrap;
+                width: 50px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border: 1px solid #000000;
+            }
+        }
+    }
+}

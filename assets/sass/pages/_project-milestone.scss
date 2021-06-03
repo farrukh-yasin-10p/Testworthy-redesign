@@ -3,56 +3,72 @@
 // Add Milestone Section Start
 .add-milestone {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .row {
+        align-items: center;
+    }
 
     .search-filter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
         position: relative;
 
         img {
-            width: 20px;
+            width: rem(20);
         }
 
         .border-line {
-            border-right: 1px solid $grey-light;
-            margin-right: 10px;
-            margin-left: 6px;
+            border-right: rem(1) solid $grey-light;
+            margin-right: rem(10);
+            margin-left: rem(6);
         }
 
         input {
-            position: relative;
-            font-size: 16px;
-            padding: 12px 95px 12px 24px;
-            border-radius: 30px;
-            background-color: #eee;
-            border: 1px solid #eee;
+            font-size: rem(16);
+            padding: rem(10) rem(45) rem(10) rem(24);
+            border-radius: rem(30);
+            border: rem(1) solid rgba(227, 229, 233, .87);
             outline: none;
-            margin-right: 10px;
+            width: rem(320);
+            background-color: #fff;
+            color: #aaa;
+
+            &::placeholder {
+                color: #aaa;
+            }
         }
 
-        .search-icon {
-            position: absolute;
-            right: 232px;
-            top: 12px;
+
+        .search-input {
+            position: relative;
+            margin-bottom: rem(10);
+
+
+            .search-icon {
+                position: absolute;
+                right: rem(16);
+                top: rem(10);
+            }
+
         }
 
         button {
-            padding: 12px 40px;
-            border-radius: 30px;
-            font-size: 16px;
+            padding: rem(10) rem(47);
+            border-radius: rem(30);
+            font-size: rem(16);
             background-color: $secondary;
             color: white;
+            margin-left: rem(10);
+            margin-bottom: rem(10);
+
         }
     }
 
-}
 
-.sort-by {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
     .sort-by-text {
         color: $grey-400;
@@ -61,44 +77,149 @@
     .sort-by-filter {
         display: flex;
         align-items: center;
-        font-size: 12px;
+        justify-content: flex-end;
+        font-size: rem(12);
+        margin-top: rem(13);
+        padding-right: rem(10);
+
 
         label {
-            margin-bottom: 0px;
-            margin-right: 40px;
-            margin-left: 3px;
+            margin: rem(0) rem(30) rem(0) rem(6);
         }
+
 
     }
 
+
     .sort-by-date {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
+        padding-right: rem(5);
+        margin-bottom: rem(15);
 
 
+        .date-round {
+
+            span {
+
+                background-color: rgba(238, 238, 238, 0.63);
+                padding: rem(8) rem(11) rem(10) rem(11);
+                border-radius: rem(20);
+            }
+
+            img {
+                width: rem(17);
+            }
+        }
     }
 
     .sort-by-tabs {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
+        margin-left: rem(42);
 
         button {
-            font-size: 12px;
-            padding-right: 0px;
-            margin-left: 50px;
+            font-size: rem(12);
         }
 
-        .active {
-            color: blue;
+        .dropdown-menu {
+            margin-right: rem(120);
+            margin-bottom: rem(10);
+            padding: rem(10) rem(0);
+            font-size: rem(12);
+            border-radius: rem(10);
+            border: none;
+            box-shadow: $shadow3;
+            min-width: rem(0);
+
+
+
+            .dropdown-item {
+                padding: rem(10) rem(20);
+                color: black;
+
+                &:hover {
+                    background-color: $filter;
+                }
+            }
         }
+
+    }
+
+    @include mq('lg', max) {
+
+        .search-filter {
+            img {
+                width: rem(18);
+            }
+
+            input {
+                font-size: rem(14);
+                width: rem(290);
+            }
+
+            button {
+                font-size: rem(14);
+                padding: rem(8) rem(47);
+            }
+
+        }
+
+        .sort-by-filter {
+            label {
+                margin: rem(0) rem(20) rem(0) rem(6);
+            }
+        }
+
     }
 
 
+    @include mq('sm', max) {
+        justify-content: center;
+
+        .search-filter {
+            justify-content: center;
+
+            input {
+                font-size: rem(12);
+                margin-top: rem(10);
+            }
+
+            button {
+                font-size: rem(12);
+                padding: rem(7) rem(28);
+                margin-bottom: rem(10);
+
+            }
+
+            .search-input {
+                .search-icon {
+                    top: rem(18);
+                }
+            }
+        }
+
+        .sort-by-filter {
+            justify-content: center;
+            padding-right: rem(0);
+        }
+
+        .sort-by-tabs {
+            margin-left: rem(0);
+        }
+    }
 }
 
+// Add Milestone Section End
+
 .milestone-tabs {
-    margin-top: 20px;
-    margin-left: 10px;
+
+
+    ul {
+        margin-bottom: rem(0);
+    }
 
     .nav-link {
         color: $grey-light;
@@ -106,33 +227,41 @@
         font-weight: bold;
 
         &.active {
-            background-color: white;
+            background-color: $primary;
             color: $secondary;
         }
     }
 }
 
 .milestone-tabs-content {
-    .milestone-content-row {
+    .tab-pane {
+        height: auto;
+    }
+}
+
+// Milestone Row Content Start
+.milestone-content-row {
+    .select-row-list {
         .custom-checkbox {
             label {
                 font-weight: normal;
-                font-size: 16px;
+                font-size: rem(16);
                 display: flex;
                 align-items: center;
                 min-width: 0;
 
                 i {
-                    margin-right: 15px;
-                    font-size: 25px;
+                    margin-right: rem(24);
+                    font-size: rem(30);
+                    color: $secondary;
                 }
 
                 &::before {
-                    top: 8px;
+                    top: rem(10);
                 }
 
                 &::after {
-                    top: 8px;
+                    top: rem(10);
                 }
             }
 
@@ -141,38 +270,185 @@
                 display: block;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                padding-bottom: rem(5);
             }
+        }
+
+        .completed {
+
+            margin-left: rem(50);
+            display: flex;
+
+            i {
+                font-size: rem(20);
+                color: $success-light;
+            }
+        }
+
+        .passed,
+        .creation-date,
+        .due-date {
+            font-size: rem(12);
+        }
+
+        li {
+            @include card-box;
+            background-color: white;
+            padding: rem(20) rem(5) rem(20) rem(20);
+            margin-bottom: rem(20);
+
+            &:hover {
+                background-color: #e7f3f8;
+            }
+        }
+
+        .passed {
+            margin-left: rem(15);
+            font-size: rem(12);
+
+            span {
+                &:first-child {
+                    margin-right: rem(5);
+                }
+            }
+        }
+
+        .due-date {
+            margin-right: rem(20);
+        }
+
+
+        .progressBar {
+            width: 100%;
+        }
+
+        .progress {
+            height: rem(10);
+            border-radius: rem(50);
+        }
+
+        .progress-bar-success {
+            background-color: $success-light;
+            border-radius: rem(50);
+        }
+
+
+
+    }
+
+
+    .select-row {
+        padding: rem(10) rem(35) rem(10) rem(20);
+        background-color: #eeeeee;
+        border-radius: rem(10);
+        font-weight: normal;
+        font-size: rem(16);
+        color: #b4b7bb;
+
+        .creation-col {
+            margin-left: auto;
+        }
+
+        label {
+            span {
+                font-size: rem(16);
+                font-weight: normal;
+            }
+        }
+
+        .milestone-progress {
+            margin-left: rem(35);
         }
     }
 
-    .passed,
-    .creation,
-    .due {
-        font-size: 12px;
+
+    @include mq('xxl', max) {
+
+        .select-row-list {
+            .completed {
+                margin-left: rem(25);
+            }
+
+            .passed {
+                margin-left: rem(0);
+            }
+        }
+
     }
 
-    li {
-        @include card-box;
-        background-color: white;
-        padding: 20px;
+    @include mq('xl', max) {
+
+
+        .select-row {
+            .milestone-progress {
+                margin-left: rem(15);
+            }
+        }
+
+        .select-row-list {
+            .completed {
+                margin-left: rem(20);
+            }
+
+            .passed {
+                margin-left: rem(0);
+            }
+        }
+
+        .creation-date {
+            white-space: pre-line;
+        }
     }
 
-    .passed {
-        white-space: nowrap;
-        margin-left: 20px;
+    @include mq('lg', max) {
+        .select-row {
+            .creation-col {
+                margin-left: rem(0);
+            }
+
+            .milestone-progress {
+                margin-left: rem(0);
+
+            }
+
+            .row {
+                display: block;
+            }
+        }
+
+        .select-row-list {
+            .progressBar {
+                width: 60%;
+                margin-bottom: rem(10);
+                margin-top: rem(10);
+            }
+
+            .completed {
+                margin-left: rem(60);
+            }
+
+            .passed {
+                margin-left: rem(0);
+                margin-bottom: rem(10);
+            }
+
+            .creation-date {
+                white-space: normal;
+                margin-bottom: rem(10);
+            }
+        }
+
+    }
+
+    @include mq('sm', max) {
+
+        .select-row-list {
+            li {
+                padding-right: rem(20);
+            }
+        }
+
     }
 }
 
-.progressBar {
-    width: 100%;
-}
-
-.progress {
-    height: 12px;
-    border-radius: 50px;
-}
-
-.progress-bar-success {
-    background-color: #24cc09;
-    border-radius: 50px;
-}
+// Milestone Row Content End

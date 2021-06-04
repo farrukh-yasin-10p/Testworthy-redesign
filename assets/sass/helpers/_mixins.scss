@@ -329,6 +329,33 @@
   }
 }
 
+@mixin case_box($boxcol,$boxborder) {
+     
+  .c100 {
+      font-size: 50px;
+      background-color: transparent;
+
+      span {
+          color: $boxcol; 
+          top: -7px;
+          left: 0;
+          text-align: center;
+          width: 4em;
+          font-weight: 600;
+          font-size: 13px;            
+      }
+
+      .slice {
+        .bar {
+          border:.09em solid $boxborder;
+          position: relative;
+          z-index: 1; 
+        }
+      }
+
+    }
+  
+}
 //===========================================
 // -Mixins end
 //===========================================

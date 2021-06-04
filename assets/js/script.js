@@ -14,10 +14,10 @@ function edit_searchList(a){
 
 
 //set all your datepickers inputs
-$("#feRouteDate").datepicker({
-  //dateFormat: 'dd/mm/yy',
-  //maxDate: 0
-});
+// $("#feRouteDate").datepicker({
+//   //dateFormat: 'dd/mm/yy',
+//   //maxDate: 0
+// });
 
 
 //You can show datepicker on click on the calendar icon

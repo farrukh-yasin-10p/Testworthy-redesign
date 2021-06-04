@@ -20,6 +20,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
         rel="stylesheet" />
 
+    <!-- My custom Scrollbar -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
     <link rel="stylesheet" href="./assets/dist/style.css">
     <title>Testworthy</title>
 
@@ -44,6 +52,22 @@
                 </span>
                 <h6><a href="#">Milestones</a> </h6>
             </div>
+
+
+            <div class="page-nav topnavbar">
+                <div class="header-nav">
+                    <ul>
+                        <li><a href="./index.html" class="">Overview</a></li>
+                        <li><a href="#" class="active">Milestones</a> </li>
+                        <li><a href="#" class="">Test Plan</a> </li>
+                        <li><a href="#" class="">Test Run & Results</a> </li>
+                        <li><a href="#" class="">Test Suites & Cases</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
         </div>
         <div class="user ml-auto">
             <div class="user-group">
@@ -105,7 +129,7 @@
         <div class="container-fluid">
 
             <!-- Page Nav Section Start -->
-            <div class="page-nav">
+            <div class="page-nav bodymenubar">
                 <div class="header-nav">
                     <ul>
                         <li><a href="./index.html" class="">Overview</a></li>
@@ -148,12 +172,15 @@
 
                             <div class=" row sort-by-filter">
                                 <div class="sort-by-date ">
-                                    <input type="radio" name="All" id=""> <label for="">All</label>
-                                    <input type="radio" name="open" id=""> <label for="">Open</label>
-                                    <input type="radio" name="completed" id=""><label for="">Completed</label>
+                                    <input type="radio" name="radio" id=""> <label for="all">All</label>
+                                    <input type="radio" name="radio" id=""> <label for="open">Open</label>
+                                    <input type="radio" name="radio" id=""><label for="completed">Completed</label>
                                     <div class="date-round">
-                                        <span><a href=""><img src="./assets/images/ic_date.png"
-                                                    alt="date-icon"></a></span>
+                                        <span class="datepicker">
+                                            <input type="hidden" id="feRouteDate" />
+                                            <img class="ic-date" src="./assets/images/ic_date.png" alt="date-icon">
+
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="sort-by-tabs">
@@ -604,7 +631,1089 @@
                     <!--Milestone-content-grid  Start tab -->
                     <div class="milestone-content-grid tab-pane fade" id="pills-grid" role="tabpanel"
                         aria-labelledby="pills-grid-tab">
-                        <h6>hello2</h6>...
+
+
+                        <div class="gridboxes">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="gridboxes__boxes">
+                                        <div class="row ic-option">
+                                            <span><i class="icon-ic_option"></i></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="gridboxes__exic">
+                                                    <div class="row">
+                                                        <div class="col-md-3"><span><i
+                                                                    class="icon-milestone-icon"></i></span> </div>
+                                                        <div class="col-md-9">
+                                                            <div class="cntnttxt">
+                                                                <h4>Execution Web - Sprint 51 </h3>
+                                                                    <a href="javascript:;">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gridboxes__progress-bar">
+
+                                                        <div class="col-md-8">
+                                                            <div class="progressBar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-success"
+                                                                        role="progressbar" aria-valuenow="65"
+                                                                        aria-valuemin="0" aria-valuemax="100"
+                                                                        style="width:65%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="passed">
+                                                                <span>65%</span>
+                                                                <span>Passed</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="gridboxes__days">
+                                                    <div class="dated">05</div>
+                                                    <div class="days">Days Left</div>
+                                                    <div class="duedate">Due Date : 31/04/21</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mscases">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box1">
+                                                            <div class="c100 p24">
+                                                                <span>24%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box2">
+                                                            <div class="c100 p9">
+                                                                <span>9%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p13">
+                                                                <span>13%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p21">
+                                                                <span>21%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="milestonetoggle">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="submilestones">5 Sub-mmilestones</div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="collapsbutton">
+                                                        <span data-toggle="collapse" data-target="#mslist1">
+                                                            <i class="icon-accordion-down"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="mslist1" class="collapse">
+                                        <div class="row gridboxes__progress-bar--milestoneprogress">
+
+                                            <div class="col-md-12">
+
+                                                <div class="checkbox box1">
+
+                                                    <div class="custom-scrollbar-css">
+                                                        <input id="box1-check1" type="checkbox" name="check"
+                                                            value="box1-check1">
+                                                        <label for="box1-check1">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box1-check2" type="checkbox" name="check"
+                                                            value="box1-check2">
+                                                        <label for="box1-check2">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box1-check3" type="checkbox" name="check"
+                                                            value="box1-check3">
+                                                        <label for="box1-check3">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box1-check4" type="checkbox" name="check"
+                                                            value="box1-check4">
+                                                        <label for="box1-check4">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="gridboxes__boxes">
+                                        <div class="row ic-option">
+                                            <span><i class="icon-ic_option"></i></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="gridboxes__exic">
+                                                    <div class="row">
+                                                        <div class="col-md-3"><span><i
+                                                                    class="icon-milestone-icon"></i></span> </div>
+                                                        <div class="col-md-9">
+                                                            <div class="cntnttxt">
+                                                                <h4>Execution Web - Sprint 51 </h3>
+                                                                    <a href="javascript:;">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gridboxes__progress-bar">
+
+                                                        <div class="col-md-8">
+                                                            <div class="progressBar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-success"
+                                                                        role="progressbar" aria-valuenow="65"
+                                                                        aria-valuemin="0" aria-valuemax="100"
+                                                                        style="width:65%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="passed">
+                                                                <span>65%</span>
+                                                                <span>Passed</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="gridboxes__days">
+                                                    <div class="dated">25</div>
+                                                    <div class="days">Days Left</div>
+                                                    <div class="duedate">Due Date : 31/04/21</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mscases">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box1">
+                                                            <div class="c100 p50">
+                                                                <span>50%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box2">
+                                                            <div class="c100 p9">
+                                                                <span>9%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p13">
+                                                                <span>13%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p21">
+                                                                <span>21%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="milestonetoggle">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="submilestones">5 Sub-mmilestones</div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="collapsbutton">
+                                                        <span data-toggle="collapse" data-target="#mslist2">
+                                                            <i class="icon-accordion-down"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="mslist2" class="collapse">
+                                        <div class="row gridboxes__progress-bar--milestoneprogress">
+
+                                            <div class="col-md-12">
+
+                                                <div class="checkbox box2">
+
+                                                    <div class="custom-scrollbar-css">
+
+                                                        <input id="box2-check1" type="checkbox" name="check"
+                                                            value="box2-check1">
+                                                        <label for="box2-check1">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box2-check2" type="checkbox" name="check"
+                                                            value="box2-check2">
+                                                        <label for="box2-check2">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box2-check3" type="checkbox" name="check"
+                                                            value="box2-check3">
+                                                        <label for="box2-check3">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box2-check4" type="checkbox" name="check"
+                                                            value="box2-check4">
+                                                        <label for="box2-check4">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="gridboxes__boxes">
+                                        <div class="row ic-option">
+                                            <span><i class="icon-ic_option"></i></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="gridboxes__exic">
+                                                    <div class="row">
+                                                        <div class="col-md-3"><span><i
+                                                                    class="icon-milestone-icon"></i></span> </div>
+                                                        <div class="col-md-9">
+                                                            <div class="cntnttxt">
+                                                                <h4>Execution Web - Sprint 51 </h3>
+                                                                    <a href="javascript:;">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gridboxes__progress-bar">
+
+                                                        <div class="col-md-8">
+                                                            <div class="progressBar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-success"
+                                                                        role="progressbar" aria-valuenow="65"
+                                                                        aria-valuemin="0" aria-valuemax="100"
+                                                                        style="width:65%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="passed">
+                                                                <span>65%</span>
+                                                                <span>Passed</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="gridboxes__days">
+                                                    <div class="dated">05</div>
+                                                    <div class="days">Days Left</div>
+                                                    <div class="duedate">Due Date : 31/04/21</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mscases">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box1">
+                                                            <div class="c100 p24">
+                                                                <span>24%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box2">
+                                                            <div class="c100 p9">
+                                                                <span>9%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p13">
+                                                                <span>13%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p21">
+                                                                <span>21%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="milestonetoggle">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="submilestones">5 Sub-mmilestones</div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="collapsbutton">
+                                                        <span data-toggle="collapse" data-target="#mslist3">
+                                                            <i class="icon-accordion-down"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="mslist3" class="collapse">
+                                        <div class="row gridboxes__progress-bar--milestoneprogress">
+
+                                            <div class="col-md-12">
+
+                                                <div class="checkbox box3">
+
+                                                    <div class="custom-scrollbar-css">
+
+                                                        <input id="box3-check1" type="checkbox" name="check"
+                                                            value="box3-check1">
+                                                        <label for="box3-check1">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box3-check2" type="checkbox" name="check"
+                                                            value="box3-check2">
+                                                        <label for="box3-check2">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box3-check3" type="checkbox" name="check"
+                                                            value="box3-check3">
+                                                        <label for="box3-check3">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box3-check4" type="checkbox" name="check"
+                                                            value="box3-check4">
+                                                        <label for="box3-check4">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="gridboxes__boxes">
+                                        <div class="row ic-option">
+                                            <span><i class="icon-ic_option"></i></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="gridboxes__exic">
+                                                    <div class="row">
+                                                        <div class="col-md-3"><span><i
+                                                                    class="icon-milestone-icon"></i></span> </div>
+                                                        <div class="col-md-9">
+                                                            <div class="cntnttxt">
+                                                                <h4>Execution Web - Sprint 51 </h3>
+                                                                    <a href="javascript:;">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gridboxes__progress-bar">
+
+                                                        <div class="col-md-8">
+                                                            <div class="progressBar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-success"
+                                                                        role="progressbar" aria-valuenow="65"
+                                                                        aria-valuemin="0" aria-valuemax="100"
+                                                                        style="width:65%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="passed">
+                                                                <span>65%</span>
+                                                                <span>Passed</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="gridboxes__days">
+                                                    <div class="dated">05</div>
+                                                    <div class="days">Days Left</div>
+                                                    <div class="duedate">Due Date : 31/04/21</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mscases">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box1">
+                                                            <div class="c100 p24">
+                                                                <span>24%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box2">
+                                                            <div class="c100 p9">
+                                                                <span>9%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p13">
+                                                                <span>13%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="mscases__cases mscases__cases--box3">
+                                                            <div class="c100 p21">
+                                                                <span>21%</span>
+                                                                <div class="slice">
+                                                                    <div class="bar"></div>
+                                                                    <div class="fill"></div>
+                                                                </div>
+                                                                <div class="cases-rate">
+                                                                    <h5>Blocked</h5>
+                                                                    <h6>6 Cases</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="milestonetoggle">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="submilestones">5 Sub-mmilestones</div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="collapsbutton">
+                                                        <span data-toggle="collapse" data-target="#mslist4">
+                                                            <i class="icon-accordion-down"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="mslist4" class="collapse">
+                                        <div class="row gridboxes__progress-bar--milestoneprogress">
+
+                                            <div class="col-md-12">
+
+                                                <div class="checkbox box4">
+
+                                                    <div class="custom-scrollbar-css">
+
+                                                        <input id="box4-check1" type="checkbox" name="check"
+                                                            value="box4-check1">
+                                                        <label for="box4-check1">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box4-check2" type="checkbox" name="check"
+                                                            value="box4-check2">
+                                                        <label for="box4-check2">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box4-check3" type="checkbox" name="check"
+                                                            value="box4-check3">
+                                                        <label for="box4-check3">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                        <input id="box4-check4" type="checkbox" name="check"
+                                                            value="box4-check4">
+                                                        <label for="box4-check4">
+                                                            <span class="row">
+                                                                <span class="col-md-4">
+                                                                    <span class="row">
+                                                                        <h5>Sub-milestone 1 lorem..</h5>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="progressBar col-md-6">
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success"
+                                                                            role="progressbar" aria-valuenow="65"
+                                                                            aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width:65%">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="col-md-2">
+                                                                    <span class="row">
+                                                                        <span class="status">
+                                                                            25% passed
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                     <!--Milestone-content-grid End tab -->
 
@@ -637,6 +1746,9 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

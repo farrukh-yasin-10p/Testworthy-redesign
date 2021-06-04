@@ -13,6 +13,38 @@ function edit_searchList(a){
 }
 
 
+//set all your datepickers inputs
+// $("#feRouteDate").datepicker({
+//   //dateFormat: 'dd/mm/yy',
+//   //maxDate: 0
+// });
+
+
+//You can show datepicker on click on the calendar icon
+$(".ic-date").on("click", function(){
+  $(this).siblings("input").datepicker("show");    
+});
+
+
+/* Top Nav Bar */
+
+
+$(window).scroll(function() {
+  if ($(this).scrollTop()>100)
+   {
+      $('.topnavbar').fadeIn(300);
+      $('.bodymenubar').fadeOut(300);
+   }
+  else
+   {
+    $('.topnavbar').stop().fadeOut(300);
+    $('.bodymenubar').stop().fadeIn(300);
+   }
+});
+
+ 
+
+
 //==================//
 
 var labels = [

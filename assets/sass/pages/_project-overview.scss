@@ -100,7 +100,7 @@
     @include mq('sm', max) {
         position: absolute;
         right: rem(0);
-        top: rem(30);
+        top: rem(96);
     }
 
     @include mq('xl', max) {

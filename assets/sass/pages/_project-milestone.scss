@@ -180,6 +180,8 @@
 
 
     @include mq('sm', max) {
+        display: block;
+        text-align: center;
         justify-content: center;
 
         .search-filter {
@@ -592,13 +594,15 @@
                     }
                 }
             }
+
             @include mq-only("xs", "ml") {
-                .c100{
+                .c100 {
                     font-size: 40px;
-                    float:none;
-                    margin:0 auto;
-                    span{
-                        font-size:11px;
+                    float: none;
+                    margin: 0 auto;
+
+                    span {
+                        font-size: 11px;
                     }
                 }
             }
@@ -673,14 +677,16 @@
         }
 
         @include mq-only("xs", "ml") {
-            .dated{
+            .dated {
                 font-size: 50px;
-                line-height:50px;
+                line-height: 50px;
             }
-            .days{
+
+            .days {
                 font-size: 12px;
             }
-            .duedate{
+
+            .duedate {
                 font-size: 10px;
             }
         }
@@ -728,7 +734,7 @@
 
     flex-grow: 0;
     padding: 20px 16px 15px 20px;
-    border-radius: 0px 0px 30px 30px; 
+    border-radius: 0px 0px 30px 30px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
     background-color: #f5f4f4;
     position: absolute;
@@ -786,6 +792,7 @@
             h5 {
                 font-size: 9px;
             }
+
             .status {
                 font-size: 9px;
             }

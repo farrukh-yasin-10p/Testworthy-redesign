@@ -12,7 +12,7 @@ header {
 
     @include mq('sm', max) {
         display: block;
-        margin-bottom: rem(10);
+        //margin-bottom: rem(10);
     }
 }
 

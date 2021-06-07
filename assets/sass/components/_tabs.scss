@@ -1,13 +1,33 @@
 // Tabs
+.page-nav {
+
+    position: fixed;
+    background-color: #f9f9f9;
+    z-index: 99;
+    width: calc(100% - 5.625rem);
+    margin-left: -10px;
+    padding-left: 25px;
+    //top: 81px;
+    //left: 282px;
+    box-shadow: 2px 2px 5px rgb(192 192 192 / 20%);
+
+    @include mq('sm', max) {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 5px;
+
+    }
+}
 
 .header-nav {
-    padding: rem(10) rem(0) rem(0) rem(0);
+    // padding: rem(10) rem(0) rem(0) rem(0);
 
     ul {
         display: flex;
         list-style: none;
         white-space: nowrap;
-        border-bottom: rem(1) solid #e2e0e0;
+        margin-bottom: 2px;
+        //border-bottom: rem(1) solid #e2e0e0;
 
         @include mq('sm', max) {
             white-space: nowrap;

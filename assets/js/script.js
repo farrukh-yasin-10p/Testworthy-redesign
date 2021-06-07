@@ -29,18 +29,18 @@ $(".ic-date").on("click", function(){
 /* Top Nav Bar */
 
 
-$(window).scroll(function() {
-  if ($(this).scrollTop()>100)
-   {
-      $('.topnavbar').fadeIn(300);
-      $('.bodymenubar').fadeOut(300);
-   }
-  else
-   {
-    $('.topnavbar').stop().fadeOut(300);
-    $('.bodymenubar').stop().fadeIn(300);
-   }
-});
+// $(window).scroll(function() {
+//   if ($(this).scrollTop()>100)
+//    {
+//       $('.topnavbar').fadeIn(300);
+//       $('.bodymenubar').fadeOut(300);
+//    }
+//   else
+//    {
+//     $('.topnavbar').stop().fadeOut(300);
+//     $('.bodymenubar').stop().fadeIn(300);
+//    }
+// });
 
  
 

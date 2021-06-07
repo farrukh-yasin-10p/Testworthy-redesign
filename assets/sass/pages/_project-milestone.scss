@@ -736,19 +736,19 @@
 .checkbox {
 
     flex-grow: 0;
-    padding: 70px 16px 15px 21px;
-    border-radius: 30px;
+    padding: 20px 16px 15px 20px;
+    border-radius: 0px 0px 30px 30px; 
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
     background-color: #f5f4f4;
     position: absolute;
-    top: -55px;
-    z-index: 0;
-    width: 93%;
-    left: 21px;
+    top: -45px;
+    z-index: 9;
+    width: 92%;
+    left: 24px;
      
     .custom-scrollbar-css {
         overflow-y: scroll;
-        height: 100px;
+        height: 65px;
     }
      
 	label {

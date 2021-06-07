@@ -585,6 +585,20 @@
                             margin: 0;
                             padding: 0;
                         }
+
+                        @include mq-only("xs", "ml") {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @include mq-only("xs", "ml") {
+                .c100{
+                    font-size: 40px;
+                    float:none;
+                    margin:0 auto;
+                    span{
+                        font-size:11px;
                     }
                 }
             }
@@ -657,6 +671,20 @@
             font-size: 12px;
             color: #626263;
         }
+
+        @include mq-only("xs", "ml") {
+            .dated{
+                font-size: 50px;
+                line-height:50px;
+            }
+            .days{
+                font-size: 12px;
+            }
+            .duedate{
+                font-size: 10px;
+            }
+        }
+
     }
 
     &__progress-bar {
@@ -674,8 +702,18 @@
 
                 &:first-child {
                     font-size: 18px;
+
+                    @include mq-only("xs", "ml") {
+                        font-size: 10px;
+                    }
                 }
 
+            }
+
+            @include mq-only("xs", "ml") {
+                span {
+                    font-size: 10px;
+                }
             }
         }
     }
@@ -689,19 +727,19 @@
 .checkbox {
 
     flex-grow: 0;
-    padding: 70px 16px 15px 21px;
-    border-radius: 30px;
+    padding: 20px 16px 15px 20px;
+    border-radius: 0px 0px 30px 30px; 
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
     background-color: #f5f4f4;
     position: absolute;
-    top: -55px;
-    z-index: 0;
-    width: 93%;
-    left: 21px;
+    top: -45px;
+    z-index: 9;
+    width: 92%;
+    left: 24px;
 
     .custom-scrollbar-css {
         overflow-y: scroll;
-        height: 100px;
+        height: 65px;
     }
 
     label {
@@ -742,6 +780,15 @@
             font-size: 13px;
             color: #626263;
             margin-top: 2px;
+        }
+
+        @include mq-only("xs", "ml") {
+            h5 {
+                font-size: 9px;
+            }
+            .status {
+                font-size: 9px;
+            }
         }
     }
 

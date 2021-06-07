@@ -578,6 +578,21 @@
                             margin:0; 
                             padding:0;
                         }
+
+                        @include mq-only("xs", "ml") {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            @include mq-only("xs", "ml") {
+                .c100{
+                    font-size: 40px;
+                    float:none;
+                    margin:0 auto;
+                    span{
+                        font-size:11px;
                     }
                 }
             }
@@ -620,6 +635,22 @@
                font-weight: bold;
                color: #1EAAE7;
            } 
+
+           @include mq-only("xs", "ml") {
+                h4 {    
+                    font-size: 12px;
+                }
+
+                a {
+                    font-size: 12px;
+                }
+           }
+        }
+
+        @include mq-only("xs", "ml") {
+            .icon-milestone-icon {
+                font-size: 40px;
+            }
         }
 
         
@@ -644,7 +675,22 @@
         .duedate{
             font-size: 12px;
             color: #626263;
+        } 
+
+        @include mq-only("xs", "ml") {
+            .dated{
+                font-size: 50px;
+                line-height:50px;
+            }
+            .days{
+                font-size: 12px;
+            }
+            .duedate{
+                font-size: 10px;
+            }
         }
+ 
+  
     }
 
     &__progress-bar {
@@ -662,11 +708,24 @@
 
                 &:first-child {
                     font-size: 18px;
+
+                    @include mq-only("xs", "ml") {
+                        font-size: 10px;
+                    }
                 }
                 
             }
+
+            @include mq-only("xs", "ml") {
+                span {
+                    font-size: 10px;
+                }
+            }
         }
+
+        
     }
+    
 }
 
 

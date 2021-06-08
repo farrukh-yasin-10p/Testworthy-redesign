@@ -7,7 +7,7 @@
     width: calc(100% - 5.625rem);
     margin-left: -10px;
     padding-left: 25px;
-    box-shadow: 2px 2px 5px rgb(192 192 192 / 20%);
+    box-shadow: $shadow;
 
     @include mq('sm', max) {
         width: 100%;

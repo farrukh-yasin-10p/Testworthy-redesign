@@ -51,19 +51,19 @@
         .input_field {
             width: 100%;
             font-size: rem(12);
-            padding: rem(7) rem(10);
+            padding: rem(10) rem(11);
             border: rem(1) solid #b6b9bd;
             border-radius: rem(6);
-            font-weight: 600;
+            // font-weight: 600;
         }
 
         textarea {
             width: 100%;
             font-size: rem(12);
-            padding: rem(7) rem(10);
+            padding: rem(10) rem(11);
             border: rem(1) solid #b6b9bd;
             border-radius: rem(6);
-            font-weight: 600;
+            // font-weight: 600;
         }
 
         #img-input {
@@ -224,6 +224,20 @@
     .alert-box {
         @include alert_box(rgba(36, 204, 9, 0.19), $sky-light, $success-200)
     }
+
+    .save-check {
+        margin-bottom: 80px;
+
+        i {
+            color: $success-200;
+        }
+
+        label {
+            font-size: 14px;
+            padding-left: 10px;
+            font-weight: 600;
+        }
+    }
 }
 
 .unsaved-project {
@@ -235,7 +249,7 @@
 
 
 // Delete Confirmation Modal
-.delete-modal {
+.confirm-modal {
     .modal-body {
         padding-top: rem(5);
         padding-left: rem(20);
@@ -252,6 +266,10 @@
 
     .modal-header {
         padding-bottom: rem(0);
+
+        button {
+            padding: 0px;
+        }
 
         .close_cross {
             position: absolute;
@@ -323,7 +341,7 @@
     }
 }
 
-.delete-complete {
+.confirm-complete {
     .modal-body {
         padding-bottom: rem(0);
         padding-top: rem(0);
@@ -355,8 +373,104 @@
         }
     }
 
-    .delete-image {
+    .project-image {
         position: relative;
         top: rem(10);
+    }
+}
+
+.milestone-modals {
+
+    .modal-body {
+        padding-bottom: rem(55);
+
+        h6 {
+            font-size: rem(16);
+            font-weight: 600;
+        }
+
+        .input_field {
+            width: 100%;
+            font-size: rem(12);
+            padding: rem(10) rem(12);
+            border: rem(1) solid #b6b9bd;
+            border-radius: rem(6);
+
+
+
+            &::placeholder {
+                color: $grey-300;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            font-size: rem(12);
+            padding: rem(10) rem(12);
+            border: rem(1) solid #b6b9bd;
+            border-radius: rem(6);
+
+        }
+
+        .date {
+            width: 48%;
+
+            input {
+                font-weight: normal;
+            }
+
+        }
+
+        .custom-checkbox {
+            margin-bottom: 80px;
+        }
+    }
+
+    .search-list {
+        ul {
+            margin-bottom: rem(0);
+        }
+
+        li {
+            padding: rem(7) rem(17) rem(7) rem(17);
+
+            &:first-child {
+                padding-top: rem(12);
+            }
+
+            &:last-child {
+                padding-bottom: rem(10);
+            }
+
+            &:hover {
+                border-radius: 0px;
+            }
+        }
+
+        .search-list-items {
+            span {
+                font-size: rem(12);
+                color: black;
+                font-weight: normal;
+            }
+
+        }
+    }
+
+    .save-project {
+        .alert-box {
+            padding: rem(10) rem(185) rem(10) rem(50);
+        }
+    }
+}
+
+.text-info-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+        color: #a4a4a4;
+
     }
 }

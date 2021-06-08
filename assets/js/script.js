@@ -10,6 +10,12 @@ function searchList(a){
 function edit_searchList(a){
   var list = document.getElementById('list_search_edit');
   list.style.display = a ;
+
+  var list1 = document.getElementById('list_search_edit1');
+  list1.style.display = a ;
+
+  var list2 = document.getElementById('list_search_edit2');
+  list2.style.display = a ;
 }
 
 

@@ -206,13 +206,11 @@
                 </div>
                 <!--Add Milestone End-->
 
-
-
                 <!--Milestone-tabs Content -->
 
                 <div class="tab-content milestone-tabs-content" id="pills-tabContent">
                     <!--Milestone-content-row Start tab -->
-                    <div class="milestone-content-row tab-pane fade show active" id="pills-row" role="tabpanel"
+                    <div class="milestone-content-row tab-pane  show active" id="pills-row" role="tabpanel"
                         aria-labelledby="pills-row-tab">
 
                         <div class="select-row ">
@@ -613,7 +611,7 @@
 
 
                     <!--Milestone-content-grid  Start tab -->
-                    <div class="milestone-content-grid tab-pane fade" id="pills-grid" role="tabpanel"
+                    <div class="milestone-content-grid tab-pane " id="pills-grid" role="tabpanel"
                         aria-labelledby="pills-grid-tab">
 
 
@@ -633,7 +631,6 @@
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#edit-milestone"><i class="icon-ic_edit"></i>
                                                         <span>Edit Milestone</span></a>
-
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-completeModal"><i
                                                             class="icon-complete-tick"></i>
@@ -911,7 +908,26 @@
                                 <div class="col-md-6">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
-                                            <span><i class="icon-ic_option"></i></span>
+                                            <div class="dropdown">
+                                                <button class="btn shadow-none " type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="icon-ic_option"></i></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                        <span>Edit Milestone</span></a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#ms-completeModal"><i
+                                                            class="icon-complete-tick"></i>
+                                                        <span>Mark as Complete</span></a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#ms-deleteModal"><i class="icon-ic_edit"></i>
+                                                        <span>Delete Milestone</span></a>
+                                                    <a class="dropdown-item" href="#"><i class="icon-rerun"></i>
+                                                        <span>Rerun Milestone</span></a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-8">
@@ -1181,7 +1197,26 @@
                                 <div class="col-md-6">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
-                                            <span><i class="icon-ic_option"></i></span>
+                                            <div class="dropdown">
+                                                <button class="btn shadow-none " type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="icon-ic_option"></i></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                        <span>Edit Milestone</span></a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#ms-completeModal"><i
+                                                            class="icon-complete-tick"></i>
+                                                        <span>Mark as Complete</span></a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#ms-deleteModal"><i class="icon-ic_edit"></i>
+                                                        <span>Delete Milestone</span></a>
+                                                    <a class="dropdown-item" href="#"><i class="icon-rerun"></i>
+                                                        <span>Rerun Milestone</span></a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-8">
@@ -1449,7 +1484,26 @@
                                 <div class="col-md-6">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
-                                            <span><i class="icon-ic_option"></i></span>
+                                            <div class="dropdown">
+                                                <button class="btn shadow-none " type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="icon-ic_option"></i></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                        <span>Edit Milestone</span></a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#ms-completeModal"><i
+                                                            class="icon-complete-tick"></i>
+                                                        <span>Mark as Complete</span></a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#ms-deleteModal"><i class="icon-ic_edit"></i>
+                                                        <span>Delete Milestone</span></a>
+                                                    <a class="dropdown-item" href="#"><i class="icon-rerun"></i>
+                                                        <span>Rerun Milestone</span></a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-8">
@@ -1733,9 +1787,8 @@
             <!-- Modal Section -->
             <section class="modal-section">
 
-
                 <!--Modal Add  Start-->
-                <div class="modal fade milestone-modals" id="add-milestone" tabindex="-1" role="dialog"
+                <div class="modal  milestone-modals" id="add-milestone" tabindex="-1" role="dialog"
                     aria-labelledby="add-milestoneLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
 
@@ -1760,7 +1813,9 @@
                                             <div class="mb-3">
                                                 <div class="text-info-icon">
                                                     <h6>Name *</h6>
-                                                    <span><i class="icon-info-icon"></i></span>
+                                                    <span>
+                                                        <i class="icon-info-icon"></i>
+                                                    </span>
                                                 </div>
                                                 <input type="text" placeholder="Version 1.0, Internal Beta 2 "
                                                     class="input_field">
@@ -1799,7 +1854,10 @@
                                             <div class="mb-3">
                                                 <div class="text-info-icon">
                                                     <h6>Description</h6>
-                                                    <span><i class="icon-info-icon"></i></span>
+                                                    <span>
+                                                        <i class="icon-info-icon"></i>
+
+                                                    </span>
                                                 </div>
 
                                                 <textarea name="" id="" cols="2" rows="4"></textarea>
@@ -1837,8 +1895,7 @@
                                         <div class="modal-footer ">
                                             <button type="button" class="btn btn-light-border"
                                                 data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-secondary-color" data-toggle="modal"
-                                                data-target="#add-milestone-confirm">Add Milestone</button>
+                                            <button type="button" class="btn btn-secondary-color">Add Milestone</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1851,43 +1908,9 @@
                 </div>
                 <!--Add modal End-->
 
-                <!--Added milestone completed Modal Start-->
-                <div class="modal fade confirm-modal" id="add-milestone-confirm" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-
-                        <!-- Modal milestone added content Start-->
-                        <div class="modal-content confirm-complete">
-                            <div class="modal-body-container px-5 pt-4  modal-shade">
-                                <div class="">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="close_cross">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="project-image text-center">
-                                            <img src="./assets/images/add-project.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer text-center">
-                                <span><img src="./assets/images/check-blue.png" alt="check-icon">
-                                    <span>Milestone Added</span>
-                                </span>
-                            </div>
-                        </div>
-                        <!--Added milestone completed Modal End-->
-                    </div>
-                </div>
-                <!--Added milestone completed Modal End-->
-
-
-
                 <!-- GRID MODALS  -->
                 <!--Modal EDIT  Start-->
-                <div class="modal fade milestone-modals" id="edit-milestone" tabindex="-1" role="dialog"
+                <div class="modal  milestone-modals" id="edit-milestone" tabindex="-1" role="dialog"
                     aria-labelledby="add-milestoneLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <!--Modal edit-milestone content  Start-->
@@ -2117,6 +2140,10 @@
                 </div>
                 <!--Modal EDIT End-->
 
+            </section>
+
+
+            <section class="popup-section">
 
 
 
@@ -2243,10 +2270,72 @@
                         </div>
                         <!-- Modal mark complete content End-->
 
+                        <!-- Modal milestone added content Start-->
+                        <div class="modal-content confirm-complete">
+                            <div class="modal-body-container px-5 pt-4  modal-shade">
+                                <div class="">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="close_cross">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="project-image text-center">
+                                            <img src="./assets/images/add-project.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <span><img src="./assets/images/check-blue.png" alt="check-icon">
+                                    <span>Milestone Added</span>
+                                </span>
+                            </div>
+                        </div>
+                        <!--Added milestone completed Modal End-->
+
                     </div>
                 </div>
                 <!--Mark Complete modal End-->
 
+
+
+                <!--Added milestone completed Modal Start-->
+                <!-- 
+                <div class="modal fade confirm-modal" id="add-milestone-confirm" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document"> -->
+
+                <!-- Modal milestone added content Start-->
+
+                <!-- <div class="modal-content confirm-complete">
+                            <div class="modal-body-container px-5 pt-4  modal-shade">
+                                <div class="">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="close_cross">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="project-image text-center">
+                                            <img src="./assets/images/add-project.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <span><img src="./assets/images/check-blue.png" alt="check-icon">
+                                    <span>Milestone Added</span>
+                                </span>
+                            </div>
+                        </div> -->
+
+                <!--Added milestone completed Modal End-->
+
+                <!-- </div>
+                </div> -->
+
+                <!--Added milestone completed Modal End-->
 
             </section>
 

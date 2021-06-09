@@ -10,8 +10,6 @@
 //     }
 // }
 
-
-
 .modal {
     padding-right: rem(0) !important;
 
@@ -39,6 +37,7 @@
     .modal-dialog {
         max-width: rem(800);
     }
+
 
     .modal-body {
         padding-bottom: rem(55);
@@ -248,136 +247,186 @@
 }
 
 
-// Delete Confirmation Modal
-.confirm-modal {
-    .modal-body {
-        padding-top: rem(5);
-        padding-left: rem(20);
-        padding-bottom: rem(30);
-
-        h6 {
-            margin-bottom: rem(15);
-        }
-
-        p {
-            margin-bottom: rem(12);
-        }
+.modal-section {
+    .modal {
+        display: block !important;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0;
+        right: 0;
+        min-width: 800px;
+        height: 100vh;
+        /* box-shadow: 0 10px 25px 2px rgb(0 0 0 / 10%), 0 10px 80px 5px rgb(0 0 0 / 10%); */
+        transform: translateX(100%);
+        transition: 0.8s all ease-out;
     }
 
-    .modal-header {
-        padding-bottom: rem(0);
-
-        button {
-            padding: 0px;
-        }
-
-        .close_cross {
-            position: absolute;
-            top: rem(14);
-        }
+    .show {
+        transform: none;
     }
 
-    .modal-shade {
-        background-color: $sky-light;
-        margin-bottom: rem(0);
-        border-radius: rem(0) rem(0) rem(30) rem(30);
+    .row {
+        height: 100%;
     }
 
     .modal-dialog {
-        max-width: rem(600);
+        margin: 0px;
+        max-width: rem(800);
+        height: 100%;
+        margin-left: auto;
     }
 
-    .modal-body-container {
-        margin-left: rem(0);
+    .modal-content {
+        height: 100%;
+        min-width: 750px;
     }
+}
 
-    p {
-        font-size: rem(12);
-    }
 
-    .info {
-        display: flex;
-        background-color: #fff;
-        padding: rem(12) rem(15) rem(0) rem(15);
-        border-radius: rem(10);
+.popup-section {
+    .modal {
 
-        p {
-            margin-top: rem(2);
-        }
-
-        img {
-            width: rem(21);
-        }
-
-        span {
-            margin-right: rem(12);
+        &.show {
+            display: flex !important;
+            align-items: center;
         }
 
     }
 
-    .modal-footer {
-        padding-right: rem(45);
-        padding-bottom: rem(30);
-        padding-top: rem(15);
-        position: static;
-    }
+    // Delete Confirmation Modal
+    .confirm-modal {
+        .modal-body {
+            padding-top: rem(5);
+            padding-left: rem(20);
+            padding-bottom: rem(30);
 
-    @include mq('sm', max) {
-        .modal-body-container {
-            padding-left: rem(0) !important;
-        }
+            h6 {
+                margin-bottom: rem(15);
+            }
 
-        .modal-header {
-            span {
-                right: rem(15);
+            p {
+                margin-bottom: rem(12);
             }
         }
 
+        .modal-header {
+            padding-bottom: rem(0);
+
+            button {
+                padding: 0px;
+            }
+
+            .close_cross {
+                position: absolute;
+                top: rem(14);
+            }
+        }
+
+        .modal-shade {
+            background-color: $sky-light;
+            margin-bottom: rem(0);
+            border-radius: rem(0) rem(0) rem(30) rem(30);
+        }
+
+        .modal-dialog {
+            max-width: rem(600);
+        }
+
+        .modal-body-container {
+            margin-left: rem(0);
+        }
+
+        p {
+            font-size: rem(12);
+        }
+
+        .info {
+            display: flex;
+            background-color: #fff;
+            padding: rem(12) rem(15) rem(0) rem(15);
+            border-radius: rem(10);
+
+            p {
+                margin-top: rem(2);
+            }
+
+            img {
+                width: rem(21);
+            }
+
+            span {
+                margin-right: rem(12);
+            }
+
+        }
+
         .modal-footer {
-            padding-right: rem(15);
-            padding-top: rem(19);
+            padding-right: rem(45);
+            padding-bottom: rem(30);
+            padding-top: rem(15);
+            position: static;
         }
 
+        @include mq('sm', max) {
+            .modal-body-container {
+                padding-left: rem(0) !important;
+            }
+
+            .modal-header {
+                span {
+                    right: rem(15);
+                }
+            }
+
+            .modal-footer {
+                padding-right: rem(15);
+                padding-top: rem(19);
+            }
+
+        }
+    }
+
+    .confirm-complete {
+        .modal-body {
+            padding-bottom: rem(0);
+            padding-top: rem(0);
+
+            img {
+                width: rem(260);
+            }
+        }
+
+        .modal-header {
+            padding-top: rem(0);
+        }
+
+        .modal-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(25);
+
+            img {
+                width: rem(30);
+                margin-right: rem(15);
+            }
+
+            span {
+                font-size: rem(20);
+                font-weight: 600;
+                color: $secondary;
+            }
+        }
+
+        .project-image {
+            position: relative;
+            top: rem(10);
+        }
     }
 }
 
-.confirm-complete {
-    .modal-body {
-        padding-bottom: rem(0);
-        padding-top: rem(0);
 
-        img {
-            width: rem(260);
-        }
-    }
 
-    .modal-header {
-        padding-top: rem(0);
-    }
-
-    .modal-footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: rem(25);
-
-        img {
-            width: rem(30);
-            margin-right: rem(15);
-        }
-
-        span {
-            font-size: rem(20);
-            font-weight: 600;
-            color: $secondary;
-        }
-    }
-
-    .project-image {
-        position: relative;
-        top: rem(10);
-    }
-}
 
 .milestone-modals {
 

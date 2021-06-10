@@ -725,10 +725,10 @@
     }
 
     .dropdown-menu {
-        top: -15px !important;
-        left: -135px !important;
         padding: rem(10) rem(0);
         font-size: rem(12);
+        margin-left: -140px;
+        margin-top: -12px;
 
         .dropdown-item {
             padding: rem(10) rem(20);

@@ -18,6 +18,12 @@ function edit_searchList(a){
   list2.style.display = a ;
 }
 
+//Tooltip
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 
 //set all your datepickers inputs
 // $("#feRouteDate").datepicker({

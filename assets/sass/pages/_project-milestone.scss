@@ -1,7 +1,7 @@
 // Milestone Page CSS 
 
-// Add Milestone Section Start
-.add-milestone {
+// Add Project Section Start
+.sort-by {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -217,9 +217,9 @@
     }
 }
 
-// Add Milestone Section End
+// Add Project Section End
 
-.milestone-tabs {
+.project-tabs {
 
 
     ul {
@@ -238,14 +238,14 @@
     }
 }
 
-.milestone-tabs-content {
+.tab-content {
     .tab-pane {
         height: auto;
     }
 }
 
-// Milestone Row Content Start
-.milestone-content-row {
+//  Row Content Start
+.content-row {
     .select-row-list {
         .custom-checkbox {
             label {
@@ -296,14 +296,60 @@
             font-size: rem(12);
         }
 
+
         li {
             @include card-box;
             background-color: white;
-            padding: rem(20) rem(5) rem(20) rem(20);
             margin-bottom: rem(20);
+            //padding: rem(20) rem(5) rem(20) rem(20);
+            min-height: 80px;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 background-color: #e7f3f8;
+
+                .due-date {
+                    display: none;
+                }
+
+                .creation-date {
+                    display: none;
+                }
+
+                .hover-row-edit {
+                    display: block;
+
+                    span {
+
+                        a {
+                            &:hover {
+                                color: black;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .row {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+
+        .hover-row-edit {
+            display: none;
+            margin-right: rem(35);
+
+            span {
+                margin-left: 20px;
+
+                a {
+                    color: $grey-300;
+                }
             }
         }
 
@@ -319,7 +365,7 @@
         }
 
         .due-date {
-            margin-right: rem(20);
+            //margin-right: rem(20);
         }
 
 
@@ -350,6 +396,12 @@
         font-size: rem(16);
         color: #b4b7bb;
 
+        .row {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
         .creation-col {
             margin-left: auto;
         }
@@ -361,14 +413,27 @@
             }
         }
 
-        .milestone-progress {
+        .progress_text {
             margin-left: rem(35);
+        }
+
+        .row-icon {
+            display: none;
+        }
+
+        input:checked+.custom-control-label {
+            .row-head {
+                display: none;
+            }
+
+            .row-icon {
+                display: block;
+            }
         }
     }
 
 
     @include mq('xxl', max) {
-
         .select-row-list {
             .completed {
                 margin-left: rem(25);
@@ -385,7 +450,7 @@
 
 
         .select-row {
-            .milestone-progress {
+            .progress_text {
                 margin-left: rem(15);
             }
         }
@@ -411,7 +476,7 @@
                 margin-left: rem(0);
             }
 
-            .milestone-progress {
+            .progress_text {
                 margin-left: rem(0);
 
             }
@@ -456,12 +521,14 @@
     }
 }
 
-// Milestone Row Content End
+
+
+//  Row Content End
 
 
 /* Grid CSS */
 
-.milestone-content-grid::-webkit-scrollbar {
+.content-grid::-webkit-scrollbar {
     width: 0;
 }
 

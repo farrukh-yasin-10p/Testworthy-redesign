@@ -127,11 +127,11 @@
         <!-- Page Nav Section End -->
         <div class="container-fluid">
             <!-- Add Milestone Section -->
-            <section>
+            <section class="milestone-section">
                 <!--Add Milestone Start-->
-                <div class="sort-by add-milestone mb-4">
+                <div class="sort-by mb-4">
                     <div class="row ">
-                        <div class="col-md-6">
+                        <div class="col-lg-6 mb-3">
                             <div>
                                 <h4 class="font-weight-bold">Milestones</h4>
                             </div>
@@ -142,7 +142,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="search-filter">
                                 <div class="search-input">
                                     <input type="text" placeholder="Search Milestone">
@@ -183,7 +183,7 @@
 
 
                                     <!--Milestone-tabs Start -->
-                                    <div class="milestone-tabs">
+                                    <div class="project-tabs">
                                         <ul class="nav nav-pills " id="pills-tab" role="tablist">
                                             <li class="nav-item">
                                                 <a class="nav-link active" id="pills-row-tab" data-toggle="pill"
@@ -208,9 +208,9 @@
 
                 <!--Milestone-tabs Content -->
 
-                <div class="tab-content milestone-tabs-content" id="pills-tabContent">
+                <div class="tab-content" id="pills-tabContent">
                     <!--Milestone-content-row Start tab -->
-                    <div class="milestone-content-row tab-pane  show active" id="pills-row" role="tabpanel"
+                    <div class="content-row tab-pane  show active" id="pills-row" role="tabpanel"
                         aria-labelledby="pills-row-tab">
 
                         <div class="select-row ">
@@ -220,13 +220,15 @@
                                         <input class="custom-control-input" type="checkbox" id="inlineCheckbox04"
                                             value="option04">
                                         <label class="custom-control-label" for="inlineCheckbox04">
-                                            <span class="">Milestone
+                                            <span class="row-head">Milestone
+                                            </span>
+                                            <span class="row-icon"><i class="icon-trash"></i>
                                             </span></label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-auto">
-                                    <div class="milestone-progress">
+                                    <div class="progress_text">
                                         <span>Progress</span>
                                     </div>
                                 </div>
@@ -252,15 +254,16 @@
                             </div>
 
                             <ul>
-                                <li>
+                                <li class="complete-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
                                                 <label class="custom-control-label" for="inlineCheckbox5">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span
-                                                        class="text">Milestone - Sprint 51
+                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text"
+                                                        data-toggle="tooltip" data-placement="top" title="Milestone - Sprint 51
+                                                        Version Alpha">Milestone - Sprint 51
                                                         Version Alpha </span></label>
                                             </div>
                                         </div>
@@ -296,12 +299,18 @@
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
                                             </div>
+
+                                            <div class="hover-row-edit">
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                 </li>
 
-                                <li>
+                                <li class="open-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
@@ -329,9 +338,6 @@
                                                 <span>65%</span>
                                                 <span>Passed</span>
                                             </div>
-                                            <!-- <div class="completed">
-                                                <i class="icon-complete-tick"></i>
-                                            </div> -->
                                         </div>
 
                                         <div class="col-lg-auto ml-auto">
@@ -345,12 +351,22 @@
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
                                             </div>
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                 </li>
 
-                                <li>
+                                <li class="complete-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
@@ -394,6 +410,12 @@
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
                                             </div>
+
+                                            <div class="hover-row-edit">
+
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -406,7 +428,7 @@
                             </div>
 
                             <ul>
-                                <li>
+                                <li class="open-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
@@ -434,9 +456,6 @@
                                                 <span>05%</span>
                                                 <span>Passed</span>
                                             </div>
-                                            <!-- <div class="completed">
-                                                <i class="icon-complete-tick"></i>
-                                            </div> -->
                                         </div>
 
                                         <div class="col-lg-auto ml-auto">
@@ -450,12 +469,22 @@
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
                                             </div>
+
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </li>
 
-                                <li>
+                                <li class="open-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
@@ -483,9 +512,6 @@
                                                 <span>95%</span>
                                                 <span>Passed</span>
                                             </div>
-                                            <!-- <div class="completed">
-                                                <i class="icon-complete-tick"></i>
-                                            </div> -->
                                         </div>
 
                                         <div class="col-lg-auto ml-auto">
@@ -499,12 +525,22 @@
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
                                             </div>
+
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </li>
 
-                                <li>
+                                <li class="complete-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
@@ -548,12 +584,18 @@
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
                                             </div>
+
+                                            <div class="hover-row-edit">
+
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </li>
 
-                                <li>
+                                <li class="open-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
@@ -581,9 +623,6 @@
                                                 <span>65%</span>
                                                 <span>Passed</span>
                                             </div>
-                                            <!-- <div class="completed">
-                                                <i class="icon-complete-tick"></i>
-                                            </div> -->
                                         </div>
 
                                         <div class="col-lg-auto ml-auto">
@@ -596,6 +635,16 @@
                                             <div class="due-date ">
                                                 <span>Due on</span>
                                                 <span>31/04/21</span>
+                                            </div>
+
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -611,10 +660,8 @@
 
 
                     <!--Milestone-content-grid  Start tab -->
-                    <div class="milestone-content-grid tab-pane " id="pills-grid" role="tabpanel"
+                    <div class="content-grid tab-pane " id="pills-grid" role="tabpanel"
                         aria-labelledby="pills-grid-tab">
-
-
                         <div class="gridboxes">
 
                             <div class="row">
@@ -1771,14 +1818,10 @@
                             </div>
 
                         </div>
-
                     </div>
                     <!--Milestone-content-grid End tab -->
-
-
                 </div>
                 <!--Milestone-tabs Content End -->
-
             </section>
 
 
@@ -1813,7 +1856,8 @@
                                             <div class="mb-3">
                                                 <div class="text-info-icon">
                                                     <h6>Name *</h6>
-                                                    <span>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="Lorem ipsum dolor sit amet.">
                                                         <i class="icon-info-icon"></i>
                                                     </span>
                                                 </div>
@@ -1824,7 +1868,9 @@
                                             <div class="mb-3">
                                                 <div class="text-info-icon">
                                                     <h6>Parent</h6>
-                                                    <span><i class="icon-info-icon"></i></span>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="The parent milestone for this milestone (for sub-milestones in milestones)."><i
+                                                            class="icon-info-icon"></i></span>
                                                 </div>
                                                 <input type="text" class="input_field"
                                                     onclick="edit_searchList('block')">
@@ -1854,7 +1900,8 @@
                                             <div class="mb-3">
                                                 <div class="text-info-icon">
                                                     <h6>Description</h6>
-                                                    <span>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="Lorem ipsum dolor sit amet.">
                                                         <i class="icon-info-icon"></i>
 
                                                     </span>
@@ -1867,7 +1914,9 @@
                                                 <div class="date">
                                                     <div class="text-info-icon">
                                                         <h6>Start Date *</h6>
-                                                        <span><i class="icon-info-icon"></i></span>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet."><i
+                                                                class="icon-info-icon"></i></span>
                                                     </div>
 
                                                     <input type="date" placeholder="Version 1.0, Internal Beta 2 "
@@ -1876,7 +1925,9 @@
                                                 <div class="date">
                                                     <div class="text-info-icon">
                                                         <h6>End Date *</h6>
-                                                        <span><i class="icon-info-icon"></i></span>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet."><i
+                                                                class="icon-info-icon"></i></span>
                                                     </div>
 
                                                     <input type="date" placeholder="Version 1.0, Internal Beta 2 "

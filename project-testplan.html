@@ -129,11 +129,11 @@
 
 
             <!-- Add Test plan Section -->
-            <section>
+            <section class="testplan-section">
                 <!--Add test plan Start-->
-                <div class="sort-by add-testplan mb-4">
+                <div class="sort-by  mb-4">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6 mb-3">
                             <div>
                                 <h4 class="font-weight-bold">Test Plan</h4>
                             </div>
@@ -144,7 +144,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-lg-6 ">
                             <div class="search-filter">
                                 <div class="search-input">
                                     <input type="text" placeholder="Search Test Plan">
@@ -152,15 +152,16 @@
                                         <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
                                     </span>
                                 </div>
-                                <button class="btn">Add Test
-                                    Plan</button>
+                                <button class="btn ">Add Test Plan</button>
                             </div>
 
                             <div class=" row sort-by-filter">
                                 <div class="sort-by-date ">
-                                    <input type="radio" name="radio" id=""> <label for="all">All</label>
-                                    <input type="radio" name="radio" id=""> <label for="open">Open</label>
-                                    <input type="radio" name="radio" id=""><label for="completed">Completed</label>
+                                    <input type="radio" name="all" id=""> <label for="all">All</label>
+                                    <input type="radio" name="Open" id=""> <label for="open">Open</label>
+                                    <input type="radio" name="completed" id=""><label for="completed">Completed</label>
+                                    <input type="radio" name="unassigned" id=""><label
+                                        for="unassigned">Unassigned</label>
                                     <div class="date-round">
                                         <span class="datepicker">
                                             <input type="hidden" id="feRouteDate" />
@@ -185,7 +186,7 @@
 
 
                                     <!--testplan-tabs Start -->
-                                    <div class="testplan-tabs">
+                                    <div class="project-tabs">
                                         <ul class="nav nav-pills " id="pills-tab" role="tablist">
                                             <li class="nav-item">
                                                 <a class="nav-link active" id="pills-row-tab" data-toggle="pill"
@@ -212,21 +213,436 @@
 
                 <!--testplan-tabs Content -->
 
-                <div class="tab-content testplan-tabs-content" id="pills-tabContent">
+                <div class="tab-content " id="pills-tabContent">
                     <!--testplan-content-row Start tab -->
-                    <div class="testplan-content-row tab-pane fade show active" id="pills-row" role="tabpanel"
+                    <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
                         aria-labelledby="pills-row-tab">
 
-                        <h1>ROW SECTION</h1>
+                        <div class="select-row ">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="custom-control custom-checkbox ">
+                                        <input class="custom-control-input " type="checkbox" id="inlineCheckbox4"
+                                            value="option4">
+                                        <label class="custom-control-label" for="inlineCheckbox4">
+                                            <span class="row-head">Test Plan
+                                            </span>
+                                            <span class="row-icon"><i class="icon-trash"></i>
+                                            </span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <div class="progress_text">
+                                        <span>Progress</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-auto assigned-to-col ">
+                                    <div>
+                                        <span>Assigned to</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="select-row-list">
+
+                            <div class="date-status mb-4 mt-5">
+                                <span>Tuesday, April 30th, 2021</span>
+                            </div>
+
+                            <ul>
+                                <li class="complete-li">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
+                                                    value="option5">
+                                                <label class="custom-control-label" for="inlineCheckbox5">
+                                                    <span><i class="icon-clipboard"></i></span> <span class="text"
+                                                        data-toggle="tooltip" data-placement="top" title="Test
+                                                    Plan - Sprint 51">Test
+                                                        Plan - Sprint 51
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  d-flex align-items-center flex-nowrap">
+                                            <div class="progressBar">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:65%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto d-flex ">
+                                            <div class="passed">
+                                                <span>65%</span>
+                                                <span>Passed</span>
+                                            </div>
+                                            <div class="completed">
+                                                <i class="icon-complete-tick"></i>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-auto ml-auto">
+
+                                            <div class="hover-row-edit">
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
+
+
+
+                                            <div class="assigned-to">
+                                                <div class="assigned-to-profile">
+                                                    <span><img src="./assets/images/user-icon.png"
+                                                            alt="profile-img"></span>
+                                                </div>
+                                                <div class="assigned-to-text">
+                                                    <span>Ahmed</span>
+                                                    <span>Tester</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="open-li">
+
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
+                                                    value="option6">
+                                                <label class="custom-control-label" for="inlineCheckbox6">
+                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                        Plan - Sprint 51
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  d-flex align-items-center flex-nowrap">
+                                            <div class="progressBar">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:75%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto d-flex ">
+                                            <div class="passed">
+                                                <span>65%</span>
+                                                <span>Passed</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto ml-auto">
+
+                                            <div class="hover-row-edit">
+                                                <span class="rerun-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                </span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
+
+
+
+                                            <div class="assigned-to">
+                                                <div class="assigned-to-profile">
+                                                    <span><img src="./assets/images/user-icon.png"
+                                                            alt="profile-img"></span>
+                                                </div>
+                                                <div class="assigned-to-text">
+                                                    <span>Ahmed</span>
+                                                    <span>Tester</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="unassigned-li">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox7"
+                                                    value="option7">
+                                                <label class="custom-control-label" for="inlineCheckbox7">
+                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                        Plan - Sprint 51
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  d-flex align-items-center flex-nowrap">
+                                            <div class="progressBar">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:65%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto d-flex ">
+                                            <div class="passed">
+                                                <span>65%</span>
+                                                <span>Passed</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-auto ml-auto">
+
+                                            <div class="hover-row-edit">
+                                                <span class="rerun-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                </span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
+                                            <div class="unassigned">
+                                                <i class="icon-unassigned"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                            <div class="date-status mb-4 mt-5">
+                                <span>Monday, April 5th, 2021</span>
+                            </div>
+
+                            <ul>
+                                <li class="complete-li">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox8"
+                                                    value="option8">
+                                                <label class="custom-control-label" for="inlineCheckbox8">
+                                                    <span><i class="icon-clipboard"></i></span> <span class="text"
+                                                        data-toggle="tooltip" data-placement="top" title="Test
+                                                    Plan - Sprint 51">Test
+                                                        Plan - Sprint 51
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  d-flex align-items-center flex-nowrap">
+                                            <div class="progressBar">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:65%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto d-flex ">
+                                            <div class="passed">
+                                                <span>65%</span>
+                                                <span>Passed</span>
+                                            </div>
+                                            <div class="completed">
+                                                <i class="icon-complete-tick"></i>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-auto ml-auto">
+
+                                            <div class="hover-row-edit">
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
+
+
+
+                                            <div class="assigned-to">
+                                                <div class="assigned-to-profile">
+                                                    <span><img src="./assets/images/user-icon.png"
+                                                            alt="profile-img"></span>
+                                                </div>
+                                                <div class="assigned-to-text">
+                                                    <span>Ahmed</span>
+                                                    <span>Tester</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="open-li">
+
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox9"
+                                                    value="option9">
+                                                <label class="custom-control-label" for="inlineCheckbox9">
+                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                        Plan - Sprint 51
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  d-flex align-items-center flex-nowrap">
+                                            <div class="progressBar">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:75%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto d-flex ">
+                                            <div class="passed">
+                                                <span>65%</span>
+                                                <span>Passed</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto ml-auto">
+
+                                            <div class="hover-row-edit">
+                                                <span class="rerun-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                </span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
+
+
+
+                                            <div class="assigned-to">
+                                                <div class="assigned-to-profile">
+                                                    <span><img src="./assets/images/user-icon.png"
+                                                            alt="profile-img"></span>
+                                                </div>
+                                                <div class="assigned-to-text">
+                                                    <span>Ahmed</span>
+                                                    <span>Tester</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="unassigned-li">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckbox10" value="option10">
+                                                <label class="custom-control-label" for="inlineCheckbox10">
+                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                        Plan - Sprint 51
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  d-flex align-items-center flex-nowrap">
+                                            <div class="progressBar">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:65%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-auto d-flex ">
+                                            <div class="passed">
+                                                <span>65%</span>
+                                                <span>Passed</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-auto ml-auto">
+
+                                            <div class="hover-row-edit">
+                                                <span class="rerun-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                </span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="Complete"><a href="#"><i
+                                                            class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                            </div>
+
+
+                                            <div class="unassigned">
+                                                <i class="icon-unassigned"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
                     </div>
 
                     <!--testplan-content-row End tab -->
 
 
                     <!--Milestone-content-grid  Start tab -->
-                    <div class="milestone-content-grid tab-pane fade" id="pills-grid" role="tabpanel"
+                    <div class="content-grid tab-pane fade" id="pills-grid" role="tabpanel"
                         aria-labelledby="pills-grid-tab">
-                        <h1>GRID SECTION</h1>
+
+
+                        <h1>Grid </h1>
+
                     </div>
                     <!--Milestone-content-grid End tab -->
 
@@ -241,7 +657,13 @@
 
 
 
-            <!-- Popup Section -->
+
+
+
+
+
+
+            <!-- Modal Section -->
             <section class="popup-section">
 
 

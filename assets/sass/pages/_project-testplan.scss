@@ -60,7 +60,7 @@
                 }
             }
 
-            .completed {
+            .progress-icon {
                 margin-left: rem(96);
             }
         }
@@ -75,7 +75,7 @@
 
         @include mq('xxl', max) {
             .select-row-list {
-                .completed {
+                .progress-icon {
                     margin-left: rem(75);
                 }
 
@@ -86,7 +86,7 @@
         @include mq('xl', max) {
 
             .select-row-list {
-                .completed {
+                .progress-icon {
                     margin-left: rem(40);
                 }
 
@@ -99,7 +99,7 @@
             .select-row-list {
 
 
-                .completed {
+                .progress-icon {
                     margin-left: rem(60);
                 }
             }

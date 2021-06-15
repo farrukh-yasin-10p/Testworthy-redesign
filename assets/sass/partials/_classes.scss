@@ -92,6 +92,10 @@
   // font-size: 100%;
   // white-space: nowrap;
   //position: relative;
+
+  @include mq('lg', max) {
+    margin-right: 40px;
+  }
 }
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before,

@@ -471,8 +471,8 @@
         <!--Edit modal End-->
       </section>
 
+      <!-- Popup Section -->
       <section class="popup-section">
-
 
         <!--Delete Modal Start-->
         <div class="modal fade confirm-modal" id="deleteModal" tabindex="-1" role="dialog"
@@ -540,6 +540,7 @@
 
       </section>
 
+      <!-- Popup Section End -->
 
       <!-- Report Section Start -->
       <div class="row report-row mt-5">
@@ -552,7 +553,13 @@
                   <span>This graph indicates the activity in th project.</span>
                 </div>
               </div>
-              <div class="col-xl-7">
+              <div class="col-xl-auto ml-auto">
+                <div class="chart-date">
+                  <span><a href=""><img src="./assets/images/ic_date.png" alt="date-icon"></a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-auto">
                 <div class="chart-filter">
                   <ul class="tabs-filter">
                     <li>
@@ -570,11 +577,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xl-1">
-                <div class="chart-date">
-                  <span><a href=""><img src="./assets/images/ic_date.png" alt="date-icon"></a></span>
-                </div>
-              </div>
+
             </div>
             <div class="chart">
               <canvas id="myChart" width="400" height="400"></canvas>
@@ -605,9 +608,12 @@
                       <span class="bar1"></span>
                     </div>
                     <div class="milestone-text d-inline-block">
-                      <h6>
-                        Execution web - Sprint 51
-                      </h6>
+                      <div class="milestone-progress-head">
+                        <h6>
+                          Execution web - Sprint 51
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
                       <span>2 Sub-milestones</span>
                     </div>
                   </div>
@@ -616,9 +622,12 @@
                       <span class="bar2"></span>
                     </div>
                     <div class="milestone-text d-inline-block">
-                      <h6>
-                        Milestone 2
-                      </h6>
+                      <div class="milestone-progress-head">
+                        <h6>
+                          milestone 2
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
                       <span>2 Sub-milestones</span>
                     </div>
                   </div>
@@ -627,9 +636,12 @@
                       <span class="bar3"></span>
                     </div>
                     <div class="milestone-text d-inline-block">
-                      <h6>
-                        Milestone 3
-                      </h6>
+                      <div class="milestone-progress-head">
+                        <h6>
+                          milestone 3
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
                       <span>2 Sub-milestones</span>
                     </div>
                   </div>
@@ -638,9 +650,12 @@
                       <span class="bar4"></span>
                     </div>
                     <div class="milestone-text d-inline-block">
-                      <h6>
-                        Milestone 4
-                      </h6>
+                      <div class="milestone-progress-head">
+                        <h6>
+                          milestone 4
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
                       <span>2 Sub-milestones</span>
                     </div>
                   </div>
@@ -906,6 +921,331 @@
         </div>
       </div>
       <!-- Milestone Section End -->
+
+
+
+      <!-- Milestone Section Start -->
+      <div class="row milestone-section  mt-5">
+        <div class="col-xl-8">
+          <div class="milestone">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="milestone-text-secttion">
+                  <div class="milestone-head">
+                    <h6>Milestones</h6>
+                  </div>
+                  <div class="milestone-text-row">
+                    <div class="milestone-bar d-inline-block">
+                      <span class="complete-bar"></span>
+                    </div>
+                    <div class="milestone-text d-inline-block">
+                      <div class="milestone-progress-head">
+                        <h6>
+                          Execution web - Sprint 51
+                        </h6>
+                        <i class="icon-complete-tick"></i>
+                      </div>
+                      <span>2 Sub-milestones</span>
+                    </div>
+                  </div>
+                  <div class="milestone-text-row">
+                    <div class="milestone-bar d-inline-block">
+                      <span class="bar2"></span>
+                    </div>
+                    <div class="milestone-text d-inline-block">
+                      <div class="milestone-progress-head">
+                        <h6>
+                          Milestone 2
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
+                      <span>2 Sub-milestones</span>
+                    </div>
+                  </div>
+                  <div class="milestone-text-row">
+                    <div class="milestone-bar d-inline-block">
+                      <span class="bar3"></span>
+                    </div>
+                    <div class="milestone-text d-inline-block">
+                      <div class="milestone-progress-head">
+                        <h6>
+                          Milestone 3
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
+                      <span>2 Sub-milestones</span>
+                    </div>
+                  </div>
+                  <div class="milestone-text-row">
+                    <div class="milestone-bar d-inline-block">
+                      <span class="bar4"></span>
+                    </div>
+                    <div class="milestone-text d-inline-block">
+                      <div class="milestone-progress-head">
+                        <h6>
+                          Milestone 4
+                        </h6>
+                        <!-- <i class="icon-complete-tick"></i> -->
+                      </div>
+                      <span>2 Sub-milestones</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row boxes-row">
+                  <div class="col-md-6 milestone-box">
+                    <div class="milestone-box-complete">
+                      <span><i class="icon-complete-tick"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 milestone-box">
+                    <div class="milestone-box2">
+                      <div class="c100 p60 white">
+                        <span>15</span>
+                        <span class="text">Days left</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 milestone-box">
+                    <div class="milestone-box3">
+                      <div class="c100 p70 white">
+                        <span>25</span>
+                        <span class="text">Days left</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 milestone-box">
+                    <div class="milestone-box4">
+                      <div class="c100 p30 blue">
+                        <span>01</span>
+                        <span class="text">Days left</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="collaborators">
+            <div class="row mb-2 ">
+              <div class="col-md-12">
+                <div class="collaborators-tab">
+                  <h6>Collaborators</h6>
+                  <a href="#"><span>View All</span> </a>
+                  <div class="d-flex">
+                    <h6>10</h6>
+                    <span class="head_span pl-1">Collaborators</span>
+                  </div>
+                  <a href=""> <span><img src="./assets/images/trash.png" alt="delete-icon"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <div class="profile-icon text-center">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anoosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Osama</h6>
+                      <span>Tester</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Umer</h6>
+                      <span>Tester</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Maryam</h6>
+                      <span>Tester</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Samad</h6>
+                      <span>Tester</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Sarah</h6>
+                      <span>Tester</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="profile-icon">
+                      <span class="profile-img "> <span class="status active"></span>
+                        <div class="image-round">
+                          <img src="./assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                      </span>
+                      <h6>Anosha</h6>
+                      <span>Admin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="search-box">
+                  <div class="search-user d-flex ">
+                    <input onfocus="searchList('block')" onfocusout="searchList('none')" type=" text" name="search"
+                      placeholder="Search User">
+                    <a href=""><img src="./assets/images/search.png" alt=""></a>
+                    <button class="btn shadow-none active ">Add Collaborators</button>
+                  </div>
+                  <div class="search-list" id="list_search">
+                    <ul>
+                      <li>
+                        <div class="search-list-items">
+                          <img src="./assets/images/user-icon.png" alt="">
+                          <span class="name">Salman Ahmed</span>
+                          <span class="email">salmanahmed@example.com</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-list-items">
+                          <img src="./assets/images/user-icon.png" alt="">
+                          <span class="name">Salman Ahmed</span>
+                          <span class="email">salman.ahmed@example.com fff</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-list-items">
+                          <img src="./assets/images/user-icon.png" alt="">
+                          <span class="name">Salman Ahmed</span>
+                          <span class="email">salman..ahmed@example.com dd</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Milestone Section End -->
+
 
 
 

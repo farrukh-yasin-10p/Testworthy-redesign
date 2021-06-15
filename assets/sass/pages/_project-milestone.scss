@@ -765,6 +765,29 @@
             }
         }
 
+        &--delay{
+            .dated {
+                color:#ed8a8a;
+            }
+    
+            .days {
+                color:#ed8a8a;
+            } 
+     
+        }
+
+        &--complete{
+           .completeico{
+               min-height: 122px;
+               margin-right: 12px;
+               .icon-complete-tick {
+                    font-size: 60px;
+                    font-weight: bold;
+                    color: #92DC82;
+               }
+           }  
+        }
+
     }
 
     &__progress-bar {
@@ -831,17 +854,17 @@
 
 
 .checkbox {
-
     flex-grow: 0;
     padding: 20px 16px 15px 20px;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 30px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
     background-color: #f5f4f4;
-    position: absolute;
-    top: -45px;
+    position: relative;
+    top: 0;
     z-index: 9;
     width: 92%;
     left: 24px;
+    margin-bottom:20px;
 
     .custom-scrollbar-css {
         overflow-y: scroll;

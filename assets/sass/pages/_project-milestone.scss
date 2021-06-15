@@ -372,11 +372,6 @@
             }
         }
 
-        .due-date {
-            //margin-right: rem(20);
-        }
-
-
         .progressBar {
             width: 100%;
         }
@@ -387,8 +382,27 @@
         }
 
         .progress-bar-success {
-            background-color: $success-light;
-            border-radius: rem(50);
+            background-color: $green-light;
+        }
+
+        .progress-bar-danger {
+            background-color: $danger-light-100;
+        }
+
+        .progress-bar-warning {
+            background-color: $warning-light;
+        }
+
+        .progress-bar-dark {
+            background-color: $navy-light;
+        }
+
+        .progress-bar-info {
+            background-color: $blue-light;
+        }
+
+        .progress-bar-grey {
+            background-color: $grey-light-100;
         }
 
 
@@ -765,27 +779,28 @@
             }
         }
 
-        &--delay{
+        &--delay {
             .dated {
-                color:#ed8a8a;
+                color: #ed8a8a;
             }
-    
+
             .days {
-                color:#ed8a8a;
-            } 
-     
+                color: #ed8a8a;
+            }
+
         }
 
-        &--complete{
-           .completeico{
-               min-height: 122px;
-               margin-right: 12px;
-               .icon-complete-tick {
+        &--complete {
+            .completeico {
+                min-height: 122px;
+                margin-right: 12px;
+
+                .icon-complete-tick {
                     font-size: 60px;
                     font-weight: bold;
                     color: #92DC82;
-               }
-           }  
+                }
+            }
         }
 
     }
@@ -864,7 +879,7 @@
     z-index: 9;
     width: 92%;
     left: 24px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
     .custom-scrollbar-css {
         overflow-y: scroll;

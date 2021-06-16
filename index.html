@@ -19,6 +19,8 @@
   <!-- Owl Carousel Links -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <link rel="stylesheet" href="./assets/dist/style.css">
   <title>Testworthy</title>
 
@@ -140,7 +142,8 @@
               <a href="#" alt="ellipsis"><img src="./assets/images/ellipsis.png"></a>
             </div>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#"><img src="./assets/images/check-circle.png" alt=""> <span>Mark as
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#complete-Modal"><img
+                  src="./assets/images/check-circle.png" alt=""> <span>Mark as
                   Complete</span></a>
               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal"><img
                   src="./assets/images/trash.png" alt=""> <span>Delete
@@ -474,12 +477,12 @@
       <!-- Popup Section -->
       <section class="popup-section">
 
-        <!--Delete Modal Start-->
-        <div class="modal fade confirm-modal" id="deleteModal" tabindex="-1" role="dialog"
+        <!--Mark-Complete Popup Start-->
+        <div class="modal fade confirm-modal" id="complete-Modal" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
 
-            <!-- Modal delete project content Start-->
+            <!-- Popup Mark-Complete project content Start-->
             <div class="modal-content confirm-project">
               <div class="modal-body-container px-5 pt-4  modal-shade">
                 <div class="">
@@ -490,8 +493,73 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Are you sure you want to delete this project.</p>
-                    <h6>Project Name</h6>
+                    <p>Are you sure you want to mark this project as completed?</p>
+                    <h6>Exelon</h6>
+                    <div class="info">
+                      <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                      <p>Marking this project as complete is a permanent action and can not be undone.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary-color">Mark as complete</button>
+              </div>
+            </div>
+
+            <!-- Mark-Complete Popup content End-->
+
+
+            <!-- Mark-Complete Popup complete content Start-->
+            <div class="modal-content confirm-complete">
+              <div class="modal-body-container px-5 pt-4  modal-shade">
+                <div class="">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="close_cross">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-image text-center">
+                      <img src="./assets/images/completed-project.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer text-center">
+                <span><img src="./assets/images/check-blue.png" alt="check-icon">
+                  <span>Project Completed</span>
+                </span>
+              </div>
+            </div>
+            <!-- Mark-Complete Popup content End-->
+
+
+          </div>
+        </div>
+        <!--Mark-Complete Popup End-->
+
+
+
+        <!--Delete Popup Start-->
+        <div class="modal fade confirm-modal" id="deleteModal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+
+            <!-- Popup delete project content Start-->
+            <div class="modal-content confirm-project">
+              <div class="modal-body-container px-5 pt-4  modal-shade">
+                <div class="">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Confirmation</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="close_cross">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Are you sure you want to delete this project?</p>
+                    <h6>Exelon</h6>
                     <div class="info">
                       <span><img src="./assets/images/info.png" alt="info-icon"></span>
                       <p>This also deletes all test cases and results and everything else that is part of this project.
@@ -506,11 +574,11 @@
               </div>
             </div>
 
-            <!-- Modal delete project content End-->
+            <!-- Popup delete project content End-->
 
 
-            <!-- Modal delete complete content Start-->
-            <!-- <div class="modal-content confirm-complete">
+            <!-- Popup delete complete content Start-->
+            <div class="modal-content confirm-complete">
               <div class="modal-body-container px-5 pt-4  modal-shade">
                 <div class="">
                   <div class="modal-header">
@@ -530,13 +598,13 @@
                   <span>Project Deleted</span>
                 </span>
               </div>
-            </div> -->
-            <!-- Modal delete complete content End-->
+            </div>
+            <!-- Popup delete complete content End-->
 
 
           </div>
         </div>
-        <!--Delete modal End-->
+        <!--Delete Popup End-->
 
       </section>
 
@@ -555,8 +623,14 @@
               </div>
               <div class="col-xl-auto ml-auto">
                 <div class="chart-date">
-                  <span><a href=""><img src="./assets/images/ic_date.png" alt="date-icon"></a>
-                  </span>
+
+                  <div class="date-picker">
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" hidden />
+                    <span><a href="#" id="daterange"><i class="icon-date-icon"></i> </a>
+                    </span>
+                  </div>
+
+
                 </div>
               </div>
               <div class="col-xl-auto">
@@ -738,6 +812,10 @@
                   <div class="col-4">
                     <div class="profile-icon text-center">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox101" value="option101">
+                          <label class="custom-control-label" for="inlineCheckbox101">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -749,6 +827,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="custom-control custom-checkbox active-chkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox102" value="option102">
+                          <label class="custom-control-label" for="inlineCheckbox102">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -760,6 +842,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox103" value="option103">
+                          <label class="custom-control-label" for="inlineCheckbox103">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -773,6 +859,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox104" value="option104">
+                          <label class="custom-control-label" for="inlineCheckbox104">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -784,6 +874,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox105" value="option105">
+                          <label class="custom-control-label" for="inlineCheckbox105">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -795,6 +889,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox active-chkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox106" value="option106">
+                          <label class="custom-control-label" for="inlineCheckbox106">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -811,6 +909,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox107" value="option107">
+                          <label class="custom-control-label" for="inlineCheckbox107">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -822,6 +924,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox108" value="option108">
+                          <label class="custom-control-label" for="inlineCheckbox108">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -833,6 +939,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox109" value="option109">
+                          <label class="custom-control-label" for="inlineCheckbox109">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -846,6 +956,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox110" value="option110">
+                          <label class="custom-control-label" for="inlineCheckbox110">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -857,6 +971,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status inactive"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox111" value="option111">
+                          <label class="custom-control-label" for="inlineCheckbox111">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -868,6 +986,10 @@
                   <div class="col-4">
                     <div class="profile-icon">
                       <span class="profile-img "> <span class="status active"></span>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox112" value="option112">
+                          <label class="custom-control-label" for="inlineCheckbox112">
+                        </div>
                         <div class="image-round">
                           <img src="./assets/images/user-icon.png" alt="user-icon">
                         </div>
@@ -950,14 +1072,14 @@
                   </div>
                   <div class="milestone-text-row">
                     <div class="milestone-bar d-inline-block">
-                      <span class="bar2"></span>
+                      <span class="delay-bar"></span>
                     </div>
                     <div class="milestone-text d-inline-block">
                       <div class="milestone-progress-head">
                         <h6>
-                          Milestone 2
+                          Execution web - Sprint 51
                         </h6>
-                        <!-- <i class="icon-complete-tick"></i> -->
+                        <i class="icon-warning"></i>
                       </div>
                       <span>2 Sub-milestones</span>
                     </div>
@@ -1000,10 +1122,10 @@
                     </div>
                   </div>
                   <div class="col-md-6 milestone-box">
-                    <div class="milestone-box2">
+                    <div class="milestone-box-delay">
                       <div class="c100 p60 white">
                         <span>15</span>
-                        <span class="text">Days left</span>
+                        <span class="text">Days Delay</span>
                         <div class="slice">
                           <div class="bar"></div>
                           <div class="fill"></div>
@@ -1034,209 +1156,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4">
-          <div class="collaborators">
-            <div class="row mb-2 ">
-              <div class="col-md-12">
-                <div class="collaborators-tab">
-                  <h6>Collaborators</h6>
-                  <a href="#"><span>View All</span> </a>
-                  <div class="d-flex">
-                    <h6>10</h6>
-                    <span class="head_span pl-1">Collaborators</span>
-                  </div>
-                  <a href=""> <span><img src="./assets/images/trash.png" alt="delete-icon"></span></a>
-                </div>
-              </div>
-            </div>
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="row mb-3">
-                  <div class="col-4">
-                    <div class="profile-icon text-center">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anoosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status inactive"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Osama</h6>
-                      <span>Tester</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Umer</h6>
-                      <span>Tester</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Maryam</h6>
-                      <span>Tester</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status inactive"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Samad</h6>
-                      <span>Tester</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Sarah</h6>
-                      <span>Tester</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="row mb-3">
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status inactive"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status inactive"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status inactive"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="profile-icon">
-                      <span class="profile-img "> <span class="status active"></span>
-                        <div class="image-round">
-                          <img src="./assets/images/user-icon.png" alt="user-icon">
-                        </div>
-                      </span>
-                      <h6>Anosha</h6>
-                      <span>Admin</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="search-box">
-                  <div class="search-user d-flex ">
-                    <input onfocus="searchList('block')" onfocusout="searchList('none')" type=" text" name="search"
-                      placeholder="Search User">
-                    <a href=""><img src="./assets/images/search.png" alt=""></a>
-                    <button class="btn shadow-none active ">Add Collaborators</button>
-                  </div>
-                  <div class="search-list" id="list_search">
-                    <ul>
-                      <li>
-                        <div class="search-list-items">
-                          <img src="./assets/images/user-icon.png" alt="">
-                          <span class="name">Salman Ahmed</span>
-                          <span class="email">salmanahmed@example.com</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="search-list-items">
-                          <img src="./assets/images/user-icon.png" alt="">
-                          <span class="name">Salman Ahmed</span>
-                          <span class="email">salman.ahmed@example.com fff</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="search-list-items">
-                          <img src="./assets/images/user-icon.png" alt="">
-                          <span class="name">Salman Ahmed</span>
-                          <span class="email">salman..ahmed@example.com dd</span>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -1359,7 +1278,7 @@
       <div class="row mt-5">
         <div class="col-md-12">
           <div class="test-changes">
-            <div class="row">
+            <div class="row tabs-row">
               <div class="col-md-6">
                 <div class="btn-tab" id="tab-toggle">
                   <button class="btn shadow-none active"><a href="#tab1"> Test Changes</a></button>
@@ -1367,11 +1286,13 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="filter text-right">
-                  <span class="filter-span">
-                    <a href="#"><img src="./assets/images/ic_date.png" alt=""></a>
-                    <span>Filter Date</span>
-                    <a href="#"><img src="./assets/images/dropdown-blue.png" alt=""></a>
+                <div class="filter-date">
+                  <!-- <div class="date-picker">
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" hidden />
+                    <span><a href="#" id="daterange"><i class="icon-date-icon"></i> </a>
+                    </span>
+                  </div> -->
+                  <span><a href=""><i class="icon-date-icon"></i> </a>
                   </span>
                 </div>
               </div>
@@ -1382,7 +1303,7 @@
             <div class="row mt-5 tab-details" id="tab1">
               <div class="col-md-12">
                 <div>
-                  <ul class="nav custom-tabs nav-pills mb-3" id="pills-tab" role="tablist">
+                  <ul class="nav custom-tabs nav-pills border_class" id="pills-tab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="pills-passed-tab" data-toggle="pill" href="#pills-passed"
                         role="tab" aria-controls="pills-passed" aria-selected="true"><span class="dot1"></span>
@@ -2152,10 +2073,10 @@
               <div class="col-md-12">
 
 
-                <div class="row">
-                  <div class="col-xl-7">
+                <div class="row border_class">
+                  <div class="col-xl-7 col1">
                     <div>
-                      <ul class="nav custom-tabs nav-pills mb-3" id="pills-tab" role="tablist">
+                      <ul class="nav custom-tabs nav-pills " id="pills-tab" role="tablist">
                         <li class="nav-item">
                           <a class="nav-link active" id="pills-milestone-tab" data-toggle="pill" href="#pills-milestone"
                             role="tab" aria-controls="pills-milestone" aria-selected="true">
@@ -2178,7 +2099,7 @@
                   </div>
 
 
-                  <div class="col-xl-5">
+                  <div class="col-xl-5 col2">
                     <div class="history-filter">
                       <ul class="tabs-filter">
                         <li>
@@ -2915,6 +2836,10 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
 </body>
 
 </html>

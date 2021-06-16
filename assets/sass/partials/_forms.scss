@@ -6,6 +6,10 @@
 
 .custom-control {
     &.custom-checkbox {
+        input {
+            z-index: 1;
+        }
+
         .custom-control-label {
             &::before {
                 border-radius: rem(2);
@@ -17,6 +21,7 @@
         }
 
         .custom-control-input:checked~.custom-control-label::after {
+
             background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231eaae7' class='bi bi-square-fill' viewBox='0 0 16 16'><path d='M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z'/></svg>");
         }
     }
@@ -26,6 +31,21 @@
         font-weight: 600;
         padding-left: rem(15);
     }
+}
+
+.owl-carousel {
+    .custom-control {
+        margin-left: -35px;
+        margin-top: -8px;
+        margin-bottom: -10px;
+        display: block;
+        min-height: 0px;
+
+        .custom-control-input {
+            left: 20px;
+        }
+    }
+
 }
 
 //===========================================

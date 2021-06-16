@@ -367,7 +367,10 @@
 
             span {
                 &:first-child {
-                    margin-right: rem(5);
+                    // margin-right: rem(5);
+                    width: 30px;
+                    display: inline-block;
+                    text-align: center;
                 }
             }
         }
@@ -404,8 +407,6 @@
         .progress-bar-grey {
             background-color: $grey-light-100;
         }
-
-
 
     }
 

@@ -1,4 +1,39 @@
 
+//$('input[name="dates"]').daterangepicker();
+// $(function () {
+//   $('input[name="daterange"]').daterangepicker({
+//     opens: 'left'
+//   }, function (start, end, label) {
+//     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+//   });
+// });
+
+$(function () {
+  $('#daterange').daterangepicker({
+    opens: 'center'
+  }, 
+  function (start, end, label) {
+    $('input[name="daterange"]').removeAttr('hidden');
+    $('input[name="daterange"]').val(start.format('MM/DD/YYYY')+' - '+end.format('MM/DD/YYYY'));
+    // console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+
+// $('#daterange').on('apply.daterangepicker', function(ev, picker) {
+//   console.log(picker.startDate.format('YYYY-MM-DD'));
+//   console.log(picker.endDate.format('YYYY-MM-DD'));
+// });
+
+// $(function () {
+//   $('input[name="daterange"]').daterangepicker({
+//     function (start, end, label) {
+//       console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+//     }
+//   }) 
+// });
+
+
+
 // Carousel Section Search List
 function searchList(a){
     var list = document.getElementById('list_search');

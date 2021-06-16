@@ -89,7 +89,24 @@
     flex-direction: column;
     align-items: center;
 
+    // .inactive-chkbox {
+    //     display: none
+    // }
+
+    .custom-checkbox {
+        display: none;
+    }
+
+    .active-chkbox {
+        display: block !important;
+    }
+
+
     &:hover {
+        .custom-checkbox {
+            display: block;
+        }
+
         background-color: #e9f8ff;
     }
 

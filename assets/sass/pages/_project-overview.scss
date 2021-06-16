@@ -194,9 +194,28 @@
     @include mq('xl', max) {
 
         .tabs-filter {
+            margin-bottom: rem(0);
+
             .nav-link {
                 font-size: rem(12);
             }
+        }
+    }
+}
+
+.filter-date {
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+        font-size: rem(16) !important;
+        background-color: #f4f5f9;
+        padding: rem(5) rem(10);
+        border-radius: rem(20);
+
+        i {
+            font-size: rem(16);
+            color: $grey-500;
         }
     }
 }
@@ -209,12 +228,34 @@
         span {
 
             background-color: #f4f5f9;
-            padding: rem(5) rem(9) rem(7) rem(9);
+            padding: rem(5) rem(10);
             border-radius: rem(20);
+
+            i {
+                color: $grey-500;
+            }
         }
 
-        img {
-            width: rem(17);
+        .date-picker {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: #f4f5f9;
+            border-radius: 17px;
+
+            input {
+                background-color: #f4f5f9;
+                outline: none;
+                padding: 11px 82px 11px 13px;
+                border: none;
+                border-radius: 17px;
+                font-size: 12px;
+            }
+
+            span {
+                // position: absolute;
+                right: 0px;
+            }
         }
     }
 }
@@ -343,6 +384,10 @@
                 @include colored-bars($green-light);
             }
 
+            .delay-bar {
+                @include colored-bars($danger-light-100);
+            }
+
             .bar1 {
                 @include colored-bars($blue);
             }
@@ -365,9 +410,16 @@
                 display: flex;
                 flex-wrap: nowrap;
 
+                .icon-warning {
+                    color: $danger;
+                }
+
+                .icon-complete-tick {
+                    color: $success-light;
+                }
+
                 i {
                     margin-left: 20px;
-                    color: $success-light;
                     font-weight: 600;
                 }
             }
@@ -402,6 +454,14 @@
     }
 
 
+}
+
+.milestone-box-delay {
+    @include milestone-box($danger-light-100);
+
+    .c100:after {
+        background-color: $danger-light-100;
+    }
 }
 
 
@@ -535,7 +595,7 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        left: 25px;
+        left: 24px;
         top: 46px;
         width: 5em;
         line-height: 5em;
@@ -669,6 +729,20 @@
 
 // Test Changes Row
 .test-changes {
+
+    .tab-content {
+        .tab-pane {
+            height: rem(500);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+
+    .tabs-row {
+        display: flex;
+        align-items: center
+    }
+
     @include card-box;
     background-color: white;
 
@@ -722,39 +796,11 @@
     }
 }
 
-.filter {
-    padding-top: rem(7);
 
-    @include mq('sm', max) {
-        padding-top: rem(20);
+.tab-details {
+    .border_class {
+        border-bottom: 1px solid #EBEBEB;
     }
-}
-
-
-.filter-span {
-    background-color: $filter;
-    padding: rem(10) rem(20);
-    border-radius: rem(20);
-
-    a {
-        &:first-child {
-            img {
-                width: rem(17);
-            }
-        }
-
-        &:last-child {
-            img {
-                width: rem(10);
-            }
-        }
-
-    }
-
-    span {
-        padding: rem(10) rem(5) rem(0) rem(5);
-    }
-
 }
 
 .custom-tabs {
@@ -1001,11 +1047,7 @@
     }
 }
 
-.tab-pane {
-    height: rem(580);
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+
 
 // History Tab
 .history-filter {
@@ -1017,6 +1059,24 @@
 }
 
 .history-row {
+    .border_class {
+        margin: 0px;
+        border-bottom: 1px solid #EBEBEB;
+        display: flex;
+        align-items: center;
+
+        .col1 {
+            padding-left: 0px;
+        }
+
+        .col2 {
+            padding-right: 0px;
+        }
+    }
+
+    .tabs-filter {
+        margin-bottom: 0px;
+    }
 
     .changes-row {
         button {

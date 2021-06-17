@@ -615,19 +615,21 @@
         <div class="col-md-8">
           <div class="chart-box">
             <div class="row mb-3">
-              <div class="col-xl-4">
+              <div class="col-xl-3 col-md-6">
                 <div class="chart-heading">
                   <h6>Project Health</h6>
                   <span>This graph indicates the activity in th project.</span>
                 </div>
               </div>
-              <div class="col-xl-auto ml-auto">
+              <div class="col-xl-auto col-md-6 ml-auto">
                 <div class="chart-date">
-
                   <div class="date-picker">
-                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" hidden />
-                    <span><a href="#" id="daterange"><i class="icon-date-icon"></i> </a>
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" hidden id="clear_input" />
+                    <span><a href="javascript: void(0)" hidden id="clear_cross" class="clear"
+                        onclick="clear_date(this)">×</a><a href="javascript: void(0)" id="daterange"><i
+                          class="icon-date-icon"></i></a>
                     </span>
+
                   </div>
 
 
@@ -1287,13 +1289,13 @@
               </div>
               <div class="col-md-6">
                 <div class="filter-date">
-                  <!-- <div class="date-picker">
-                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" hidden />
-                    <span><a href="#" id="daterange"><i class="icon-date-icon"></i> </a>
+                  <div class="date-picker">
+                    <input type="text" name="single-date" value="10/24/1984" hidden id="clear_input2" />
+                    <span><a href="javascript: void(0)" hidden id="clear_cross2" class="clear"
+                        onclick="clear_date(this)">×</a><a href="javascript: void(0)" id="single-date"><i
+                          class="icon-date-icon"></i></a>
                     </span>
-                  </div> -->
-                  <span><a href=""><i class="icon-date-icon"></i> </a>
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1338,10 +1340,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-success-100">Passed</button>
+                          <button class="btn btn-success-100 shadow-none">Passed</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1364,10 +1366,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-success-100">Passed</button>
+                          <button class="btn btn-success-100 shadow-none">Passed</button>
                           <span>User should be able to book appointment with same details on same property</span>
                         </div>
                       </div>
@@ -1390,10 +1392,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-success-100">Passed</button>
+                          <button class="btn btn-success-100 shadow-none">Passed</button>
                           <span>Verify user should be able to use execution app on other WIFI networks.</span>
                         </div>
                       </div>
@@ -1423,10 +1425,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-success-100">Passed</button>
+                          <button class="btn btn-success-100 shadow-none">Passed</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1450,10 +1452,10 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-success-100">Passed</button>
+                          <button class="btn btn-success-100 shadow-none">Passed</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1485,10 +1487,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-danger">Failed</button>
+                          <button class="btn btn-danger shadow-none">Failed</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1511,10 +1513,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-danger">Failed</button>
+                          <button class="btn btn-danger shadow-none">Failed</button>
                           <span>User should be able to book appointment with same details on same property</span>
                         </div>
                       </div>
@@ -1537,10 +1539,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-danger">Failed</button>
+                          <button class="btn btn-danger shadow-none">Failed</button>
                           <span>Verify user should be able to use execution app on other WIFI networks.</span>
                         </div>
                       </div>
@@ -1570,10 +1572,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-danger">Failed</button>
+                          <button class="btn btn-danger shadow-none">Failed</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1596,10 +1598,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-danger">Failed</button>
+                          <button class="btn btn-danger shadow-none">Failed</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1631,10 +1633,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-warning">Retest</button>
+                          <button class="btn btn-warning-color shadow-none">Retest</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1657,10 +1659,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-warning">Retest</button>
+                          <button class="btn btn-warning-color shadow-none">Retest</button>
                           <span>User should be able to book appointment with same details on same property</span>
                         </div>
                       </div>
@@ -1683,10 +1685,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-warning">Retest</button>
+                          <button class="btn btn-warning-color shadow-none">Retest</button>
                           <span>Verify user should be able to use execution app on other WIFI networks.</span>
                         </div>
                       </div>
@@ -1716,10 +1718,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-warning">Retest</button>
+                          <button class="btn btn-warning-color shadow-none">Retest</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1742,10 +1744,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-warning">Retest</button>
+                          <button class="btn btn-warning-color shadow-none">Retest</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1777,10 +1779,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-grey-100">Untested</button>
+                          <button class="btn btn-grey-100 shadow-none">Untested</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1803,10 +1805,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-grey-100">Untested</button>
+                          <button class="btn btn-grey-100  shadow-none">Untested</button>
                           <span>User should be able to book appointment with same details on same property</span>
                         </div>
                       </div>
@@ -1829,10 +1831,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-grey-100">Untested</button>
+                          <button class="btn btn-grey-100  shadow-none">Untested</button>
                           <span>Verify user should be able to use execution app on other WIFI networks.</span>
                         </div>
                       </div>
@@ -1862,10 +1864,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-grey-100">Untested</button>
+                          <button class="btn btn-grey-100 shadow-none">Untested</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1889,10 +1891,10 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-grey-100">Untested</button>
+                          <button class="btn btn-grey-100 shadow-none">Untested</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1924,10 +1926,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-navy-blue">Blocked</button>
+                          <button class="btn btn-navy-blue shadow-none">Blocked</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -1950,10 +1952,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-navy-blue">Blocked</button>
+                          <button class="btn btn-navy-blue shadow-none">Blocked</button>
                           <span>User should be able to book appointment with same details on same property</span>
                         </div>
                       </div>
@@ -1976,10 +1978,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-navy-blue">Blocked</button>
+                          <button class="btn btn-navy-blue shadow-none">Blocked</button>
                           <span>Verify user should be able to use execution app on other WIFI networks.</span>
                         </div>
                       </div>
@@ -2009,10 +2011,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-navy-blue">Blocked</button>
+                          <button class="btn btn-navy-blue shadow-none">Blocked</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -2036,10 +2038,10 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
-                          <button class="btn btn-navy-blue">Blocked</button>
+                          <button class="btn btn-navy-blue shadow-none">Blocked</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>
@@ -2138,7 +2140,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2167,7 +2169,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2197,7 +2199,7 @@
                     </div>
 
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2235,7 +2237,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2264,7 +2266,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2310,7 +2312,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2339,7 +2341,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2369,7 +2371,7 @@
                     </div>
 
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2407,7 +2409,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2436,7 +2438,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2481,7 +2483,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2510,7 +2512,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2540,7 +2542,7 @@
                     </div>
 
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2578,7 +2580,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2607,7 +2609,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2652,7 +2654,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2681,7 +2683,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2711,7 +2713,7 @@
                     </div>
 
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2749,7 +2751,7 @@
                       </div>
                     </div>
 
-                    <div class="row mb-3 changes-row">
+                    <div class="row mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"
@@ -2778,7 +2780,7 @@
                       </div>
                     </div>
 
-                    <div class="row  mb-3 changes-row">
+                    <div class="row  mb-4 changes-row">
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-secondary-border"><span><img src="./assets/images/milestone.png"

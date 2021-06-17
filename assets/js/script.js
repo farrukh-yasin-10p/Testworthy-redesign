@@ -7,30 +7,40 @@
 //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 //   });
 // });
+function clear_date(a){
+  var x  = document.getElementById('clear_input');
+  var y  = document.getElementById('clear_input2');
+  x.value = "";
+  x.hidden = true;
+  y.value = "";
+  y.hidden = true;
+  a.hidden = true;
+}
 
 $(function () {
   $('#daterange').daterangepicker({
     opens: 'center'
   }, 
   function (start, end, label) {
+    $('#clear_cross').removeAttr('hidden');
     $('input[name="daterange"]').removeAttr('hidden');
     $('input[name="daterange"]').val(start.format('MM/DD/YYYY')+' - '+end.format('MM/DD/YYYY'));
     // console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   });
 });
 
-// $('#daterange').on('apply.daterangepicker', function(ev, picker) {
-//   console.log(picker.startDate.format('YYYY-MM-DD'));
-//   console.log(picker.endDate.format('YYYY-MM-DD'));
-// });
 
-// $(function () {
-//   $('input[name="daterange"]').daterangepicker({
-//     function (start, end, label) {
-//       console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-//     }
-//   }) 
-// });
+$(function () {
+  $('#single-date').daterangepicker({
+    opens: 'left',
+    singleDatePicker: true
+  }, 
+  function (start, end, label) {
+    $('#clear_cross2').removeAttr('hidden');
+    $('input[name="single-date"]').removeAttr('hidden');
+    $('input[name="single-date"]').val(start.format('MM/DD/YYYY'));
+  });
+});
 
 
 

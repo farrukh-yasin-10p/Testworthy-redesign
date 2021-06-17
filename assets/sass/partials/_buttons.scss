@@ -73,6 +73,16 @@
 
     }
   }
+
+  &.btn-warning-color {
+    background-color: #f3c214;
+    color: white;
+
+    &:hover {
+      background-color: darken(#f3c214, 20%);
+
+    }
+  }
 }
 
 

@@ -4,10 +4,13 @@
     position: fixed;
     background-color: #f9f9f9;
     z-index: 99;
-    width: calc(100% - 5.625rem);
+    width: calc(100% - 17.625rem);
     margin-left: -10px;
-    padding-left: 25px;
     box-shadow: $shadow;
+
+    @include mq('xl', max) {
+        width: calc(100% - 5.625rem);
+    }
 
     @include mq('sm', max) {
         width: 100%;
@@ -18,7 +21,7 @@
 }
 
 .header-nav {
-
+    padding-left: 25px;
     ul {
         display: flex;
         list-style: none;

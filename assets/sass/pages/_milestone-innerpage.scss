@@ -1,25 +1,6 @@
-.milestone-inner-icon-row {
-    //overflow-x: hidden;
-}
-
-.icons-row {
-    padding-top: 55px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.04);
-    text-align: right;
-    margin-left: rem(-10);
-    margin-right: rem(-10);
-
-
-    .icons {
-        padding: 8px 25px;
-    }
-
-
-}
-
 .milestone-inner-section {
 
-    //padding-top: 65px;
+    padding-top: 120px;
 
     .sort-by {
         padding-top: 0px;
@@ -29,4 +10,6 @@
 
 .icons {
     padding: 8px 25px;
+    border-top:1px solid #ebebeb;
+    text-align: right;
 }

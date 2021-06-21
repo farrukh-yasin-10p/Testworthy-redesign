@@ -53,6 +53,10 @@
     &:checked~.main-content {
         margin-left: rem(90);
 
+        .page-nav {
+            width: calc(100% - 5.625rem);
+        }
+
         @include mq('sm', max) {
             margin-left: rem(0);
         }

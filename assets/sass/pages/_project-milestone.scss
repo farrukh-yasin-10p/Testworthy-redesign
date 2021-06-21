@@ -99,21 +99,6 @@
         align-items: center;
         padding-right: rem(5);
         margin-bottom: rem(15);
-
-
-        .date-round {
-
-            span {
-
-                background-color: rgba(238, 238, 238, 0.63);
-                padding: rem(8) rem(11) rem(10) rem(11);
-                border-radius: rem(20);
-            }
-
-            img {
-                width: rem(17);
-            }
-        }
     }
 
     .sort-by-tabs {
@@ -125,6 +110,10 @@
 
         button {
             font-size: rem(12);
+
+            i {
+                margin-left: 3px;
+            }
         }
 
         .dropdown-menu {
@@ -268,20 +257,30 @@
                 &::after {
                     top: rem(10);
                 }
+
+
+                .text {
+                    white-space: nowrap;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    a {
+                        color: black;
+                    }
+                }
             }
 
-            .text {
-                white-space: nowrap;
-                display: block;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                padding-bottom: rem(5);
+            .custom-control-input {
+                top: 7px;
             }
+
         }
+
 
         .progress-icon {
 
-            margin-left: rem(50);
+            margin-left: rem(38);
             display: flex;
 
             .icon-warning {
@@ -302,6 +301,16 @@
         .creation-date,
         .due-date {
             font-size: rem(12);
+            color: black;
+        }
+
+
+        .due-date {
+            min-width: 117px;
+        }
+
+        .creation-date {
+            min-width: 126px;
         }
 
 
@@ -322,7 +331,7 @@
                 }
 
                 .creation-date {
-                    display: none;
+                    //display: none;
                 }
 
                 .hover-row-edit {
@@ -349,11 +358,16 @@
         }
 
         .hover-row-edit {
+            min-width: 117px;
             display: none;
-            margin-right: rem(35);
+            text-align: right;
 
             span {
                 margin-left: 20px;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
 
                 a {
                     color: $grey-300;
@@ -362,15 +376,13 @@
         }
 
         .passed {
-            margin-left: rem(15);
             font-size: rem(12);
 
             span {
                 &:first-child {
-                    // margin-right: rem(5);
                     width: 30px;
                     display: inline-block;
-                    text-align: center;
+                    //text-align: center;
                 }
             }
         }
@@ -427,6 +439,11 @@
 
         .creation-col {
             margin-left: auto;
+            margin-right: 28px;
+        }
+
+        .due-date-col {
+            margin-right: 15px;
         }
 
         label {
@@ -437,7 +454,7 @@
         }
 
         .progress_text {
-            margin-left: rem(28);
+            margin-left: rem(16);
         }
 
         .row-icon {
@@ -457,17 +474,47 @@
 
 
     @include mq('xxl', max) {
+        .select-row {
+            .due-date-col {
+                margin-right: 0px;
+            }
+
+            .creation-col {
+                margin-right: 0px;
+            }
+
+        }
+
         .select-row-list {
             .progress-icon {
                 margin-left: rem(25);
             }
 
+            .hover-row-edit {
+                min-width: 75px;
+
+                span {
+                    margin-left: 10px;
+                }
+
+            }
+
             .passed {
                 margin-left: rem(0);
             }
-        }
 
+            .creation-date {
+                display: grid;
+                min-width: 75px;
+            }
+
+            .due-date {
+                display: grid;
+                min-width: 75px;
+            }
+        }
     }
+
 
     @include mq('xl', max) {
 
@@ -475,6 +522,15 @@
             .progress_text {
                 margin-left: rem(15);
             }
+
+            .due-date-col {
+                margin-right: 0px;
+            }
+
+            .creation-col {
+                margin-right: 0px;
+            }
+
         }
 
         .select-row-list {
@@ -482,13 +538,30 @@
                 margin-left: rem(20);
             }
 
+            .hover-row-edit {
+                min-width: 75px;
+
+                span {
+                    margin-left: 10px;
+                }
+
+            }
+
             .passed {
                 margin-left: rem(0);
             }
-        }
 
-        .creation-date {
-            white-space: pre-line;
+            .creation-date {
+                //white-space: pre-line;
+                display: grid;
+                min-width: 75px;
+            }
+
+            .due-date {
+                //white-space: pre-line;
+                display: grid;
+                min-width: 75px;
+            }
         }
     }
 

@@ -26,7 +26,7 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
 
     <link rel="stylesheet" href="./assets/dist/style.css">
     <title>Testworthy</title>
@@ -51,7 +51,9 @@
                 <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
                 </span>
                 <h6><a href="#">Milestones</a> </h6>
-
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="milestone-innerpage.html">Execution Web - Sprint 41</a></h6>
             </div>
 
         </div>
@@ -111,7 +113,7 @@
 
     <!-- Main Content Section Start -->
 
-    <div class="main-content">
+    <div class="main-content m-innerpage">
         <!-- Page Nav Section Start -->
         <div class="page-nav ">
             <div class="header-nav">
@@ -126,15 +128,29 @@
             </div>
         </div>
         <!-- Page Nav Section End -->
+
+        <section class="milestone-inner-icon-row">
+            <div class="row icons-row">
+                <div class="col-md-12">
+                    <div class="icons ">
+                        <span><a href=""><i class="icon-ic_edit"></i></a></span>
+                        <span><a href=""><i class="icon-ic_edit"></i></a></span>
+                        <span><a href=""><i class="icon-ic_edit"></i></a></span>
+                        <span><a href=""><i class="icon-ic_edit"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container-fluid">
-            <!-- Add Milestone Section -->
-            <section class="milestone-section">
-                <!--Add Milestone Start-->
+
+            <!--  Milestone InnerPage Section -->
+            <section class="milestone-inner-section mt-5">
                 <div class="sort-by mb-4">
                     <div class="row ">
                         <div class="col-lg-6 mb-3">
                             <div>
-                                <h4 class="font-weight-bold">Milestones</h4>
+                                <h4 class="font-weight-bold">Execution Web - Sprint 41</h4>
                             </div>
                             <div class="sort-by-text">
                                 <span>3 open, 20 completed milestones in this project Amet minim mollit non deserunt
@@ -160,12 +176,11 @@
                                     <input type="radio" name="radio" id=""> <label for="all">All</label>
                                     <input type="radio" name="radio" id=""> <label for="open">Open</label>
                                     <input type="radio" name="radio" id=""><label for="complete">Completed</label>
-                                    <div class="date-picker">
-                                        <input type="text" name="single-date" value="10/24/1984" hidden
-                                            id="clear_input3" />
-                                        <span><a href="javascript: void(0)" hidden id="clear_cross2" class="clear"
-                                                onclick="clear_date2(this)">×</a><a href="javascript: void(0)"
-                                                id="single-date"><i class="icon-date-icon"></i></a>
+                                    <div class="date-round">
+                                        <span class="datepicker">
+                                            <input type="hidden" id="feRouteDate" />
+                                            <img class="ic-date" src="./assets/images/ic_date.png" alt="date-icon">
+
                                         </span>
                                     </div>
                                 </div>
@@ -173,7 +188,94 @@
                                     <div class="dropdown">
                                         <button class="btn shadow-none " type="button" id="dropdownMenuButton"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sort by<i class="fas fa-angle-down"></i>
+                                            Sort by <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Recently Updated</a>
+                                            <a class="dropdown-item" href="#">Due Date</a>
+                                            <a class="dropdown-item" href="#">Creation Date</a>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!--Milestone-tabs Start -->
+                                    <div class="project-tabs">
+                                        <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-row-tab" data-toggle="pill"
+                                                    href="#pills-row" role="tab" aria-controls="pills-row"
+                                                    aria-selected="true"><i class="icon-row "></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-grid-tab" data-toggle="pill"
+                                                    href="#pills-grid" role="tab" aria-controls="pills-grid"
+                                                    aria-selected="false"><i class="icon-grid"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Milestone-tabs  End -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <!--  Milestone InnerPage Section  End-->
+
+
+
+
+
+
+            <!-- Add Milestone Section -->
+            <section class="milestone-section">
+                <!--Add Milestone Start-->
+                <div class="sort-by mb-4">
+                    <div class="row ">
+                        <div class="col-lg-6 mb-3">
+                            <div>
+                                <h4 class="font-weight-bold">Execution Web - Sprint 41</h4>
+                            </div>
+                            <div class="sort-by-text">
+                                <span>3 open, 20 completed milestones in this project Amet minim mollit non deserunt
+                                    ullamco est
+                                    sit aliqua dolor do amet sint. Velit officiat lorem </span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="search-filter">
+                                <div class="search-input">
+                                    <input type="text" placeholder="Search Milestone">
+                                    <span class="search-icon">
+                                        <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
+                                    </span>
+                                </div>
+                                <button type="button" class="btn" data-toggle="modal" data-target="#add-milestone">Add
+                                    Milestone</button>
+                            </div>
+
+                            <div class=" row sort-by-filter">
+                                <div class="sort-by-date ">
+                                    <input type="radio" name="radio" id=""> <label for="all">All</label>
+                                    <input type="radio" name="radio" id=""> <label for="open">Open</label>
+                                    <input type="radio" name="radio" id=""><label for="complete">Completed</label>
+                                    <div class="date-round">
+                                        <span class="datepicker">
+                                            <input type="hidden" id="feRouteDate" />
+                                            <img class="ic-date" src="./assets/images/ic_date.png" alt="date-icon">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="sort-by-tabs">
+                                    <div class="dropdown">
+                                        <button class="btn shadow-none " type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Sort by <i class="fas fa-angle-down"></i>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#">Recently Updated</a>
@@ -241,7 +343,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-auto due-date-col">
+                                <div class="col-md-auto">
                                     <div>
                                         <span>Due Date</span>
                                     </div>
@@ -258,23 +360,23 @@
                             <ul>
                                 <li class="complete-li">
                                     <div class="row d-flex align-items-center">
-                                        <div class="col-lg-4 ">
+                                        <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                            Version Alpha</a>
-                                                    </span></label>
+                                                <label class="custom-control-label" for="inlineCheckbox5">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text"
+                                                        data-toggle="tooltip" data-placement="top" title="Milestone - Sprint 51
+                                                        Version Alpha">Milestone - Sprint 51
+                                                        Version Alpha </span></label>
                                             </div>
                                         </div>
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar  progress-bar-success" style="width:100%">
+                                                    <div class="progress-bar  progress-bar-success" style="width:65%">
                                                     </div>
-                                                    <!-- <div class="progress-bar progress-bar-warning" style="width:5%">
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%">
                                                     </div>
                                                     <div class="progress-bar progress-bar-dark" style="width:10%">
                                                     </div>
@@ -283,14 +385,14 @@
                                                     <div class="progress-bar progress-bar-info" style="width:5%">
                                                     </div>
                                                     <div class="progress-bar progress-bar-grey" style="width:5%">
-                                                    </div> -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center ">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
-                                                <span>100%</span>
+                                                <span>65%</span>
                                                 <span>Passed</span>
                                             </div>
                                             <div class="progress-icon">
@@ -326,10 +428,9 @@
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
                                                     value="option6">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                            Version Alpha</a>
+                                                <label class="custom-control-label" for="inlineCheckbox6">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span
+                                                        class="text">Milestone - Sprint 51
                                                     </span></label>
                                             </div>
                                         </div>
@@ -352,9 +453,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center ">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
-                                                <span>60%</span>
+                                                <span>65%</span>
                                                 <span>Passed</span>
                                             </div>
                                         </div>
@@ -385,23 +486,22 @@
 
                                 </li>
 
-                                <li class="warning-li">
+                                <li class="complete-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox7"
                                                     value="option7">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                        </a>
+                                                <label class="custom-control-label" for="inlineCheckbox7">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span
+                                                        class="text">Milestone - Sprint 51
                                                     </span></label>
                                             </div>
                                         </div>
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <!-- <div class="progress-bar  progress-bar-success" style="width:65%">
+                                                    <div class="progress-bar  progress-bar-success" style="width:65%">
                                                     </div>
                                                     <div class="progress-bar progress-bar-warning" style="width:5%">
                                                     </div>
@@ -412,18 +512,18 @@
                                                     <div class="progress-bar progress-bar-info" style="width:5%">
                                                     </div>
                                                     <div class="progress-bar progress-bar-grey" style="width:5%">
-                                                    </div> -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
-                                                <span>0%</span>
+                                                <span>65%</span>
                                                 <span>Passed</span>
                                             </div>
                                             <div class="progress-icon">
-                                                <i class="icon-warning"></i>
+                                                <i class="icon-complete-tick"></i>
                                             </div>
                                         </div>
 
@@ -462,10 +562,9 @@
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox8"
                                                     value="option8">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                        </a>
+                                                <label class="custom-control-label" for="inlineCheckbox8">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span
+                                                        class="text">Milestone - Sprint 51
                                                     </span></label>
                                             </div>
                                         </div>
@@ -488,9 +587,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center ">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
-                                                <span>65%</span>
+                                                <span>05%</span>
                                                 <span>Passed</span>
                                             </div>
                                             <div class="progress-icon">
@@ -530,10 +629,9 @@
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox9"
                                                     value="option9">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                        </a>
+                                                <label class="custom-control-label" for="inlineCheckbox9">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span
+                                                        class="text">Milestone - Sprint 51
                                                     </span></label>
                                             </div>
                                         </div>
@@ -556,9 +654,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
-                                                <span>65%</span>
+                                                <span>95%</span>
                                                 <span>Passed</span>
                                             </div>
                                         </div>
@@ -593,13 +691,13 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
-                                                <input class="custom-control-input" type="checkbox"
-                                                    id="inlineCheckbox10" value="option10">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                        </a>
-                                                    </span></label>
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
+                                                    value="option5">
+                                                <label class="custom-control-label" for="inlineCheckbox5">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text"
+                                                        data-toggle="tooltip" data-placement="top" title="Milestone - Sprint 51
+                                                        Version Alpha">Milestone - Sprint 51
+                                                        Version Alpha </span></label>
                                             </div>
                                         </div>
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
@@ -621,7 +719,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center ">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
                                                 <span>65%</span>
                                                 <span>Passed</span>
@@ -658,11 +756,10 @@
                                         <div class="col-lg-4">
                                             <div class="custom-control custom-checkbox ">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="inlineCheckbox11" value="option11">
-                                                <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text">
-                                                        <a href="milestone-innerpage.html">Milestone - Sprint 51
-                                                        </a>
+                                                    id="inlineCheckbox10" value="option10">
+                                                <label class="custom-control-label" for="inlineCheckbox10">
+                                                    <span><i class="icon-milestone-icon"></i></span> <span
+                                                        class="text">Milestone - Sprint 51
                                                     </span></label>
                                             </div>
                                         </div>
@@ -685,7 +782,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-auto d-flex align-items-center">
+                                        <div class="col-lg-auto d-flex ">
                                             <div class="passed">
                                                 <span>65%</span>
                                                 <span>Passed</span>
@@ -2470,9 +2567,6 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -2482,9 +2576,10 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
 
 </html>

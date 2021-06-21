@@ -1,12 +1,4 @@
 
-//$('input[name="dates"]').daterangepicker();
-// $(function () {
-//   $('input[name="daterange"]').daterangepicker({
-//     opens: 'left'
-//   }, function (start, end, label) {
-//     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-//   });
-// });
 function clear_date(a){
   var x  = document.getElementById('clear_input');
   var y  = document.getElementById('clear_input2');
@@ -15,6 +7,13 @@ function clear_date(a){
   y.value = "";
   y.hidden = true;
   a.hidden = true;
+}
+
+function clear_date2(b){
+  var z  = document.getElementById('clear_input3');
+  z.value = "";
+  z.hidden = true;
+  b.hidden = true;
 }
 
 $(function () {

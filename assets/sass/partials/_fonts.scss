@@ -37,7 +37,10 @@ $icomoon-font-path: "./../fonts" !default;
     font-display: block;
 }
 
-$font-types: (trash: "\e900",
+$font-types: (download: "\e91d",
+    reports: "\e91e",
+    testcases: "\e91f",
+    trash: "\e900",
     accordion-down: "\e901",
     complete-tick: "\e902",
     ic_edit: "\e903",
@@ -66,6 +69,7 @@ $font-types: (trash: "\e900",
     settings: "\e91a",
     users: "\e91b",
     milestone-2: "\e91c",
+
 
 );
 

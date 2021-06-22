@@ -810,6 +810,12 @@
                 font-weight: bold;
                 color: #1EAAE7;
             }
+
+            label {
+                font-size: 12px;
+                padding-right: 10px;
+                color:#626263;
+            }
         }
 
 
@@ -940,20 +946,18 @@
 
 /* checkboxes */
 
-
-
+  
 .checkbox {
     flex-grow: 0;
     padding: 20px 16px 15px 20px;
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
     background-color: #f5f4f4;
     position: relative;
-    top: 0;
+    top: -32px;
     z-index: 9;
     width: 92%;
-    left: 24px;
-    margin-bottom: 20px;
+    left: 24px; 
 
     .custom-scrollbar-css {
         overflow-y: scroll;
@@ -998,6 +1002,18 @@
             font-size: 13px;
             color: #626263;
             margin-top: 2px;
+        }
+
+        .completeico {
+            margin-left: 20px;
+            color:#ccc;
+        }
+
+        &:hover {
+            .completeico {
+                margin-left: 20px;
+                color:#949494;
+            } 
         }
 
         @include mq-only("xs", "ml") {

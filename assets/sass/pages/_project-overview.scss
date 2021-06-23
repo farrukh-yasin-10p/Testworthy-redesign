@@ -20,44 +20,43 @@
 
 
 //Edit Icon Content
+.dropdown-menu {
+    margin-right: rem(20);
+    margin-bottom: rem(10);
+    padding: rem(10) rem(0);
+    font-size: rem(10);
+    border-radius: rem(10);
+    border: none;
+    box-shadow: $shadow3;
+
+    a {
+        color: black;
+        padding: 0.525rem 1.25rem;
+        &:hover {
+            background-color: $filter;
+        }
+
+        // &:first-child {
+        //     margin-bottom: rem(10);
+        // }
+
+        img {
+            width: rem(17);
+            margin-left: rem(-8);
+            margin-right: rem(5);
+        }
+
+        &:last-child img {
+            width: rem(20);
+            margin-left: rem(-10);
+            margin-right: rem(5);
+        }
+    }
+}
 
 .edit-content {
     display: flex;
     padding-top: rem(90);
-
-    .dropdown-menu {
-        margin-right: rem(120);
-        margin-bottom: rem(10);
-        padding: rem(10) rem(0);
-        font-size: rem(10);
-        border-radius: rem(10);
-        border: none;
-        box-shadow: $shadow3;
-
-        a {
-            color: black;
-
-            &:hover {
-                background-color: $filter;
-            }
-
-            &:first-child {
-                margin-bottom: rem(10);
-            }
-
-            img {
-                width: rem(17);
-                margin-left: rem(-8);
-                margin-right: rem(5);
-            }
-
-            &:last-child img {
-                width: rem(20);
-                margin-left: rem(-10);
-                margin-right: rem(5);
-            }
-        }
-    }
 
     @include mq('sm', max) {
         position: relative;
@@ -119,7 +118,7 @@
     }
 }
 
-.dropup {
+.dropup, .dropdown {
     .ellipsis {
         padding-top: rem(6);
         margin-left: rem(10);

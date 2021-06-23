@@ -37,7 +37,9 @@ $icomoon-font-path: "./../fonts" !default;
     font-display: block;
 }
 
-$font-types: (download: "\e91d",
+$font-types: (
+    more-vertical: "\e920",
+    download: "\e91d",
     reports: "\e91e",
     testcases: "\e91f",
     trash: "\e900",

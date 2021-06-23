@@ -7,11 +7,6 @@
     flex-wrap: wrap;
     padding-top: rem(90);
 
-
-    .row {
-        align-items: center;
-    }
-
     .search-filter {
         display: flex;
         flex-wrap: wrap;
@@ -916,31 +911,31 @@
         }
     }
 
-    .dropdown-menu {
-        padding: rem(10) rem(0);
-        font-size: rem(12);
-        margin-left: -140px;
-        margin-top: -12px;
+        .dropdown-menu {
+            padding: rem(10) rem(0);
+            font-size: rem(12);
+            margin-left: -140px;
+            margin-top: -12px;
 
-        .dropdown-item {
-            padding: rem(10) rem(20);
-            color: black;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            .dropdown-item {
+                padding: rem(10) rem(20);
+                color: black;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
 
-            &:hover {
-                background-color: $filter;
-            }
+                &:hover {
+                    background-color: $filter;
+                }
 
 
-            i {
-                font-size: 18px;
-                margin-right: 10px;
-                font-weight: 600;
+                i {
+                    font-size: 18px;
+                    margin-right: 10px;
+                    font-weight: 600;
+                }
             }
         }
-    }
 }
 
 

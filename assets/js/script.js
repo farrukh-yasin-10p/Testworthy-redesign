@@ -1,4 +1,3 @@
-
 function clear_date(a){
   var x  = document.getElementById('clear_input');
   var y  = document.getElementById('clear_input2');

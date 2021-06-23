@@ -2,16 +2,20 @@
     padding-top: 120px;
 }
 
-.page-nav {
-
-    .icons {
-        padding: 8px 25px;
-        border-top: 1px solid #ebebeb;
-        text-align: right;
+.page-option {
+    padding: 20px 25px 16px 25px;
+    border-top: 1px solid #ebebeb;
+    text-align: right;
+    a {
+        color: $grey-300;
+        &:hover{
+            color: black;
+        }
     }
-
+    i {
+        font-size: 23px;
+    }
 }
-
 
 .sub-milestone-list-card {
     @include card-box;
@@ -31,7 +35,10 @@
 
         .select-row-list {
             .custom-checkbox label::before {
-                top: 0;
+                top: 6px;
+            }
+            .custom-checkbox label::after {
+                top: 6px;
             }
 
             li {
@@ -80,4 +87,105 @@
         }
     }
 
+}
+
+.status-count {
+    font-size: rem(12);
+
+}
+
+.report-table-container {
+    overflow-y: auto;
+}
+.report-table {
+    width: 100%;
+
+    th {
+        font-size: rem(12);
+        color: $grey-200;
+        font-weight: 400;
+        white-space: nowrap;
+        padding-bottom: rem(5);
+    }
+    thead {
+        border-bottom: rem(1) solid $grey-light-200;
+        padding-bottom: rem(10);
+    }
+    td {
+        font-size: rem(14);
+        white-space: nowrap;
+        padding: rem(10) 0;
+        padding-right: rem(5);
+    }
+    .report-name {
+        font-size: rem(16);
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: rem(140);
+        i {
+            font-size: rem(30);
+            color: $grey-200;
+            transform: scaleX(-1);
+            margin-right: rem(10);
+        }
+        span {
+            vertical-align: super;
+        }
+    }
+}
+
+.report-table-btn {
+    .btn {
+        padding-top: rem(15);
+        padding-bottom: rem(15);
+    }
+}
+
+.milestone-summary {
+    height: rem(345);
+}
+
+.milestone-chart {
+    width: 100%;
+
+    .chart-heading {
+        h1 {
+            font-size: rem(40);
+        }
+    }
+    @include mq('xxl', min) {
+        width: 70%;
+        .chart-heading {
+            h1 {
+                font-size: rem(55);
+            }
+        }
+    }
+
+}
+
+.due-date {
+    img {
+        height: rem(80);
+    }
+}
+
+.timestamp {
+    font-size: rem(14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.sub-milestones-sort {
+    height: rem(56);
+    border-radius: rem(30);
+    width: rem(354);
+    .btn {
+        height: 100%;
+        border-radius: rem(30);
+    }
 }

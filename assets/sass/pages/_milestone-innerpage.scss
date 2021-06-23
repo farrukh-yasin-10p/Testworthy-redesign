@@ -35,7 +35,10 @@
 
         .select-row-list {
             .custom-checkbox label::before {
-                top: 0;
+                top: 6px;
+            }
+            .custom-checkbox label::after {
+                top: 6px;
             }
 
             li {

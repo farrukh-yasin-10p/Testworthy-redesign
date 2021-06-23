@@ -352,7 +352,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#"  data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -431,7 +431,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -510,7 +510,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -596,7 +596,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -675,7 +675,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -754,7 +754,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -833,7 +833,7 @@
 
                                                 <div class="hover-row-edit">
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
                                                         data-placement="top" title="Complete"><a href="#"><i
                                                                 class="icon-complete-tick"></i></a></span>
@@ -2065,7 +2065,269 @@
 
             </section>
 
+            <!-- Modal Section -->
+            <section class="modal-section">
 
+                <!--Modal Add  Start-->
+                <div class="modal  milestone-modals" id="add-milestone" tabindex="-1" role="dialog"
+                    aria-labelledby="add-milestoneLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+
+                        <!--Modal add-milestone content  Start-->
+                        <div class="modal-content add-milestone-content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="modal-side-color">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Add Milestone</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+
+                                            <div class="mb-3">
+                                                <div class="text-info-icon">
+                                                    <h6>Name *</h6>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="Lorem ipsum dolor sit amet.">
+                                                        <i class="icon-info-icon"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="text" placeholder="Version 1.0, Internal Beta 2 "
+                                                    class="input_field">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="text-info-icon">
+                                                    <h6>Parent</h6>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="The parent milestone for this milestone (for sub-milestones in milestones)."><i
+                                                            class="icon-info-icon"></i></span>
+                                                </div>
+                                                <input type="text" class="input_field"
+                                                    onclick="edit_searchList('block')">
+                                            </div>
+
+
+                                            <div class="search-list" id="list_search_edit">
+                                                <ul>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <span>Execution Mob - Sprint 2 </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <span>Execution Mob - Sprint 2 </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <span>Execution Mob - Sprint 2 </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="text-info-icon">
+                                                    <h6>Description</h6>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="Lorem ipsum dolor sit amet.">
+                                                        <i class="icon-info-icon"></i>
+
+                                                    </span>
+                                                </div>
+
+                                                <textarea name="" id="" cols="2" rows="4"></textarea>
+                                            </div>
+
+                                            <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                <div class="date">
+                                                    <div class="text-info-icon">
+                                                        <h6>Start Date *</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet."><i
+                                                                class="icon-info-icon"></i></span>
+                                                    </div>
+
+                                                    <input type="date" placeholder="Version 1.0, Internal Beta 2 "
+                                                        class="input_field">
+                                                </div>
+                                                <div class="date">
+                                                    <div class="text-info-icon">
+                                                        <h6>End Date *</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet."><i
+                                                                class="icon-info-icon"></i></span>
+                                                    </div>
+
+                                                    <input type="date" placeholder="Version 1.0, Internal Beta 2 "
+                                                        class="input_field">
+                                                </div>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox4"
+                                                    value="option4">
+                                                <label class="custom-control-label" for="inlineCheckbox4">This milestone
+                                                    is completed</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-light-border"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary-color">Add Milestone</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Modal add-milestone content  End-->
+
+                    </div>
+                </div>
+                <!--Add modal End-->
+
+                 <!-- Modal Section -->
+            <section class="modal-section">
+
+                <!--Modal Add  Start-->
+                <div class="modal  milestone-modals" id="edit-milestone" tabindex="-1" role="dialog"
+                    aria-labelledby="edit-milestoneLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+
+                        <!--Modal add-milestone content  Start-->
+                        <div class="modal-content add-milestone-content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="modal-side-color">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Edit Sub-Milestone</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+
+                                            <div class="mb-3">
+                                                <div class="text-info-icon">
+                                                    <h6>Name *</h6>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="Lorem ipsum dolor sit amet.">
+                                                        <i class="icon-info-icon"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="text" placeholder="Version 1.0, Internal Beta 2 "
+                                                    class="input_field">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="text-info-icon">
+                                                    <h6>Parent</h6>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="The parent milestone for this milestone (for sub-milestones in milestones)."><i
+                                                            class="icon-info-icon"></i></span>
+                                                </div>
+                                                <input type="text" class="input_field"
+                                                    onclick="edit_searchList('block')">
+                                            </div>
+
+
+                                            <div class="search-list" id="list_search_edit">
+                                                <ul>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <span>Execution Mob - Sprint 2 </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <span>Execution Mob - Sprint 2 </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <span>Execution Mob - Sprint 2 </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="text-info-icon">
+                                                    <h6>Description</h6>
+                                                    <span data-toggle="tooltip" data-placement="top"
+                                                        title="Lorem ipsum dolor sit amet.">
+                                                        <i class="icon-info-icon"></i>
+
+                                                    </span>
+                                                </div>
+
+                                                <textarea name="" id="" cols="2" rows="4"></textarea>
+                                            </div>
+
+                                            <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                <div class="date">
+                                                    <div class="text-info-icon">
+                                                        <h6>Start Date *</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet."><i
+                                                                class="icon-info-icon"></i></span>
+                                                    </div>
+
+                                                    <input type="date" placeholder="Version 1.0, Internal Beta 2 "
+                                                        class="input_field">
+                                                </div>
+                                                <div class="date">
+                                                    <div class="text-info-icon">
+                                                        <h6>End Date *</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet."><i
+                                                                class="icon-info-icon"></i></span>
+                                                    </div>
+
+                                                    <input type="date" placeholder="Version 1.0, Internal Beta 2 "
+                                                        class="input_field">
+                                                </div>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox4"
+                                                    value="option4">
+                                                <label class="custom-control-label" for="inlineCheckbox4">This milestone
+                                                    is completed</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-light-border"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary-color">Add Milestone</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Modal add-milestone content  End-->
+
+                    </div>
+                </div>
+                <!--Add modal End-->
 
         </div>
     </div>

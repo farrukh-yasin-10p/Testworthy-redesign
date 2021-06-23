@@ -174,7 +174,6 @@
         font-weight: bold;
         margin-bottom: rem(0);
     }
-
     span {
         font-size: rem(12);
         color: $grey-200;
@@ -875,6 +874,10 @@
 
 .dot5 {
     @include colored-dots($navy-blue);
+}
+
+.dot6 {
+    @include colored-dots($secondary);
 }
 
 

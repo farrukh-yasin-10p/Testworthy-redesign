@@ -34,11 +34,13 @@
         }
 
         .select-row-list {
-            .custom-checkbox label::before {
-                top: 6px;
-            }
-            .custom-checkbox label::after {
-                top: 6px;
+            &.without-icon {
+                .custom-checkbox label::before {
+                    top: 6px;
+                }
+                .custom-checkbox label::after {
+                    top: 6px;
+                }
             }
 
             li {
@@ -90,7 +92,7 @@
 }
 
 .status-count {
-    font-size: rem(12);
+    font-size: rem(10);
 
 }
 
@@ -204,8 +206,7 @@
     }
     &:hover{
         i {
-            color: black;
+            color: black ;
         }
     }
-    
 }

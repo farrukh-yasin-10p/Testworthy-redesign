@@ -33,7 +33,7 @@
             }
         }
 
-        .select-row-list {
+        .select-row-list.without-icon {
             .custom-checkbox label::before {
                 top: 6px;
             }
@@ -90,7 +90,7 @@
 }
 
 .status-count {
-    font-size: rem(12);
+    font-size: rem(10);
 
 }
 

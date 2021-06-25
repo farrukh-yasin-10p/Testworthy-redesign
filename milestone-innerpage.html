@@ -27,7 +27,7 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="./assets/dist/style.css">
     <title>Testworthy</title>
 
@@ -154,7 +154,7 @@
                 <h2 class="mb-3 pb-1 pt-4 font-weight-bold">Execution Web - Sprint 41 </h2>
                 <div class="row mb-4 pb-2 milestone-summary">
                     <div class="col-6">
-                        <div class="chart-box h-100">
+                        <div class="chart-box h-100 d-flex flex-column justify-content-between">
                             <div class="chart-heading">
                                 <h6>Status Summary</h6>
                                 <span>1500 Cases from Suite: Smoke - Checklist - Web.</span>
@@ -331,13 +331,15 @@
                                         <input type="radio" name="radio" id=""> <label for="all">All</label>
                                         <input type="radio" name="radio" id=""> <label for="open">Open</label>
                                         <input type="radio" name="radio" id=""><label for="complete">Completed</label>
-                                        <div class="date-round">
-                                            <span class="datepicker">
-                                                <input type="hidden" id="feRouteDate" />
-                                                <img class="ic-date" src="./assets/images/ic_date.png" alt="date-icon">
-
-                                            </span>
-                                        </div>
+                                        <div class="filter-date">
+                                            <div class="date-picker">
+                                              <input type="text" name="single-date" value="10/24/1984" hidden id="clear_input2" />
+                                              <span><a href="javascript: void(0)" hidden id="clear_cross2" class="clear"
+                                                  onclick="clear_date(this)">×</a><a href="javascript: void(0)" id="single-date"><i
+                                                    class="icon-date-icon"></i></a>
+                                              </span>
+                                            </div>
+                                          </div>
                                     </div>
                                     <div class="sort-by-tabs">
                                         <div class="dropdown">
@@ -426,7 +428,7 @@
                                     </div>
                                 </div>
 
-                                <div class="select-row-list">
+                                <div class="select-row-list without-icon">
 
                                     <div class="date-status mb-4 mt-5">
                                         <span>Tuesday, April 30th, 2021</span>
@@ -442,7 +444,7 @@
                                                         <label class="custom-control-label" for="inlineCheckbox5">
                                                             <span class="text" data-toggle="tooltip" data-placement="top"
                                                                 title="Milestone - Sprint 51
-                                                    Version Alpha">Milestone - Sprint 51
+                                                    Version Alpha"> Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
@@ -2166,8 +2168,8 @@
                             <!--Milestone-content-grid End tab -->
                         </div>
                     </div>
-                    <div id="tab2" class="tab-details">
-                        <div class="tab-content" id="pills-tabContent">
+                    <div id="tab2" class="tab-details ">
+                        <div class="tab-content testplan-section" id="pills-tabContent">
                             <!--Milestone-content-row Start tab -->
                             <div class="content-row tab-pane  show active" id="pills-row" role="tabpanel"
                                 aria-labelledby="pills-row-tab">
@@ -2195,28 +2197,29 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-2">
-                                            <div class="text-run-head ml-auto w-50">
+                                        <div class="col-md-3">
+                                            <div class="d-flex justify-content-end">
                                                 <span>Assigned to</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="select-row-list">
+                                <div class="select-row-list" >
 
                                     <div class="date-status mb-4 mt-5">
                                         <span>Tuesday, April 30th, 2021</span>
                                     </div>
 
                                     <ul>
-                                        <li class="testrun-active-li">
+                                        <li class="open-li">
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
+                                                            <span><i class="icon-clipboard"></i></span>
                                                             <span class="text" data-toggle="tooltip" data-placement="top"
                                                                 title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
@@ -2248,18 +2251,39 @@
                                                         <span>Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2">
-                                                    <i class="d-block fa-2x icon-unassigned ml-auto w-50 text-primary"></i>
+                                                <div class="col-md-3">
+                                                    <div class="hover-row-edit">
+                                                        <span class="rerun-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        </span>
+                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                    </div>
+
+
+
+
+                                                    <div class="assigned-to justify-content-end">
+                                                        <div class="assigned-to-profile">
+                                                            <span><img src="./assets/images/user-icon.png" alt="profile-img"></span>
+                                                        </div>
+                                                        <div class="assigned-to-text">
+                                                            <span>Ahmed</span>
+                                                            <span>Tester</span>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="testrun-active-li">
+                                        <li class="open-li">
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
+                                                            <span><i class="icon-clipboard"></i></span>
                                                             <span class="text" data-toggle="tooltip" data-placement="top"
                                                                 title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
@@ -2291,8 +2315,28 @@
                                                         <span>Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2">
-                                                    <i class="d-block fa-2x icon-unassigned ml-auto w-50 text-primary"></i>
+                                                <div class="col-md-3">
+                                                    <div class="hover-row-edit">
+                                                        <span class="rerun-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        </span>
+                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                    </div>
+
+
+
+
+                                                    <div class="assigned-to justify-content-end">
+                                                        <div class="assigned-to-profile">
+                                                            <span><img src="./assets/images/user-icon.png" alt="profile-img"></span>
+                                                        </div>
+                                                        <div class="assigned-to-text">
+                                                            <span>Ahmed</span>
+                                                            <span>Tester</span>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </li>
@@ -2304,13 +2348,14 @@
                                     </div>
 
                                     <ul>
-                                        <li class="testrun-active-li">
+                                        <li class="open-li">
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
+                                                            <span><i class="icon-clipboard"></i></span>
                                                             <span class="text" data-toggle="tooltip" data-placement="top"
                                                                 title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
@@ -2342,51 +2387,28 @@
                                                         <span>Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2">
-                                                    <i class="d-block fa-2x icon-unassigned ml-auto w-50 text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="testrun-active-li">
-                                            <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
-                                                    <div class="custom-control custom-checkbox ">
-                                                        <input class="custom-control-input" type="checkbox"
-                                                            id="inlineCheckbox5" value="option5">
-                                                        <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
-                                                    Version Alpha">Milestone - Sprint 51
-                                                                Version Alpha </span></label>
+                                                <div class="col-md-3">
+                                                    <div class="hover-row-edit">
+                                                        <span class="rerun-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        </span>
+                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap">
-                                                    <div class="progressBar">
-                                                        <div class="progress">
-                                                            <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%">
-                                                            </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%">
-                                                            </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%">
-                                                            </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%">
-                                                            </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%">
-                                                            </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%">
-                                                            </div>
+
+
+
+
+                                                    <div class="assigned-to justify-content-end">
+                                                        <div class="assigned-to-profile">
+                                                            <span><img src="./assets/images/user-icon.png" alt="profile-img"></span>
+                                                        </div>
+                                                        <div class="assigned-to-text">
+                                                            <span>Ahmed</span>
+                                                            <span>Tester</span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-auto ml-auto">
-                                                    <div class="passed">
-                                                        <span>100%</span>
-                                                        <span>Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <i class="d-block fa-2x icon-unassigned ml-auto w-50 text-primary"></i>
+
                                                 </div>
                                             </div>
                                         </li>
@@ -3885,16 +3907,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
         const dataDonut = {
             datasets: [{

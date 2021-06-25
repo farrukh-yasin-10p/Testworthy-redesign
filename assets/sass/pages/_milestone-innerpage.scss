@@ -210,3 +210,22 @@
         }
     }
 }
+
+.bg-progress {
+    background-image: url(../images/inprograss.svg);
+    background-repeat: no-repeat;
+    background-position: center rem(20);
+}
+.bg-late {
+    background-image: url(../images/late.svg);
+    background-repeat: no-repeat;
+    background-position: center rem(20);
+}
+.bg-done {
+    background-image: url(../images/done.svg);
+    background-repeat: no-repeat;
+    background-position: center rem(20);
+}
+.gridboxes__days {
+    height: rem(130);
+}

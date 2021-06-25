@@ -189,3 +189,23 @@
         border-radius: rem(30);
     }
 }
+
+.dropmenu {
+    display: inline-block;
+    .fa-angle-down {
+        font-size: 13px;
+    }
+    .dropdown-menu {
+        margin-right: 0;
+       
+    }
+    i {
+        color: $grey-300;
+    }
+    &:hover{
+        i {
+            color: black;
+        }
+    }
+    
+}

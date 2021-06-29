@@ -128,7 +128,7 @@
             </div>
             <div class="page-option">
                 <!-- <span class="mx-3 d-inline-block"><a href="" class="d-inline-block"><i class="icon-reports"></i></a></span> -->
-                <div class="dropdown dropmenu" data-toggle="tooltip" title="reports">
+                <div class="dropdown dropmenu" data-toggle="tooltip" title="Reports">
                     <button class="btn shadow-none pt-0 pb-1" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                         <i class="icon-reports"></i> <i class="fas fa-angle-down"></i>
@@ -140,7 +140,7 @@
 
                     </div>
                 </div>
-                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="download report"><a href="" class="d-inline-block"><i class="icon-download"></i></a></span>
+                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="Download Report"><a href="" class="d-inline-block"><i class="icon-download"></i></a></span>
                 <span class="mx-3 d-inline-block"><a href="" class="d-inline-block"><i class="icon-ic_edit"></i></a></span>
                 <span class="dropdown d-inline-block valign-top">
                     <span class="ellipsis pt-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="bottom">
@@ -321,28 +321,28 @@
                                     <button class="btn btn2 shadow-none"><a href="#tab2">Test Plans & Runs</a></button>
                                 </div>
                                 <div class="sort-by-text">
-                                    <span>20 open sub-milestones in this milestone.</span>
+                                    <span>100 test runs and 4 test plans in this milestone.</span>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="search-filter">
                                     <div class="search-input">
-                                        <input type="text" placeholder="Search Milestone">
+                                        <input type="text" class="search-milestone-width" placeholder="Search Milestone">
                                         <span class="search-icon">
                                             <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
                                         </span>
                                     </div>
-                                    <button type="button" class="btn" data-toggle="modal"
-                                        data-target="#add-milestone">Add
-                                        sub-Milestone</button>
+                               
                                 </div>
 
                                 <div class=" row sort-by-filter">
-                                    <div class="sort-by-date ">
+                                    <div class="sort-by-date sorting-widht ">
                                         <input type="radio" name="radio" id=""> <label for="all">All</label>
                                         <input type="radio" name="radio" id=""> <label for="open">Open</label>
                                         <input type="radio" name="radio" id=""><label for="complete">Completed</label>
+                                        <input type="radio" name="radio" id=""><label for="complete">Unassigned</label>
+
                                         <div class="filter-date">
                                             <div class="date-picker">
                                               <input type="text" name="single-date" value="10/24/1984" hidden id="clear_input2" />
@@ -369,7 +369,7 @@
 
 
                                         <!--Milestone-tabs Start -->
-                                        <div class="project-tabs">
+                                        <!-- <div class="project-tabs">
                                             <ul class="nav nav-pills " id="pills-tab" role="tablist">
                                                 <li class="nav-item">
                                                     <a class="nav-link active" id="pills-row-tab" data-toggle="pill"
@@ -382,7 +382,7 @@
                                                         aria-selected="false"><i class="icon-grid"></i></a>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> -->
                                         <!--Milestone-tabs  End -->
                                     </div>
                                 </div>
@@ -2231,7 +2231,7 @@
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span><i class="icon-clipboard"></i></span>
+                                                            <span><i class="icon-test-run"></i></span>
                                                             <span class="text" data-toggle="tooltip" data-placement="top"
                                                                 title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51

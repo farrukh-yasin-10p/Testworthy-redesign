@@ -30,13 +30,17 @@
             border-radius: rem(30);
             border: rem(1) solid rgba(227, 229, 233, .87);
             outline: none;
-            width: rem(320);
+            // width: rem(320);
+          
             background-color: #fff;
             color: #aaa;
 
             &::placeholder {
                 color: #aaa;
             }
+        }
+        .search-milestone-width{
+            width: 34em;
         }
 
 
@@ -94,6 +98,9 @@
         align-items: center;
         padding-right: rem(5);
         margin-bottom: rem(15);
+    }
+    .sorting-widht{
+        width: 0em;
     }
 
     .sort-by-tabs {

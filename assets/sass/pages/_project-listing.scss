@@ -1,0 +1,272 @@
+.projectlisting-section{
+
+    .sort-by{
+        h4 {
+            font-size: 32px;
+        }
+    }
+
+    .tab-content{
+
+        .content-row{
+
+            .select-row{
+                .avatarlist{
+                    margin-right: 175px;
+                }
+            }
+
+            .select-row-list{
+                
+                .custom-checkbox
+                {
+                    label{
+                        .text{
+                            font-size:18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+                ul{
+                    li{
+                        ul{
+                            li{
+                              padding: 0;
+                              min-height: auto;
+                              background-color: transparent;
+                              border:0;
+                              border-radius: unset;
+                              box-shadow: none;
+                              margin: 0;
+                              display: inline-block;
+                              
+                              a{
+                                  font-size: 12px;
+                                  color: #1eaae7;
+                                  padding-right: 5px;
+                                  margin-right: 3px;
+                                  border-right: 2px solid #000;
+
+                                  &:hover {
+                                      border-bottom:2px solid #1eaae7;
+                                  }
+                              }
+                              
+                              &:last-child{
+                                a {
+                                    border-right:0;
+                                }
+                              }
+
+                            }
+
+                        }
+
+                        .aligncenter{
+                            text-align: center; 
+                            min-width: 500px;
+                            margin-top: 10px;
+                            position:relative;
+                            
+                            .progress-icon {
+                                position: absolute;
+                                right: 40px;
+                                top: 17px;
+                                
+                                .icon-complete-tick {
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+
+                        .unassigned{
+                            font-size: 25px;
+                            color: #1eaae7; 
+                        }
+
+                        .avatars {
+                            text-align: center; 
+                            min-width: 300px;
+                            margin-top: 10px;
+                            position: relative;
+                
+                            .avatar {
+                            position: relative;
+                            display: inline-block;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            width: 51px;
+                            transition: transform 250ms;
+
+                                &:not(:first-child) {
+                                    margin-left: -75px;
+                                }
+
+                                img {
+                                    width: 100%;
+                                    display: block;
+                                    
+                                }
+
+                                &:hover {
+                                    transform: translateY(-10px);
+                                }
+                            }
+
+                            .remainings {
+                                width: 50px;
+                                height: 50px;
+                                padding: 15px;
+                                background: #e7f3f8;
+                                color: #c4c4c4;
+                                font-size: 12px;
+                                text-align: center;
+                                transition: transform 0ms;
+
+                                &:hover {
+                                    transform: translateY(0px);
+                                }
+                            }
+
+                            
+                        }
+
+                        .due-date {
+                            min-width: 138px;
+                            text-align: center;
+                        }
+                 
+                    }
+                }
+                
+                .hover-row-edit{
+                    min-width:138px;
+                }
+
+                
+            }
+        }
+
+
+        .content-grid{
+            .gridboxes {
+
+                &__exic {
+
+                    .icon-milestone-icon {
+                        width: 80px;
+                        height: 66px;
+                        font-size: 55px;
+                        color: #1EAAE7;
+                        position: relative; 
+                    }
+
+                    figure{
+                        
+                        display: table;
+                        height: 50px;
+
+                        span{
+                            display: table-cell;
+                            vertical-align: middle;    
+                        }
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+               
+                }
+
+
+                &__content {
+                   font-size: 14px;
+                   color: #a4a4a4;
+                   padding-top: 25px;
+                   min-height: 165px;
+ 
+                }
+
+                &__complete {
+                    .completeico {
+                       text-align: right;
+                       padding-right:30px;
+        
+                        .icon-complete-tick {
+                            font-size: 30px;
+                            font-weight: bold;
+                            color: #92DC82;
+                        }
+                    }
+                }
+ 
+                
+                &__countlist {
+                    &--counts{
+                        span{
+                            display: block;
+                            color: #1EAAE7;
+
+                            &:first-child{
+                               font-size:36px;
+                            }
+
+                            &:last-child{
+                                font-size:18px;
+                             }
+                        }
+                    }
+
+                    &--avatars {
+                        
+                            text-align: center;
+                            margin-top: 20px;
+                            
+                            .avatar {
+                            position: relative;
+                            display: inline-block;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            width: 48px;
+                                
+                                img {
+                                    width: 100%;
+                                    display: block;
+                                }
+
+                                &:not(:first-child) {
+                                  margin-left: -75px;
+                                }
+ 
+                            }
+
+                            .remainings{
+                                width: 50px;
+                                height: 50px;
+                                padding: 15px;
+                                background: #e7f3f8;
+                                color: #c4c4c4;
+                                font-size: 12px;
+                                text-align: center;
+                                transition: -webkit-transform 0ms;
+                                transition: transform 0ms;
+                                transition: transform 0ms, -webkit-transform 0ms;
+                            }
+
+                            .unassigned {
+                                color: #1eaae7;
+                                font-size: 50px;
+                                margin-top: -10px;
+                            }
+                 
+                    }
+                }
+
+            }
+        }
+    }
+}
+ 

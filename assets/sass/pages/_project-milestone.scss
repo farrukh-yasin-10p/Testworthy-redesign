@@ -669,7 +669,15 @@
                 cursor: pointer;
             }
         }
-
+        .icon-clipboard{
+            width: 80px;
+            height: 66px;
+            font-size: 55px;
+            color: #1EAAE7;
+            position: relative;
+            top: 2px;
+        }
+        
         .mscases {
 
             margin-top: 30px;
@@ -950,13 +958,18 @@
     background-color: #f5f4f4;
     position: relative;
     top: -32px;
-    z-index: 9;
+    z-index: 0;
     width: 92%;
     left: 24px; 
 
+
+    // top: -54px;
+    // width: 96%;
+    // left: 9px;
+
     .custom-scrollbar-css {
         overflow-y: scroll;
-        height: 65px;
+        // height: 120px;
     }
 
     label {

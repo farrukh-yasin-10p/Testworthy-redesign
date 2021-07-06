@@ -625,10 +625,9 @@
 .gridboxes {
 
     &__boxes {
-
         flex-grow: 0;
-        margin: 10px 5px;
-        padding: 15px 16px 18px 21px;
+        margin: 10px 0px;
+        padding: 15px 30px 15px 30px;
         border-radius: 30px;
         background: #fff;
         box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.03);
@@ -640,7 +639,7 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            margin: 10px 20px 10px 0;
+            margin: 0px 0px 0px 0;
 
             .icon-ic_option {
                 font-size: 20px;
@@ -651,8 +650,8 @@
 
         .milestonetoggle {
 
-            padding: 10px 0 0;
-            margin: 10px 0 0;
+            padding: 20px 0 0;
+            margin: 15px 0 0;
             border-top: 1px solid #eeeeee;
 
             .submilestones {
@@ -665,8 +664,11 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
-                padding-right: 25px;
+                padding-right: 0px;
                 cursor: pointer;
+            }
+            .icon-accordion-down {
+                font-size: 24px;
             }
         }
         .icon-clipboard{
@@ -685,6 +687,12 @@
             .col-md-3 {
                 padding-right: 5px;
                 padding-left: 5px;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
             }
 
             &__cases {
@@ -949,111 +957,120 @@
 
 /* checkboxes */
 
-  
-.checkbox {
-    flex-grow: 0;
-    padding: 20px 16px 15px 20px;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
-    background-color: #f5f4f4;
+.collape-section {
     position: relative;
-    top: -32px;
-    z-index: 0;
-    width: 92%;
-    left: 24px; 
+    top: -62px;
+    .collape-section-inner {
+        flex-grow: 0;
+        padding: 60px 16px 15px 28px;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+        background-color: #f5f4f4;
+        z-index: 0;
+        width: 100%;
 
 
-    // top: -54px;
-    // width: 96%;
-    // left: 9px;
+        // top: -54px;
+        // width: 96%;
+        // left: 9px;
 
-    .custom-scrollbar-css {
-        overflow-y: scroll;
-        // height: 120px;
-    }
-
-    label {
-
-        cursor: pointer;
-        display: block;
-        position: relative;
-        padding-right: 40px;
-        margin-left: 20px;
-
-        &:before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            left: 0;
+        .custom-scrollbar-css {
+            overflow-y: scroll;
+            // height: 120px;
+            &::-webkit-scrollbar {
+                width: 7px;
+              }
+               
+              &::-webkit-scrollbar-track {
+                box-shadow: none;
+              }
+               
+              &::-webkit-scrollbar-thumb {
+                background-color: #c4c4c4;
+                border: 0;
+              }
         }
 
-        &:before {
-            background: url('/assets/images/inactive.png') left center no-repeat;
-            margin-left: 95%;
-            background-size: 18px;
-            background-position: 0 2px;
-        }
+        label {
 
-        h5 {
-            font-size: 13px;
-            color: #626263;
-            margin-top: 5px;
-        }
+            cursor: pointer;
+            display: block;
+            position: relative;
+            padding-right: 70px;
+            margin-left: 0px;
+            margin-bottom: 20px;
 
-        .progress {
-            height: 8px;
-            margin-top: 10px;
-        }
+            &:before {
+                content: "";
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                left: 0;
+                background: url('/assets/images/check-circle.png') left center no-repeat;
+                opacity: 0.4;
+                margin-left: 93%;
+                background-size: 95%;
+                background-position: 0 2px;
+            }
 
-        .status {
-            font-size: 13px;
-            color: #626263;
-            margin-top: 2px;
-        }
 
-        .completeico {
-            margin-left: 20px;
-            color:#ccc;
-        }
-
-        &:hover {
-            .completeico {
-                margin-left: 20px;
-                color:#949494;
-            } 
-        }
-
-        @include mq-only("xs", "ml") {
             h5 {
-                font-size: 9px;
+                font-size: 14px;
+                color: #626263;
+                margin-top: 5px;
+            }
+
+            .progress {
+                height: 8px;
+                margin-top: 10px;
             }
 
             .status {
-                font-size: 9px;
+                font-size: 14px;
+                color: #626263;
+                margin-top: 2px;
+            }
+
+            .completeico {
+                margin-left: 20px;
+                color:#ccc;
+            }
+
+            &:hover {
+                .completeico {
+                    margin-left: 20px;
+                    color:#949494;
+                } 
+            }
+
+            @include mq-only("xs", "ml") {
+                h5 {
+                    font-size: 9px;
+                }
+
+                .status {
+                    font-size: 9px;
+                }
             }
         }
-    }
 
-    input[type=checkbox] {
-        display: none;
+        input[type=checkbox] {
+            display: none;
 
-        &:checked {
-            + {
-                label {
-                    &:before {
-                        background: url('/assets/images/check-circle.png') left center no-repeat;
-                        margin-left: 95%;
-                        background-size: 18px;
-                        background-position: 0 2px;
+            &:checked {
+                + {
+                    label {
+                        &:before {
+                            // background: url('/assets/images/check-circle.png') left center no-repeat;
+                            opacity: 1;
+                        }
                     }
                 }
             }
         }
+
     }
-
-}
-
+}  
 
 /* Custom Scrollbar using CSS */
 .custom-scrollbar-css {

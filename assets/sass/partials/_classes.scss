@@ -69,11 +69,13 @@
 
 
 .profile-img-name{
-  text-align: center;
-  width: 33%;
+  text-align: right;
+  max-width: 130px;
+  display: flex;
+  justify-content: flex-end;
 }
 .profile-name-styling{
-  font-size: 13px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
   font-weight: bold;
@@ -87,22 +89,29 @@
 }
 .progress-padding{
   padding-top: 10px;
-  width: 106%;
+  // width: 100%;
 }
 .progress-color{
   background-color: #24cc09;
   
 }
-
+.progressBar {
+  width: 100%;
+}
+.passed {
+  width: 130px;
+  text-align: right;
+  font-weight: 600;
+}
 .progress-hieght{
-  height: 0.5em;
+  height: 12px;
 }
 
 .progress-row{
   align-items: center;
 }
 .scrollbar-height{
-  height: 116px;
+  height: 180px;
   // overflow-x: scroll;
 }
 .checkbox-sizing{

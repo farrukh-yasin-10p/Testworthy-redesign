@@ -61,6 +61,24 @@ function edit_searchList(a){
   list2.style.display = a ;
 }
 
+
+// assigned user Search List
+function assigned_to(a){
+  var list = document.getElementById('selectuser');
+  list.style.display = a ;
+}
+
+function milestone_list(b){
+  var list = document.getElementById('milestone-list');
+  list.style.display = b;
+}
+
+function testsuite_list(b){
+  var list = document.getElementById('testsuite_list');
+  list.style.display = b;
+}
+
+
 //Tooltip
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))

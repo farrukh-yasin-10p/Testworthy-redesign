@@ -361,7 +361,9 @@
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration" ><i class="icon-ic_edit"></i></a>
+                                            </span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
@@ -391,7 +393,8 @@
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
@@ -421,7 +424,9 @@
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a>
+                                            </span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
@@ -451,7 +456,8 @@
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
@@ -481,7 +487,8 @@
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
@@ -539,10 +546,203 @@
 
 
             <!-- Modal Section -->
+
+
+            <section class="modal-section">
+
+                <!--Modal Add  Start-->
+                <div class="modal  milestone-modals" id="add-configuration" tabindex="-1" role="dialog"
+                    aria-labelledby="add-milestoneLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+
+                        <!--Modal add-Configuration content Start-->
+                        <div class="modal-content add-configuration-content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="modal-side-color">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Configuration</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+ 
+                                            <div id="accordion" class="panel-group">
+
+                                                <div class="panel addgroup">
+                                                  <div class="panel-heading">
+                                                  <h4 class="panel-title">
+                                                    <a href="#panelBodyOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+                                                        Add a new group
+                                                    </a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="panelBodyOne" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        
+                                                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                            <input type="text" placeholder="Operating System" class="input_field">
+                                                            <button type="button" class="btn btn-light-border" data-dismiss="modal">
+                                                                Add
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="panel addconfig">
+                                                  <div class="panel-heading">
+                                                  <h4 class="panel-title">
+                                                    <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="falsegit">
+                                                        Add Configuration 
+                                                    </a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="panelBodyTwo" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        
+                                                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                            <div class="date">
+                                                                <div class="text-info-icon">
+                                                                    <h6>Configuration *</h6>
+                                                                    <span>
+                                                                        <i class="icon-warning"></i> Required field
+                                                                    </span>
+                                                                </div>
+            
+                                                                <input type="text" placeholder="Windows 10, iOS 8 or Firefox" class="input_field required">
+                                                            </div>
+                                                            <div class="date">
+                                                                <div class="text-info-icon">
+                                                                    <h6>Group *</h6> 
+                                                                </div>
+            
+                                                                <select class="input_field selectuser">
+                                                                    <option value="Operating System">
+                                                                        Operating System
+                                                                    </option>
+                                                                </select>
+
+                                                            </div>
+
+                                                        </div>
+                                                        
+                                                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                           <div class="mb-3">&nbsp;</div>
+                                                           <div class="mb-3">
+                                                                <button type="button" class="btn btn-light-border" data-dismiss="modal">
+                                                                    Add
+                                                                </button>
+                                                            </div>
+                                                        </div> 
+                                                             
+                                                        
+
+
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                               
+                                            </div>
+                                              
+                                            <div class="search-list collab">
+                                                <table class="table">
+                                                  <thead>
+                                                    <tr>
+                                                      <th class="checks">
+                                                        <div class="custom-control custom-checkbox ">
+                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
+                                                            value="option0all">
+                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                        </div>
+                                                      </th>
+                                                      <th class="config">Configuration</th>
+                                                      <th class="group">Group</th> 
+                                                    </tr>
+                        
+                                                  </thead>
+                                                </table>
+                        
+                                                <table class="table">
+                                                  <tbody>
+                                                    
+                                                    <tr>
+                                                      <td class="checks">
+                                                        <div class="custom-control custom-checkbox ">
+                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
+                                                            value="option0all">
+                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                        </div>
+                                                      </td>
+                                                      <td class="config">iPhone 7</td>
+                                                      <td class="group">Devices
+                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                      </td> 
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td class="checks">
+                                                        <div class="custom-control custom-checkbox ">
+                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
+                                                            value="option0all">
+                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                        </div>
+                                                      </td>
+                                                      <td class="config">iPhone 7</td>
+                                                      <td class="group">Devices
+                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                      </td> 
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td class="checks">
+                                                        <div class="custom-control custom-checkbox ">
+                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
+                                                            value="option0all">
+                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                        </div>
+                                                      </td>
+                                                      <td class="config">iPhone 7</td>
+                                                      <td class="group">Devices
+                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                      </td> 
+                                                    </tr>
+                        
+                                                  </tbody>
+                        
+                                                </table>
+                                            </div>
+                                             
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-light-border"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary-color">Add Milestone</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Modal add-milestone content  End-->
+
+                    </div>
+                </div>
+                <!--Add modal End-->
+ 
+
+            </section>
+
+
+
             <section class="popup-section">
-
-
-
+ 
                 <!--Delete Modal Start-->
                 <div class="modal fade confirm-modal" id="ms-deleteModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -693,45 +893,7 @@
                     </div>
                 </div>
                 <!--Mark Complete modal End-->
-
-
-
-                <!--Added milestone completed Modal Start-->
-                <!-- 
-                <div class="modal fade confirm-modal" id="add-milestone-confirm" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document"> -->
-
-                <!-- Modal milestone added content Start-->
-
-                <!-- <div class="modal-content confirm-complete">
-                            <div class="modal-body-container px-5 pt-4  modal-shade">
-                                <div class="">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="close_cross">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="project-image text-center">
-                                            <img src="./assets/images/add-project.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer text-center">
-                                <span><img src="./assets/images/check-blue.png" alt="check-icon">
-                                    <span>Milestone Added</span>
-                                </span>
-                            </div>
-                        </div> -->
-
-                <!--Added milestone completed Modal End-->
-
-                <!-- </div>
-                </div> -->
-
-                <!--Added milestone completed Modal End-->
+ 
 
             </section>
 

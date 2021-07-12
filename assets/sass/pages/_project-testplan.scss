@@ -285,6 +285,7 @@
                     vertical-align:middle;
                     border: 0;
                     padding:5px;
+                    position: relative;
  
                     &:first-child  {
                         border-radius: 10px 0 0 10px;
@@ -306,11 +307,15 @@
                     }
 
                     .trash-icon{
-                        position:relative;
-                        left:5px;
+                        position:absolute;
+                        right:10px;
                         display: none;
                         a{
-                            color: #000;
+                            color: #e3e4e9;
+
+                            &:hover {
+                                color: #000;
+                            }
                         }
                     }
 
@@ -331,7 +336,7 @@
         }
 
         .names {
-            width: 300px;
+            width: 340px;
         }
 
         .cases{
@@ -348,7 +353,7 @@
         }
 
         .suites {
-            width: 315px;
+            width: 415px;
         }
 
         .assignedto {
@@ -415,14 +420,13 @@ form{
         background: url("/assets/images/chevron-down.svg") no-repeat right;
         -webkit-appearance: none;
         background-position-x: 98%;
+
     }
- 
-    
+
     .selectuser {
-        background: #fff url("/assets/images/chevron-down.svg") no-repeat right;
-        background-position-x: 98%;
+        background: url("/assets/images/chevron-down.svg") no-repeat 98%;
     }
-  
+   
     option{
         color:#000; 
     }
@@ -465,11 +469,8 @@ form{
             }
         }
     }
-
-     
-         
+   
 }
-
 
 // Inputs Placeholders
 
@@ -488,3 +489,5 @@ form{
     color: #c4c4c4;
     opacity: 0.6;
 }
+
+ 

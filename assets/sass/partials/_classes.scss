@@ -68,6 +68,63 @@
 }
 
 
+.profile-img-name{
+  text-align: right;
+  max-width: 130px;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile-name-styling{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+}
+.small-styling{
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  color: #7a7e88;
+}
+.progress-padding{
+  padding-top: 10px;
+  // width: 100%;
+}
+.progress-color{
+  background-color: #24cc09;
+  
+}
+.progressBar {
+  width: 100%;
+}
+.passed {
+  width: 130px;
+  text-align: right;
+  font-weight: 600;
+}
+.progress-hieght{
+  height: 12px;
+}
+
+.progress-row{
+  align-items: center;
+}
+.scrollbar-height{
+  height: 180px;
+  // overflow-x: scroll;
+}
+.checkbox-sizing{
+  top: -54px;
+  width: 96%;
+  left: 9px;
+}
+.text-plan-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 // Search list Class End 
 
 

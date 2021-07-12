@@ -37,11 +37,15 @@
       <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
     </div>
     <div class="header-back">
-      <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span> <a
-            href="#">Exelon</a>
+      <label for=""><a href="#" class="arrow-back">
+          <i class="icon-arrow-left"></i>
+          <!-- <img src="./assets/images/arrow-left.png" alt="">  -->
+        </a> <span> <a href="#">Exelon</a>
           </spam></label>
       <div class="breadCrumb">
-        <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+        <span>
+          <i class="icon-chevron-right"></i>
+          <!-- <img src="./assets/images/chevron-right.png" alt="" class="img-fluid"> -->
         </span>
         <h6><a href="#">Overview</a> </h6>
       </div>
@@ -54,7 +58,8 @@
           <p class="text-right">Admin</p>
         </div>
         <div class="user-icon">
-          <span><img src="./assets/images/user-icon.png" alt=""></span>
+          <span>
+            <img src="./assets/images/user-icon.png" alt=""></span>
         </div>
       </div>
       <div class="caret-down">
@@ -296,7 +301,8 @@
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalLabel">Edit Project</h4>
                       <span class="alert-box">
-                        <img src="./assets/images/check-success.png" alt="check_icon">
+                        <i class="icon-check_icon"></i>
+                        <!-- <img src="./assets/images/check-success.png" alt="check_icon"> -->
                         <span>Changes saved!</span>
                       </span>
                     </div>
@@ -360,7 +366,8 @@
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalLabel">Edit Project</h4>
                       <span class="alert-box">
-                        <img src="./assets/images/uncheck-danger.png" alt="uncheck_icon">
+                        <i class="icon-uncheck_icon"></i>
+                        <!-- <img src="./assets/images/uncheck-danger.png" alt="uncheck_icon"> -->
                         <span>Unable to save changes</span>
                       </span>
                     </div>
@@ -771,7 +778,7 @@
         <div class="col-md-8">
           <div class="chart-box">
             <div class="row mb-3">
-              <div class="col-xl-3 col-md-6">
+              <div class="col-xl-4 col-md-6">
                 <div class="chart-heading">
                   <h6>Project Health</h6>
                   <span>This graph indicates the activity in th project.</span>
@@ -809,7 +816,7 @@
 
             </div>
             <div class="chart">
-              <canvas id="myChart" width="400" height="400"></canvas>
+              <canvas id="myChart"></canvas>
             </div>
           </div>
         </div>
@@ -833,10 +840,10 @@
                     <h6>Milestones</h6>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="bar1"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
                           Execution web - Sprint 51
@@ -847,13 +854,13 @@
                     </div>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="bar2"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
-                          milestone 2
+                          Milestone 2
                         </h6>
                         <!-- <i class="icon-complete-tick"></i> -->
                       </div>
@@ -861,13 +868,13 @@
                     </div>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="bar3"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
-                          milestone 3
+                          Milestone 3
                         </h6>
                         <!-- <i class="icon-complete-tick"></i> -->
                       </div>
@@ -875,13 +882,13 @@
                     </div>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="bar4"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
-                          milestone 4
+                          Milestone 4
                         </h6>
                         <!-- <i class="icon-complete-tick"></i> -->
                       </div>
@@ -891,8 +898,8 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="row boxes-row">
-                  <div class="col-md-6 milestone-box">
+                <div class="boxes-row">
+                  <div class=" milestone-box">
                     <div class="milestone-box1">
                       <div class="c100 p90 white">
                         <span>05</span>
@@ -904,7 +911,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 milestone-box">
+                  <div class=" milestone-box">
                     <div class="milestone-box2">
                       <div class="c100 p60 white">
                         <span>15</span>
@@ -916,7 +923,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 milestone-box">
+                  <div class=" milestone-box">
                     <div class="milestone-box3">
                       <div class="c100 p70 white">
                         <span>25</span>
@@ -928,7 +935,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 milestone-box">
+                  <div class=" milestone-box">
                     <div class="milestone-box4">
                       <div class="c100 p30 blue">
                         <span>01</span>
@@ -1210,10 +1217,10 @@
                     <h6>Milestones</h6>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="complete-bar"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
                           Execution web - Sprint 51
@@ -1224,10 +1231,10 @@
                     </div>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="delay-bar"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
                           Execution web - Sprint 51
@@ -1238,10 +1245,10 @@
                     </div>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="bar3"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
                           Milestone 3
@@ -1252,10 +1259,10 @@
                     </div>
                   </div>
                   <div class="milestone-text-row">
-                    <div class="milestone-bar d-inline-block">
+                    <div class="milestone-bar ">
                       <span class="bar4"></span>
                     </div>
-                    <div class="milestone-text d-inline-block">
+                    <div class="milestone-text ">
                       <div class="milestone-progress-head">
                         <h6>
                           Milestone 4
@@ -1268,13 +1275,13 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="row boxes-row">
-                  <div class="col-md-6 milestone-box">
+                <div class="boxes-row">
+                  <div class=" milestone-box">
                     <div class="milestone-box-complete">
                       <span><i class="icon-complete-tick"></i></span>
                     </div>
                   </div>
-                  <div class="col-md-6 milestone-box">
+                  <div class=" milestone-box">
                     <div class="milestone-box-delay">
                       <div class="c100 p60 white">
                         <span>15</span>
@@ -1286,7 +1293,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 milestone-box">
+                  <div class=" milestone-box">
                     <div class="milestone-box3">
                       <div class="c100 p70 white">
                         <span>25</span>
@@ -1298,7 +1305,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 milestone-box">
+                  <div class=" milestone-box">
                     <div class="milestone-box4">
                       <div class="c100 p30 blue">
                         <span>01</span>
@@ -1332,21 +1339,24 @@
             <div class="row text-center">
               <div class="col-sm-4 col-xs-4">
                 <div class="icon-box">
-                  <img src="./assets/images/check-circle-blue.png" alt="">
+                  <i class="icon-complete-tick"></i>
+                  <!-- <img src="./assets/images/check-circle-blue.png" alt=""> -->
                   <h6>05</h6>
                   <span>Completed</span>
                 </div>
               </div>
               <div class="col-sm-4 col-xs-4">
                 <div class="icon-box">
-                  <img src="./assets/images/activity.png" alt="">
+                  <i class="icon-active"></i>
+                  <!-- <img src="./assets/images/activity.png" alt=""> -->
                   <h6>04</h6>
                   <span>Active</span>
                 </div>
               </div>
               <div class="col-sm-4 col-xs-4">
                 <div class="icon-box">
-                  <img src="./assets/images/user-x.png" alt="">
+                  <i class="icon-unassigned"></i>
+                  <!-- <img src="./assets/images/user-x.png" alt=""> -->
                   <h6>02</h6>
                   <span>Unassigned</span>
                 </div>
@@ -1363,7 +1373,8 @@
             <div class="row text-center">
               <div class="col-sm-5 col-xs-5">
                 <div class="icon-box2">
-                  <img src="./assets/images/archive.png" alt="">
+                  <i class="icon-test-case"></i>
+                  <!-- <img src="./assets/images/archive.png" alt=""> -->
                 </div>
                 <div class="icon-box2-text">
                   <h6>42</h6>
@@ -1379,7 +1390,8 @@
 
               <div class="col-sm-5 col-xs-5">
                 <div class="icon-box2">
-                  <img src="./assets/images/briefcase.png" alt="">
+                  <i class="icon-test-cases"></i>
+                  <!-- <img src="./assets/images/briefcase.png" alt=""> -->
                 </div>
                 <div class="icon-box2-text">
                   <h6>2045</h6>
@@ -1399,21 +1411,24 @@
             <div class="row text-center">
               <div class="col-sm-4 col-xs-4">
                 <div class="icon-box">
-                  <img src="./assets/images/check-circle-blue.png" alt="">
+                  <i class="icon-complete-tick"></i>
+                  <!-- <img src="./assets/images/check-circle-blue.png" alt=""> -->
                   <h6>05</h6>
                   <span>Completed</span>
                 </div>
               </div>
               <div class="col-sm-4 col-xs-4">
                 <div class="icon-box">
-                  <img src="./assets/images/activity.png" alt="">
+                  <i class="icon-active"></i>
+                  <!-- <img src="./assets/images/activity.png" alt=""> -->
                   <h6>04</h6>
                   <span>Active</span>
                 </div>
               </div>
               <div class="col-sm-4 col-xs-4">
                 <div class="icon-box">
-                  <img src="./assets/images/user-x.png" alt="">
+                  <i class="icon-unassigned"></i>
+                  <!-- <img src="./assets/images/user-x.png" alt=""> -->
                   <h6>02</h6>
                   <span>Unassigned</span>
                 </div>
@@ -1477,6 +1492,10 @@
                     <li class="nav-item">
                       <a class="nav-link" id="pills-blocked-tab" data-toggle="pill" href="#pills-blocked" role="tab"
                         aria-controls="pills-blocked" aria-selected="false"><span class="dot5"></span> Blocked</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-partial-tab" data-toggle="pill" href="#pills-partial" role="tab"
+                        aria-controls="pills-partial" aria-selected="false"><span class="dot6"></span> Partial</a>
                     </li>
                   </ul>
                 </div>
@@ -2193,6 +2212,153 @@
                       <div class="col-md-8">
                         <div class="btn-text">
                           <button class="btn btn-navy-blue shadow-none">Blocked</button>
+                          <span>Verify Password strength for forget password.</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="icon-user-text">
+                          <div class="icon-user">
+                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                          </div>
+                          <div class="text-user">
+                            <strong>Ahmed</strong>
+                            <br>
+                            <p>Tester</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="tested-time">
+                          <span>Tested</span>
+                          <p>5:00 AM</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane " id="pills-partial" role="tabpanel" aria-labelledby="pills-partial-tab">
+                    <div class="row mt-5">
+                      <div class="col-md-12">
+                        <div class="date-status">
+                          <span>Tuesday,April 30th,2021</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4 changes-row">
+                      <div class="col-md-8">
+                        <div class="btn-text">
+                          <button class="btn btn-secondary-color shadow-none">Partial</button>
+                          <span>Verify Password strength for forget password.</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="icon-user-text">
+                          <div class="icon-user">
+                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                          </div>
+                          <div class="text-user">
+                            <strong>Ahmed</strong>
+                            <br>
+                            <p>Tester</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="tested-time">
+                          <span>Tested</span>
+                          <p>5:00 AM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row  mb-4 changes-row">
+                      <div class="col-md-8">
+                        <div class="btn-text">
+                          <button class="btn btn-secondary-color shadow-none">Partial</button>
+                          <span>User should be able to book appointment with same details on same property</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="icon-user-text">
+                          <div class="icon-user">
+                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                          </div>
+                          <div class="text-user">
+                            <strong>Ahmed</strong>
+                            <br>
+                            <p>Tester</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="tested-time">
+                          <span>Tested</span>
+                          <p>5:00 AM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row  mb-4 changes-row">
+                      <div class="col-md-8">
+                        <div class="btn-text">
+                          <button class="btn btn-secondary-color shadow-none">Partial</button>
+                          <span>Verify user should be able to use execution app on other WIFI networks.</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="icon-user-text">
+                          <div class="icon-user">
+                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                          </div>
+                          <div class="text-user">
+                            <strong>Ahmed</strong>
+                            <br>
+                            <p>Tester</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="tested-time">
+                          <span>Tested</span>
+                          <p>5:00 AM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-5">
+                      <div class="col-md-12">
+                        <div class="date-status">
+                          <span>Monday, April 29th, 2021</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4 changes-row">
+                      <div class="col-md-8">
+                        <div class="btn-text">
+                          <button class="btn btn-secondary-color shadow-none">Partial</button>
+                          <span>Verify Password strength for forget password.</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="icon-user-text">
+                          <div class="icon-user">
+                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                          </div>
+                          <div class="text-user">
+                            <strong>Ahmed</strong>
+                            <br>
+                            <p>Tester</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="tested-time">
+                          <span>Tested</span>
+                          <p>5:00 AM</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row  mb-4 changes-row">
+                      <div class="col-md-8">
+                        <div class="btn-text">
+                          <button class="btn btn-secondary-color shadow-none">Partial</button>
                           <span>Verify Password strength for forget password.</span>
                         </div>
                       </div>

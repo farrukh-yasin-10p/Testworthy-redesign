@@ -8,9 +8,10 @@
 header {
     display: flex;
     align-items: center;
-    padding: rem(20) rem(30);
+    padding: rem(20) rem(46);
     @include bg-color-sh;
     display: flex;
+    height: rem(120);
 
     @include mq('sm', max) {
         display: block;
@@ -23,11 +24,11 @@ header {
 
     @include mq('sm', max) {
         display: inline-block;
-        font-size: rem(20);
+        font-size: 20px;
         color: $secondary;
 
         label {
-            margin-bottom: rem(0);
+            margin-bottom: 0px;
         }
     }
 }
@@ -46,7 +47,7 @@ header {
 }
 
 .head-logo img {
-    width: rem(200);
+    width: rem(247);
 
     @include mq('sm', max) {
         width: rem(180);
@@ -56,7 +57,7 @@ header {
 
 .header-back {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding-left: rem(55);
     display: flex;
 
@@ -67,18 +68,27 @@ header {
     }
 
     span {
-        font-size: rem(24);
-        font-weight: bold;
+        font-size: rem(32);
+        font-weight: 600;
         padding-left: rem(10);
+        display: flex;
+        align-items: center;
     }
 
-    .arrow-back img {
-        width: rem(25);
+    // .arrow-back img {
+    //     width: rem(34);
+    // }
+
+    .arrow-back {
+        font-size: rem(20);
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
     }
 
-    img {
-        width: rem(20);
-    }
+    // img {
+    //     width: rem(24);
+    // }
 
     a {
         color: black;
@@ -86,13 +96,19 @@ header {
 
     .breadCrumb {
         display: flex;
-        align-items: center;
+        align-items: baseline;
 
         h6 {
+            font-size: rem(18);
             margin-bottom: rem(0);
             font-weight: 600;
             margin-left: rem(12);
-            margin-top: rem(4);
+            // margin-top: rem(4);
+        }
+
+        i {
+            font-size: rem(16);
+            margin: 0px 8px;
         }
 
         @include mq('lg', max) {
@@ -101,23 +117,23 @@ header {
     }
 
     @include mq('sm', max) {
-        padding-top: rem(0);
-        padding-left: rem(0);
-        margin-left: rem(20);
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 20px;
         display: inline-block;
 
         span {
-            font-size: rem(20);
+            font-size: 20px;
             font-weight: 600;
-            padding-left: rem(0);
+            padding-left: 0px;
         }
 
         img {
-            width: rem(18);
+            width: 18px;
         }
 
         a {
-            margin-right: rem(10);
+            margin-right: 10px;
         }
     }
 }
@@ -132,31 +148,32 @@ header {
 
         @include mq('sm', max) {
             float: right;
-            padding-bottom: rem(0);
-            margin-top: rem(4);
+            padding-bottom: 0px;
+            margin-top: 4px;
 
         }
     }
 
     .user-text {
         padding: rem(0);
-        font-size: rem(14);
+        font-size: rem(16);
 
 
         p {
             @include size-color(rem(10), $grey-light);
-            margin-bottom: rem(0)
+            margin-bottom: rem(0);
+            font-size: rem(12);
         }
 
         @include mq('sm', max) {
-            padding: rem(0);
-            font-size: rem(10);
+            padding: 0px;
+            font-size: 10px;
             display: inline-block;
-            margin-top: rem(0);
+            margin-top: 0px;
 
 
             p {
-                font-size: rem(8);
+                font-size: 8px;
 
             }
         }
@@ -177,13 +194,13 @@ header {
             align-items: center;
 
             img {
-                width: rem(44);
-                height: rem(44);
+                width: rem(57);
+                height: rem(57);
 
 
                 @include mq('sm', max) {
-                    width: rem(40);
-                    height: rem(40);
+                    width: 35px;
+                    height: 35px;
                 }
             }
 
@@ -192,8 +209,8 @@ header {
 
         @include mq('sm', max) {
             display: inline-block;
-            padding-left: rem(0);
-            margin-left: rem(10);
+            padding-left: 0px;
+            margin-left: 10px;
         }
     }
 
@@ -206,11 +223,12 @@ header {
 
     .dropdown-toggle {
 
-        @include size-color(rem(20), $grey-light);
+        @include size-color(rem(26), $grey-light);
         float: right;
 
+
         @include mq('sm', max) {
-            font-size: rem(16);
+            font-size: 16px;
 
         }
     }
@@ -220,9 +238,10 @@ header {
         margin-top: rem(20);
         padding: rem(10) rem(0);
         font-size: rem(14);
-        border-radius: rem(10);
+        border-radius: 10px;
         border: none;
         box-shadow: $shadow;
+
 
         a {
             color: black;
@@ -233,14 +252,14 @@ header {
         }
 
         @include mq('sm', max) {
-            padding: rem(8) rem(0);
-            font-size: rem(12);
-            margin-top: rem(10);
+            padding: 8px 0px;
+            font-size: 12px;
+            margin-top: 10px;
         }
     }
 
     @include mq('sm', max) {
-        margin-top: rem(0);
+        margin-top: 0px;
 
 
     }

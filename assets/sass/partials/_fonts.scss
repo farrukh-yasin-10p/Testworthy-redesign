@@ -37,17 +37,21 @@ $icomoon-font-path: "./../fonts" !default;
     font-display: block;
 }
 
-$font-types: (
-    more-vertical: "\e920",
+$font-types: (kabab-menu: "\e900",
+    test-cases: "\e901",
+    projects: "\e925",
+    active: "\e923",
+    arrow-left: "\e920",
+    chevron-right: "\e921",
     download: "\e91d",
     reports: "\e91e",
     testcases: "\e91f",
-    trash: "\e900",
-    accordion-down: "\e901",
-    complete-tick: "\e902",
-    ic_edit: "\e903",
-    info-icon: "\e904",
-    ic_option: "\e905",
+    trash: "\e902",
+    accordion-down: "\e903",
+    complete-tick: "\e904",
+    ic_edit: "\e905",
+    info-icon: "\e922",
+    ic_option: "\e924",
     milestone-icon: "\e906",
     warning: "\e907",
     arrow-tab: "\e908",
@@ -71,7 +75,6 @@ $font-types: (
     settings: "\e91a",
     users: "\e91b",
     milestone-2: "\e91c",
-
 
 );
 

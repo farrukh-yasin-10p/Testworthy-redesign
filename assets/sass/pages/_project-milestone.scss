@@ -2,10 +2,14 @@
 
 // Add Project Section Start
 .sort-by {
-    display: flex;
+    //display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding-top: rem(90);
+
+    h4 {
+        font-size: rem(32);
+    }
 
     .search-filter {
         display: flex;
@@ -25,14 +29,16 @@
         }
 
         input {
-            font-size: rem(16);
+            font-size: rem(18);
             padding: rem(10) rem(45) rem(10) rem(24);
-            border-radius: rem(30);
+            border-radius: 30px;
             border: rem(1) solid rgba(227, 229, 233, .87);
             outline: none;
-            width: rem(320);
+            width: rem(382);
+            height: rem(56);
             background-color: #fff;
             color: #aaa;
+
 
             &::placeholder {
                 color: #aaa;
@@ -48,19 +54,23 @@
             .search-icon {
                 position: absolute;
                 right: rem(16);
-                top: rem(10);
+                top: rem(15);
+                width: rem(24);
+                height: rem(24);
             }
 
         }
 
         button {
             padding: rem(10) rem(47);
-            border-radius: rem(30);
-            font-size: rem(16);
+            border-radius: 30px;
+            font-size: rem(18);
             background-color: $secondary;
             color: white;
             margin-left: rem(10);
             margin-bottom: rem(10);
+            min-width: rem(245);
+            height: rem(56);
 
         }
     }
@@ -69,13 +79,14 @@
 
     .sort-by-text {
         color: $grey-400;
+        font-size: rem(18);
     }
 
     .sort-by-filter {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-size: rem(12);
+        font-size: rem(14);
         margin-top: rem(13);
         padding-right: rem(10);
 
@@ -104,10 +115,10 @@
         margin-bottom: rem(10);
 
         button {
-            font-size: rem(12);
+            font-size: rem(14);
 
             i {
-                margin-left: 3px;
+                margin-left: rem(3);
             }
         }
 
@@ -139,24 +150,25 @@
 
         .search-filter {
             img {
-                width: rem(18);
+                width: 18px;
             }
 
             input {
-                font-size: rem(14);
-                width: rem(290);
+                font-size: 14px;
+                width: 290px;
+                height: 46px;
             }
 
             button {
-                font-size: rem(14);
-                padding: rem(8) rem(47);
+                font-size: 14px;
+                padding: 8px 47px;
             }
 
         }
 
         .sort-by-filter {
             label {
-                margin: rem(0) rem(20) rem(0) rem(6);
+                margin: 0px 20px 0px 6px;
             }
         }
 
@@ -172,31 +184,31 @@
             justify-content: center;
 
             input {
-                font-size: rem(12);
-                margin-top: rem(10);
+                font-size: 12px;
+                margin-top: 10px;
             }
 
             button {
-                font-size: rem(12);
-                padding: rem(7) rem(28);
-                margin-bottom: rem(10);
+                font-size: 12px;
+                padding: 7px 28px;
+                margin-bottom: 10px;
 
             }
 
             .search-input {
                 .search-icon {
-                    top: rem(18);
+                    top: 18px;
                 }
             }
         }
 
         .sort-by-filter {
             justify-content: center;
-            padding-right: rem(0);
+            padding-right: 0px;
         }
 
         .sort-by-tabs {
-            margin-left: rem(0);
+            margin-left: 0px;
         }
     }
 }
@@ -212,7 +224,7 @@
 
     .nav-link {
         color: $grey-light;
-        font-size: rem(18);
+        font-size: rem(30);
         font-weight: bold;
 
         &.active {
@@ -241,7 +253,7 @@
 
                 i {
                     margin-right: rem(24);
-                    font-size: rem(30);
+                    font-size: rem(34);
                     color: $secondary;
                 }
 
@@ -259,6 +271,7 @@
                     display: block;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    font-size: rem(18);
 
                     a {
                         color: black;
@@ -267,7 +280,7 @@
             }
 
             .custom-control-input {
-                top: 7px;
+                top: rem(7);
             }
 
         }
@@ -275,7 +288,7 @@
 
         .progress-icon {
 
-            margin-left: rem(38);
+            margin-left: rem(65);
             display: flex;
 
             .icon-warning {
@@ -287,7 +300,7 @@
             }
 
             i {
-                font-size: rem(20);
+                font-size: rem(34);
 
             }
         }
@@ -295,28 +308,32 @@
         .passed,
         .creation-date,
         .due-date {
-            font-size: rem(12);
+            font-size: rem(14);
             color: black;
         }
 
 
         .due-date {
-            min-width: 117px;
+            min-width: rem(136);
         }
 
         .creation-date {
-            min-width: 126px;
+            min-width: rem(147);
         }
 
+        .warning-li {
+            border: 1px solid $danger-dark;
+        }
 
         li {
             @include card-box;
             background-color: white;
             margin-bottom: rem(20);
             //padding: rem(20) rem(5) rem(20) rem(20);
-            min-height: 80px;
+            height: rem(90);
             display: flex;
             align-items: center;
+            border-radius: 30px;
 
             &:hover {
                 background-color: #e7f3f8;
@@ -353,12 +370,13 @@
         }
 
         .hover-row-edit {
-            min-width: 117px;
+            min-width: rem(136);
             display: none;
             text-align: right;
+            font-size: rem(24);
 
             span {
-                margin-left: 20px;
+                margin-left: rem(20);
 
                 &:first-child {
                     margin-left: 0px;
@@ -371,11 +389,11 @@
         }
 
         .passed {
-            font-size: rem(12);
+            font-size: rem(14);
 
             span {
                 &:first-child {
-                    width: 30px;
+                    width: rem(33);
                     display: inline-block;
                     //text-align: center;
                 }
@@ -387,7 +405,7 @@
         }
 
         .progress {
-            height: rem(10);
+            height: rem(12);
             border-radius: rem(50);
         }
 
@@ -423,8 +441,9 @@
         background-color: #eeeeee;
         border-radius: rem(10);
         font-weight: normal;
-        font-size: rem(16);
+        font-size: rem(18);
         color: #b4b7bb;
+        height: rem(49);
 
         .row {
             width: 100%;
@@ -434,16 +453,16 @@
 
         .creation-col {
             margin-left: auto;
-            margin-right: 28px;
+            margin-right: rem(30);
         }
 
         .due-date-col {
-            margin-right: 15px;
+            margin-right: rem(30);
         }
 
         label {
             span {
-                font-size: rem(16);
+                font-size: rem(18);
                 font-weight: normal;
             }
         }
@@ -482,11 +501,12 @@
 
         .select-row-list {
             .progress-icon {
-                margin-left: rem(25);
+                margin-left: 50px;
             }
 
             .hover-row-edit {
-                min-width: 75px;
+                //Will remain in px
+                min-width: 80px;
 
                 span {
                     margin-left: 10px;
@@ -495,17 +515,19 @@
             }
 
             .passed {
-                margin-left: rem(0);
+                margin-left: 0px;
             }
 
             .creation-date {
                 display: grid;
+                //Will remain in px
                 min-width: 75px;
             }
 
             .due-date {
                 display: grid;
-                min-width: 75px;
+                //Will remain in px
+                min-width: 80px;
             }
         }
     }
@@ -515,7 +537,7 @@
 
         .select-row {
             .progress_text {
-                margin-left: rem(15);
+                margin-left: 15px;
             }
 
             .due-date-col {
@@ -530,44 +552,21 @@
 
         .select-row-list {
             .progress-icon {
-                margin-left: rem(20);
-            }
-
-            .hover-row-edit {
-                min-width: 75px;
-
-                span {
-                    margin-left: 10px;
-                }
-
-            }
-
-            .passed {
-                margin-left: rem(0);
-            }
-
-            .creation-date {
-                //white-space: pre-line;
-                display: grid;
-                min-width: 75px;
-            }
-
-            .due-date {
-                //white-space: pre-line;
-                display: grid;
-                min-width: 75px;
+                margin-left: 25px;
             }
         }
     }
 
     @include mq('lg', max) {
         .select-row {
+            height: auto;
+
             .creation-col {
-                margin-left: rem(0);
+                margin-left: 0px;
             }
 
             .progress_text {
-                margin-left: rem(0);
+                margin-left: 0px;
 
             }
 
@@ -577,24 +576,29 @@
         }
 
         .select-row-list {
+
+            li {
+                height: auto;
+            }
+
             .progressBar {
                 width: 60%;
-                margin-bottom: rem(10);
-                margin-top: rem(10);
+                margin-bottom: 10px;
+                margin-top: 10px;
             }
 
             .progress-icon {
-                margin-left: rem(60);
+                margin-left: 60px;
             }
 
             .passed {
-                margin-left: rem(0);
-                margin-bottom: rem(10);
+                margin-left: 0px;
+                margin-bottom: 10px;
             }
 
             .creation-date {
                 white-space: normal;
-                margin-bottom: rem(10);
+                margin-bottom: 10px;
             }
         }
 
@@ -604,7 +608,7 @@
 
         .select-row-list {
             li {
-                padding-right: rem(20);
+                padding-right: 20px;
             }
         }
 
@@ -627,23 +631,23 @@
     &__boxes {
 
         flex-grow: 0;
-        margin: 10px 5px;
-        padding: 15px 16px 18px 21px;
+        margin: rem(10) rem(5);
+        padding: rem(15) rem(16) rem(18) rem(21);
         border-radius: 30px;
         background: #fff;
         box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.03);
         position: relative;
         z-index: 1;
-        margin-bottom: 30px;
+        margin-bottom: rem(30);
 
         .ic-option {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            margin: 10px 20px 10px 0;
+            margin: rem(10) rem(20) rem(10) 0;
 
             .icon-ic_option {
-                font-size: 20px;
+                font-size: rem(20);
                 color: #000;
                 cursor: pointer;
             }
@@ -651,8 +655,8 @@
 
         .milestonetoggle {
 
-            padding: 10px 0 0;
-            margin: 10px 0 0;
+            padding: rem(10) 0 0;
+            margin: rem(10) 0 0;
             border-top: 1px solid #eeeeee;
 
             .submilestones {
@@ -665,18 +669,22 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
-                padding-right: 25px;
+                padding-right: rem(25);
                 cursor: pointer;
+
+                i {
+                    font-size: rem(20);
+                }
             }
         }
 
         .mscases {
 
-            margin-top: 30px;
+            margin-top: rem(30);
 
             .col-md-3 {
-                padding-right: 5px;
-                padding-left: 5px;
+                padding-right: rem(5);
+                padding-left: rem(5);
             }
 
             &__cases {
@@ -686,8 +694,8 @@
                 -ms-flex-positive: 0;
                 flex-grow: 0;
                 border-radius: 15px;
-                margin-bottom: 10px;
-                padding: 8px 5px;
+                margin-bottom: rem(10);
+                padding: rem(8) rem(5);
 
                 &--box1 {
                     @include case_box(#E71E1E, #ed8a8a);
@@ -732,7 +740,7 @@
                         top: 10px;
 
                         h5 {
-                            font-size: 13px;
+                            font-size: rem(13);
                             padding: 0;
                             margin: 0;
                             font-weight: bold;
@@ -740,7 +748,7 @@
                         }
 
                         h6 {
-                            font-size: 11px;
+                            font-size: rem(11);
                             margin: 0;
                             padding: 0;
                         }
@@ -777,10 +785,17 @@
 
     &__exic {
 
-        .icon-milestone-icon {
-            width: 80px;
-            height: 66px;
-            font-size: 55px;
+        .row {
+            &:first-child {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .icon-milestone-2 {
+            width: rem(80);
+            height: rem(66);
+            font-size: rem(70);
             color: #1EAAE7;
             position: relative;
             top: 2px;
@@ -789,7 +804,7 @@
         .cntnttxt {
             h4 {
                 font-family: Poppins;
-                font-size: 18px;
+                font-size: rem(20);
                 font-weight: 600;
                 font-stretch: normal;
                 font-style: normal;
@@ -797,19 +812,19 @@
                 letter-spacing: 0.44px;
                 text-align: left;
                 color: #000000;
-                margin: 7px 0 0 0;
+                margin: rem(7) 0 0 0;
             }
 
             a {
-                font-size: 14px;
+                font-size: rem(14);
                 font-weight: bold;
                 color: #1EAAE7;
             }
 
             label {
-                font-size: 12px;
-                padding-right: 10px;
-                color:#626263;
+                font-size: rem(12);
+                padding-right: rem(10);
+                color: #626263;
             }
         }
 
@@ -819,23 +834,23 @@
     &__days {
 
         text-align: right;
-        margin-right: 10px;
+        margin-right: rem(10);
 
         .dated {
-            font-size: 96px;
+            font-size: rem(96);
             color: #1eaae7;
-            line-height: 85px;
+            line-height: rem(85);
             font-weight: bold;
         }
 
         .days {
-            font-size: 24px;
+            font-size: rem(24);
             color: #1eaae7;
             font-weight: 600;
         }
 
         .duedate {
-            font-size: 12px;
+            font-size: rem(12);
             color: #626263;
         }
 
@@ -867,11 +882,11 @@
 
         &--complete {
             .completeico {
-                min-height: 122px;
-                margin-right: 12px;
+                min-height: rem(122);
+                margin-right: rem(12);
 
                 .icon-complete-tick {
-                    font-size: 60px;
+                    font-size: rem(60);
                     font-weight: bold;
                     color: #92DC82;
                 }
@@ -881,20 +896,20 @@
     }
 
     &__progress-bar {
-        padding: 66px 0 0 0;
+        padding: rem(48) 0 0 0;
 
         .passed {
             margin-left: 0;
-            line-height: 14px;
+            line-height: rem(14);
 
             span {
 
-                font-size: 14px;
+                font-size: rem(14);
                 font-weight: bold;
                 color: #000;
 
                 &:first-child {
-                    font-size: 18px;
+                    font-size: rem(18);
 
                     @include mq-only("xs", "ml") {
                         font-size: 10px;
@@ -911,52 +926,52 @@
         }
     }
 
-        .dropdown-menu {
-            padding: rem(10) rem(0);
-            font-size: rem(12);
-            margin-left: -140px;
-            margin-top: -12px;
+    .dropdown-menu {
+        padding: rem(10) rem(0);
+        font-size: rem(12);
+        margin-left: rem(-140);
+        margin-top: rem(-12);
 
-            .dropdown-item {
-                padding: rem(10) rem(20);
-                color: black;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
+        .dropdown-item {
+            padding: rem(10) rem(20);
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
 
-                &:hover {
-                    background-color: $filter;
-                }
+            &:hover {
+                background-color: $filter;
+            }
 
 
-                i {
-                    font-size: 18px;
-                    margin-right: 10px;
-                    font-weight: 600;
-                }
+            i {
+                font-size: rem(18);
+                margin-right: rem(10);
+                font-weight: 600;
             }
         }
+    }
 }
 
 
 /* checkboxes */
 
-  
+
 .checkbox {
     flex-grow: 0;
-    padding: 20px 16px 15px 20px;
+    padding: rem(20) rem(16) rem(15) rem(20);
     border-radius: 0 0 30px 30px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
     background-color: #f5f4f4;
     position: relative;
     top: -32px;
     z-index: 9;
-    width: 92%;
-    left: 24px; 
+    width: 97%;
+    left: 13px;
 
     .custom-scrollbar-css {
         overflow-y: scroll;
-        height: 65px;
+        height: rem(65);
     }
 
     label {
@@ -964,13 +979,13 @@
         cursor: pointer;
         display: block;
         position: relative;
-        padding-right: 40px;
-        margin-left: 20px;
+        padding-right: rem(40);
+        margin-left: rem(20);
 
         &:before {
             content: "";
-            width: 24px;
-            height: 24px;
+            width: rem(24);
+            height: rem(24);
             position: absolute;
             left: 0;
         }
@@ -978,37 +993,37 @@
         &:before {
             background: url('/assets/images/inactive.png') left center no-repeat;
             margin-left: 95%;
-            background-size: 18px;
-            background-position: 0 2px;
+            background-size: rem(18);
+            background-position: 0 rem(2);
         }
 
         h5 {
-            font-size: 13px;
+            font-size: rem(13);
             color: #626263;
-            margin-top: 5px;
+            margin-top: rem(5);
         }
 
         .progress {
-            height: 8px;
-            margin-top: 10px;
+            height: rem(8);
+            margin-top: rem(10);
         }
 
         .status {
-            font-size: 13px;
+            font-size: rem(13);
             color: #626263;
-            margin-top: 2px;
+            margin-top: rem(2);
         }
 
         .completeico {
-            margin-left: 20px;
-            color:#ccc;
+            margin-left: rem(20);
+            color: #ccc;
         }
 
         &:hover {
             .completeico {
-                margin-left: 20px;
-                color:#949494;
-            } 
+                margin-left: rem(20);
+                color: #949494;
+            }
         }
 
         @include mq-only("xs", "ml") {
@@ -1062,5 +1077,5 @@
     border-radius: 1rem;
     background-color: #c4c4c4;
     position: relative;
-    right: 20px;
+    right: rem(20);
 }

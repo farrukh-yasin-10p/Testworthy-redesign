@@ -1,6 +1,7 @@
 .sidebar {
     @include bg-color-sh;
-    width: rem(280);
+    box-shadow: 0 rem(15) rem(15) 0 #ebebeb;
+    width: rem(345);
     left: 0;
     top: 0;
     height: 100%;
@@ -9,15 +10,20 @@
     overflow-y: auto;
 
     @include mq('xl', max) {
-        width: rem(90);
+        width: rem(115);
 
+        .sidebar-menu {
+            li {
+                padding-left: rem(16);
+            }
+        }
 
         .sidebar-menu a {
             padding-left: rem(0);
         }
 
         .sidebar-hamburger {
-            padding-left: rem(36);
+            padding-left: rem(48);
         }
 
         li a span:last-child {
@@ -32,7 +38,7 @@
 }
 
 .sidebar-hamburger {
-    padding: rem(16) rem(0) rem(16) rem(48);
+    padding: rem(48) rem(0) rem(16) rem(75);
 
     label {
         margin-bottom: 0px;
@@ -44,7 +50,7 @@
         padding-top: rem(120);
 
         i {
-            @include size-color(rem(20), $secondary);
+            @include size-color(rem(24), $secondary);
         }
     }
 }
@@ -55,13 +61,13 @@
     li {
         width: 100%;
         margin-bottom: rem(18);
-        padding-left: 1rem;
+        padding-left: 3rem;
     }
 
     a {
         @include size-color(rem(16), $grey-light);
         display: block;
-        padding-left: rem(15);
+        //padding-left: rem(15);
         display: flex;
         align-items: center;
 
@@ -90,13 +96,23 @@
 
         span {
             &:first-child {
-                font-size: rem(24);
-                padding: rem(11) rem(15) rem(7) rem(15);
+                font-size: rem(32);
+                //padding: rem(11) rem(15) rem(7) rem(15);
                 margin-right: rem(20);
+                width: rem(80);
+                height: rem(80);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include mq('xl', max) {
+                    margin-right: 0px;
+                }
             }
 
             &:last-child {
                 font-weight: 500;
+                font-size: rem(18);
             }
         }
 

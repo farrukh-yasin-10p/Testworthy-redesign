@@ -44,18 +44,21 @@
             <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
         </div>
         <div class="header-back">
-            <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
-                    <a href="#">Exelon</a>
+            <label for=""><a href="#" class="arrow-back">
+                    <i class="icon-arrow-left"></i>
+                    <!-- <img src="./assets/images/arrow-left.png" alt="">  -->
+                </a> <span> <a href="#">Exelon</a>
                     </spam></label>
             <div class="breadCrumb">
-                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                <span> <i class="icon-chevron-right"></i>
+                    <!-- <img src="./assets/images/chevron-right.png" alt="" class="img-fluid"> -->
                 </span>
                 <h6><a href="#">Milestones</a> </h6>
-                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                <span> <i class="icon-chevron-right"></i>
+                    <!-- <img src="./assets/images/chevron-right.png" alt="" class="img-fluid"> -->
                 </span>
                 <h6><a href="milestone-innerpage.html">Execution Web - Sprint 41</a></h6>
             </div>
-
         </div>
         <div class="user ml-auto">
             <div class="user-group">
@@ -130,7 +133,7 @@
                 <!-- <span class="mx-3 d-inline-block"><a href="" class="d-inline-block"><i class="icon-reports"></i></a></span> -->
                 <div class="dropdown dropmenu" data-toggle="tooltip" title="reports">
                     <button class="btn shadow-none pt-0 pb-1" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-reports"></i> <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
@@ -140,19 +143,22 @@
 
                     </div>
                 </div>
-                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="download report"><a href="" class="d-inline-block"><i class="icon-download"></i></a></span>
-                <span class="mx-3 d-inline-block"><a href="" class="d-inline-block"><i class="icon-ic_edit"></i></a></span>
+                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="download report"><a href=""
+                        class="d-inline-block"><i class="icon-download"></i></a></span>
+                <span class="mx-3 d-inline-block"><a href="" class="d-inline-block"><i
+                            class="icon-ic_edit"></i></a></span>
                 <span class="dropdown d-inline-block valign-top">
-                    <span class="ellipsis pt-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="bottom">
-                      <a href="#" alt="ellipsis"><img src="./assets/images/ellipsis.png"></a>
+                    <span class="ellipsis pt-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-placement="bottom">
+                        <a href="#" alt="ellipsis"><img src="./assets/images/ellipsis.png"></a>
                     </span>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#complete-Modal"><img
-                          src="./assets/images/check-circle.png" alt=""> <span>Mark as
-                          Complete</span></a>
-                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal"><img
-                          src="./assets/images/trash.png" alt=""> <span>Delete
-                          Project</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#complete-Modal"><img
+                                src="./assets/images/check-circle.png" alt=""> <span>Mark as
+                                Complete</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal"><img
+                                src="./assets/images/trash.png" alt=""> <span>Delete
+                                Project</span></a>
                     </div>
                 </span>
             </div>
@@ -173,13 +179,13 @@
                             </div>
                             <div class="d-flex align-items-end justify-content-between milestone-chart mb-4">
                                 <div class="chart">
-                                    <canvas id="donutChart" width="188" height="188"></canvas>
+                                    <canvas id="donutChart"></canvas>
                                 </div>
-                                <div class="chart-heading px-3 d-flex flex-column align-items-center mb-4"> 
+                                <div class="chart-heading px-3 d-flex flex-column align-items-center mb-4">
                                     <h1 class="mb-1">45%</h1>
                                     <span>Passed Cases</span>
                                 </div>
-                                <div class="chart-heading px-3 d-flex flex-column align-items-center mb-4"> 
+                                <div class="chart-heading px-3 d-flex flex-column align-items-center mb-4">
                                     <h1 class="mb-1">
                                         <i class="icon-testcases"></i>
                                     </h1>
@@ -211,11 +217,11 @@
                                     <span class="dot4"></span>
                                     10 Untested
                                 </span>
- 
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 h-100">
+                    <div class="col-lg-4 h-100">
                         <div class="chart-box d-flex flex-column h-100">
                             <div class="chart-heading mb-2">
                                 <h6>Reports</h6>
@@ -345,13 +351,15 @@
                                         <input type="radio" name="radio" id=""><label for="complete">Completed</label>
                                         <div class="filter-date">
                                             <div class="date-picker">
-                                              <input type="text" name="single-date" value="10/24/1984" hidden id="clear_input2" />
-                                              <span><a href="javascript: void(0)" hidden id="clear_cross2" class="clear"
-                                                  onclick="clear_date(this)">×</a><a href="javascript: void(0)" id="single-date"><i
-                                                    class="icon-date-icon"></i></a>
-                                              </span>
+                                                <input type="text" name="single-date" value="10/24/1984" hidden
+                                                    id="clear_input2" />
+                                                <span><a href="javascript: void(0)" hidden id="clear_cross2"
+                                                        class="clear" onclick="clear_date(this)">×</a><a
+                                                        href="javascript: void(0)" id="single-date"><i
+                                                            class="icon-date-icon"></i></a>
+                                                </span>
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="sort-by-tabs">
                                         <div class="dropdown">
@@ -403,8 +411,8 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="custom-control custom-checkbox ">
-                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox04"
-                                                    value="option04">
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckbox04" value="option04">
                                                 <label class="custom-control-label" for="inlineCheckbox04">
                                                     <span class="row-head">Milestone
                                                     </span>
@@ -433,7 +441,7 @@
                                         </div>
 
                                         <div class="col-md-auto">
-                                            <div>
+                                            <div class="due_date_col">
                                                 <span>Due Date</span>
                                             </div>
                                         </div>
@@ -449,38 +457,47 @@
                                     <ul>
                                         <li class="testrun-active-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha"> Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex  ml-auto">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -512,13 +529,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#"  data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -528,38 +548,47 @@
 
                                         <li class="testrun-active-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex ml-auto ">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -591,13 +620,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -607,38 +639,47 @@
 
                                         <li class="testrun-active-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex ml-auto">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -670,13 +711,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -693,38 +737,47 @@
                                     <ul>
                                         <li class="testrun-active-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex ml-auto">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -756,13 +809,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -772,38 +828,47 @@
 
                                         <li class="complete-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex ml-auto">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -835,13 +900,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -851,38 +919,47 @@
 
                                         <li class="complete-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex ml-auto">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -914,13 +991,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -930,38 +1010,47 @@
 
                                         <li class="complete-li">
                                             <div class="row d-flex align-items-center">
-                                                <div class="col-lg-3">
+                                                <div class="col-xl-4 col-lg-3">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input class="custom-control-input" type="checkbox"
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ml-auto">
+                                                <div class="col-lg-3  d-flex align-items-center flex-nowrap ">
                                                     <div class="progressBar">
                                                         <div class="progress">
                                                             <div class="progress-bar  progress-bar-success"
-                                                                style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                                style="width:65%" data-toggle="tooltip"
+                                                                title="60% Passed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%" data-toggle="tooltip"
+                                                                title="10% Retest">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="20% Blocked">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%" data-toggle="tooltip"
+                                                                title="35% Failed">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                            <div class="progress-bar progress-bar-info" style="width:5%"
+                                                                data-toggle="tooltip" title="05% Partial">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
+                                                            <div class="progress-bar progress-bar-grey" style="width:5%"
+                                                                data-toggle="tooltip" title="08% Untested">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-auto d-flex ">
+                                                <div class="col-lg-auto d-flex ml-auto">
                                                     <div class="passed">
                                                         <span>100%</span>
                                                         <span>Passed</span>
@@ -993,13 +1082,16 @@
                                                     </div>
 
                                                     <div class="hover-row-edit">
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-milestone"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><a href="#"
+                                                                data-toggle="modal" data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i></a></span>
                                                         <span class="complete-tick-icon" data-toggle="tooltip"
                                                             data-placement="top" title="Complete"><a href="#"><i
                                                                     class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                            title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
                                                 </div>
@@ -1034,7 +1126,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -1052,7 +1145,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -1199,8 +1293,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1227,8 +1322,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1255,8 +1351,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1283,8 +1380,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1320,7 +1418,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -1338,7 +1437,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -1487,8 +1587,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1515,8 +1616,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1543,8 +1645,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1571,8 +1674,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1610,7 +1714,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -1628,7 +1733,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -1775,8 +1881,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1803,8 +1910,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1831,8 +1939,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1859,8 +1968,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -1897,7 +2007,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -1915,7 +2026,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -2062,8 +2174,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2090,8 +2203,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2118,8 +2232,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2146,8 +2261,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2190,8 +2306,8 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="custom-control custom-checkbox ">
-                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox04"
-                                                    value="option04">
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckbox04" value="option04">
                                                 <label class="custom-control-label" for="inlineCheckbox04">
                                                     <span class="row-head">Test Runs
                                                     </span>
@@ -2217,7 +2333,7 @@
                                     </div>
                                 </div>
 
-                                <div class="select-row-list" >
+                                <div class="select-row-list">
 
                                     <div class="date-status mb-4 mt-5">
                                         <span>Tuesday, April 30th, 2021</span>
@@ -2232,8 +2348,8 @@
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
                                                             <span><i class="icon-clipboard"></i></span>
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
@@ -2244,15 +2360,20 @@
                                                             <div class="progress-bar  progress-bar-success"
                                                                 style="width:65%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%">
+                                                            <div class="progress-bar progress-bar-info"
+                                                                style="width:5%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%">
+                                                            <div class="progress-bar progress-bar-grey"
+                                                                style="width:5%">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2265,11 +2386,21 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="hover-row-edit">
-                                                        <span class="rerun-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        <span class="rerun-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="Rerun"><a
+                                                                href="#"><i class="icon-rerun"></i></a>
                                                         </span>
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
-                                                        <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="Edit"><a
+                                                                href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="complete-tick-icon" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Complete"><a href="#"><i
+                                                                    class="icon-complete-tick"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
 
@@ -2277,7 +2408,8 @@
 
                                                     <div class="assigned-to justify-content-end">
                                                         <div class="assigned-to-profile">
-                                                            <span><img src="./assets/images/user-icon.png" alt="profile-img"></span>
+                                                            <span><img src="./assets/images/user-icon.png"
+                                                                    alt="profile-img"></span>
                                                         </div>
                                                         <div class="assigned-to-text">
                                                             <span>Ahmed</span>
@@ -2296,8 +2428,8 @@
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
                                                             <span><i class="icon-clipboard"></i></span>
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
@@ -2308,15 +2440,20 @@
                                                             <div class="progress-bar  progress-bar-success"
                                                                 style="width:65%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%">
+                                                            <div class="progress-bar progress-bar-info"
+                                                                style="width:5%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%">
+                                                            <div class="progress-bar progress-bar-grey"
+                                                                style="width:5%">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2329,11 +2466,21 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="hover-row-edit">
-                                                        <span class="rerun-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        <span class="rerun-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="Rerun"><a
+                                                                href="#"><i class="icon-rerun"></i></a>
                                                         </span>
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
-                                                        <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="Edit"><a
+                                                                href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="complete-tick-icon" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Complete"><a href="#"><i
+                                                                    class="icon-complete-tick"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
 
@@ -2341,7 +2488,8 @@
 
                                                     <div class="assigned-to justify-content-end">
                                                         <div class="assigned-to-profile">
-                                                            <span><img src="./assets/images/user-icon.png" alt="profile-img"></span>
+                                                            <span><img src="./assets/images/user-icon.png"
+                                                                    alt="profile-img"></span>
                                                         </div>
                                                         <div class="assigned-to-text">
                                                             <span>Ahmed</span>
@@ -2368,8 +2516,8 @@
                                                             id="inlineCheckbox5" value="option5">
                                                         <label class="custom-control-label" for="inlineCheckbox5">
                                                             <span><i class="icon-clipboard"></i></span>
-                                                            <span class="text" data-toggle="tooltip" data-placement="top"
-                                                                title="Milestone - Sprint 51
+                                                            <span class="text" data-toggle="tooltip"
+                                                                data-placement="top" title="Milestone - Sprint 51
                                                     Version Alpha">Milestone - Sprint 51
                                                                 Version Alpha </span></label>
                                                     </div>
@@ -2380,15 +2528,20 @@
                                                             <div class="progress-bar  progress-bar-success"
                                                                 style="width:65%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width:5%">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                style="width:5%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-dark" style="width:10%">
+                                                            <div class="progress-bar progress-bar-dark"
+                                                                style="width:10%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-danger" style="width:10%">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                style="width:10%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-info" style="width:5%">
+                                                            <div class="progress-bar progress-bar-info"
+                                                                style="width:5%">
                                                             </div>
-                                                            <div class="progress-bar progress-bar-grey" style="width:5%">
+                                                            <div class="progress-bar progress-bar-grey"
+                                                                style="width:5%">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2401,11 +2554,21 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="hover-row-edit">
-                                                        <span class="rerun-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        <span class="rerun-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="Rerun"><a
+                                                                href="#"><i class="icon-rerun"></i></a>
                                                         </span>
-                                                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
-                                                        <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        <span class="edit-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="Edit"><a
+                                                                href="#"><i class="icon-ic_edit"></i></a></span>
+                                                        <span class="complete-tick-icon" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Complete"><a href="#"><i
+                                                                    class="icon-complete-tick"></i></a></span>
+                                                        <span class="trash-icon" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Delete"><a href="#"><i
+                                                                    class="icon-trash"></i></a></span>
                                                     </div>
 
 
@@ -2413,7 +2576,8 @@
 
                                                     <div class="assigned-to justify-content-end">
                                                         <div class="assigned-to-profile">
-                                                            <span><img src="./assets/images/user-icon.png" alt="profile-img"></span>
+                                                            <span><img src="./assets/images/user-icon.png"
+                                                                    alt="profile-img"></span>
                                                         </div>
                                                         <div class="assigned-to-text">
                                                             <span>Ahmed</span>
@@ -2452,7 +2616,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -2470,7 +2635,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -2617,8 +2783,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2645,8 +2812,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2673,8 +2841,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2701,8 +2870,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2738,7 +2908,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -2756,7 +2927,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -2905,8 +3077,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2933,8 +3106,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2961,8 +3135,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -2989,8 +3164,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3028,7 +3204,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -3046,7 +3223,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -3193,8 +3371,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3221,8 +3400,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3249,8 +3429,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3277,8 +3458,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3315,7 +3497,8 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
-                                                                data-target="#edit-milestone"><i class="icon-ic_edit"></i>
+                                                                data-target="#edit-milestone"><i
+                                                                    class="icon-ic_edit"></i>
                                                                 <span>Edit Milestone</span></a>
                                                             <a class="dropdown-item" href="#" data-toggle="modal"
                                                                 data-target="#ms-completeModal"><i
@@ -3333,7 +3516,8 @@
                                                         <div class="gridboxes__exic">
                                                             <div class="row">
                                                                 <div class="col-md-3"><span><i
-                                                                            class="icon-milestone-icon"></i></span> </div>
+                                                                            class="icon-milestone-icon"></i></span>
+                                                                </div>
                                                                 <div class="col-md-9">
                                                                     <div class="cntnttxt">
                                                                         <h4>Execution Web - Sprint 51 </h3>
@@ -3480,8 +3664,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3508,8 +3693,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3536,8 +3722,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3564,8 +3751,9 @@
                                                                         <div class="progressBar col-md-6">
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-success"
-                                                                                    role="progressbar" aria-valuenow="65"
-                                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                                    role="progressbar"
+                                                                                    aria-valuenow="65" aria-valuemin="0"
+                                                                                    aria-valuemax="100"
                                                                                     style="width:65%">
                                                                                 </div>
                                                                             </div>
@@ -3777,137 +3965,140 @@
                 </div>
                 <!--Add modal End-->
 
-                 <!-- Modal Section -->
-            <section class="modal-section">
+                <!-- Modal Section -->
+                <section class="modal-section">
 
-                <!--Modal Add  Start-->
-                <div class="modal  milestone-modals" id="edit-milestone" tabindex="-1" role="dialog"
-                    aria-labelledby="edit-milestoneLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                    <!--Modal Add  Start-->
+                    <div class="modal  milestone-modals" id="edit-milestone" tabindex="-1" role="dialog"
+                        aria-labelledby="edit-milestoneLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
 
-                        <!--Modal add-milestone content  Start-->
-                        <div class="modal-content add-milestone-content">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="modal-side-color">
-                                    </div>
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="modal-body-container pr-4 pt-4 pb-4">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title" id="exampleModalLabel">Edit Sub-Milestone</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true" class="close_cross">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-
-
-                                            <div class="mb-3">
-                                                <div class="text-info-icon">
-                                                    <h6>Name *</h6>
-                                                    <span data-toggle="tooltip" data-placement="top"
-                                                        title="Lorem ipsum dolor sit amet.">
-                                                        <i class="icon-info-icon"></i>
-                                                    </span>
-                                                </div>
-                                                <input type="text" placeholder="Version 1.0, Internal Beta 2 "
-                                                    class="input_field">
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <div class="text-info-icon">
-                                                    <h6>Parent</h6>
-                                                    <span data-toggle="tooltip" data-placement="top"
-                                                        title="The parent milestone for this milestone (for sub-milestones in milestones)."><i
-                                                            class="icon-info-icon"></i></span>
-                                                </div>
-                                                <input type="text" class="input_field"
-                                                    onclick="edit_searchList('block')">
-                                            </div>
-
-
-                                            <div class="search-list" id="list_search_edit">
-                                                <ul>
-                                                    <li>
-                                                        <div class="search-list-items">
-                                                            <span>Execution Mob - Sprint 2 </span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="search-list-items">
-                                                            <span>Execution Mob - Sprint 2 </span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="search-list-items">
-                                                            <span>Execution Mob - Sprint 2 </span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <div class="text-info-icon">
-                                                    <h6>Description</h6>
-                                                    <span data-toggle="tooltip" data-placement="top"
-                                                        title="Lorem ipsum dolor sit amet.">
-                                                        <i class="icon-info-icon"></i>
-
-                                                    </span>
-                                                </div>
-
-                                                <textarea name="" id="" cols="2" rows="4"></textarea>
-                                            </div>
-
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="date">
-                                                    <div class="text-info-icon">
-                                                        <h6>Start Date *</h6>
-                                                        <span data-toggle="tooltip" data-placement="top"
-                                                            title="Lorem ipsum dolor sit amet."><i
-                                                                class="icon-info-icon"></i></span>
-                                                    </div>
-
-                                                    <input type="date" placeholder="Version 1.0, Internal Beta 2 "
-                                                        class="input_field">
-                                                </div>
-                                                <div class="date">
-                                                    <div class="text-info-icon">
-                                                        <h6>End Date *</h6>
-                                                        <span data-toggle="tooltip" data-placement="top"
-                                                            title="Lorem ipsum dolor sit amet."><i
-                                                                class="icon-info-icon"></i></span>
-                                                    </div>
-
-                                                    <input type="date" placeholder="Version 1.0, Internal Beta 2 "
-                                                        class="input_field">
-                                                </div>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox4"
-                                                    value="option4">
-                                                <label class="custom-control-label" for="inlineCheckbox4">This milestone
-                                                    is completed</label>
-                                            </div>
-
-                                        </div>
-                                        <div class="modal-footer ">
-                                            <button type="button" class="btn btn-light-border"
-                                                data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-secondary-color">Add Milestone</button>
+                            <!--Modal add-milestone content  Start-->
+                            <div class="modal-content add-milestone-content">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="modal-side-color">
                                         </div>
                                     </div>
+                                    <div class="col-md-10">
+                                        <div class="modal-body-container pr-4 pt-4 pb-4">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="exampleModalLabel">Edit Sub-Milestone</h4>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true" class="close_cross">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>Name *</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet.">
+                                                            <i class="icon-info-icon"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" placeholder="Version 1.0, Internal Beta 2 "
+                                                        class="input_field">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>Parent</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="The parent milestone for this milestone (for sub-milestones in milestones)."><i
+                                                                class="icon-info-icon"></i></span>
+                                                    </div>
+                                                    <input type="text" class="input_field"
+                                                        onclick="edit_searchList('block')">
+                                                </div>
+
+
+                                                <div class="search-list" id="list_search_edit">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="search-list-items">
+                                                                <span>Execution Mob - Sprint 2 </span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="search-list-items">
+                                                                <span>Execution Mob - Sprint 2 </span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="search-list-items">
+                                                                <span>Execution Mob - Sprint 2 </span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>Description</h6>
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="Lorem ipsum dolor sit amet.">
+                                                            <i class="icon-info-icon"></i>
+
+                                                        </span>
+                                                    </div>
+
+                                                    <textarea name="" id="" cols="2" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="date">
+                                                        <div class="text-info-icon">
+                                                            <h6>Start Date *</h6>
+                                                            <span data-toggle="tooltip" data-placement="top"
+                                                                title="Lorem ipsum dolor sit amet."><i
+                                                                    class="icon-info-icon"></i></span>
+                                                        </div>
+
+                                                        <input type="date" placeholder="Version 1.0, Internal Beta 2 "
+                                                            class="input_field">
+                                                    </div>
+                                                    <div class="date">
+                                                        <div class="text-info-icon">
+                                                            <h6>End Date *</h6>
+                                                            <span data-toggle="tooltip" data-placement="top"
+                                                                title="Lorem ipsum dolor sit amet."><i
+                                                                    class="icon-info-icon"></i></span>
+                                                        </div>
+
+                                                        <input type="date" placeholder="Version 1.0, Internal Beta 2 "
+                                                            class="input_field">
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox"
+                                                        id="inlineCheckbox4" value="option4">
+                                                    <label class="custom-control-label" for="inlineCheckbox4">This
+                                                        milestone
+                                                        is completed</label>
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-light-border"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-secondary-color">Add
+                                                    Milestone</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
+                            <!--Modal add-milestone content  End-->
 
                         </div>
-                        <!--Modal add-milestone content  End-->
-
                     </div>
-                </div>
-                <!--Add modal End-->
+                    <!--Add modal End-->
 
         </div>
     </div>
@@ -3919,11 +4110,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
@@ -3934,9 +4125,9 @@
                 label: 'My First Dataset',
                 data: [300, 50, 100],
                 backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)'
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
                 ],
                 hoverOffset: 4
             }]

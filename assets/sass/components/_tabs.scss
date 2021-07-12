@@ -4,36 +4,38 @@
     position: fixed;
     background-color: #f9f9f9;
     z-index: 99;
-    width: calc(100% - 17.625rem);
-    margin-left: -10px;
+    width: calc(100% - 21.5625rem);
+    margin-left: rem(-10);
     box-shadow: $shadow;
 
     @include mq('xl', max) {
-        width: calc(100% - 5.625rem);
+        width: calc(100% - 7.1875rem);
     }
 
     @include mq('sm', max) {
         width: 100%;
-        margin-left: 0px;
-        padding-left: 5px;
+        margin-left: rem(0);
+        padding-left: rem(5);
 
     }
 }
 
 .header-nav {
-    padding-left: 25px;
+    padding-left: rem(25);
+
     ul {
+        font-size: rem(18);
         display: flex;
         list-style: none;
         white-space: nowrap;
-        margin-bottom: 2px;
+        margin-bottom: rem(2);
 
         @include mq('sm', max) {
             white-space: nowrap;
         }
 
         @include mq('xl', max) {
-            overflow-x: scroll;
+            overflow-x: auto;
         }
 
         li {

@@ -5,19 +5,29 @@
 //main content
 
 .main-content {
-    margin-left: rem(280);
+    margin-left: rem(345);
     padding: rem(0) rem(10);
 
     @include mq('xl', max) {
-        margin-left: rem(90);
+        margin-left: rem(115);
     }
 
     @include mq('sm', max) {
-        margin-left: rem(0);
-        padding: rem(0) rem(0);
+        margin-left: 0px;
+        padding: 0px 0px;
     }
 }
 
+.edit-btn {
+    .dropdown-menu {
+        &.show {
+            width: rem(202);
+            height: rem(104);
+            transform: translate3d(rem(-165), rem(-115), rem(0)) !important;
+            padding: rem(12) rem(0);
+        }
+    }
+}
 
 //Edit Icon Content
 .dropdown-menu {
@@ -29,9 +39,11 @@
     border: none;
     box-shadow: $shadow3;
 
+
     a {
         color: black;
-        padding: 0.525rem 1.25rem;
+        padding: rem(10) rem(25);
+
         &:hover {
             background-color: $filter;
         }
@@ -41,21 +53,26 @@
         // }
 
         img {
-            width: rem(17);
-            margin-left: rem(-8);
-            margin-right: rem(5);
+            width: rem(20);
+            height: rem(20);
+            margin-right: rem(12);
         }
 
         &:last-child img {
-            width: rem(20);
-            margin-left: rem(-10);
-            margin-right: rem(5);
+            width: rem(21.1);
+            height: rem(20);
+            margin-right: rem(12);
+        }
+
+        span {
+            font-size: rem(12);
         }
     }
 }
 
 .edit-content {
     display: flex;
+    align-items: center;
     padding-top: rem(90);
 
     @include mq('sm', max) {
@@ -65,10 +82,12 @@
 }
 
 .logo-content img {
-    width: rem(100);
+    width: rem(109);
+    height: rem(109);
 
     @include mq('sm', max) {
-        width: rem(70);
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -77,14 +96,19 @@
     padding-left: rem(30);
     padding-right: rem(20);
 
+    h4 {
+        font-size: rem(32);
+    }
+
 
     p {
         font-size: rem(14);
+        margin-bottom: 0px;
     }
 
     @include mq('sm', max) {
         width: 100%;
-        padding: rem(10) rem(0) rem(0) rem(0);
+        padding: 10px 0px 0px 0px;
 
         p {
             display: block;
@@ -93,38 +117,43 @@
 }
 
 .edit-btn {
-    padding-top: rem(40);
+    //padding-top: rem(40);
     display: flex;
+    align-items: center;
 
     @include mq('sm', max) {
         position: absolute;
-        right: rem(0);
-        top: rem(96);
+        right: 0px;
+        top: 96px;
     }
 
     @include mq('xl', max) {
-        padding-top: rem(5);
+        padding-top: 5px;
     }
 
 }
 
 .edit_project button {
     @include icon-circle;
-    padding: rem(8) rem(10) rem(8) rem(10);
+    //padding: rem(8) rem(10) rem(8) rem(10);
     box-shadow: none;
+    width: rem(55);
+    height: rem(56);
 
     img {
         width: rem(20);
     }
 }
 
-.dropup, .dropdown {
+.dropup,
+.dropdown {
     .ellipsis {
         padding-top: rem(6);
         margin-left: rem(10);
 
         img {
-            width: rem(25);
+            width: rem(38);
+            height: rem(38);
         }
 
     }
@@ -145,9 +174,12 @@
 
 .chart-box {
     @include card-box;
+    padding: rem(20);
+    //height: rem(650);
+    height: 100%;
 
     @include mq('sm', max) {
-        margin-bottom: rem(40);
+        margin-bottom: 40px;
     }
 
     // h6 {
@@ -163,17 +195,28 @@
 
 .chart {
     canvas {
-        // height: rem(350);
+        //height: rem(520);
+    }
+
+    #myChart {
+        height: rem(485);
+    }
+
+    @include mq('xxxl', max) {
+        #myChart {
+            height: 375px;
+        }
     }
 }
 
 // Chart 
 .chart-heading {
     h6 {
-        font-size: rem(18);
+        font-size: rem(20);
         font-weight: bold;
         margin-bottom: rem(0);
     }
+
     span {
         font-size: rem(12);
         color: $grey-200;
@@ -187,22 +230,22 @@
 
     .tabs-filter {
         .nav-link {
-            font-size: rem(11);
+            font-size: rem(14);
         }
     }
 
     @include mq('xl', max) {
         justify-content: center;
-        margin-top: rem(10);
+        margin-top: 10px;
     }
 
     @include mq('xl', max) {
 
         .tabs-filter {
-            margin-bottom: rem(0);
+            margin-bottom: 0px;
 
             .nav-link {
-                font-size: rem(11);
+                font-size: 11px;
             }
         }
     }
@@ -216,7 +259,7 @@
         font-size: rem(16) !important;
 
         i {
-            font-size: rem(16);
+            font-size: rem(23);
         }
     }
 }
@@ -227,39 +270,51 @@
     display: flex;
     align-items: center;
     background-color: #f4f5f9;
-    border-radius: 17px;
+    //border-radius: 17px;
+    border-radius: 30px;
 
     input {
         background-color: #f4f5f9;
         outline: none;
-        padding: 11px 0px 11px 10px;
+        padding: rem(11) rem(0) rem(11) rem(10);
         border: none;
         border-radius: 17px;
-        font-size: 12px;
+        font-size: rem(12);
     }
 
     span {
 
         background-color: #f4f5f9;
-        padding: rem(5) rem(10);
-        border-radius: rem(20);
-        right: 0px;
-        font-size: 16px;
+        //padding: rem(5) rem(10);
+        padding: rem(16) rem(16);
+        // border-radius: rem(20);
+        border-radius: 26px;
+        right: rem(0);
+        width: rem(48);
+        height: rem(48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         i {
             color: $grey-500;
+            font-size: rem(22);
         }
     }
 
     .clear {
-        padding: 0px;
-        font-size: 18px;
+        padding: rem(0);
+        font-size: rem(20);
         color: $danger;
-        margin-right: 5px;
+        margin-right: rem(5);
     }
 }
 
 .report-row {
+    img {
+        //height: rem(660);
+    }
+
     .chart-date {
         display: flex;
         justify-content: flex-end;
@@ -268,23 +323,24 @@
 
             background-color: #f4f5f9;
             padding: rem(5) rem(10);
-            border-radius: rem(20);
+            border-radius: 20px;
 
             i {
                 color: $grey-500;
+                font-size: rem(22);
             }
         }
 
         .date-picker {
 
             input {
-                padding: 11px 0px 11px 10px;
-                font-size: 10px;
+                padding: rem(11) rem(0) rem(11) rem(10);
+                font-size: rem(12);
             }
 
             .clear {
-                padding: 0px;
-                font-size: 18px;
+                padding: rem(0);
+                font-size: rem(20);
             }
         }
     }
@@ -296,6 +352,7 @@
 
 .report-box {
 
+    height: 100%;
     // align-items: right;
     // img{
     //     width: rem(300);
@@ -312,12 +369,12 @@
     margin-bottom: rem(20);
 
     h6 {
-        font-size: rem(18);
+        font-size: rem(20);
         font-weight: bold;
     }
 
     span {
-        font-size: rem(12);
+        font-size: rem(14);
     }
 }
 
@@ -337,40 +394,54 @@
     }
 
     @include mq('sm', max) {
-        margin-bottom: rem(10);
+        margin-bottom: 10px;
     }
 
 }
 
 .icon-box {
+    i {
+        font-size: rem(27);
+        color: $secondary;
+
+    }
+
     img {
         width: rem(30);
     }
 
     h6 {
         padding-top: rem(10);
+        font-size: rem(24);
     }
 
     span {
         display: block;
+        font-size: rem(14);
     }
 
     @include mq('sm', max) {
-        margin-bottom: rem(15);
+        margin-bottom: 15px;
     }
 }
 
 .icon-box2 {
     display: inline-block;
 
+    i {
+        font-size: rem(32);
+        color: $secondary;
+        margin-right: rem(10);
+    }
+
     img {
-        width: rem(28);
+        width: rem(33);
         margin-top: rem(-40);
     }
 
     p {
         padding-top: rem(15);
-        font-size: rem(12);
+        font-size: rem(14);
     }
 }
 
@@ -392,24 +463,39 @@
 
 .milestone {
     @include card-box;
-    padding-top: 30px;
+    padding: rem(30);
+    height: 100%;
+    display: flex;
+    align-items: center;
 
     h6 {
-        font-size: 18px;
+        font-size: rem(20);
         font-weight: bold;
     }
 
     span {
-        font-size: 12px;
+        font-size: rem(12);
+    }
+
+    .boxes-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .milestone-head {
-        margin-bottom: 25px;
+        margin-bottom: rem(40);
     }
 
     .milestone-text-row {
 
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(20);
+
         .milestone-bar {
+            margin-right: rem(20);
+
             .complete-bar {
                 @include colored-bars($green-light);
             }
@@ -420,10 +506,12 @@
 
             .bar1 {
                 @include colored-bars($blue);
+
             }
 
             .bar2 {
                 @include colored-bars($sky-blue);
+
             }
 
             .bar3 {
@@ -449,22 +537,22 @@
                 }
 
                 i {
-                    margin-left: 20px;
+                    margin-left: rem(20);
                     font-weight: 600;
+                    width: rem(18);
+                    height: rem(18);
                 }
             }
 
             h6 {
-                font-size: 16px;
+                font-size: rem(18);
                 font-weight: bold;
             }
 
             span {
                 display: block;
-                margin-top: -7px;
-                margin-bottom: 28px;
                 font-weight: normal;
-                font-size: 12px;
+                font-size: rem(14);
                 color: rgba(0, 0, 0, 0.6)
             }
         }
@@ -473,11 +561,13 @@
 
 .milestone-box-complete {
     @include milestone-box($green-light);
-    padding: 25px 0px 0px 28px;
+    margin-bottom: rem(30);
+    margin-right: rem(30);
+
 
     span {
         i {
-            font-size: 102px;
+            font-size: rem(112);
             color: white;
             font-weight: 600;
         }
@@ -488,6 +578,7 @@
 
 .milestone-box-delay {
     @include milestone-box($danger-light-100);
+    margin-bottom: rem(30);
 
     .c100:after {
         background-color: $danger-light-100;
@@ -497,6 +588,8 @@
 
 .milestone-box1 {
     @include milestone-box($blue);
+    margin-right: rem(30);
+    margin-bottom: rem(30);
 
     .c100:after {
         background-color: $blue;
@@ -505,6 +598,8 @@
 
 .milestone-box2 {
     @include milestone-box($sky-blue);
+    margin-bottom: rem(30);
+
 
     .c100:after {
         background-color: $sky-blue;
@@ -513,7 +608,9 @@
 
 .milestone-box3 {
     @include milestone-box($sky-blue-100);
-    margin-bottom: 10px;
+    margin-right: rem(30);
+
+
 
     .c100:after {
         background-color: $sky-blue-100;
@@ -522,7 +619,6 @@
 
 .milestone-box4 {
     @include milestone-box(white);
-    margin-bottom: 0px;
     border: 2px solid $primary-color-blue;
 
     .c100 {
@@ -586,7 +682,7 @@
     }
 
     position: relative;
-    font-size: 110px;
+    font-size: rem(120);
     width: 1em;
     height: 1em;
     border-radius: 50%;
@@ -598,11 +694,11 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        left: -50px;
-        top: -56px;
+        left: rem(-60);
+        top: rem(-67);
         width: 5em;
         line-height: 5em;
-        font-size: rem(42);
+        font-size: rem(48);
         font-weight: 600;
         color: rgb(255, 255, 255);
         display: block;
@@ -611,13 +707,13 @@
         transition: all 0.2s ease-out;
 
         @include mq('xl', max) {
-            left: -44px;
-            top: -50px;
+            // left: -44px;
+            // top: -50px;
         }
 
         @include mq('sm', max) {
-            left: -38px;
-            top: -46px;
+            // left: -38px;
+            // top: -46px;
         }
     }
 
@@ -625,11 +721,11 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        left: 24px;
-        top: 46px;
+        left: rem(25);
+        top: rem(47);
         width: 5em;
         line-height: 5em;
-        font-size: rem(12);
+        font-size: rem(14);
         font-weight: 600;
         color: white;
         display: block;
@@ -638,8 +734,8 @@
         transition: all 0.2s ease-out;
 
         @include mq('sm', max) {
-            left: 28px;
-            top: 48px;
+            left: rem(28);
+            top: rem(48);
         }
     }
 
@@ -763,7 +859,7 @@
 
     .tab-content {
         .tab-pane {
-            height: rem(500);
+            height: rem(600);
             overflow-y: auto;
             overflow-x: hidden;
         }
@@ -791,8 +887,9 @@
 
     border: rem(1) solid $primary;
     background-color: $primary;
-    width: rem(260);
-    border-radius: rem(20);
+    width: rem(350);
+    border-radius: 30px;
+    height: rem(48);
 
     a {
         color: black;
@@ -810,11 +907,13 @@
 
     button {
         color: black;
-        border-radius: rem(20);
+        border-radius: 30px;
         padding-left: rem(20);
         padding-right: rem(20);
-        font-size: rem(16);
+        font-size: rem(20);
         font-weight: bold;
+        width: rem(184);
+        height: rem(48);
     }
 
     .btn-tab .active a {
@@ -824,6 +923,7 @@
 
     .btn2 {
         float: right;
+        width: rem(155);
     }
 }
 
@@ -843,9 +943,12 @@
 
         background-color: white;
         color: $grey-light;
-        border-radius: rem(20) rem(20) rem(0) rem(0);
-        font-size: rem(14);
+        border-radius: rem(30) rem(30) rem(0) rem(0);
+        font-size: rem(18);
         font-weight: bold;
+        display: flex;
+        align-items: center;
+        padding: rem(11) rem(24) rem(8) rem(24);
 
         &.active {
             background-color: $filter;
@@ -885,7 +988,7 @@
     margin-bottom: rem(50);
 
     span {
-        font-size: rem(18);
+        font-size: rem(20);
         font-weight: bold;
     }
 }
@@ -898,8 +1001,8 @@
 
     @include mq('sm', max) {
         float: right;
-        padding-bottom: rem(0);
-        padding-right: rem(8);
+        padding-bottom: 0px;
+        padding-right: 8px;
     }
 }
 
@@ -912,14 +1015,14 @@
     }
 
     @include mq('sm', max) {
-        padding: rem(0) rem(0) rem(0) rem(0);
-        font-size: rem(10);
+        padding: 0px 0px 0px 0px;
+        font-size: 10px;
         display: inline-block;
-        padding-right: rem(5);
-        margin-top: rem(6);
+        padding-right: 5px;
+        margin-top: 6px;
 
         p {
-            font-size: rem(8);
+            font-size: 8px;
 
         }
     }
@@ -937,7 +1040,7 @@
 
 
             @include mq('sm', max) {
-                width: rem(35);
+                width: 35px;
             }
         }
 
@@ -946,9 +1049,9 @@
 
     @include mq('sm', max) {
         display: inline-block;
-        padding-right: rem(25);
-        margin-top: rem(-10);
-        padding-left: rem(0);
+        padding-right: 25px;
+        margin-top: -10px;
+        padding-left: 0px;
     }
 }
 
@@ -965,12 +1068,14 @@
 
     button {
         color: white;
-        border-radius: rem(20);
+        border-radius: 20px;
         padding-left: rem(35);
         padding-right: rem(35);
-        font-size: rem(14);
+        font-size: rem(16);
         font-weight: 500;
         margin-right: rem(15);
+        height: rem(49);
+        min-width: rem(151);
     }
 
     .icon-user-text {
@@ -985,25 +1090,25 @@
     }
 
     .text-user {
-        font-size: rem(14);
+        font-size: rem(16);
         padding-left: rem(10);
 
         p {
-            @include size-color(rem(10), $grey-light);
+            @include size-color(rem(14), $grey-light);
             color: rgba(0, 0, 0, 0.8);
             padding-top: rem(5);
             margin: rem(0);
         }
 
         @include mq('sm', max) {
-            padding: rem(0) rem(0) rem(0) rem(0);
-            font-size: rem(10);
+            padding: 0px 0px 0px 0px;
+            font-size: 10px;
             display: inline-block;
-            padding-right: rem(5);
-            margin-top: rem(6);
+            padding-right: 5px;
+            margin-top: 6px;
 
             p {
-                font-size: rem(8);
+                font-size: 8px;
             }
         }
     }
@@ -1019,19 +1124,19 @@
             align-items: center;
 
             img {
-                width: rem(40);
-                height: rem(40);
+                width: rem(50.1);
+                height: rem(49);
             }
         }
     }
 
     .tested-time {
         span {
-            font-size: rem(14);
+            font-size: rem(16);
         }
 
         p {
-            font-size: rem(10);
+            font-size: rem(14);
             margin-top: rem(-5);
             color: rgba(0, 0, 0, 0.8);
             margin: rem(0);
@@ -1043,40 +1148,40 @@
         align-items: center;
 
         span {
-            font-size: rem(14);
+            font-size: rem(16);
         }
     }
 
     @include mq('lg', max) {
         .btn-text {
             span {
-                font-size: rem(12);
+                font-size: 12px;
             }
         }
 
         button {
-            font-size: rem(12);
+            font-size: 12px;
         }
 
         .tested-time {
             span {
-                font-size: rem(12);
+                font-size: 12px;
             }
 
             p {
-                font-size: rem(10);
+                font-size: 10px;
             }
         }
 
         .text-user {
-            font-size: rem(12);
+            font-size: 12px;
         }
     }
 
     @include mq('sm', max) {
         .btn-text {
             flex-wrap: wrap;
-            margin-bottom: rem(10);
+            margin-bottom: 10px;
 
             button {
                 margin-bottom: 10px;
@@ -1084,15 +1189,15 @@
         }
 
         .icon-user-text {
-            margin-bottom: rem(10);
+            margin-bottom: 10px;
         }
 
         .tested-time {
-            margin-bottom: rem(10);
+            margin-bottom: 10px;
         }
 
         .icon-user {
-            padding-right: rem(10);
+            padding-right: 10px;
         }
     }
 }
@@ -1134,18 +1239,14 @@
             border-radius: rem(20);
             padding-left: rem(17);
             padding-right: rem(17);
-            font-size: rem(12);
+            font-size: rem(14);
             font-weight: 500;
             margin-right: rem(15);
         }
 
         .tested-time {
-            span {
-                font-size: rem(14);
-            }
 
             p {
-                font-size: rem(10);
                 margin-top: rem(-5);
                 color: rgba(0, 0, 0, 0.8);
                 margin: rem(0);

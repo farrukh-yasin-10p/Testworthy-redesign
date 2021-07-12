@@ -35,6 +35,7 @@ $success-light : #24cc09;
 $success-200 : #2bc155;
 $green-light :#92dc82;
 $danger:#e71e1e;
+$danger-dark:#e71e1e80;
 $danger-light : #feebeb;
 $scroll-color : #e4e4e4;
 $grey:rgba(255, 255, 255, 0.22);
@@ -76,7 +77,8 @@ $grid-breakpoints: (xs: 0,
   lg: 992px,
   ml: 1100px,
   xl: 1200px,
-  xxl:1368px);
+  xxl:1368px,
+  xxxl:1540);
 
 // ===========================================
 // -Variables end

@@ -1,10 +1,10 @@
 .owl-carousel .owl-item img {
-    width: rem(44);
+    //width: rem(44);
     margin: 0 auto;
 
     @include mq('sm', max) {
-        width: rem(40);
-        height: rem(40);
+        // width: rem(40);
+        // height: rem(40);
     }
 }
 
@@ -29,7 +29,7 @@
     box-sizing: border-box;
 
     h6 {
-        font-size: rem(18);
+        font-size: rem(20);
         font-weight: bold;
     }
 
@@ -43,6 +43,11 @@
         align-items: center;
         text-align: center;
 
+        div {
+            h6 {
+                font-size: rem(24);
+            }
+        }
 
         a {
             color: $secondary;
@@ -54,13 +59,14 @@
         }
 
         img {
-            width: rem(22);
+            width: rem(25);
+            height: rem(24);
         }
 
         span {
             margin-top: rem(-5);
             display: block;
-            font-size: rem(12);
+            font-size: rem(14);
 
         }
 
@@ -70,12 +76,12 @@
 
         @include mq('md', max) {
             flex-wrap: wrap;
-            padding: 0 rem(15);
+            padding: 0 15px;
         }
     }
 
     @include mq('xl', max) {
-        margin-top: rem(40);
+        margin-top: 40px;
     }
 
 }
@@ -89,6 +95,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: rem(131);
+    min-width: rem(124);
 
     // .inactive-chkbox {
     //     display: none
@@ -96,7 +104,28 @@
 
     .custom-checkbox {
         display: none;
+
+        input {
+            left: rem(44);
+            top: rem(2);
+        }
+
+        .custom-control-label {
+
+            &::before {
+                width: rem(20);
+                height: rem(20);
+            }
+
+            &::after {
+                width: rem(20);
+                height: rem(20);
+            }
+
+        }
     }
+
+
 
     .active-chkbox {
         display: block !important;
@@ -115,9 +144,8 @@
 
         &:last-child {
             margin-top: rem(2);
-            font-size: rem(10);
             display: block;
-            font-size: rem(10);
+            font-size: rem(12);
 
         }
     }
@@ -139,16 +167,16 @@
         }
 
         @include mq('sm', max) {
-            height: rem(10);
-            width: rem(10);
-            border-radius: rem(20);
-            bottom: rem(4);
-            right: rem(1);
+            height: 10px;
+            width: 10px;
+            border-radius: 20px;
+            bottom: 4px;
+            right: 1px;
         }
     }
 
     h6 {
-        font-size: rem(14);
+        font-size: rem(16);
         margin: rem(0);
         padding-top: rem(5);
     }
@@ -159,8 +187,10 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    width: rem(44);
-    height: rem(44);
+    // width: rem(44);
+    // height: rem(44);
+    width: rem(65.2);
+    height: rem(60);
     //align-items: center;
 }
 
@@ -206,11 +236,13 @@
         position: absolute;
         right: rem(0);
         color: white;
-        font-size: rem(12);
+        font-size: rem(14);
         padding: rem(15) rem(28);
         background-color: $secondary;
         border-radius: rem(30);
         margin-top: rem(48);
+        width: rem(229.4);
+        height: rem(56);
     }
 
     button:hover {
@@ -219,19 +251,19 @@
 
     @include mq('sm', max) {
         input {
-            padding: rem(10) rem(150) rem(10) rem(19);
+            padding: 10px 150px 10px 19px;
         }
 
         button {
-            font-size: rem(10);
-            padding: rem(10) rem(16);
+            font-size: 10px;
+            padding: 10px 16px;
         }
 
         img {
-            width: rem(16);
-            height: rem(16);
-            right: rem(131);
-            top: rem(11);
+            width: 16px;
+            height: 16px;
+            right: 131px;
+            top: 11px;
         }
     }
 }

@@ -8,16 +8,26 @@
     &.custom-checkbox {
         input {
             z-index: 1;
+            width: rem(20);
+            height: rem(20);
+            top: 4px;
         }
 
         .custom-control-label {
+            padding-top: rem(2);
+
             &::before {
                 border-radius: rem(2);
                 background-color: white;
                 border: rem(2) solid #1eaae7;
+                width: rem(20);
+                height: rem(20);
             }
 
-            padding-top: rem(2);
+            &::after {
+                width: rem(20);
+                height: rem(20);
+            }
         }
 
         .custom-control-input:checked~.custom-control-label::after {
@@ -27,7 +37,7 @@
     }
 
     label {
-        font-size: rem(14);
+        font-size: rem(16);
         font-weight: 600;
         padding-left: rem(15);
     }
@@ -35,15 +45,12 @@
 
 .owl-carousel {
     .custom-control {
-        margin-left: -35px;
-        margin-top: -8px;
-        margin-bottom: -10px;
+        margin-left: rem(-58);
+        margin-top: rem(-8);
+        margin-bottom: rem(-10);
         display: block;
-        min-height: 0px;
+        min-height: rem(0);
 
-        .custom-control-input {
-            left: 20px;
-        }
     }
 
 }

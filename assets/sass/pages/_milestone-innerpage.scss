@@ -1,25 +1,31 @@
 .milestone-inner-section {
-    padding-top: 120px;
+    padding-top: rem(120);
 }
 
 .page-option {
-    padding: 20px 25px 16px 25px;
+    padding: rem(20) rem(25) rem(16) rem(25);
     border-top: 1px solid #ebebeb;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     a {
         color: $grey-300;
-        &:hover{
+
+        &:hover {
             color: black;
         }
     }
+
     i {
-        font-size: 23px;
+        font-size: rem(30);
     }
 }
 
 .sub-milestone-list-card {
     @include card-box;
-    padding: 28px 28px;
+    padding: rem(28) rem(28);
 
     .sort-by {
         padding-top: 0px;
@@ -31,15 +37,24 @@
                 margin-right: 0px;
                 margin-left: 0px;
             }
+
+            .due_date_col {
+                margin-right: rem(10);
+            }
+
+            .progress_text {
+                margin-left: 0px;
+            }
         }
 
         .select-row-list {
             &.without-icon {
                 .custom-checkbox label::before {
-                    top: 6px;
+                    top: rem(6);
                 }
+
                 .custom-checkbox label::after {
-                    top: 6px;
+                    top: rem(6);
                 }
             }
 
@@ -47,12 +62,12 @@
                 box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.05);
 
                 .test-runs-text {
-                    font-size: 12px;
-                    min-width: 75px;
+                    font-size: rem(14);
+                    min-width: rem(78);
                 }
 
                 .progress-icon {
-                    min-width: 75px;
+                    min-width: rem(78);
                     text-align: center;
                     margin-left: 0px;
                     display: flex;
@@ -64,20 +79,20 @@
             .creation-date {
                 display: grid;
                 text-align: center;
-                min-width: 115px;
+                min-width: rem(115);
             }
 
             .due-date {
                 display: grid;
                 text-align: center;
-                min-width: 120px;
+                min-width: rem(120);
             }
 
             .hover-row-edit {
-                min-width: 120px;
+                min-width: rem(120);
 
                 span {
-                    margin-left: 15px;
+                    margin-left: rem(15);
 
                     &:first-child {
                         margin-left: 0px;
@@ -89,16 +104,65 @@
         }
     }
 
+    @include mq('xxl', max) {
+        .content-row {
+            .select-row-list {
+                .creation-date {
+                    // Will be remain in px
+                    min-width: 70px;
+                }
+            }
+
+            .select-row {
+                .progress_text {
+                    margin-left: 0px;
+                }
+
+                .due_date_col {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    @include mq('lg', max) {
+        .content-row {
+            .select-row-list {
+                .creation-date {
+                    text-align: left;
+                    white-space: normal;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+
+                .due-date {
+                    text-align: left;
+                }
+
+                li {
+                    .progress-icon {
+                        justify-content: left;
+
+                    }
+                }
+            }
+        }
+    }
 }
 
+
+
 .status-count {
-    font-size: rem(10);
+    font-size: rem(12);
+    display: flex;
+    align-items: center;
 
 }
 
 .report-table-container {
     overflow-y: auto;
 }
+
 .report-table {
     width: 100%;
 
@@ -109,16 +173,19 @@
         white-space: nowrap;
         padding-bottom: rem(5);
     }
+
     thead {
         border-bottom: rem(1) solid $grey-light-200;
         padding-bottom: rem(10);
     }
+
     td {
         font-size: rem(14);
         white-space: nowrap;
         padding: rem(10) 0;
         padding-right: rem(5);
     }
+
     .report-name {
         font-size: rem(16);
         display: block;
@@ -126,12 +193,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: rem(140);
+
         i {
             font-size: rem(30);
             color: $grey-200;
             transform: scaleX(-1);
             margin-right: rem(10);
         }
+
         span {
             vertical-align: super;
         }
@@ -143,6 +212,15 @@
         padding-top: rem(15);
         padding-bottom: rem(15);
     }
+
+    @include mq('xl', max) {
+        .btn {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 10px;
+        }
+    }
+
 }
 
 .milestone-summary {
@@ -152,13 +230,20 @@
 .milestone-chart {
     width: 100%;
 
+    #donutChart {
+        width: rem(188);
+        height: rem(188);
+    }
+
     .chart-heading {
         h1 {
             font-size: rem(40);
         }
     }
+
     @include mq('xxl', min) {
         width: 90%;
+
         .chart-heading {
             h1 {
                 font-size: rem(55);
@@ -184,29 +269,40 @@
 
 .sub-milestones-sort {
     height: rem(56);
-    border-radius: rem(30);
-    width: rem(354);
+    border-radius: 30px;
+    min-width: rem(435);
+
     .btn {
-        height: 100%;
-        border-radius: rem(30);
+        min-width: rem(205);
+        border-radius: 30px;
+        height: rem(56);
+    }
+
+    .btn2 {
+        min-width: rem(222);
+
     }
 }
 
 .dropmenu {
     display: inline-block;
+
     .fa-angle-down {
-        font-size: 13px;
+        font-size: rem(13);
     }
+
     .dropdown-menu {
         margin-right: 0;
-       
+
     }
+
     i {
         color: $grey-300;
     }
-    &:hover{
+
+    &:hover {
         i {
-            color: black ;
+            color: black;
         }
     }
 }
@@ -216,16 +312,19 @@
     background-repeat: no-repeat;
     background-position: center rem(20);
 }
+
 .bg-late {
     background-image: url(../images/late.svg);
     background-repeat: no-repeat;
     background-position: center rem(20);
 }
+
 .bg-done {
     background-image: url(../images/done.svg);
     background-repeat: no-repeat;
     background-position: center rem(20);
 }
+
 .gridboxes__days {
     height: rem(130);
 }

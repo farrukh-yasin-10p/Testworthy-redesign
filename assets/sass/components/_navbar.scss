@@ -7,33 +7,65 @@
     display: none;
 
     &:checked+.sidebar {
-        width: rem(90);
+        width: rem(115);
+
+
+        .sidebar-menu {
+            li {
+                padding-left: 0rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
         .sidebar-menu a {
             padding-left: rem(0);
+
+            span {
+                &:first-child {
+                    margin-right: 0px;
+                }
+            }
         }
 
         .sidebar-hamburger {
-            padding-left: rem(36);
+            padding-left: rem(46);
         }
 
         li a span:last-child {
             display: none;
         }
 
+
+
         @include mq('xl', max) {
             display: block;
-            width: rem(280);
+            width: rem(345);
             padding-top: rem(0);
             overflow-y: auto;
 
+
+            .sidebar-menu {
+                li {
+                    padding-left: rem(48);
+                    display: block;
+                }
+            }
+
             .sidebar-menu a {
-                padding-left: rem(10);
+                //padding-left: rem(10);
+
+                span {
+                    &:first-child {
+                        margin-right: rem(20);
+                    }
+                }
             }
 
             .sidebar-hamburger {
                 display: block;
-                padding-left: rem(42);
+                padding-left: rem(80);
             }
 
             li a span:last-child {
@@ -51,14 +83,22 @@
     }
 
     &:checked~.main-content {
-        margin-left: rem(90);
+        margin-left: rem(115);
 
         .page-nav {
-            width: calc(100% - 5.625rem);
+            width: calc(100% - 7.1875rem);
+        }
+
+        @include mq('xxxl', max) {
+            .chart {
+                #myChart {
+                    height: 445px !important;
+                }
+            }
         }
 
         @include mq('sm', max) {
-            margin-left: rem(0);
+            margin-left: 0px;
         }
     }
 

@@ -45,6 +45,10 @@
             }
         }
 
+        .search-milestone-width {
+            width: 34em;
+        }
+
 
         .search-input {
             position: relative;
@@ -105,6 +109,10 @@
         align-items: center;
         padding-right: rem(5);
         margin-bottom: rem(15);
+    }
+
+    .sorting-widht {
+        width: 0em;
     }
 
     .sort-by-tabs {
@@ -629,7 +637,6 @@
 .gridboxes {
 
     &__boxes {
-
         flex-grow: 0;
         margin: rem(10) rem(5);
         padding: rem(15) rem(16) rem(18) rem(21);
@@ -676,6 +683,19 @@
                     font-size: rem(20);
                 }
             }
+
+            .icon-accordion-down {
+                font-size: 24px;
+            }
+        }
+
+        .icon-clipboard {
+            width: 80px;
+            height: 66px;
+            font-size: 55px;
+            color: #1EAAE7;
+            position: relative;
+            top: 2px;
         }
 
         .mscases {
@@ -685,6 +705,14 @@
             .col-md-3 {
                 padding-right: rem(5);
                 padding-left: rem(5);
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
             }
 
             &__cases {
@@ -956,106 +984,122 @@
 
 /* checkboxes */
 
-
-.checkbox {
-    flex-grow: 0;
-    padding: rem(20) rem(16) rem(15) rem(20);
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
-    background-color: #f5f4f4;
+.collape-section {
     position: relative;
-    top: -32px;
-    z-index: 9;
-    width: 97%;
-    left: 13px;
+    top: -62px;
 
-    .custom-scrollbar-css {
-        overflow-y: scroll;
-        height: rem(65);
-    }
+    .collape-section-inner {
+        flex-grow: 0;
+        padding: 60px 16px 15px 28px;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+        background-color: #f5f4f4;
+        z-index: 0;
+        width: 100%;
 
-    label {
 
-        cursor: pointer;
-        display: block;
-        position: relative;
-        padding-right: rem(40);
-        margin-left: rem(20);
+        // top: -54px;
+        // width: 96%;
+        // left: 9px;
 
-        &:before {
-            content: "";
-            width: rem(24);
-            height: rem(24);
-            position: absolute;
-            left: 0;
-        }
+        .custom-scrollbar-css {
+            overflow-y: scroll;
 
-        &:before {
-            background: url('/assets/images/inactive.png') left center no-repeat;
-            margin-left: 95%;
-            background-size: rem(18);
-            background-position: 0 rem(2);
-        }
+            // height: 120px;
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
 
-        h5 {
-            font-size: rem(13);
-            color: #626263;
-            margin-top: rem(5);
-        }
+            &::-webkit-scrollbar-track {
+                box-shadow: none;
+            }
 
-        .progress {
-            height: rem(8);
-            margin-top: rem(10);
-        }
-
-        .status {
-            font-size: rem(13);
-            color: #626263;
-            margin-top: rem(2);
-        }
-
-        .completeico {
-            margin-left: rem(20);
-            color: #ccc;
-        }
-
-        &:hover {
-            .completeico {
-                margin-left: rem(20);
-                color: #949494;
+            &::-webkit-scrollbar-thumb {
+                background-color: #c4c4c4;
+                border: 0;
             }
         }
 
-        @include mq-only("xs", "ml") {
+        label {
+
+            cursor: pointer;
+            display: block;
+            position: relative;
+            padding-right: 70px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+
+            &:before {
+                content: "";
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                left: 0;
+                background: url('/assets/images/check-circle.png') left center no-repeat;
+                opacity: 0.4;
+                margin-left: 93%;
+                background-size: 95%;
+                background-position: 0 2px;
+            }
+
+
             h5 {
-                font-size: 9px;
+                font-size: 14px;
+                color: #626263;
+                margin-top: 5px;
+            }
+
+            .progress {
+                height: 8px;
+                margin-top: 10px;
             }
 
             .status {
-                font-size: 9px;
+                font-size: 14px;
+                color: #626263;
+                margin-top: 2px;
+            }
+
+            .completeico {
+                margin-left: 20px;
+                color: #ccc;
+            }
+
+            &:hover {
+                .completeico {
+                    margin-left: 20px;
+                    color: #949494;
+                }
+            }
+
+            @include mq-only("xs", "ml") {
+                h5 {
+                    font-size: 9px;
+                }
+
+                .status {
+                    font-size: 9px;
+                }
             }
         }
-    }
 
-    input[type=checkbox] {
-        display: none;
+        input[type=checkbox] {
+            display: none;
 
-        &:checked {
-            + {
-                label {
-                    &:before {
-                        background: url('/assets/images/check-circle.png') left center no-repeat;
-                        margin-left: 95%;
-                        background-size: 18px;
-                        background-position: 0 2px;
+            &:checked {
+                + {
+                    label {
+                        &:before {
+                            // background: url('/assets/images/check-circle.png') left center no-repeat;
+                            opacity: 1;
+                        }
                     }
                 }
             }
         }
+
     }
-
 }
-
 
 /* Custom Scrollbar using CSS */
 .custom-scrollbar-css {

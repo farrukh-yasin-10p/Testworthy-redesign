@@ -298,8 +298,8 @@
                       }
 
                     .edit-icon {
-                        position:relative;
-                        left:5px;
+                        position: absolute;
+                        right: 20%;
                         display: none;
                         a{
                             color: #dfe1e6;
@@ -317,10 +317,8 @@
                                 color: #000;
                             }
                         }
-                    }
-
-                    
-                }
+                    } 
+                } 
  
                 .checks{
                     padding-left:10px;
@@ -328,9 +326,7 @@
   
             }
             
-        }
- 
-
+        }  
         .checks{
             width:38px;
         }
@@ -398,6 +394,9 @@
 }
 
 
+.bs-popover-bottom {
+    font-size: 12px;
+}
 
 form{
 

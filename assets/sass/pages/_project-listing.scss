@@ -83,12 +83,13 @@
                         .unassigned{
                             font-size: 25px;
                             color: #1eaae7; 
+                            min-height:50px;
+                            margin:5px 0;
                         }
 
                         .avatars {
                             text-align: center; 
-                            min-width: 300px;
-                            margin-top: 10px;
+                            min-width: 300px; 
                             position: relative;
                 
                             .avatar {
@@ -269,4 +270,6 @@
         }
     }
 }
+
+ 
  

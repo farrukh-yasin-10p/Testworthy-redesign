@@ -676,7 +676,15 @@
                 align-items: flex-end;
                 justify-content: flex-end;
                 padding-right: 0px;
-                cursor: pointer;
+                > span {
+                    display: flex;
+                    transform: rotate(180deg);
+                    cursor: pointer;
+                    transition: 0.3s;
+                    &[aria-expanded="true"] {
+                        transform: rotate(0deg);
+                    }
+                }
             }
             .icon-accordion-down {
                 font-size: 24px;
@@ -717,19 +725,19 @@
                 padding: 8px 5px;
 
                 &--box1 {
-                    @include case_box(#E71E1E, #ed8a8a);
+                    @include case_box($danger, $danger-light-100);
                 }
 
                 &--box2 {
-                    @include case_box(#f3c214, #ebd480);
+                    @include case_box($warning, $warning-light);
                 }
 
                 &--box3 {
-                    @include case_box(#1eaae7, #88ceeb);
+                    @include case_box($sky-blue-200, lighten($sky-blue-100, 10));
                 }
 
                 &--box4 {
-                    @include case_box(#1c4e63, #86a1ab);
+                    @include case_box(darken($sky-blue-200, 30), $navy-light);
                 }
 
 
@@ -831,6 +839,7 @@
                 font-size: 14px;
                 font-weight: bold;
                 color: #1EAAE7;
+                text-decoration: underline;
             }
 
             label {
@@ -1040,6 +1049,7 @@
                 font-size: 14px;
                 color: #626263;
                 margin-top: 2px;
+                white-space: nowrap;
             }
 
             .completeico {

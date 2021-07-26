@@ -26,7 +26,7 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <link rel="stylesheet" href="./assets/dist/style.css">
     <title>Testworthy</title>
@@ -135,7 +135,7 @@
                     <div class="row">
                         <div class="col-lg-6 mb-3">
                             <div>
-                                <h4 class="font-weight-bold">Test Plan demo</h4>
+                                <h4 class="font-weight-bold">Test Plans</h4>
                             </div>
                             <div class="sort-by-text">
                                 <span>3 open, 20 completed milestones in this project Amet minim mollit non deserunt
@@ -162,11 +162,11 @@
                                     <input type="radio" name="complete" id=""><label for="complete">Completed</label>
                                     <input type="radio" name="unassigned" id=""><label
                                         for="unassigned">Unassigned</label>
-                                    <div class="date-round">
-                                        <span class="datepicker">
-                                            <input type="hidden" id="feRouteDate" />
-                                            <img class="ic-date" src="./assets/images/ic_date.png" alt="date-icon">
-
+                                    <div class="date-picker">
+                                        <input type="text" name="single-date" value="10/24/1984" hidden="" id="clear_input3">
+                                        <span><a href="javascript: void(0)" hidden id="clear_cross2" class="clear"
+                                            onclick="clear_date2(this)">×</a><a href="javascript: void(0)"
+                                            id="single-date"><i class="icon-date-icon"></i></a>
                                         </span>
                                     </div>
                                 </div>
@@ -568,9 +568,7 @@
 
                                         </div>
                                     </div>
-
                                 </li>
-
                                 <li class="unassigned-li">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-lg-4">
@@ -641,31 +639,27 @@
                         aria-labelledby="pills-grid-tab">
 
 
-                        <h1>Grid </h1>
                         <div class="row text-plan-cards">
-
-                        
-
                                 <div class="col-md-6">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
                                             <div class="dropdown">
                                                 <button class="btn shadow-none px-0" type="button"
                                                     id="dropdownMenuButton" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
+                                                    aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
                                                     <i class="icon-ic_option"></i></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#edit-name"><i class="icon-ic_edit"></i>
-                                                        <span>Edit Milestone</span></a>
+                                                        <span>Edit Test plan</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-completeModal"><i
                                                             class="icon-complete-tick"></i>
                                                         <span>Mark as Complete</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                                                        <span>Delete Milestone</span></a>
+                                                        <span>Delete Test plan</span></a>
 
                                                 </div>
                                             </div>
@@ -705,7 +699,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="passed">
+                                                <div class="passed is-gridview">
                                                     <span>65%</span>
                                                     <span>Passed</span>
                                                 </div>
@@ -725,7 +719,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Failed</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -741,7 +735,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Retest</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -757,7 +751,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Partial</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -765,7 +759,7 @@
                                                     </div>
 
                                                     <div class="col-md-3">
-                                                        <div class="mscases__cases mscases__cases--box3">
+                                                        <div class="mscases__cases mscases__cases--box4">
                                                             <div class="c100 p21">
                                                                 <span>21%</span>
                                                                 <div class="slice">
@@ -916,20 +910,20 @@
                                             <div class="dropdown">
                                                 <button class="btn shadow-none px-0" type="button"
                                                     id="dropdownMenuButton" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
+                                                    aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
                                                     <i class="icon-ic_option"></i></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#edit-milestone"><i class="icon-ic_edit"></i>
-                                                        <span>Edit Milestone</span></a>
+                                                        <span>Edit Test plan</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-completeModal"><i
                                                             class="icon-complete-tick"></i>
                                                         <span>Mark as Complete</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                                                        <span>Delete Milestone</span></a>
+                                                        <span>Delete Test plan</span></a>
 
                                                 </div>
                                             </div>
@@ -969,7 +963,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="passed">
+                                                <div class="passed is-gridview">
                                                     <span>65%</span>
                                                     <span>Passed</span>
                                                 </div>
@@ -989,7 +983,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Failed</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1005,7 +999,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Retest</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1021,7 +1015,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Partial</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1029,7 +1023,7 @@
                                                     </div>
 
                                                     <div class="col-md-3">
-                                                        <div class="mscases__cases mscases__cases--box3">
+                                                        <div class="mscases__cases mscases__cases--box4">
                                                             <div class="c100 p21">
                                                                 <span>21%</span>
                                                                 <div class="slice">
@@ -1183,20 +1177,20 @@
                                             <div class="dropdown">
                                                 <button class="btn shadow-none  px-0" type="button"
                                                     id="dropdownMenuButton" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
+                                                    aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
                                                     <i class="icon-ic_option"></i></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#edit-milestone"><i class="icon-ic_edit"></i>
-                                                        <span>Edit Milestone</span></a>
+                                                        <span>Edit Test plan</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-completeModal"><i
                                                             class="icon-complete-tick"></i>
                                                         <span>Mark as Complete</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                                                        <span>Delete Milestone</span></a>
+                                                        <span>Delete Test plan</span></a>
 
                                                 </div>
                                             </div>
@@ -1236,7 +1230,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="passed">
+                                                <div class="passed is-gridview">
                                                     <span>65%</span>
                                                     <span>Passed</span>
                                                 </div>
@@ -1256,7 +1250,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Failed</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1272,7 +1266,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Retest</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1288,7 +1282,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Partial</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1296,7 +1290,7 @@
                                                     </div>
 
                                                     <div class="col-md-3">
-                                                        <div class="mscases__cases mscases__cases--box3">
+                                                        <div class="mscases__cases mscases__cases--box4">
                                                             <div class="c100 p21">
                                                                 <span>21%</span>
                                                                 <div class="slice">
@@ -1447,20 +1441,20 @@
                                             <div class="dropdown">
                                                 <button class="btn shadow-none px-0" type="button"
                                                     id="dropdownMenuButton" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
+                                                    aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
                                                     <i class="icon-ic_option"></i></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#edit-milestone"><i class="icon-ic_edit"></i>
-                                                        <span>Edit Milestone</span></a>
+                                                        <span>Edit Test plan</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-completeModal"><i
                                                             class="icon-complete-tick"></i>
                                                         <span>Mark as Complete</span></a>
                                                     <a class="dropdown-item" href="#" data-toggle="modal"
                                                         data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                                                        <span>Delete Milestone</span></a>
+                                                        <span>Delete Test plan</span></a>
 
                                                 </div>
                                             </div>
@@ -1500,7 +1494,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="passed">
+                                                <div class="passed is-gridview">
                                                     <span>65%</span>
                                                     <span>Passed</span>
                                                 </div>
@@ -1520,7 +1514,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Failed</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1536,7 +1530,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Retest</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1552,7 +1546,7 @@
                                                                     <div class="fill"></div>
                                                                 </div>
                                                                 <div class="cases-rate">
-                                                                    <h5>Blocked</h5>
+                                                                    <h5>Partial</h5>
                                                                     <h6>6 Cases</h6>
                                                                 </div>
                                                             </div>
@@ -1560,7 +1554,7 @@
                                                     </div>
 
                                                     <div class="col-md-3">
-                                                        <div class="mscases__cases mscases__cases--box3">
+                                                        <div class="mscases__cases mscases__cases--box4">
                                                             <div class="c100 p21">
                                                                 <span>21%</span>
                                                                 <div class="slice">
@@ -1767,7 +1761,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-secondary-color">Delete Milestone</button>
+                                <button type="button" class="btn btn-secondary-color">Delete Test plan</button>
                             </div>
                         </div>
                         <!-- Modal delete project content End-->
@@ -2216,6 +2210,8 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

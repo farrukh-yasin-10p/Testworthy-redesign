@@ -48,11 +48,12 @@
 
 
     img {
-      width: rem(25);
+      width: rem(32);
+      height: rem(32);
     }
 
     span {
-      font-size: rem(10);
+      font-size: rem(12);
     }
 
     .name {
@@ -68,60 +69,76 @@
 }
 
 
-.profile-img-name{
+.profile-img-name {
   text-align: right;
-  max-width: 130px;
+  max-width: rem(130);
   display: flex;
   justify-content: flex-end;
 }
-.profile-name-styling{
-  font-size: 14px;
+
+.profile-name-styling {
+  font-size: rem(14);
   padding: 0;
   margin: 0;
   font-weight: bold;
   color: #000;
 }
-.small-styling{
-  font-size: 11px;
+
+.small-styling {
+  font-size: rem(11);
   margin: 0;
   padding: 0;
   color: #7a7e88;
 }
-.progress-padding{
-  padding-top: 10px;
+
+.progress-padding {
+  padding-top: rem(10);
   // width: 100%;
 }
-.progress-color{
+
+.progress-color {
   background-color: #24cc09;
-  
+
 }
+
 .progressBar {
   width: 100%;
 }
-.passed {
-  width: 130px;
-  text-align: right;
-  font-weight: 600;
-}
-.progress-hieght{
-  height: 12px;
+
+
+
+.progress-hieght {
+  height: rem(12);
 }
 
-.progress-row{
+.progress-row {
   align-items: center;
 }
-.scrollbar-height{
-  height: 180px;
+
+.scrollbar-height {
+  height: rem(180);
   // overflow-x: scroll;
 }
-.checkbox-sizing{
-  top: -54px;
+
+
+.checkbox-sizing {
+  top: rem(-54);
   width: 96%;
-  left: 9px;
+  left: rem(9);
 }
-.text-plan-cards{
+
+.test-plan-cards {
   display: flex;
   flex-wrap: wrap;
+
+  .passed {
+    width: rem(130);
+    text-align: right;
+    font-weight: 600;
+  }
+
+
+
 }
 
 

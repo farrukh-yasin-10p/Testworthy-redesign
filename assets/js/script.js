@@ -41,7 +41,6 @@ $(function () {
 });
 
 
-
 // Carousel Section Search List
 function searchList(a){
     var list = document.getElementById('list_search');

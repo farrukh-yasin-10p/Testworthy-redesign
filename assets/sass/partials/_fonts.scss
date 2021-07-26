@@ -37,7 +37,8 @@ $icomoon-font-path: "./../fonts" !default;
     font-display: block;
 }
 
-$font-types: (kabab-menu: "\e900",
+$font-types: (plus: "\e926",
+    kabab-menu: "\e900",
     test-cases: "\e901",
     projects: "\e925",
     active: "\e923",
@@ -75,8 +76,6 @@ $font-types: (kabab-menu: "\e900",
     settings: "\e91a",
     users: "\e91b",
     milestone-2: "\e91c",
-    icon-plus: "\e923",
-
 );
 
 @each $type,

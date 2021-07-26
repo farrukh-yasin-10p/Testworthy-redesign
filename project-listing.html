@@ -44,16 +44,16 @@
             <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
         </div>
         <div class="header-back">
-            <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
-                    <a href="#">Exelon</a>
+            <label for=""><a href="#" class="arrow-back">
+                    <i class="icon-arrow-left"></i>
+                </a> <span> <a href="#">Exelon</a>
                     </spam></label>
             <div class="breadCrumb">
-                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                <span>
+                    <i class="icon-chevron-right"></i>
                 </span>
                 <h6><a href="#">Projects</a> </h6>
-
             </div>
-
         </div>
         <div class="user ml-auto">
             <div class="user-group">
@@ -63,7 +63,8 @@
                     <p class="text-right">Admin</p>
                 </div>
                 <div class="user-icon">
-                    <span><img src="./assets/images/user-icon.png" alt=""></span>
+                    <span>
+                        <img src="./assets/images/user-icon.png" alt=""></span>
                 </div>
             </div>
             <div class="caret-down">
@@ -153,9 +154,9 @@
                                 </div>
                                 <!--<button type="button" class="btn" data-toggle="modal" data-target="#add-milestone">Add
                                     Project</button>-->
-                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Add
-                                        Project</button>
-                                    
+                                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Add
+                                    Project</button>
+
                             </div>
 
                             <div class=" row sort-by-filter">
@@ -163,6 +164,7 @@
                                     <input type="radio" name="radio" id=""> <label for="all">All</label>
                                     <input type="radio" name="radio" id=""> <label for="open">Open</label>
                                     <input type="radio" name="radio" id=""><label for="complete">Completed</label>
+                                    <input type="radio" name="radio" id=""><label for="complete">Unassigned</label>
                                     <div class="date-picker">
                                         <input type="text" name="single-date" value="10/24/1984" hidden
                                             id="clear_input3" />
@@ -231,7 +233,7 @@
                                             </span></label>
                                     </div>
                                 </div>
- 
+
                                 <div class="col-md-auto creation-col avatarlist">
                                     <div>
                                         <span>Collaborators</span>
@@ -246,8 +248,10 @@
                             </div>
                         </div>
 
+                        <br class="clear" />
+
                         <div class="select-row-list">
-  
+
                             <ul>
                                 <li class="complete-li">
                                     <div class="row d-flex align-items-center">
@@ -256,7 +260,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
                                                 <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text" >
+                                                    <span><i class="icon-projects"></i></span> <span class="text">
                                                         <a href="javascript:;">Test Project</a>
                                                         <ul>
                                                             <li><a href="javascript:;">10 open test runs</a></li>
@@ -265,28 +269,33 @@
                                                     </span></label>
                                             </div>
                                         </div>
-                                          
+
                                         <div class="col-lg-auto ml-auto aligncenter">
                                             <div class="avatars">
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                    <img  src="assets/images/avatar.png">
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="assets/images/avatar.png">
                                                 </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                      <img  src="https://picsum.photos/70">
-                                                  </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                      <img src="https://picsum.photos/80">
-                                                  </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                      <img src="https://picsum.photos/90">
-                                                  </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                     <img src="https://picsum.photos/100">
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/70">
+                                                </span>
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/80">
+                                                </span>
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/90">
+                                                </span>
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/100">
                                                 </span>
                                                 <span class="avatar remainings">
                                                     100+
                                                 </span>
-                                                 
+
                                             </div>
                                         </div>
                                         <div class="col-lg-auto ">
@@ -294,12 +303,18 @@
                                                 <span>Completed on</span>
                                                 <span>31/04/21</span>
                                             </div>
- 
+
 
                                             <div class="hover-row-edit">
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
-                                                <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
-                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Complete"><a
+                                                        href="#"><i class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
                                             </div>
 
                                         </div>
@@ -314,7 +329,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
                                                 <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text" >
+                                                    <span><i class="icon-projects"></i></span> <span class="text">
                                                         <a href="javascript:;">Test Project</a>
                                                         <ul>
                                                             <li><a href="javascript:;">10 open test runs</a></li>
@@ -323,7 +338,7 @@
                                                     </span></label>
                                             </div>
                                         </div>
-                                          
+
                                         <div class="col-lg-auto ml-auto aligncenter">
                                             <div class="unassigned">
                                                 <i class="icon-unassigned"></i>
@@ -334,12 +349,18 @@
                                                 <span>Creation </span>
                                                 <span>31/04/21</span>
                                             </div>
- 
+
 
                                             <div class="hover-row-edit">
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
-                                                <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
-                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Complete"><a
+                                                        href="#"><i class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
                                             </div>
 
                                         </div>
@@ -354,7 +375,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
                                                 <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text" >
+                                                    <span><i class="icon-projects"></i></span> <span class="text">
                                                         <a href="javascript:;">Test Project</a>
                                                         <ul>
                                                             <li><a href="javascript:;">10 open test runs</a></li>
@@ -363,22 +384,26 @@
                                                     </span></label>
                                             </div>
                                         </div>
-                                          
+
                                         <div class="col-lg-auto ml-auto aligncenter">
-                                            <div class="avatars"> 
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                      <img  src="https://picsum.photos/70">
-                                                  </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                      <img src="https://picsum.photos/80">
-                                                  </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                      <img src="https://picsum.photos/90">
-                                                  </span>
-                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                     <img src="https://picsum.photos/100">
-                                                  </span>
-                                                  <span class="avatar remainings">
+                                            <div class="avatars">
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/70">
+                                                </span>
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/80">
+                                                </span>
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/90">
+                                                </span>
+                                                <span class="avatar" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Ahmed Ali | Tester">
+                                                    <img src="https://picsum.photos/100">
+                                                </span>
+                                                <span class="avatar remainings">
                                                     50+
                                                 </span>
                                             </div>
@@ -387,15 +412,17 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-auto ">
-                                            
+
                                             <div class="due-date ">
                                                 <span>Completed on</span>
                                                 <span>31/04/21</span>
                                             </div>
- 
+
 
                                             <div class="hover-row-edit">
-                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
                                             </div>
 
                                         </div>
@@ -410,7 +437,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
                                                 <label class="custom-control-label" for="">
-                                                    <span><i class="icon-milestone-icon"></i></span> <span class="text" >
+                                                    <span><i class="icon-projects"></i></span> <span class="text">
                                                         <a href="javascript:;">Test Project</a>
                                                         <ul>
                                                             <li><a href="javascript:;">10 open test runs</a></li>
@@ -419,11 +446,11 @@
                                                     </span></label>
                                             </div>
                                         </div>
-                                          
+
                                         <div class="col-lg-auto ml-auto aligncenter">
                                             <div class="avatars">
                                                 <span class="avatar">
-                                                      <img  src="https://picsum.photos/70">
+                                                    <img src="https://picsum.photos/70">
                                                 </span>
                                             </div>
                                         </div>
@@ -432,12 +459,18 @@
                                                 <span>Completed on</span>
                                                 <span>31/04/21</span>
                                             </div>
- 
+
 
                                             <div class="hover-row-edit">
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
-                                                <span class="complete-tick-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Complete"><a href="#"><i class="icon-complete-tick"></i></a></span>
-                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="complete-tick-icon" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Complete"><a
+                                                        href="#"><i class="icon-complete-tick"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
                                             </div>
 
                                         </div>
@@ -445,8 +478,8 @@
 
                                 </li>
                             </ul>
- 
- 
+
+
 
 
                         </div>
@@ -458,12 +491,12 @@
                     <!--Milestone-content-grid  Start tab -->
                     <div class="content-grid tab-pane " id="pills-grid" role="tabpanel"
                         aria-labelledby="pills-grid-tab">
-                         
+
                         <div class="gridboxes">
 
                             <div class="row">
- 
-                                <div class="col-sm-12 col-md-6">
+
+                                <div class="col-lg-6 col-md-12">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
                                             <div class="dropdown">
@@ -489,30 +522,35 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="gridboxes__exic">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
+                                                    <div class="row gridboxes__exic--row">
+                                                        <div class="gridboxes__exic--logo">
                                                             <figure>
                                                                 <span>
-                                                                    <img src="/assets/images/exelon_logo.PNG" alt="" class="">
+                                                                    <img src="/assets/images/exelon_logo.PNG" alt=""
+                                                                        class="">
                                                                 </span>
-                                                            </figure> 
+                                                            </figure>
                                                         </div>
-                                                        <div class="col-md-9">
+                                                        <div class="gridboxes__exic--text ">
                                                             <div class="cntnttxt">
                                                                 <h4>Execution Web - Sprint 51 </h3>
-                                                                    <span><label>Created on : 31/04/21</label><a href="javascript:;">View Details</a></span>
+                                                                    <span><label>Created on : 31/04/21</label><a
+                                                                            href="javascript:;">View Details</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row gridboxes__content">
 
                                                         <div class="col-md-12">
-                                                            <p>Amet minim mollit non deserunt ullamco est sitvie aliqua dolor do amet sint. 
-                                                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat 
-                                                            sunt nostrud amet. Amet minim moll Amet min mollit non deserunt ullamco est sitvie 
-                                                            aliqua dolor do amet amet.....</p>
+                                                            <p>Amet minim mollit non deserunt ullamco est sitvie aliqua
+                                                                dolor do amet sint.
+                                                                Velit officia consequat duis enim velit mollit.
+                                                                Exercitation veniam consequat
+                                                                sunt nostrud amet. Amet minim moll Amet min mollit non
+                                                                deserunt ullamco est sitvie
+                                                                aliqua dolor do amet amet.....</p>
                                                         </div>
-                                                         
+
                                                     </div>
                                                 </div>
 
@@ -522,10 +560,10 @@
                                                     <div class="completeico">
                                                         <i class="icon-complete-tick"></i>
                                                     </div>
-                                                     
+
                                                 </div>
                                             </div>
-                                              
+
                                         </div>
 
                                         <div class="gridboxes__countlist">
@@ -546,16 +584,24 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="gridboxes__countlist--avatars">
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                                <img  src="https://picsum.photos/70">
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
+                                                                <img src="https://picsum.photos/70">
                                                             </span>
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
                                                                 <img src="https://picsum.photos/80">
                                                             </span>
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
                                                                 <img src="https://picsum.photos/90">
                                                             </span>
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
                                                                 <img src="https://picsum.photos/100">
                                                             </span>
                                                             <span class="avatar remainings">
@@ -567,12 +613,12 @@
 
                                             </div>
                                         </div>
-  
+
                                     </div>
-                                    
+
                                 </div>
 
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-lg-6 col-md-12">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
                                             <div class="dropdown">
@@ -598,27 +644,29 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="gridboxes__exic">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
+                                                    <div class="row  gridboxes__exic--row">
+                                                        <div class="gridboxes__exic--logo">
                                                             <figure>
                                                                 <span>
-                                                                    <img src="/assets/images/exelon_logo.PNG" alt="" class="">
+                                                                    <img src="/assets/images/exelon_logo.PNG" alt=""
+                                                                        class="">
                                                                 </span>
-                                                            </figure>     
+                                                            </figure>
                                                         </div>
-                                                        <div class="col-md-9">
+                                                        <div class="gridboxes__exic--text">
                                                             <div class="cntnttxt">
                                                                 <h4>Execution Web - Sprint 51 </h3>
-                                                                    <span><label>Created on : 31/04/21</label><a href="javascript:;">View Details</a></span>
+                                                                    <span><label>Created on : 31/04/21</label><a
+                                                                            href="javascript:;">View Details</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row gridboxes__content">
 
                                                         <div class="col-md-12">
-                                                             &nbsp;
+                                                            &nbsp;
                                                         </div>
-                                                         
+
                                                     </div>
                                                 </div>
 
@@ -626,7 +674,7 @@
                                             <div class="col-md-4">
                                                 &nbsp;
                                             </div>
-                                              
+
                                         </div>
 
                                         <div class="gridboxes__countlist">
@@ -656,12 +704,12 @@
 
                                             </div>
                                         </div>
-  
+
                                     </div>
-                                    
+
                                 </div>
 
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-lg-6 col-md-12">
                                     <div class="gridboxes__boxes">
                                         <div class="row ic-option">
                                             <div class="dropdown">
@@ -687,30 +735,35 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="gridboxes__exic">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
+                                                    <div class="row gridboxes__exic--row ">
+                                                        <div class="gridboxes__exic--logo">
                                                             <figure>
                                                                 <span>
-                                                                    <img src="assets/images/Testworthy.png" alt="" class="">
+                                                                    <img src="assets/images/Testworthy.png" alt=""
+                                                                        class="">
                                                                 </span>
-                                                            </figure>     
+                                                            </figure>
                                                         </div>
-                                                        <div class="col-md-9">
+                                                        <div class="gridboxes__exic--text">
                                                             <div class="cntnttxt">
                                                                 <h4>Execution Web - Sprint 51 </h3>
-                                                                    <span><label>Created on : 31/04/21</label><a href="javascript:;">View Details</a></span>
+                                                                    <span><label>Created on : 31/04/21</label><a
+                                                                            href="javascript:;">View Details</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row gridboxes__content">
 
                                                         <div class="col-md-12">
-                                                            <p>Amet minim mollit non deserunt ullamco est sitvie aliqua dolor do amet sint. 
-                                                                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat 
-                                                                sunt nostrud amet. Amet minim moll Amet min mollit non deserunt ullamco est sitvie 
+                                                            <p>Amet minim mollit non deserunt ullamco est sitvie aliqua
+                                                                dolor do amet sint.
+                                                                Velit officia consequat duis enim velit mollit.
+                                                                Exercitation veniam consequat
+                                                                sunt nostrud amet. Amet minim moll Amet min mollit non
+                                                                deserunt ullamco est sitvie
                                                                 aliqua dolor do amet amet.....</p>
                                                         </div>
-                                                         
+
                                                     </div>
                                                 </div>
 
@@ -718,7 +771,7 @@
                                             <div class="col-md-4">
                                                 &nbsp;
                                             </div>
-                                              
+
                                         </div>
 
                                         <div class="gridboxes__countlist">
@@ -739,16 +792,24 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="gridboxes__countlist--avatars">
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
-                                                                <img  src="https://picsum.photos/70">
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
+                                                                <img src="https://picsum.photos/70">
                                                             </span>
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
                                                                 <img src="https://picsum.photos/80">
                                                             </span>
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
                                                                 <img src="https://picsum.photos/90">
                                                             </span>
-                                                            <span class="avatar" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ahmed Ali | Tester">    
+                                                            <span class="avatar" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Ahmed Ali | Tester">
                                                                 <img src="https://picsum.photos/100">
                                                             </span>
                                                             <span class="avatar remainings">
@@ -760,11 +821,11 @@
 
                                             </div>
                                         </div>
-  
+
                                     </div>
-                                    
+
                                 </div>
- 
+
                             </div>
 
                         </div>
@@ -779,142 +840,149 @@
 
             <!-- Modal Section -->
             <section class="modal-section">
-                
+
                 <!--Modal Edit  Start-->
                 <div class="modal " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+                    aria-hidden="true">
                     <div class="modal-dialog" role="document">
 
-                    <!--Modal Add-project content  Start-->
-                    <div class="modal-content edit-project">
-                        <div class="row">
-                        <div class="col-md-2">
-                            <div class="modal-side-color">
-                            </div>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="modal-body-container pr-4 pt-4 pb-4">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLabel">Add Project</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="close_cross">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <input type="file" id="img-input">
-                                <label for="img-input" class="input-label">
-                                <div class="image-thumbnail mb-3">
-                                    <div class="row ">
-                                    <div class="col-sm-4 text-center">
-                                        <div class="image-box">
-                                        <img src="./assets/images/image-thumbnail.png" alt="image-thumbnail">
+                        <!--Modal Add-project content  Start-->
+                        <div class="modal-content edit-project">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="modal-side-color">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Add Project</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="file" id="img-input">
+                                            <label for="img-input" class="input-label">
+                                                <div class="image-thumbnail mb-3">
+                                                    <div class="row ">
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="image-box">
+                                                                <img src="./assets/images/image-thumbnail.png"
+                                                                    alt="image-thumbnail">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <div>
+                                                                <span>Drop your image here</span>
+                                                                <br>
+                                                                <span>or</span>
+                                                                <br>
+                                                                <span>click to browse</span>
+                                                                <br>
+                                                                <p>Acceptable formats: JPEG, PNG, JPG and BMP</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+
+                                            <div class="mb-3">
+                                                <h6>Project Name*</h6>
+                                                <input type="text" placeholder="Project Name" class="input_field">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h6>Description</h6>
+                                                <textarea name="" id="" cols="2" rows="3"
+                                                    placeholder="Example project for testing"></textarea>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h6>Collaborators</h6>
+                                                <div class="edit-tags" onclick="edit_searchList('block')"
+                                                    ondblclick="edit_searchList('none')">
+                                                    <ul>
+                                                        <li>
+                                                            <span>
+                                                                <img src="./assets/images/user-icon.png" alt=""> <label
+                                                                    for="" class="tag-label">Ahmed
+                                                                    Ali</label> <a href="">×</a></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><img src="./assets/images/user-icon.png" alt="">
+                                                                <label for="" class="tag-label">Ahmed
+                                                                    Ali</label> <a href="">×</a></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><img src="./assets/images/user-icon.png" alt="">
+                                                                <label for="" class="tag-label">Ahmed
+                                                                    Ali</label> <a href="">×</a></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><img src="./assets/images/user-icon.png" alt="">
+                                                                <label for="" class="tag-label">Ahmed
+                                                                    Ali</label> <a href="">×</a></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="search-list" id="list_search_edit">
+                                                <ul>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <img src="./assets/images/user-icon.png" alt="">
+                                                            <span class="name">Salman Ahmed</span>
+                                                            <span class="email">salmanahmed@example.com</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <img src="./assets/images/user-icon.png" alt="">
+                                                            <span class="name">Salman Ahmed</span>
+                                                            <span class="email">salman.ahmed@example.com fff</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <img src="./assets/images/user-icon.png" alt="">
+                                                            <span class="name">Salman Ahmed</span>
+                                                            <span class="email">salman..ahmed@example.com dd</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option1">
+                                                <label class="custom-control-label" for="inlineCheckbox1">Integration
+                                                    with Jira</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light-border"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary-color">Save Project</button>
                                         </div>
                                     </div>
-                                    <div class="col-sm-8">
-                                        <div>
-                                        <span>Drop your image here</span>
-                                        <br>
-                                        <span>or</span>
-                                        <br>
-                                        <span>click to browse</span>
-                                        <br>
-                                        <p>Acceptable formats: JPEG, PNG, JPG and BMP</p>
-                                        </div>
-                                    </div>
-                                    </div>
                                 </div>
-                                </label>
-
-                                <div class="mb-3">
-                                <h6>Project Name*</h6>
-                                <input type="text" placeholder="Project Name" class="input_field">
-                                </div>
-
-                                <div class="mb-3">
-                                <h6>Description</h6>
-                                <textarea name="" id="" cols="2" rows="3" placeholder="Example project for testing"></textarea>
-                                </div>
-
-                                <div class="mb-3">
-                                <h6>Collaborators</h6>
-                                <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
-                                    <ul>
-                                    <li>
-                                        <span>
-                                        <img src="./assets/images/user-icon.png" alt=""> <label for="" class="tag-label">Ahmed
-                                            Ali</label> <a href="">×</a></span>
-                                    </li>
-                                    <li>
-                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
-                                            class="tag-label">Ahmed
-                                            Ali</label> <a href="">×</a></span>
-                                    </li>
-                                    <li>
-                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
-                                            class="tag-label">Ahmed
-                                            Ali</label> <a href="">×</a></span>
-                                    </li>
-                                    <li>
-                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
-                                            class="tag-label">Ahmed
-                                            Ali</label> <a href="">×</a></span>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-
-                                <div class="search-list" id="list_search_edit">
-                                <ul>
-                                    <li>
-                                    <div class="search-list-items">
-                                        <img src="./assets/images/user-icon.png" alt="">
-                                        <span class="name">Salman Ahmed</span>
-                                        <span class="email">salmanahmed@example.com</span>
-                                    </div>
-                                    </li>
-                                    <li>
-                                    <div class="search-list-items">
-                                        <img src="./assets/images/user-icon.png" alt="">
-                                        <span class="name">Salman Ahmed</span>
-                                        <span class="email">salman.ahmed@example.com fff</span>
-                                    </div>
-                                    </li>
-                                    <li>
-                                    <div class="search-list-items">
-                                        <img src="./assets/images/user-icon.png" alt="">
-                                        <span class="name">Salman Ahmed</span>
-                                        <span class="email">salman..ahmed@example.com dd</span>
-                                    </div>
-                                    </li>
-                                </ul>
-                                </div>
-
-                                <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="custom-control-label" for="inlineCheckbox1">Integration with Jira</label>
-                                </div>
-
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-secondary-color">Save Project</button>
-                            </div>
-                            </div>
+
                         </div>
-                        </div>
+                        <!--Modal Add-project content  End-->
 
-                    </div>
-                    <!--Modal Add-project content  End-->
-            
                     </div>
                 </div>
                 <!--Add modal End-->
- 
+
             </section>
 
 
             <section class="popup-section">
- 
+
                 <!--Delete Modal Start-->
                 <div class="modal fade confirm-modal" id="ms-deleteModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1066,7 +1134,7 @@
                 </div>
                 <!--Mark Complete modal End-->
 
- 
+
 
             </section>
 
@@ -1077,7 +1145,7 @@
     </div>
 
     <!-- Main Content Section End -->
-  
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

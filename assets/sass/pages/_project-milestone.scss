@@ -90,7 +90,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-size: rem(14);
+        font-size: rem(12);
         margin-top: rem(13);
         padding-right: rem(10);
 
@@ -109,10 +109,17 @@
         align-items: center;
         padding-right: rem(5);
         margin-bottom: rem(15);
-    }
 
-    .sorting-widht {
-        width: 0em;
+        input[type=radio] {
+            width: rem(19);
+            height: rem(19);
+        }
+
+        .date-picker {
+            input {
+                width: 80px;
+            }
+        }
     }
 
     .sort-by-tabs {
@@ -123,7 +130,7 @@
         margin-bottom: rem(10);
 
         button {
-            font-size: rem(14);
+            font-size: rem(12);
 
             i {
                 margin-left: rem(3);
@@ -258,6 +265,7 @@
                 display: flex;
                 align-items: center;
                 min-width: 0;
+                padding-left: rem(30);
 
                 i {
                     margin-right: rem(24);
@@ -280,6 +288,7 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     font-size: rem(18);
+                    //color: black;
 
                     a {
                         color: black;
@@ -335,6 +344,7 @@
 
         li {
             @include card-box;
+            border: none;
             background-color: white;
             margin-bottom: rem(20);
             //padding: rem(20) rem(5) rem(20) rem(20);
@@ -469,6 +479,8 @@
         }
 
         label {
+            padding-left: 30px;
+
             span {
                 font-size: rem(18);
                 font-weight: normal;
@@ -481,6 +493,10 @@
 
         .row-icon {
             display: none;
+
+            i {
+                font-size: rem(24);
+            }
         }
 
         input:checked+.custom-control-label {
@@ -514,7 +530,7 @@
 
             .hover-row-edit {
                 //Will remain in px
-                min-width: 80px;
+                min-width: 84px;
 
                 span {
                     margin-left: 10px;
@@ -535,7 +551,7 @@
             .due-date {
                 display: grid;
                 //Will remain in px
-                min-width: 80px;
+                min-width: 84px;
             }
         }
     }
@@ -549,7 +565,7 @@
             }
 
             .due-date-col {
-                margin-right: 0px;
+                margin-right: 15px;
             }
 
             .creation-col {
@@ -561,6 +577,18 @@
         .select-row-list {
             .progress-icon {
                 margin-left: 25px;
+            }
+
+            .creation-date {
+                min-width: 60px;
+            }
+
+            .due-date {
+                min-width: 84px;
+            }
+
+            .hover-row-edit {
+                min-width: 84px;
             }
         }
     }
@@ -580,6 +608,10 @@
 
             .row {
                 display: block;
+            }
+
+            label {
+                padding-left: 15px;
             }
         }
 
@@ -651,10 +683,10 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            margin: rem(10) rem(20) rem(10) 0;
+            margin: rem(0) rem(20) rem(0) 0;
 
             .icon-ic_option {
-                font-size: rem(20);
+                font-size: rem(24);
                 color: #000;
                 cursor: pointer;
             }

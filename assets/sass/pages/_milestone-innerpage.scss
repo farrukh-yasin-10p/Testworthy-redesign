@@ -1,5 +1,5 @@
 .milestone-inner-section {
-    padding-top: rem(120);
+    padding-top: 120px;
 }
 
 .page-option {
@@ -43,7 +43,7 @@
             }
 
             .progress_text {
-                margin-left: 0px;
+                //margin-left: 0px;
             }
         }
 
@@ -148,8 +148,34 @@
             }
         }
     }
-}
 
+    .testplan-section {
+        .content-row {
+            .select-row-list {
+                .progress-icon {
+                    margin-left: rem(85);
+                }
+            }
+
+            @include mq('xxl', max) {
+                .select-row {
+                    .progress_text {
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+            @include mq('xl', max) {
+                .select-row-list {
+                    .progress-icon {
+                        margin-left: 25px;
+                    }
+                }
+            }
+
+        }
+    }
+}
 
 
 .status-count {
@@ -225,6 +251,32 @@
 
 .milestone-summary {
     height: rem(345);
+
+    &__reports {
+        height: 100%;
+    }
+
+    &__days {
+        height: 100%;
+    }
+
+    &__status {
+        height: 100%;
+    }
+
+    @include mq('lg', max) {
+        height: auto;
+
+        &__status {
+            margin-bottom: 25px;
+        }
+
+        &__reports {
+            height: 245px;
+        }
+
+
+    }
 }
 
 .milestone-chart {

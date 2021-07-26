@@ -38,19 +38,16 @@ body {
   // Media Query max width Usage
   @include mq("md", max) {
     //font-size: 14px;
-
   }
 
   // Media Query min max width Usage
   @include mq-only("md", "xl") {
     //font-size: 15px;
-
   }
 
   // Media Query min width Usage
   @include mq("xl", min) {
     //font-size: 16px;
-
   }
 
   @include mq("xxxl", max) {

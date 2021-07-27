@@ -117,8 +117,8 @@
                 <ul>
                     <li><a href="./index.html" class="">Overview</a></li>
                     <li><a href="./project-milestone.html">Milestones</a> </li>
-                    <li><a href="./project-testplan.html" class="active">Test Plan</a> </li>
-                    <li><a href="./project-testrun.html" class="">Test Run & Results</a> </li>
+                    <li><a href="./project-testplan.html" class="">Test Plan</a> </li>
+                    <li><a href="./project-testrun.html" class="active">Test Run & Results</a> </li>
                     <li><a href="#" class="">Test Suites & Cases</a> </li>
                     <li><a href="#" class="">Reports</a> </li>
                 </ul>
@@ -135,12 +135,10 @@
                     <div class="row">
                         <div class="col-lg-6 mb-3">
                             <div>
-                                <h4 class="font-weight-bold">Test Plans</h4>
+                                <h4 class="font-weight-bold">Test Run & Results</h4>
                             </div>
                             <div class="sort-by-text">
-                                <span>3 open, 20 completed milestones in this project Amet minim mollit non deserunt
-                                    ullamco est
-                                    sit aliqua dolor do amet sint. Velit officiat lorem </span>
+                                <span>3 open, 4 unassigned, 20 completed test runs in this projectAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </span>
                             </div>
                         </div>
 
@@ -152,7 +150,7 @@
                                         <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
                                     </span>
                                 </div>
-                                <button class="btn ">Add Test Plan</button>
+                                <button class="btn " onclick="location.href='./project-addtestrun.html';" >Add Test Runs</button>
                             </div>
 
                             <div class=" row sort-by-filter">
@@ -262,7 +260,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox5"
                                                     value="option5">
                                                 <label class="custom-control-label" for="inlineCheckbox5">
-                                                    <span><i class="icon-clipboard"></i></span> <span class="text"
+                                                    <span><i class="icon-test-run"></i></span> <span class="text"
                                                         data-toggle="tooltip" data-placement="top" title="Test
                                                     Plan - Sprint 51"><a href="testplan-innerpage.html">Test
                                                         Plan - Sprint 51</a>
@@ -272,9 +270,18 @@
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:65%">
+                                                    <div class="progress-bar  progress-bar-success"
+                                                        style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
                                                     </div>
                                                 </div>
                                             </div>
@@ -325,7 +332,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
                                                     value="option6">
                                                 <label class="custom-control-label" for="inlineCheckbox6">
-                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                    <span><i class="icon-test-run"></i></span> <span class="text">Test
                                                         Plan - Sprint 51
                                                     </span></label>
                                             </div>
@@ -333,9 +340,18 @@
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:75%">
+                                                    <div class="progress-bar  progress-bar-success"
+                                                        style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
                                                     </div>
                                                 </div>
                                             </div>
@@ -389,7 +405,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox7"
                                                     value="option7">
                                                 <label class="custom-control-label" for="inlineCheckbox7">
-                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                    <span><i class="icon-test-run"></i></span> <span class="text">Test
                                                         Plan - Sprint 51
                                                     </span></label>
                                             </div>
@@ -397,9 +413,18 @@
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:65%">
+                                                    <div class="progress-bar  progress-bar-success"
+                                                        style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
                                                     </div>
                                                 </div>
                                             </div>
@@ -451,7 +476,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox8"
                                                     value="option8">
                                                 <label class="custom-control-label" for="inlineCheckbox8">
-                                                    <span><i class="icon-clipboard"></i></span> <span class="text"
+                                                    <span><i class="icon-test-run"></i></span> <span class="text"
                                                         data-toggle="tooltip" data-placement="top" title="Test
                                                     Plan - Sprint 51">Test
                                                         Plan - Sprint 51
@@ -461,9 +486,18 @@
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:65%">
+                                                    <div class="progress-bar  progress-bar-success"
+                                                        style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
                                                     </div>
                                                 </div>
                                             </div>
@@ -514,7 +548,7 @@
                                                 <input class="custom-control-input" type="checkbox" id="inlineCheckbox9"
                                                     value="option9">
                                                 <label class="custom-control-label" for="inlineCheckbox9">
-                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                    <span><i class="icon-test-run"></i></span> <span class="text">Test
                                                         Plan - Sprint 51
                                                     </span></label>
                                             </div>
@@ -522,9 +556,18 @@
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:75%">
+                                                    <div class="progress-bar  progress-bar-success"
+                                                        style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
                                                     </div>
                                                 </div>
                                             </div>
@@ -576,7 +619,7 @@
                                                 <input class="custom-control-input" type="checkbox"
                                                     id="inlineCheckbox10" value="option10">
                                                 <label class="custom-control-label" for="inlineCheckbox10">
-                                                    <span><i class="icon-clipboard"></i></span> <span class="text">Test
+                                                    <span><i class="icon-test-run"></i></span> <span class="text">Test
                                                         Plan - Sprint 51
                                                     </span></label>
                                             </div>
@@ -584,9 +627,18 @@
                                         <div class="col-lg-3  d-flex align-items-center flex-nowrap">
                                             <div class="progressBar">
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:65%">
+                                                    <div class="progress-bar  progress-bar-success"
+                                                        style="width:65%" data-toggle="tooltip" title="60% Passed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" style="width:5%" data-toggle="tooltip" title="10% Retest">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-dark" style="width:10%" data-toggle="tooltip" title="20% Blocked">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%" data-toggle="tooltip" title="35% Failed">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-info" style="width:5%" data-toggle="tooltip" title="05% Partial">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-grey" style="width:5%" data-toggle="tooltip" title="08% Untested">
                                                     </div>
                                                 </div>
                                             </div>

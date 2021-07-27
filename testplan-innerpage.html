@@ -710,15 +710,15 @@
     
                                                 <div class="hover-row-edit">
                                                     <span class="rerun-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Rerun"><a href="#"><i class="icon-rerun"></i></a>
+                                                        title="Rerun"><a href="#" data-toggle="modal" data-target="#rerunModal"><i class="icon-rerun"></i></a>
                                                     </span>
                                                     <span class="edit-icon" data-toggle="tooltip" data-placement="top"
                                                         title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
                                                     <span class="complete-tick-icon" data-toggle="tooltip"
-                                                        data-placement="top" title="Complete"><a href="#"><i
+                                                        data-placement="top" title="Complete"><a href="#" data-toggle="modal" data-target="#complete-Modal"><i
                                                                 class="icon-complete-tick"></i></a></span>
                                                     <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                                                        title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                                        title="Delete"><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="icon-trash"></i></a></span>
                                                 </div>
     
     
@@ -2515,6 +2515,71 @@
           </div>
         </div>
         <!--Delete Popup End-->
+
+
+         <!--Rerun Popup Start-->
+         <div class="modal fade confirm-modal" id="rerunModal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+
+           <!-- Popup Rerun content Start-->
+           <div class="modal-content confirm-project">
+             <div class="modal-body-container px-5 pt-4  modal-shade">
+               <div class="">
+                 <div class="modal-header">
+                   <h4 class="modal-title" id="exampleModalLabel">Confirmation</h4>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true" class="close_cross">&times;</span>
+                   </button>
+                 </div>
+                 <div class="modal-body">
+                   <p>Are you sure you want to rerun this Test plan?</p>
+                   <h6>Testing Plan 123</h6>
+                   <div class="info">
+                     <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                     <p>Rerunning this test plan will create a duplicate of this test plan. </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-secondary-color">Rerun Test Plan </button>
+             </div>
+           </div>
+
+           <!-- Popup Rerun content End-->
+
+
+           <!-- Popup Rerun content Start-->
+           <div class="modal-content confirm-complete">
+             <div class="modal-body-container px-5 pt-4  modal-shade">
+               <div class="">
+                 <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true" class="close_cross">&times;</span>
+                   </button>
+                 </div>
+                 <div class="modal-body">
+                   <div class="project-image text-center">
+                     <img src="./assets/images/delete-project.png" alt="">
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="modal-footer text-center">
+               <span><img src="./assets/images/check-blue.png" alt="check-icon">
+                 <span>Test plan Rerun</span>
+               </span>
+             </div>
+           </div>
+           <!-- Popup Rerun content End-->
+
+
+         </div>
+       </div>
+       <!--Rerun Popup End-->
+        
 
       </section>
 

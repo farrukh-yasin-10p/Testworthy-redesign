@@ -70,6 +70,12 @@
                 color: $grey-100;
                 background-color: white;
             }
+
+            &:hover {
+                background:#1eaae7;
+                border: rem(2) solid #1eaae7;
+                color: #fff;
+            }
         }
     }
 

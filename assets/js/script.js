@@ -165,6 +165,9 @@ var data = {
 };
 
 $(document).ready(function () {
+
+  $('[data-toggle="popover"]').popover({ trigger: "hover" }); 
+  
   // Owl Carousel Query
   $('.owl-carousel').owlCarousel({
       loop:true,

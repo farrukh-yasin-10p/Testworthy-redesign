@@ -70,6 +70,12 @@
                 color: $grey-100;
                 background-color: white;
             }
+
+            &:hover {
+                background:#1eaae7;
+                border: rem(2) solid #1eaae7;
+                color: #fff;
+            }
         }
     }
 
@@ -325,7 +331,7 @@
             background-color: white;
             margin-bottom: rem(20);
             //padding: rem(20) rem(5) rem(20) rem(20);
-            min-height: 80px;
+            min-height: 90px;
             display: flex;
             align-items: center;
 
@@ -651,11 +657,57 @@
             align-items: flex-end;
             justify-content: flex-end;
             margin: 0px 0px 0px 0;
+            font-size: 13px;
 
             .icon-ic_option {
                 font-size: 20px;
                 color: #000;
                 cursor: pointer;
+            }
+
+            .dropdown-item{
+                i {
+                    font-size:16px;
+                    font-weight: bold;
+                    position:relative;
+                    top:4px;
+                }
+                
+                span {
+                    font-size: 12px;
+                    padding: 0 5px;
+                }
+            }
+            
+        }
+
+        .profile-img-name{
+
+            .completeico {
+                position: relative;
+                right:25px;
+                top:12px;
+                font-size: 25px;
+                color:#24cc09;
+            }
+
+            .unassigned {
+                position: relative;
+                top:10px;
+                font-size: 30px;
+                color:#1eaae7;
+                min-height: 94px;
+            }
+        }
+        
+        .profile-img {
+            width:55px;
+            height:55px; 
+            border-radius:50px;
+            overflow:hidden;
+
+            img {
+                width: 100%;
             }
         }
 

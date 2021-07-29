@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <span class="mx-3 d-inline-block" data-toggle="tooltip" title="Download Report"><a href="" class="d-inline-block"><i class="icon-download"></i></a></span>
-                <span class="mx-3 d-inline-block"><a href="" class="d-inline-block"><i class="icon-ic_edit"></i></a></span>
+                <span class="mx-3 d-inline-block"><a href="" data-toggle="modal" data-target="#edit-name" class="d-inline-block"><i class="icon-ic_edit"></i></a></span>
                 <span class="dropdown d-inline-block valign-top">
                     <span class="ellipsis pt-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="bottom">
                       <a href="#" alt="ellipsis"><img src="./assets/images/ellipsis.png"></a>
@@ -674,8 +674,8 @@
                                                     <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
                                                         value="option6">
                                                     <label class="custom-control-label" for="inlineCheckbox6">
-                                                        <span><i class="icon-test-run"></i></span> <span class="text">Test
-                                                            Plan - Sprint 51
+                                                        <span><i class="icon-test-run"></i></span> <span class="text">
+                                                            Test Run 04/28/2021
                                                         </span></label>
                                                 </div>
                                             </div>
@@ -2515,8 +2515,261 @@
           </div>
         </div>
         <!--Delete Popup End-->
+        <section class="modal-section">
+        <div class="modal  milestone-modals" id="edit-name" tabindex="-1" role="dialog"
+        aria-labelledby="add-milestoneLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
 
+                <!--Modal Edit Name Start-->
+                    <div class="modal-content edit-project">
+                        <div class="row">
+                        <div class="col-md-2">
+                            <div class="modal-side-color">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="modal-body-container pr-4 pt-4 pb-4">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Edit </h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                
+        
+                                <div class="mb-4">
+                                <h6>Name *</h6>
+                                <input type="text" placeholder="Project Name" class="input_field">
+                                </div>
+        
+                                <div class="mb-4">
+                                    <div class="text-info-icon">
+                                        <h6>Description</h6>
+                                        <span data-toggle="tooltip" data-placement="top"
+                                            title="Use Shift+Enter to change the line in the below fields.">
+                                            <i class="icon-info-icon"></i>
+                                        </span>
+                                    </div>
+                                <textarea name="" id="" cols="2" rows="3" placeholder="Example project for testing"></textarea>
+                                </div>
+        
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-secondary-color">Save Changes</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                    </div>
+                <!--Modal Edit Name End-->
+    
+                <!--Modal Edit User Start-->
+                    <div class="modal-content save-project">
+                        <div class="row">
+                        <div class="col-md-2">
+                            <div class="modal-side-color">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="modal-body-container pr-4 pt-4 pb-4">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Edit user </h4>
+                                <span class="alert-box">
+                                <img src="./assets/images/check-success.png" alt="check_icon">
+                                <span>Changes saved!</span>
+                                </span>
+                            </div>
+                            <div class="modal-body">
+                            <div class="mb-3">
+                                <h6>Assigned to</h6>
+                                <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
+                                    <ul>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    </ul>
+                                </div>
+                                </div>
+                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary-color">Okay</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                    </div>
+                <!--Modal Edit User End-->
+    
+                <!--Modal Rerun Test Plan Start-->
+                    <div class="modal-content unsaved-project">
+        
+                        <div class="row">
+                        <div class="col-md-2">
+                            <div class="modal-side-color">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="modal-body-container pr-4 pt-4 pb-4">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLabel">Rerun Test Plan </h4>
+                                    
+                                </div>
+                                <div class="modal-body">
+                                <div class="mb-3">
+                                    
+                                    <div class="text-info-icon">
+                                        <h6>Assign to</h6>
+                                        <span data-toggle="tooltip" data-placement="top"
+                                            title="Hello">
+                                            <i class="icon-info-icon"></i>
+                                        </span>
+                                    </div>
+                                    <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
+                                        <ul>
+                                        <li>
+                                            <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                                class="tag-label">Ahmed
+                                                Ali</label> <a href="">×</a></span>
+                                        </li>
+                                        <li>
+                                            <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                                class="tag-label">Ahmed
+                                                Ali</label> <a href="">×</a></span>
+                                        </li>
+                                        <li>
+                                            <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                                class="tag-label">Ahmed
+                                                Ali</label> <a href="">×</a></span>
+                                        </li>
+                                        <li>
+                                            <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                                class="tag-label">Ahmed
+                                                Ali</label> <a href="">×</a></span>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-secondary-color">Rerun</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                    </div>
+                <!--Modal Rerun Test Plan End-->
 
+                <!--Modal unsaved-project content  Start-->
+                    <div class="modal-content unsaved-project">
+
+                        <div class="row">
+                        <div class="col-md-2">
+                            <div class="modal-side-color">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="modal-body-container pr-4 pt-4 pb-4">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Edit user </h4>
+                                <span class="alert-box">
+                                <img src="./assets/images/uncheck-danger.png" alt="uncheck_icon">
+                                <span>Unable to save changes</span>
+                                </span>
+                            </div>
+                            <div class="modal-body">
+                        
+                                <div class="mb-3">
+                                <h6>Assigned to</h6>
+                                <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
+                                    <ul>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                        <span><img src="./assets/images/user-icon.png" alt=""> <label for=""
+                                            class="tag-label">Ahmed
+                                            Ali</label> <a href="">×</a></span>
+                                    </li>
+                                    </ul>
+                                </div>
+                                </div>
+        
+                                <div class="search-list" id="list_search_edit">
+                                <ul>
+                                    <li>
+                                    <div class="search-list-items">
+                                        <img src="./assets/images/user-icon.png" alt="">
+                                        <span class="name">Salman Ahmed</span>
+                                        <span class="email">salmanahmed@example.com</span>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="search-list-items">
+                                        <img src="./assets/images/user-icon.png" alt="">
+                                        <span class="name">Salman Ahmed</span>
+                                        <span class="email">salman.ahmed@example.com fff</span>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="search-list-items">
+                                        <img src="./assets/images/user-icon.png" alt="">
+                                        <span class="name">Salman Ahmed</span>
+                                        <span class="email">salman..ahmed@example.com dd</span>
+                                    </div>
+                                    </li>
+                                </ul>
+                                </div>
+        
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-secondary-color">Save Changes</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                    </div>
+                <!--Modal unsaved-project content  End-->
+
+            </div>
+        </div>
+        </section>
          <!--Rerun Popup Start-->
          <div class="modal fade confirm-modal" id="rerunModal" tabindex="-1" role="dialog"
          aria-labelledby="exampleModalLabel" aria-hidden="true">

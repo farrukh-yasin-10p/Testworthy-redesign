@@ -53,7 +53,10 @@
                 <h6><a href="#">Test Runs</a> </h6>
                 <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
                 </span>
-                <h6><a href="#">Add Test Run</a> </h6>
+                <h6><a href="#">Test Run 05/28/2021</a> </h6>
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="#">Edit Test Run</a> </h6>
             </div>
 
         </div>
@@ -137,7 +140,7 @@
                     <div class="row">
                         <div class="col-lg-6 mb-3">
                             <div>
-                                <h4 class="font-weight-bold">Add Test Run</h4>
+                                <h4 class="font-weight-bold">Edit Test Run</h4>
                             </div>
                         </div>
 
@@ -168,15 +171,13 @@
                                             <h6>Name *</h6>
                                         </div>
                                         <div>
-                                            <span class="pr-2 mb-1 d-inline-block text">
-                                                <i class="icon-warning"></i> Required field
-                                            </span>
+                                            
                                             <span data-toggle="tooltip" data-placement="top" title="Ex: All supported browsers or operating system/database combinations.">
                                                 <i class="icon-info-icon"></i>
                                             </span>
                                         </div>
                                     </div>  
-                                    <input type="text" class="form-control input_field required" placeholder="Ex: All supported browsers or operating system/database combinations.">
+                                    <input type="text" class="form-control " placeholder="Ex: All supported browsers or operating system/database combinations.">
                                   </div>
                                   <div class="col">
                                     <div class="text-info-icon">
@@ -263,7 +264,7 @@
                                             </span>
                                         </div>  
                                         
-                                        <input type="text" class="selectuser form-control" onclick="testsuite_list('block')" ondblclick="testsuite_list('none')" placeholder="Type or select a suite">
+                                        <input type="text" class="selectuser form-control" onclick="testsuite_list('block')" ondblclick="testsuite_list('none')" placeholder="Type or select a suite" disabled>
                                         <div class="search-list common-list" id="testsuite_list">
                                                 <ul>
                                                 <li>
@@ -303,7 +304,7 @@
                                     <div class="col-12">
                                         <div class="modal-footer formrelative pr-4">
                                             <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-secondary-color">Add Test Run</button>
+                                            <button type="button" class="btn btn-secondary-color">Save Changes</button>
                                           </div>
                                     </div>
                                 </div>

@@ -76,6 +76,17 @@
             min-width: rem(245);
             height: rem(56);
 
+            &.grey-color {
+                border: rem(2) solid $grey-100;
+                color: $grey-100;
+                background-color: white;
+            }
+
+            &:hover {
+                background: #1eaae7;
+                border: rem(2) solid #1eaae7;
+                color: #fff;
+            }
         }
     }
 
@@ -131,7 +142,7 @@
         }
 
         .dropdown-menu {
-            margin-right: rem(120);
+            margin-right: rem(76);
             margin-bottom: rem(10);
             padding: rem(10) rem(0);
             font-size: rem(12);
@@ -337,13 +348,14 @@
 
         li {
             @include card-box;
+            border: none;
             background-color: white;
             margin-bottom: rem(20);
             //padding: rem(20) rem(5) rem(20) rem(20);
-            height: rem(90);
+            min-height: rem(91);
             display: flex;
             align-items: center;
-            border-radius: 30px;
+            border-radius: rem(30);
 
             &:hover {
                 background-color: #e7f3f8;
@@ -665,16 +677,62 @@
         z-index: 1;
         margin-bottom: rem(30);
 
+
         .ic-option {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            margin: rem(10) rem(20) rem(10) 0;
+            margin: rem(0) rem(20) rem(0) 0;
 
             .icon-ic_option {
-                font-size: rem(20);
+                font-size: rem(24);
                 color: #000;
                 cursor: pointer;
+            }
+        }
+
+        .dropdown-item {
+            i {
+                font-size: 16px;
+                font-weight: bold;
+                position: relative;
+                top: 4px;
+            }
+
+            span {
+                font-size: 12px;
+                padding: 0 5px;
+            }
+        }
+
+
+        .profile-img-name {
+
+            .completeico {
+                position: relative;
+                right: 25px;
+                top: 12px;
+                font-size: 25px;
+                color: #24cc09;
+            }
+
+            .unassigned {
+                position: relative;
+                top: 10px;
+                font-size: 30px;
+                color: #1eaae7;
+                min-height: 94px;
+            }
+        }
+
+        .profile-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
             }
         }
 
@@ -699,6 +757,18 @@
 
                 i {
                     font-size: rem(20);
+                    //padding-right: 0px;
+                }
+
+                >span {
+                    display: flex;
+                    transform: rotate(180deg);
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &[aria-expanded="true"] {
+                        transform: rotate(0deg);
+                    }
                 }
             }
 
@@ -744,19 +814,19 @@
                 padding: rem(8) rem(5);
 
                 &--box1 {
-                    @include case_box(#E71E1E, #ed8a8a);
+                    @include case_box($danger, $danger-light-100);
                 }
 
                 &--box2 {
-                    @include case_box(#f3c214, #ebd480);
+                    @include case_box($warning, $warning-light);
                 }
 
                 &--box3 {
-                    @include case_box(#1eaae7, #88ceeb);
+                    @include case_box($sky-blue-200, lighten($sky-blue-100, 10));
                 }
 
                 &--box4 {
-                    @include case_box(#1c4e63, #86a1ab);
+                    @include case_box(darken($sky-blue-200, 30), $navy-light);
                 }
 
 
@@ -865,6 +935,7 @@
                 font-size: rem(14);
                 font-weight: bold;
                 color: #1EAAE7;
+                text-decoration: underline;
             }
 
             label {
@@ -1076,6 +1147,7 @@
                 font-size: 14px;
                 color: #626263;
                 margin-top: 2px;
+                white-space: nowrap;
             }
 
             .completeico {

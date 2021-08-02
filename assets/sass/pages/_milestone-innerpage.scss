@@ -379,4 +379,42 @@
 
 .gridboxes__days {
     height: rem(130);
+
+    figure{
+ 
+        padding:0; 
+        
+        img{
+            border-radius:80px;
+            width: 117px;
+            height:117px;
+        }
+    }
+
+    .assignedto{
+        h5{
+            font-size: 12px;
+            color: #969ba0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3{
+            font-size: 16px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+    }
+
+    .completed-icon{
+
+        margin-top:20px;
+
+        .icon-complete-tick {
+            color: #24cc09;
+            font-size: 25px;
+        }
+    }
 }

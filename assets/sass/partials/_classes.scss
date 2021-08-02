@@ -133,10 +133,33 @@
 
   .passed {
     width: rem(130);
-    text-align: right;
     font-weight: 600;
+    font-size: rem(18);
+    white-space: nowrap;
+
+    &.is-gridview {
+      text-align: right;
+    }
+
+    span:last-child {
+      font-size: rem(14);
+    }
   }
 }
+
+.is-gridview {
+  width: rem(130);
+  font-weight: 600;
+  font-size: rem(18);
+  white-space: nowrap;
+  text-align: right;
+
+  span:last-child {
+    font-size: rem(14);
+  }
+}
+
+
 
 
 // Search list Class End 

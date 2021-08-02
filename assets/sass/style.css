@@ -3956,6 +3956,7 @@ header {
   font-size: 14px;
   font-weight: bold;
   color: #1EAAE7;
+  text-decoration: underline;
 }
 
 .gridboxes__days {

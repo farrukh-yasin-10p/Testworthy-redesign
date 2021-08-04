@@ -31,7 +31,7 @@
             border: rem(1) solid rgba(227, 229, 233, .87);
             outline: none;
             // width: rem(320);
-          
+
             background-color: #fff;
             color: #aaa;
 
@@ -39,7 +39,8 @@
                 color: #aaa;
             }
         }
-        .search-milestone-width{
+
+        .search-milestone-width {
             width: 34em;
         }
 
@@ -65,6 +66,7 @@
             color: white;
             margin-left: rem(10);
             margin-bottom: rem(10);
+
             &.grey-color {
                 border: rem(2) solid $grey-100;
                 color: $grey-100;
@@ -103,7 +105,8 @@
         padding-right: rem(5);
         margin-bottom: rem(15);
     }
-    .sorting-widht{
+
+    .sorting-widht {
         width: 0em;
     }
 
@@ -676,21 +679,25 @@
                 align-items: flex-end;
                 justify-content: flex-end;
                 padding-right: 0px;
-                > span {
+
+                >span {
                     display: flex;
                     transform: rotate(180deg);
                     cursor: pointer;
                     transition: 0.3s;
+
                     &[aria-expanded="true"] {
                         transform: rotate(0deg);
                     }
                 }
             }
+
             .icon-accordion-down {
                 font-size: 24px;
             }
         }
-        .icon-clipboard{
+
+        .icon-clipboard {
             width: 80px;
             height: 66px;
             font-size: 55px;
@@ -698,7 +705,7 @@
             position: relative;
             top: 2px;
         }
-        
+
         .mscases {
 
             margin-top: 30px;
@@ -706,9 +713,11 @@
             .col-md-3 {
                 padding-right: 5px;
                 padding-left: 5px;
+
                 &:first-child {
                     padding-left: 0;
                 }
+
                 &:last-child {
                     padding-right: 0;
                 }
@@ -845,7 +854,7 @@
             label {
                 font-size: 12px;
                 padding-right: 10px;
-                color:#626263;
+                color: #626263;
             }
         }
 
@@ -947,31 +956,31 @@
         }
     }
 
-        .dropdown-menu {
-            padding: rem(10) rem(0);
-            font-size: rem(12);
-            margin-left: -140px;
-            margin-top: -12px;
+    .dropdown-menu {
+        padding: rem(10) rem(0);
+        font-size: rem(12);
+        margin-left: -140px;
+        margin-top: -12px;
 
-            .dropdown-item {
-                padding: rem(10) rem(20);
-                color: black;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
+        .dropdown-item {
+            padding: rem(10) rem(20);
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
 
-                &:hover {
-                    background-color: $filter;
-                }
+            &:hover {
+                background-color: $filter;
+            }
 
 
-                i {
-                    font-size: 18px;
-                    margin-right: 10px;
-                    font-weight: 600;
-                }
+            i {
+                font-size: 18px;
+                margin-right: 10px;
+                font-weight: 600;
             }
         }
+    }
 }
 
 
@@ -980,6 +989,7 @@
 .collape-section {
     position: relative;
     top: -62px;
+
     .collape-section-inner {
         flex-grow: 0;
         padding: 60px 16px 15px 28px;
@@ -996,19 +1006,20 @@
 
         .custom-scrollbar-css {
             overflow-y: scroll;
+
             // height: 120px;
             &::-webkit-scrollbar {
                 width: 7px;
-              }
-               
-              &::-webkit-scrollbar-track {
+            }
+
+            &::-webkit-scrollbar-track {
                 box-shadow: none;
-              }
-               
-              &::-webkit-scrollbar-thumb {
+            }
+
+            &::-webkit-scrollbar-thumb {
                 background-color: #c4c4c4;
                 border: 0;
-              }
+            }
         }
 
         label {
@@ -1054,14 +1065,14 @@
 
             .completeico {
                 margin-left: 20px;
-                color:#ccc;
+                color: #ccc;
             }
 
             &:hover {
                 .completeico {
                     margin-left: 20px;
-                    color:#949494;
-                } 
+                    color: #949494;
+                }
             }
 
             @include mq-only("xs", "ml") {
@@ -1091,7 +1102,7 @@
         }
 
     }
-}  
+}
 
 /* Custom Scrollbar using CSS */
 .custom-scrollbar-css {

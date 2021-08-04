@@ -113,7 +113,7 @@
                     margin-left: rem(0);
                 }
             }
- 
+
 
             .select-row-list {
                 li {
@@ -136,7 +136,7 @@
     }
 
     .date-status {
-        margin-bottom:25px;
+        margin-bottom: 25px;
         display: flex;
         flex-flow: column wrap;
         flex-direction: row;
@@ -144,7 +144,7 @@
         align-items: center;
         align-content: space-around;
     }
- 
+
     h6 {
         font-weight: 600;
     }
@@ -156,24 +156,24 @@
     .empty-posts {
         flex-grow: 0;
         padding: 15px 0 20px 20px;
-        margin-bottom:20px;
-        margin-top:10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
         border-radius: 10px;
         background-color: #eeeeee;
-        
-        h4{
+
+        h4 {
             font-size: 18px;
             color: #7a7a7a;
-            margin-bottom: 5px; 
+            margin-bottom: 5px;
         }
 
         h5 {
             font-size: 14px;
-            color:#a4a4a4;
+            color: #a4a4a4;
             padding: 0;
             margin: 0;
         }
- 
+
 
         .boxes {
             display: flex;
@@ -181,26 +181,27 @@
             .icon-info-icon {
                 font-size: 24px;
                 color: #7a7a7a;
-                margin:10px 15px 10px 0;
+                margin: 10px 15px 10px 0;
             }
         }
     }
 
     .add-circle-icon {
         margin-top: 5px;
-        a{
-            display:block;
+
+        a {
+            display: block;
             width: 40px;
-            height: 40px; 
+            height: 40px;
             color: #ccc;
             padding: 9px;
             text-align: center;
-            border-radius:50px;
+            border-radius: 50px;
             border: 1px solid #ccc;
 
             &:hover {
                 color: #fff;
-                background:#1eaae7;
+                background: #1eaae7;
                 border: 1px solid #1eaae7;
             }
         }
@@ -208,16 +209,17 @@
 
     .empty-posts.hidebg {
         background: none;
+
         .boxes {
             display: none;
         }
     }
 
-    .testplans-list{
+    .testplans-list {
 
         height: 200px;
 
-        .table{
+        .table {
 
             table-layout: fixed;
             width: 100%;
@@ -225,23 +227,23 @@
             border-collapse: collapse;
 
             thead {
-                
-                tr{
+
+                tr {
                     display: block;
-                    background: #eee; 
-                    border-radius:20px;
+                    background: #eee;
+                    border-radius: 20px;
                 }
 
-                th{
+                th {
                     font-size: 13px;
-                    color: #b5b8bc; 
+                    color: #b5b8bc;
                     border: 0;
                     border-style: solid none;
                     padding: 10px;
                     background-color: #eee;
-                    vertical-align:middle;
+                    vertical-align: middle;
 
-                    &:first-child{
+                    &:first-child {
                         border-left-style: solid;
                         border-top-left-radius: 10px;
                         border-bottom-left-radius: 10px;
@@ -249,68 +251,72 @@
                 }
 
                 .names {
-                    padding-left:15px;
+                    padding-left: 15px;
                 }
 
-                .assignedto{
-                    padding-left:15px;
+                .assignedto {
+                    padding-left: 15px;
                 }
- 
+
             }
 
-            tbody{
+            tbody {
 
                 height: 240px;
                 overflow-y: scroll;
                 display: block;
-                padding:0 5px; 
+                padding: 0 5px;
 
-                tr{
+                tr {
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-                    background-color:white;
+                    background-color: white;
                     border-spacing: 5em;
                     position: relative;
                     display: block;
-                    margin:5px 0 10px;
-                    border-radius: 10px; 
+                    margin: 5px 0 10px;
+                    border-radius: 10px;
 
                     &:hover {
-                        .edit-icon, .trash-icon{
+
+                        .edit-icon,
+                        .trash-icon {
                             display: inline-block;
                         }
                     }
                 }
 
-                td{
-                    vertical-align:middle;
+                td {
+                    vertical-align: middle;
                     border: 0;
-                    padding:5px;
+                    padding: 5px;
                     position: relative;
- 
-                    &:first-child  {
+
+                    &:first-child {
                         border-radius: 10px 0 0 10px;
-                        border:0;
-                      }
-                    
+                        border: 0;
+                    }
+
                     &:last-child {
                         border-radius: 0 10px 10px 0;
-                        border:0;
-                      }
+                        border: 0;
+                    }
 
                     .edit-icon {
-                        position:relative;
-                        left:5px;
+                        position: relative;
+                        left: 5px;
                         display: none;
-                        a{
+
+                        a {
                             color: #dfe1e6;
                         }
                     }
 
-                    .trash-icon{
-                        position:absolute;
-                        right:10px;
+                    .trash-icon {
+                        position: absolute;
+                        right: 10px;
                         display: none;
-                        a{
+
+                        a {
                             color: #e3e4e9;
 
                             &:hover {
@@ -319,27 +325,27 @@
                         }
                     }
 
-                    
-                }
- 
-                .checks{
-                    padding-left:10px;
-                }
-  
-            }
-            
-        }
- 
 
-        .checks{
-            width:38px;
+                }
+
+                .checks {
+                    padding-left: 10px;
+                }
+
+            }
+
+        }
+
+
+        .checks {
+            width: 38px;
         }
 
         .names {
             width: 340px;
         }
 
-        .cases{
+        .cases {
             width: 150px;
         }
 
@@ -357,13 +363,13 @@
         }
 
         .assignedto {
-            figure{
-                
+            figure {
+
                 display: flex;
                 margin-bottom: 0;
                 margin-top: 5px;
-                
-                img{
+
+                img {
                     width: 30px;
                     height: 30px;
                 }
@@ -373,8 +379,8 @@
                 }
             }
 
-            span{
-                margin-left:10px;
+            span {
+                margin-left: 10px;
                 font-size: 13px;
 
                 label {
@@ -382,35 +388,35 @@
                     font-size: 12px;
                 }
             }
- 
-            
-        }
-         
 
-        .formrelative{
+
+        }
+
+
+        .formrelative {
             position: relative;
-            bottom:0;
-            right:0;
+            bottom: 0;
+            right: 0;
             padding: 0 0 20px 0;
         }
-        
+
     }
 }
 
 
 
-form{
+form {
 
-    .form-control{
+    .form-control {
         font-size: 14px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         border: 1px solid #b6b9bd;
         color: #000;
-        opacity: 0.6; 
+        opacity: 0.6;
         height: 45px;
-    }  
-    
-    select { 
+    }
+
+    select {
         padding: 5px;
         font-size: 16px;
         line-height: 1;
@@ -426,33 +432,33 @@ form{
     .selectuser {
         background: url("/assets/images/chevron-down.svg") no-repeat 98%;
     }
-   
-    option{
-        color:#000; 
+
+    option {
+        color: #000;
     }
 
     .assigned-to-users {
         width: 96%;
-        top: 74px; 
+        top: 74px;
     }
 
-    #testsuite_list{
+    #testsuite_list {
         width: 95%;
-        top:166px;
+        top: 166px;
     }
 
     .common-list {
- 
+
         ul {
-            li{
-                padding:8px 10px;
-                font-size:12px;
+            li {
+                padding: 8px 10px;
+                font-size: 12px;
                 font-weight: bold;
             }
 
             .last-item {
-                background:#1eaae7;
-                text-align:center;
+                background: #1eaae7;
+                text-align: center;
 
                 &:hover {
                     border-radius: 0;
@@ -463,31 +469,32 @@ form{
                     font-weight: normal;
 
                     .icon-icon-plus {
-                        padding:0 5px;
+                        padding: 0 5px;
                     }
                 }
             }
         }
     }
-   
+
 }
 
 // Inputs Placeholders
 
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #c4c4c4;
-    opacity: 0.6; 
+    opacity: 0.6;
 
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #c4c4c4;
     opacity: 0.6;
 }
 
-.form-control::-ms-input-placeholder { /* Microsoft Edge */
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #c4c4c4;
     opacity: 0.6;
 }
-
- 

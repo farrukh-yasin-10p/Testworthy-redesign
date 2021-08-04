@@ -5,6 +5,7 @@
 .btn {
   cursor: pointer;
   border-radius: rem(30);
+
   // background: red !important;
   &[disabled],
   &.disabled {

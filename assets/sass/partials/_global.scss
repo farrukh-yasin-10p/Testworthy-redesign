@@ -81,13 +81,16 @@ a:hover {
   font-weight: 600;
   font-size: rem(18);
   white-space: nowrap;
-  &.is-gridview { 
+
+  &.is-gridview {
     text-align: right;
   }
+
   span:last-child {
     font-size: rem(14);
   }
 }
+
 
 // Make images easier to work with
 // img {

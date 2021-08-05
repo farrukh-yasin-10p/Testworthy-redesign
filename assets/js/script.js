@@ -55,7 +55,7 @@ var tree_data = {
 {
   "id": "node1",
   "parent": "#",
-  "text": "Prerequisites" 
+  "text": "Prerequisites <span class='counts'>(243/23)</span>" 
 },
 {
   "id": "node2",
@@ -66,7 +66,7 @@ var tree_data = {
 {
   "id": "node3",
   "parent": "node1",
-  "text": "Tutorials"
+  "text": "Tutorials <span class='counts'>(3/43)</span>"
  
 },
  {
@@ -97,13 +97,13 @@ var tree_data = {
 {
   "id": "node7",
   "parent": "#",
-  "text": "Installations"
+  "text": "Installations <span class='counts'>(3/23)</span>"
 },
 
 {
   "id": "node8",
   "parent": "node7",
-  "text": "Tutorials"
+  "text": "Tutorials <span class='counts'>(2/13)</span>"
  
 },
 {

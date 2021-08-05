@@ -745,6 +745,11 @@
 }
 
 .testplan-modals {
+
+    .counts {
+        color: $secondary-text-color;
+    }
+
     .modal-header {
         padding-bottom: 5px;
     }

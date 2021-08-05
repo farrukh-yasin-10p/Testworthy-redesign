@@ -1,3 +1,130 @@
+
+
+// This will check all boxes inside the tree
+function checkAll(tree) {
+  console.dir(tree.jstree())
+      tree.jstree(true).check_all();
+  }
+  
+  function getchild(parentId){
+  
+  var arr = [
+  {"name":"Verify that document with maximun 750+ pages","ParentID":"node6"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node1"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node1"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node3"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node4"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node5"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node6"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node5"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node6"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node5"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node2"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node6"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node5"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node5"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node5"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node6"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node7"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node8"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node8"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node9"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node9"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node10"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node10"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node10"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node11"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node12"},
+    {"name":"Verify that document with maximun 750+ pages","ParentID":"node12"},
+    
+    ]
+    
+      return arr.filter(a => a.ParentID == parentId);
+  }
+// js tree library
+var tree_data = {
+  "core": {
+  "multiple" : false,
+    "data": [
+{
+  "id": "node1",
+  "parent": "#",
+  "text": "Prerequisites" 
+},
+{
+  "id": "node2",
+  "parent": "node1",
+  "text": "Update"
+ 
+},
+{
+  "id": "node3",
+  "parent": "node1",
+  "text": "Tutorials"
+ 
+},
+ {
+  "id": "node5",
+  "parent": "node1",
+  "text": "Installation"
+ 
+},
+{
+  "id": "node4",
+  "parent": "node2",
+  "text": "Goals"
+ 
+},
+
+{
+  "id": "node6",
+  "parent": "node3",
+  "text": "Goals"
+ 
+},
+{
+  "id": "node13",
+  "parent": "node2",
+  "text": "Goals"
+},
+  
+{
+  "id": "node7",
+  "parent": "#",
+  "text": "Installations"
+},
+
+{
+  "id": "node8",
+  "parent": "node7",
+  "text": "Tutorials"
+ 
+},
+{
+  "id": "node9",
+  "parent": "node7",
+  "text": "Installations"
+ 
+},
+
+{
+  "id": "node12",
+  "parent": "node9",
+  "text": "Goals"
+ 
+}
+]
+  },
+  "plugins" : ["checkbox"]
+};
+
+
 function clear_date(a){
   var x  = document.getElementById('clear_input');
   var y  = document.getElementById('clear_input2');
@@ -164,9 +291,12 @@ var data = {
   ]
 };
 
-$(document).ready(function () {
 
-  $('[data-toggle="popover"]').popover({ trigger: "hover" }); 
+
+
+$(document).ready(function () {
+  
+
   
   // Owl Carousel Query
   $('.owl-carousel').owlCarousel({
@@ -179,8 +309,9 @@ $(document).ready(function () {
    // Owl Carousel Query End
 
 
-
-  var ctx = document.getElementById('myChart').getContext('2d');
+var chartvar= document.getElementById('myChart');
+if(chartvar){
+  var ctx = chartvar.getContext('2d');
   ctx.height = 300;
   var myChart = new Chart(ctx, {
       type: 'line',
@@ -220,6 +351,9 @@ $(document).ready(function () {
       }
   });
 
+}
+  
+ 
 // Test Changes & History Tabs Toggle
 $('#tab-toggle button:first-child').addClass('active');
 $('.tab-details').hide();
@@ -236,6 +370,76 @@ $('#tab-toggle button').click(function(){
   $(activeTab).fadeIn();
   return false;
 });
+
+
 // Test Changes & History Tabs Toggle End
 
+// js tree 
+$('.collapse').on('show.bs.collapse', function(){
+  $(this).parent().find(".icon-caret-right").removeClass("icon-caret-right").addClass("icon-caret-down");
+  }).on('hide.bs.collapse', function(){
+  $(this).parent().find(".icon-caret-down").removeClass("icon-caret-down").addClass("icon-caret-right");
+ 
+  });
+
+  $('#close-filter-btn').on("click",function(){
+    $('#filter-col').hide();
+    $('#open-filter-btn').removeAttr('hidden');
+    $('#empty-div').removeAttr('hidden');
+    $(this).hide();
+  });
+
+  $('#open-filter-btn').on("click",function(){
+    $('#filter-col').show();
+    $('#close-filter-btn').show();
+    $('#empty-div').attr('hidden',true);
+    $(this).attr('hidden' , true);
+  });
+
 })
+
+
+jQuery(function($) {
+  // js tree library
+$('#jstree').jstree(tree_data);
+$('#jstree').jstree({core:{multiple : false}});
+
+
+
+// Try to check all boxes, here it works. Why.
+$("#btn").click(function(){
+    checkAll($("#jstree"));
+})
+
+$('#jstree').on("select_node.jstree", function (e, data1) { 
+  console.log("hello");
+
+var child = getchild(data1.node.id);
+var r = [];
+child.forEach((item) => {
+  
+  r.push(item.name);
+});
+
+var html_data= "" ; 
+r.forEach((item) => {
+html_data=html_data+'<div class="custom-control custom-checkbox"> <input class="custom-control-input" type="checkbox"> <label class="custom-control-label" for=""></label> <span data-toggle="tooltip" data-placement="top"  title="'+item+'">'+item+'</span> </div>';
+
+});
+
+$('#event_result').html(html_data);
+
+//Tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+
+}
+);
+
+
+});
+
+
+// Populate the tree with some generic data

@@ -959,6 +959,28 @@
                     padding-left: 25px;
                     margin-bottom: 10px;
                 }
+
+                &-date-filter {
+                    display: flex;
+
+                    .date-picker {
+                        background-color: #fff;
+                        border: 1px solid $grey-300;
+                        border-radius: 10px;
+
+                        input {
+                            background-color: #fff;
+                            padding: 8px 0px 8px 8px;
+                            font-size: 10px;
+                        }
+
+                        span {
+                            background-color: #fff;
+                            font-size: 16px;
+                        }
+
+                    }
+                }
             }
         }
 

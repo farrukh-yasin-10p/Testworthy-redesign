@@ -18060,6 +18060,12 @@ function clear_date2(b){
   z.hidden = true;
   b.hidden = true;
 }
+function clear_date_tree(c){
+  var x  = document.getElementById('clear_input');
+  x.value = "";
+  x.hidden = true;
+  c.hidden = true;
+}
 
 $(function () {
   $('#daterange').daterangepicker({

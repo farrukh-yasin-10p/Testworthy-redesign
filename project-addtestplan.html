@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="./assets/dist/style.css">
     <title>Testworthy</title>
 
@@ -842,18 +845,19 @@
                                                                 <div id="collapse3" class="collapse"
                                                                     aria-labelledby="heading3"
                                                                     data-parent="#accordionExample3">
-                                                                    <div class="accordion-body ">
-                                                                        <div class="custom-control custom-checkbox">
-                                                                            <input class="custom-control-input"
-                                                                                type="checkbox"> <label
-                                                                                class="custom-control-label"
-                                                                                for="">Smoke</label><br>
-                                                                        </div>
-                                                                        <div class="custom-control custom-checkbox">
-                                                                            <input class="custom-control-input"
-                                                                                type="checkbox"> <label
-                                                                                class="custom-control-label"
-                                                                                for="">Regression</label><br>
+                                                                    <div class="accordion-body accordion-date-filter ">
+                                                                        <div class="date-picker">
+                                                                            <input type="text" name="daterange"
+                                                                                value="01/01/2018 - 01/15/2018"
+                                                                                id="clear_input" hidden>
+                                                                            <span><a href="javascript: void(0)"
+                                                                                    id="clear_cross" class="clear"
+                                                                                    onclick="clear_date_tree(this)"
+                                                                                    hidden>×</a><a
+                                                                                    href="javascript: void(0)"
+                                                                                    id="daterange"><i
+                                                                                        class="icon-date-icon"></i></a>
+                                                                            </span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1570,6 +1574,8 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

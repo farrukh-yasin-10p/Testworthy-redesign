@@ -380,27 +380,27 @@
 .gridboxes__days {
     height: rem(130);
 
-    figure{
- 
-        padding:0; 
-        
-        img{
-            border-radius:80px;
-            width: 117px;
-            height:117px;
+    figure {
+
+        padding: 0;
+
+        img {
+            border-radius: rem(80);
+            width: rem(117);
+            height: rem(117);
         }
     }
 
-    .assignedto{
-        h5{
-            font-size: 12px;
+    .assignedto {
+        h5 {
+            font-size: rem(12);
             color: #969ba0;
             margin: 0;
             padding: 0;
         }
 
-        h3{
-            font-size: 16px;
+        h3 {
+            font-size: rem(16);
             color: #000;
             margin: 0;
             padding: 0;
@@ -408,13 +408,13 @@
         }
     }
 
-    .completed-icon{
+    .completed-icon {
 
-        margin-top:20px;
+        margin-top: rem(20);
 
         .icon-complete-tick {
             color: #24cc09;
-            font-size: 25px;
+            font-size: rem(25);
         }
     }
 }

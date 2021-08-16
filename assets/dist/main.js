@@ -17974,68 +17974,68 @@ var tree_data = {
 {
   "id": "node1",
   "parent": "#",
-  "text": "Prerequisites <span class='counts'>(243/23)</span>" 
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Prerequisites</span> <span class='jstree-counts'>(243/23)</span></div>" 
 },
 {
   "id": "node2",
   "parent": "node1",
-  "text": "Update"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Update</span></div>"
  
 },
 {
   "id": "node3",
   "parent": "node1",
-  "text": "Tutorials <span class='counts'>(3/43)</span>"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Tutorials</span> <span class='jstree-counts'>(3/43)</span></div>"
  
 },
  {
   "id": "node5",
   "parent": "node1",
-  "text": "Installation"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Installation</span></div>"
  
 },
 {
   "id": "node4",
   "parent": "node2",
-  "text": "Goals"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Goals</span></div>"
  
 },
 
 {
   "id": "node6",
   "parent": "node3",
-  "text": "Goals"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Goals</span></div>"
  
 },
 {
   "id": "node13",
   "parent": "node2",
-  "text": "Goals"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Goals</span></div>"
 },
   
 {
   "id": "node7",
   "parent": "#",
-  "text": "Installations <span class='counts'>(3/23)</span>"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Installations</span> <span class='jstree-counts'>(3/43)</span></div>" 
 },
 
 {
   "id": "node8",
   "parent": "node7",
-  "text": "Tutorials <span class='counts'>(2/13)</span>"
+  "text":  "<div class='jstree-textbox'><span class='jstree-text'>Tutorials</span> <span class='jstree-counts'>(2/43)</span></div>"
  
 },
 {
   "id": "node9",
   "parent": "node7",
-  "text": "Installations"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Installations</span></div>"
  
 },
 
 {
   "id": "node12",
   "parent": "node9",
-  "text": "Goals"
+  "text": "<div class='jstree-textbox'><span class='jstree-text'>Goals</span></div>"
  
 }
 ]
@@ -18059,6 +18059,12 @@ function clear_date2(b){
   z.value = "";
   z.hidden = true;
   b.hidden = true;
+}
+function clear_date_tree(c){
+  var x  = document.getElementById('clear_input');
+  x.value = "";
+  x.hidden = true;
+  c.hidden = true;
 }
 
 $(function () {
@@ -18357,7 +18363,9 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 }
 );
 
+
 });
+
 
 // Populate the tree with some generic data
 

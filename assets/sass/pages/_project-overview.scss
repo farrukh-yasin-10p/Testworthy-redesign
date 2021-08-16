@@ -34,7 +34,7 @@
     margin-right: rem(20);
     margin-bottom: rem(10);
     padding: rem(10) rem(0);
-    font-size: rem(10);
+    font-size: rem(12);
     border-radius: rem(10);
     border: none;
     box-shadow: $shadow3;
@@ -134,14 +134,15 @@
 }
 
 .edit_project button {
-    @include icon-circle;
+    background-color: $secondary;
+    border-radius: 50%;
     //padding: rem(8) rem(10) rem(8) rem(10);
     box-shadow: none;
     width: rem(55);
     height: rem(56);
 
     img {
-        width: rem(20);
+        width: rem(24);
     }
 }
 
@@ -149,12 +150,17 @@
 .dropdown {
     .ellipsis {
         padding-top: rem(6);
-        margin-left: rem(10);
+        margin-left: rem(20);
 
-        img {
-            width: rem(38);
-            height: rem(38);
+        i {
+            font-size: 20px;
+            color: black;
         }
+
+        // img {
+        //     width: rem(38);
+        //     height: rem(38);
+        // }
 
     }
 
@@ -173,7 +179,6 @@
 // Chart & Report Row
 
 .chart-box {
-    @include card-box;
     padding: rem(20);
     //height: rem(650);
     height: 100%;
@@ -209,7 +214,7 @@
     }
 }
 
-// Chart 
+// Chart
 .chart-heading {
     h6 {
         font-size: rem(20);
@@ -225,9 +230,6 @@
 
 
 .chart-filter {
-    @include tab-filter;
-
-
     .tabs-filter {
         .nav-link {
             font-size: rem(14);
@@ -363,7 +365,6 @@
 // Test Cards Row
 
 .test-card {
-    @include card-box;
     box-shadow: 0 12px 23px 0 rgba(62, 73, 84, 0.04);
     // height: 90%;
     margin-bottom: rem(20);
@@ -462,7 +463,6 @@
 // Milestone Section
 
 .milestone {
-    @include card-box;
     padding: rem(30);
     height: 100%;
     display: flex;
@@ -497,29 +497,27 @@
             margin-right: rem(20);
 
             .complete-bar {
-                @include colored-bars($green-light);
+                background-color: $green-light;
             }
 
             .delay-bar {
-                @include colored-bars($danger-light-100);
+                background-color: $danger-light-100;
             }
 
             .bar1 {
-                @include colored-bars($blue);
-
+                background-color: $blue;
             }
 
             .bar2 {
-                @include colored-bars($sky-blue);
-
+                background-color: $sky-blue;
             }
 
             .bar3 {
-                @include colored-bars($sky-blue-100);
+                background-color: $sky-blue-100;
             }
 
             .bar4 {
-                @include colored-bars($sky-light);
+                background-color: $sky-light;
             }
         }
 
@@ -560,7 +558,8 @@
 }
 
 .milestone-box-complete {
-    @include milestone-box($green-light);
+    //@include milestone-box($green-light);
+    background-color: $green-light;
     margin-bottom: rem(30);
     margin-right: rem(30);
 
@@ -577,7 +576,8 @@
 }
 
 .milestone-box-delay {
-    @include milestone-box($danger-light-100);
+    // @include milestone-box($danger-light-100);
+    background-color: $danger-light-100;
     margin-bottom: rem(30);
 
     .c100:after {
@@ -587,7 +587,8 @@
 
 
 .milestone-box1 {
-    @include milestone-box($blue);
+    //@include milestone-box($blue);
+    background-color: $blue;
     margin-right: rem(30);
     margin-bottom: rem(30);
 
@@ -597,7 +598,8 @@
 }
 
 .milestone-box2 {
-    @include milestone-box($sky-blue);
+    //@include milestone-box($sky-blue);
+    background-color: $sky-blue;
     margin-bottom: rem(30);
 
 
@@ -607,7 +609,8 @@
 }
 
 .milestone-box3 {
-    @include milestone-box($sky-blue-100);
+    //@include milestone-box($sky-blue-100);
+    background-color: $sky-blue-100;
     margin-right: rem(30);
 
 
@@ -618,7 +621,8 @@
 }
 
 .milestone-box4 {
-    @include milestone-box(white);
+    //@include milestone-box(white);
+    background-color: white;
     border: 2px solid $primary-color-blue;
 
     .c100 {
@@ -856,6 +860,16 @@
 
 // Test Changes Row
 .test-changes {
+    background-color: white;
+
+    h6 {
+        font-size: rem(18);
+        font-weight: bold;
+    }
+
+    span {
+        font-size: rem(12);
+    }
 
     .tab-content {
         .tab-pane {
@@ -870,17 +884,6 @@
         align-items: center
     }
 
-    @include card-box;
-    background-color: white;
-
-    h6 {
-        font-size: rem(18);
-        font-weight: bold;
-    }
-
-    span {
-        font-size: rem(12);
-    }
 }
 
 .btn-tab {
@@ -959,28 +962,28 @@
 
 
 .dot1 {
-    @include colored-dots($success-100);
+    background-color: $success-100;
 }
 
 .dot2 {
-    @include colored-dots($danger-100);
+    background-color: $danger-100;
 }
 
 .dot3 {
-    @include colored-dots($warning);
+    background-color: $warning;
 }
 
 .dot4 {
-    @include colored-dots($grey-100);
+    background-color: $grey-100;
 }
 
 
 .dot5 {
-    @include colored-dots($navy-blue);
+    background-color: $navy-blue;
 }
 
 .dot6 {
-    @include colored-dots($secondary);
+    background-color: $secondary;
 }
 
 
@@ -1011,7 +1014,8 @@
     font-size: rem(14);
 
     p {
-        @include size-color(rem(10), $grey-light);
+        font-size: rem(10);
+        color: $grey-light;
     }
 
     @include mq('sm', max) {
@@ -1094,7 +1098,8 @@
         padding-left: rem(10);
 
         p {
-            @include size-color(rem(14), $grey-light);
+            font-size: rem(14);
+            color: $grey-light;
             color: rgba(0, 0, 0, 0.8);
             padding-top: rem(5);
             margin: rem(0);
@@ -1207,7 +1212,6 @@
 
 // History Tab
 .history-filter {
-    @include tab-filter;
 
     @include mq('xl', max) {
         justify-content: center;

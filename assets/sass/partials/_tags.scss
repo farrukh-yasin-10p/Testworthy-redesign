@@ -1,0 +1,73 @@
+.name-tags {
+    padding: rem(18) rem(15) rem(0) rem(15);
+    color: white;
+    border: rem(1) solid #b6b9bd;
+    font-size: rem(10);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: rem(6);
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 25.8px;
+        height: 25.3px;
+        margin-right: rem(10);
+        border-radius: 50%;
+    }
+
+    span {
+        background-color: $secondary;
+        display: flex;
+        min-width: rem(163);
+        height: rem(44);
+        padding: rem(2) rem(8);
+        border-radius: rem(20);
+        flex-direction: row;
+        align-items: center;
+        margin: rem(0) rem(16) rem(8) rem(0);
+    }
+
+    a {
+        font-size: rem(24);
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    .tag-label {
+        margin-bottom: rem(0);
+        margin-right: rem(10);
+        font-size: rem(12);
+    }
+
+    @include mq('sm', max) {
+
+        img {
+            width: rem(22);
+            margin-right: rem(3);
+        }
+
+        span {
+            min-width: rem(110);
+            padding: rem(1) rem(4);
+            margin: rem(0) rem(8) rem(5) rem(0);
+        }
+
+        a {
+            font-size: rem(18);
+        }
+
+        .tag-label {
+            margin-right: rem(3);
+        }
+
+    }
+
+}

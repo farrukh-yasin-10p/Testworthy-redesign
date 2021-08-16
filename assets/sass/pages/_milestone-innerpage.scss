@@ -24,7 +24,6 @@
 }
 
 .sub-milestone-list-card {
-    @include card-box;
     padding: rem(28) rem(28);
 
     .sort-by {

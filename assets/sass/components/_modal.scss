@@ -99,7 +99,6 @@
         }
 
         .saved-tags {
-            @include tags;
             border: none;
             padding-left: rem(0);
 
@@ -109,7 +108,6 @@
         }
 
         .edit-tags {
-            @include tags;
 
             a {
                 color: white;
@@ -427,7 +425,16 @@
 
 .save-project {
     .alert-box {
-        @include alert_box(rgba(36, 204, 9, 0.19), $sky-light, $success-200)
+        border: 3px solid rgba(36, 204, 9, 0.19);
+        background-color: $sky-light;
+
+        i {
+            color: $success-200;
+        }
+
+        span {
+            color: $success-200;
+        }
     }
 
     .save-check {
@@ -447,8 +454,18 @@
 
 .unsaved-project {
     .alert-box {
-        @include alert_box(rgba(231, 30, 30, 0.5), $danger-light, $danger-100);
         padding: rem(10) rem(185) rem(10) rem(35);
+        border: 3px solid rgba(231, 30, 30, 0.5);
+        background-color: $danger-light;
+
+        i {
+            color: $danger-100;
+        }
+
+        span {
+            color: $danger-100;
+        }
+
     }
 }
 
@@ -742,15 +759,6 @@
     .modal-dialog {
         max-width: rem(1304);
     }
-
-    // .modal-footer {
-    //     button {
-    //         &:last-child {
-    //             min-width: 200px;
-    //             min-height: 38px;
-    //         }
-    //     }
-    // }
 }
 
 .testplan-modals {
@@ -766,9 +774,23 @@
         line-height: 20px;
     }
 
-    .counts {
-        color: $secondary-text-color;
-        font-size: rem(11);
+    .jstree-textbox {
+        display: inline-flex;
+        align-items: baseline;
+
+        .jstree-text {
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: rem(195);
+            margin-right: rem(2);
+        }
+
+        .jstree-counts {
+            color: $secondary-text-color;
+            font-size: rem(11);
+        }
     }
 
     .modal-header {
@@ -786,16 +808,10 @@
 
                 &::before {
                     top: 0;
-                    //top: auto;
-                    // width: rem(18);
-                    // height: rem(18);
                 }
 
                 &::after {
                     top: 0;
-                    //top: auto;
-                    // width: rem(19);
-                    // height: rem(19);
                 }
             }
 
@@ -813,7 +829,6 @@
 
         .login-auth {
             border: 1px solid $grey-300;
-            //flex-grow: 5;
             flex: 1;
             position: relative;
 
@@ -881,7 +896,6 @@
             border: 1px solid $grey-300;
             border-right: none;
 
-            //flex-grow: 3;
 
             &__head {
                 span {
@@ -919,11 +933,6 @@
                     }
 
                     span {
-                        // display: block;
-                        // width: 100%;
-                        // text-overflow: ellipsis;
-                        // max-height: 40px;
-                        // overflow: hidden;
                         -webkit-line-clamp: 2;
                         text-overflow: ellipsis;
                         overflow: hidden;
@@ -936,21 +945,6 @@
                         background-color: #f4f6f7;
                     }
 
-                    label {
-
-
-                        &::before {
-                            //top: 0;
-                            // width: 18px;
-                            // height: 18px;
-                        }
-
-                        &::after {
-                            //top: 0;
-                            // width: 18px;
-                            // height: 18px;
-                        }
-                    }
                 }
             }
 
@@ -1006,6 +1000,14 @@
                         margin-right: rem(5);
                         font-size: rem(12);
                     }
+
+                    span {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: rem(12);
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                    }
                 }
 
                 &-body {
@@ -1013,21 +1015,47 @@
                     padding-left: rem(25);
                     margin-bottom: rem(10);
                 }
+
+                &-date-filter {
+                    display: flex;
+
+                    .date-picker {
+                        background-color: #fff;
+                        border: 1px solid $grey-300;
+                        border-radius: rem(10);
+
+                        input {
+                            background-color: #fff;
+                            padding: rem(8) rem(0) rem(8) rem(8);
+                            font-size: rem(10);
+                        }
+
+                        span {
+                            background-color: #fff;
+                            height: unset;
+                            width: unset;
+                            padding: rem(4) rem(8);
+                            font-size: rem(16);
+
+
+                            i {
+                                font-size: rem(16);
+                            }
+                        }
+
+                    }
+                }
             }
         }
 
         .filter-empty-box {
             border: 1px solid $grey-300;
-            width: 100px;
+            width: rem(100);
             border-left: none;
         }
 
         .tree-section {
             padding: rem(15);
-
-            // span {
-            //     font-size: rem(14);
-            // }
         }
     }
 }
@@ -1039,7 +1067,9 @@
         margin-right: rem(5);
     }
 
-
+    .jstree-icon.jstree-undetermined {
+        background: url("../images/partial-check.png") no-repeat !important;
+    }
 }
 
 .jstree-anchor.jstree-clicked {

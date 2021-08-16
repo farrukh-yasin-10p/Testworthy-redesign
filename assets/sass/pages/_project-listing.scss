@@ -231,11 +231,16 @@
                             width: 67px;
                             height: 67px;
                         }
+
+                        .grid-testworthy-logo {
+                            width: 62px;
+                            height: 12px;
+                        }
                     }
 
                     &--row {
                         display: flex;
-                        align-items: flex-end;
+                        align-items: center;
                     }
 
                     &--logo {

@@ -224,3 +224,140 @@
 //===========================================
 // -Helper Classes end
 //===========================================
+
+// tab-filter class
+.tab-filter {
+  display: flex;
+  justify-content: flex-end;
+
+  .tabs-filter {
+    background-color: $filter;
+    border-radius: rem(20);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .nav-link {
+
+      background-color: $filter;
+      color: $grey-light;
+      font-weight: bold;
+      border-radius: 30px;
+      font-size: rem(14);
+      width: rem(100);
+      height: rem(48);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        background-color: $secondary;
+        color: white;
+      }
+    }
+  }
+}
+
+// alert box
+.alert-box {
+  position: absolute;
+  right: rem(0);
+  padding: rem(10) rem(240) rem(10) rem(50);
+  border-right: none;
+  height: rem(68);
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: rem(20);
+    width: rem(30);
+  }
+
+  i {
+    font-size: rem(39);
+    margin-right: rem(20);
+  }
+
+  span {
+    font-size: rem(18);
+    font-weight: 600;
+  }
+
+
+  @include mq('sm', max) {
+    top: rem(20);
+    padding: rem(8) rem(30) rem(8) rem(18);
+  }
+}
+
+
+// card box
+.card-box {
+  border: rem(2) solid white;
+  background-color: white;
+  border-radius: rem(20);
+  padding: rem(15) rem(20);
+  box-shadow: 0 rem(4) rem(6) 0 rgba(62, 73, 84, 0.04);
+}
+
+
+// colored dots
+.colored-dots {
+  height: rem(19);
+  width: rem(19);
+  border-radius: 15px;
+  display: inline-block;
+  flex-grow: 0;
+  margin-right: rem(10);
+}
+
+// colored bars
+.colored-bars {
+  height: rem(54);
+  width: rem(14);
+  border-radius: 14px;
+  display: block;
+  flex-grow: 0;
+}
+
+// milestone boxes
+.milestone-boxes {
+  width: rem(180);
+  height: rem(166);
+  flex-grow: 0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// case boxes
+.case-box {
+  .c100 {
+    font-size: 50px;
+    background-color: transparent;
+
+    span {
+      top: -7px;
+      left: 0;
+      text-align: center;
+      width: 4em;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .slice {
+      .bar {
+        z-index: 1;
+      }
+    }
+
+  }
+
+}

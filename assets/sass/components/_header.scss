@@ -9,7 +9,9 @@ header {
     display: flex;
     align-items: center;
     padding: rem(20) rem(46);
-    @include bg-color-sh;
+    background-color: $primary;
+    box-shadow: $shadow;
+    z-index: 100;
     display: flex;
     height: rem(120);
 
@@ -160,7 +162,9 @@ header {
 
 
         p {
-            @include size-color(rem(10), $grey-light);
+
+            font-size: rem(10);
+            color: $grey-light;
             margin-bottom: rem(0);
             font-size: rem(12);
         }
@@ -222,8 +226,8 @@ header {
     margin-top: rem(8);
 
     .dropdown-toggle {
-
-        @include size-color(rem(26), $grey-light);
+        font-size: rem(26);
+        color: $grey-light;
         float: right;
 
 

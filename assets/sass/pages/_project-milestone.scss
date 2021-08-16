@@ -347,12 +347,13 @@
         }
 
         li {
-            @include card-box;
+            padding: rem(15) rem(20);
+            box-shadow: 0 rem(4) rem(6) 0 rgba(62, 73, 84, 0.04);
             border: none;
             background-color: white;
             margin-bottom: rem(20);
             //padding: rem(20) rem(5) rem(20) rem(20);
-            min-height: rem(91);
+            height: rem(91);
             display: flex;
             align-items: center;
             border-radius: rem(30);
@@ -693,15 +694,15 @@
 
         .dropdown-item {
             i {
-                font-size: 16px;
+                font-size: rem(16);
                 font-weight: bold;
                 position: relative;
-                top: 4px;
+                top: rem(4);
             }
 
             span {
-                font-size: 12px;
-                padding: 0 5px;
+                font-size: rem(12);
+                padding: 0 rem(5);
             }
         }
 
@@ -710,25 +711,25 @@
 
             .completeico {
                 position: relative;
-                right: 25px;
-                top: 12px;
-                font-size: 25px;
+                right: rem(25);
+                top: rem(12);
+                font-size: rem(25);
                 color: #24cc09;
             }
 
             .unassigned {
                 position: relative;
-                top: 10px;
-                font-size: 30px;
+                top: rem(10);
+                font-size: rem(30);
                 color: #1eaae7;
-                min-height: 94px;
+                min-height: rem(94);
             }
         }
 
         .profile-img {
-            width: 55px;
-            height: 55px;
-            border-radius: 50px;
+            width: rem(55);
+            height: rem(55);
+            border-radius: rem(50);
             overflow: hidden;
 
             img {
@@ -773,17 +774,17 @@
             }
 
             .icon-accordion-down {
-                font-size: 24px;
+                font-size: rem(24);
             }
         }
 
         .icon-clipboard {
-            width: 80px;
-            height: 66px;
-            font-size: 55px;
+            width: rem(80);
+            height: rem(66);
+            font-size: rem(55);
             color: #1EAAE7;
             position: relative;
-            top: 2px;
+            top: rem(2);
         }
 
         .mscases {
@@ -809,29 +810,74 @@
                 overflow: hidden;
                 -ms-flex-positive: 0;
                 flex-grow: 0;
-                border-radius: 15px;
+                border-radius: rem(15);
                 margin-bottom: rem(10);
                 padding: rem(8) rem(5);
 
                 &--box1 {
-                    @include case_box($danger, $danger-light-100);
+
+                    .c100 {
+                        span {
+                            color: $danger;
+                        }
+
+                        .slice {
+                            .bar {
+                                border: .09em solid $danger-light-100;
+                            }
+                        }
+                    }
                 }
 
                 &--box2 {
-                    @include case_box($warning, $warning-light);
+
+                    .c100 {
+                        span {
+                            color: $warning;
+                        }
+
+                        .slice {
+                            .bar {
+                                border: .09em solid $warning-light;
+                            }
+                        }
+                    }
                 }
 
                 &--box3 {
-                    @include case_box($sky-blue-200, lighten($sky-blue-100, 10));
+
+
+                    .c100 {
+                        span {
+                            color: $sky-blue-200;
+                        }
+
+                        .slice {
+                            .bar {
+                                border: .09em solid lighten($sky-blue-100, 10);
+                            }
+                        }
+                    }
                 }
 
                 &--box4 {
-                    @include case_box(darken($sky-blue-200, 30), $navy-light);
+
+                    .c100 {
+                        span {
+                            color: darken($sky-blue-200, 30);
+                        }
+
+                        .slice {
+                            .bar {
+                                border: .09em solid $navy-light;
+                            }
+                        }
+                    }
                 }
 
 
                 .c100 {
-                    font-size: 50px;
+                    font-size: rem(50);
                     background-color: transparent;
 
                     &:after {
@@ -841,19 +887,19 @@
                     }
 
                     span {
-                        top: -7px;
+                        top: rem(-7);
                         left: 0;
                         text-align: center;
                         width: 4em;
                         font-weight: 600;
-                        font-size: 13px;
+                        font-size: rem(13);
                     }
 
                     .cases-rate {
 
                         position: relative;
-                        left: 55px;
-                        top: 10px;
+                        left: rem(55);
+                        top: rem(10);
 
                         h5 {
                             font-size: rem(13);
@@ -914,7 +960,7 @@
             font-size: rem(70);
             color: #1EAAE7;
             position: relative;
-            top: 2px;
+            top: rem(2);
         }
 
         .cntnttxt {

@@ -1,5 +1,6 @@
 .sidebar {
-    @include bg-color-sh;
+    background-color: $primary;
+    z-index: 100;
     box-shadow: 0 rem(15) rem(15) 0 #ebebeb;
     width: rem(345);
     left: 0;
@@ -50,7 +51,8 @@
         padding-top: rem(120);
 
         i {
-            @include size-color(rem(24), $secondary);
+            font-size: rem(24);
+            color: $secondary;
         }
     }
 }
@@ -65,9 +67,9 @@
     }
 
     a {
-        @include size-color(rem(16), $grey-light);
+        font-size: rem(16);
+        color: $grey-light;
         display: block;
-        //padding-left: rem(15);
         display: flex;
         align-items: center;
 
@@ -78,7 +80,9 @@
         &.active {
             span {
                 &:first-child {
-                    @include icon-circle;
+                    background-color: $secondary;
+                    border-radius: 50%;
+                    box-shadow: $shadow2;
                     color: white;
 
                 }

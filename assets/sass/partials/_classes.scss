@@ -179,6 +179,36 @@
   vertical-align: top;
 }
 
+.wd350{
+  min-width: 350px;
+}
+
+.error-msg{
+  .input_field.required{
+    background:rgba(231, 30, 30, 0.06);
+    border: 2px solid #e71e1e;
+  }
+  .text {
+    font-size: 13px;
+    color: #e71e1e;
+  }
+  .icon-warning {
+    color: #e71e1e;
+  }
+}
+
+.radio-disc {
+  display: block;
+  font-size: 14px;
+  color: #a4a4a4;
+}
+
+hr {
+  &.radio-bdr {
+    margin:25px 40px;
+  }
+}
+
 // Tooltip End 
 //===========================================
 // -Helper Classes end

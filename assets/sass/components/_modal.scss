@@ -745,9 +745,23 @@
 }
 
 .testplan-modals {
+    .jstree-textbox {
+        display: inline-flex;
+        align-items: baseline;
 
-    .counts {
-        color: $secondary-text-color;
+        .jstree-text {
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 195px;
+            margin-right: 2px;
+        }
+
+        .jstree-counts {
+            color: $secondary-text-color;
+            font-size: 11px;
+        }
     }
 
     .modal-header {
@@ -1006,8 +1020,13 @@
         background: url("../images/uncheckbox.png") no-repeat !important;
     }
 
+    .jstree-icon.jstree-undetermined {
+        background: url("../images/partial-check.png") no-repeat !important;
+    }
 
 }
+
+
 
 .jstree-anchor.jstree-clicked {
 

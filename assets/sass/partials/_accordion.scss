@@ -1,0 +1,133 @@
+//===========================================
+// -Accordion start
+//===========================================
+.content-row {
+  .test-case-list {
+    margin-right: 60px;
+    .card {
+      border: none;
+      border-radius: rem(10) rem(10) rem(0) rem(0);
+      font-weight: normal;
+      font-size: rem(16);
+      color: #b4b7bb;
+      margin-top: 10px;
+      position: relative;
+      
+    }
+    .parent {
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        border-left: 1px dotted #1eaae7;
+        left: 21px;
+        height: 100%;
+        top: 22px;
+      }
+      .card-header {
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 25px;
+          border-top: 1px dotted #1eaae7;
+          left: -25px;
+          height: 1px;
+          top: 22px;
+        }
+      }
+      .circle-dots {
+        position: absolute;
+        left: 17px;
+        top: 10px;
+        span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #1eaae7;
+          border-radius: 30px;
+        }
+      }
+    }
+    .row-head {
+      color: #000;
+    }
+    
+    .select-row {
+      background-color: #f9f9f9;
+      border: solid 1px #ebecef;
+      label {
+        span {
+          &.row-text {
+            font-size: 12px;
+            padding-left: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .icons-sec {
+      a {
+        color: #939394;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    .row-text-small {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    
+
+    .dots{
+      margin-left: -5px;
+      img {
+        width: 20px;
+        opacity: 0.6;
+        &:last-child {
+          margin-left: -13px;
+        }
+      } 
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  .table-head {
+    .display-table{
+      border:1px solid #bfbfbf;
+      border-radius: 10px;
+    }
+    color: #b4b7bb;
+  }
+  .display-table {
+    display: table;
+    width: 100%;
+    padding: 8px;
+  }
+  .table-cell {
+    display: table-cell;
+  }
+  .table-body {
+    overflow: scroll;
+    max-height: 350px;
+    max-width: 100%;
+    a {
+      color: $secondary;
+    }
+  }
+  .col1{
+    width: 27px;
+    min-width: 27px;
+  }
+  .col2{
+    width: 95px;
+    min-width: 95px;
+  }
+}
+//===========================================
+// -Accordion end
+//===========================================

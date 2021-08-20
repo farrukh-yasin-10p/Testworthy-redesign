@@ -6,47 +6,75 @@
     margin-right: 60px;
     .card {
       border: none;
-      border-radius: rem(10) rem(10) rem(0) rem(0);
       font-weight: normal;
       font-size: rem(16);
       color: #b4b7bb;
-      margin-top: 10px;
       position: relative;
       
     }
     .parent {
+      display: flex;
+      flex-direction: row;
       position: relative;
-      &:before{
-        content: "";
-        position: absolute;
-        width: 1px;
-        border-left: 1px dotted #1eaae7;
-        left: 21px;
-        height: 100%;
-        top: 22px;
-      }
+      // &:before{
+      //   content: "";
+      //   position: absolute;
+      //   width: 1px;
+      //   border-left: 1px dotted #1eaae7;
+      //   left: 21px;
+      //   height: 100%;
+      //   top: 22px;  
+      // }
       .card-header {
         position: relative;
-        &:before{
-          content: "";
-          position: absolute;
-          width: 25px;
-          border-top: 1px dotted #1eaae7;
-          left: -25px;
-          height: 1px;
-          top: 22px;
-        }
+        // &:before{
+        //   content: "";
+        //   position: absolute;
+        //   width: 25px;
+        //   border-top: 1px dotted #1eaae7;
+        //   left: -25px;
+        //   height: 1px;
+        //   top: 22px;
+        // }
       }
       .circle-dots {
-        position: absolute;
-        left: 17px;
-        top: 10px;
-        span {
+        white-space: nowrap;
+        display: flex;
+        .dot-container {
+          padding-right: 10px;
+          position: relative;
+          &:last-child {
+            padding-right: 22px;
+            &::before {
+              content: '';
+              height: 2px;
+              width: 100%;
+              background-color: #1eaae7;
+              position: absolute;
+              top: 3px;
+            }
+          }
+        }
+        .dot {
           display: inline-block;
           width: 10px;
           height: 10px;
           background: #1eaae7;
           border-radius: 30px;
+          display: flex;
+
+          &::after {
+            content: '';
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            margin-bottom: -42px;
+            background: #1eaae7;
+            margin-top: 10px;
+            margin-left: 4px;
+          }
         }
       }
     }

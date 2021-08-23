@@ -764,6 +764,11 @@
         }
     }
 
+    .jstree-checkbox-selection {
+        height: 500px;
+        overflow: auto;
+    }
+
     .modal-header {
         padding-bottom: 5px;
     }
@@ -993,6 +998,21 @@
                             font-size: 16px;
                         }
 
+                    }
+                }
+
+                .form-control {
+                    padding: 6px;
+                    border-radius: 10px;
+                    font-size: 12px;
+                }
+
+                .search-list {
+                    width: 26%;
+                    margin-top: 5px;
+
+                    span {
+                        font-size: 12px;
                     }
                 }
             }

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <!-- My custom Scrollbar -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="./assets/dist/style.css">
+    <title>Testworthy</title>
+
+</head>
+
+<body>
+    <!-- Header Section start -->
+
+    <header class="sticky-top">
+        <div class="head-logo">
+            <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu-btn">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="header-back">
+            <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
+                    <a href="#">Exelon</a>
+                    </spam></label>
+            <div class="breadCrumb">
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="#">Test Suites & Cases</a> </h6>
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="#">Smoke Checklist - Converter and Editor</a> </h6>
+            </div>
+
+        </div>
+        <div class="user ml-auto">
+            <div class="user-group">
+                <div class="user-text">
+                    <span>Hello,</span><strong> Ahmed</strong>
+                    <br>
+                    <p class="text-right">Admin</p>
+                </div>
+                <div class="user-icon">
+                    <span><img src="./assets/images/user-icon.png" alt=""></span>
+                </div>
+            </div>
+            <div class="caret-down">
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Integration</a>
+                        <a class="dropdown-item" href="#">Subscription</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Sidebar Section Start -->
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-hamburger">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a>
+                </li>
+                <li><a href="" class="active"><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
+                <li><a href=""><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
+                <li><a href=""><span><i class="icon-integration"></i></span> <span>Integration</span></a>
+                </li>
+                <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
+                <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sidebar Section End -->
+
+
+    <!-- Main Content Section Start -->
+
+    <div class="main-content">
+        <!-- Page Nav Section Start -->
+        <div class="page-nav ">
+            <div class="header-nav">
+                <ul>
+                    <li><a href="./index.html" class="">Overview</a></li>
+                    <li><a href="./project-milestone.html">Milestones</a> </li>
+                    <li><a href="./project-testplan.html" class="">Test Plan</a> </li>
+                    <li><a href="./project-testrun.html" class="">Test Run & Results</a> </li>
+                    <li><a href="#" class="active">Test Suites & Cases</a> </li>
+                </ul>
+            </div>
+
+            <div class="page-option">
+                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="" data-original-title="Edit"><a href=""
+                        class="d-inline-block"><i class="icon-ic_edit"></i></a></span>
+                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="" data-original-title="Delete"><a href=""
+                        class="d-inline-block"><i class="icon-trash"></i></a></span>
+            </div>
+        </div>
+        <!-- Page Nav Section End -->
+        <div class="container-fluid testcaseid">
+            <!-- Edit Test Case Section -->
+            <section class="testplan-section addtestplan testcases card-box">
+                <!--Edit Test Case Start-->
+
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div>
+                            <h4 class="font-weight-bold">Test Case ID - 131095</h4>
+                        </div>
+                        <div class="breadCrumb">
+                            <a href="#" class="breadCrumb__text">Exelon</a>
+                            <span class="breadCrumb__icon"><i class="icon-chevron-right"></i>
+                            </span>
+                            <a href="#" class="breadCrumb__text">Smoke Checklist - Converter and Editor</a>
+                            <span class="breadCrumb__icon"><i class="icon-chevron-right"></i>
+                            </span>
+                            <a href="#" class="breadCrumb__text">Converter</a>
+                            <span class="breadCrumb__icon"><i class="icon-chevron-right"></i>
+                            </span>
+                            <a href="#" class="breadCrumb__text">Home Site Selection</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <button class="btn btn-light-border btn-icon mr-2" id="dropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-chevron-right icon-rotate-left"></i>
+                                Previous Test Case
+                            </button>
+                            <button class="btn btn-secondary-color btn-icon" id="dropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Next Test Case
+                                <i class="icon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Edit Test Case End-->
+
+                <div class="row textcaseid-content mb-5">
+                    <div class="col-lg-12">
+                        <div class="textcaseid-content__text">
+                            <p>Verify that if a user tries to mark a site which do not have a Functional Area Assigned
+                                to it
+                                an error message should appear "No default Functional Area selected. Please select,
+                                before
+                                proceeding."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="textcaseid-content__cols d-flex justify-content-around">
+                            <div class="textcaseid-content__cols-text">
+                                <h6>Estimate</h6>
+                                <span>12 Minutes</span>
+                            </div>
+
+                            <div class="textcaseid-content__cols-text">
+                                <h6>Reference</h6>
+                                <span>12 Minutes</span>
+                            </div>
+
+                            <div class="textcaseid-content__cols-text">
+                                <h6>Section</h6>
+                                <span>12 Minutes</span>
+                            </div>
+
+                            <div class="textcaseid-content__cols-text">
+                                <h6>Milestone</h6>
+                                <span>Milestone - Sprint 51 Version Alpha</span>
+                            </div>
+
+                            <div class="textcaseid-content__cols-text">
+                                <h6>Type</h6>
+                                <span>12 Minutes</span>
+                            </div>
+
+                            <div class="textcaseid-content__cols-text">
+                                <h6>Priority</h6>
+                                <span>12 Minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row testcaseid-description mb-4">
+                    <div class="col-lg-7">
+                        <div class="testcaseid-description__text mb-4">
+                            <h6 class="mb-3">Description</h6>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim
+                                mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non
+                                deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt
+                                ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet
+                                minim mollit<span id="dots1"></span><span id="more1" class="more-hide">erisque enim
+                                    ligula venenatis dolor. Maecenas nisl est, ultrices
+                                    nec
+                                    congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
+                                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+                                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                                    venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                                    tempor porta.</span> <a onclick="myFunction(this,1)" class="see-more-toggle">See
+                                    More</a></p>
+                        </div>
+
+                        <div class="testcaseid-description__text">
+                            <h6 class="mb-3">Preconditions</h6>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim
+                                mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non
+                                deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt
+                                ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet
+                                minim molli
+                            <ul>
+                                <li>Amet minim mollit non deserunt ullamco est </li>
+                                <li>Amet minim mollit non deserunt ullamco est </li>
+                                <span id="dots2"></span>
+                                <span id="more2" class="more-hide">
+                                    <li>Amet minim mollit non deserunt ullamco est </li>
+                                    <li>Amet minim mollit non deserunt ullamco est </li>
+                                </span>
+
+                            </ul>
+                            <a onclick="myFunction(this,2)" class="see-more-toggle">See
+                                More</a>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="testcaseid-description__checklist mt-4">
+                            <div class="row mb-5">
+                                <div class="col radio-checkbox-col radio-checkbox-col-1">
+                                    <div class="radio-btns">
+                                        <input type="radio">
+                                        <label for="">To Automate</label>
+                                    </div>
+
+                                    <div class="radio-btns">
+                                        <input type="radio">
+                                        <label for="">Automated</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="col radio-checkbox-col radio-checkbox-col-2">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Smoke</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Regression</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col radio-checkbox-col radio-checkbox-col-1">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Reviewed by QA Lead</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Reviewed by QA Manager</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Reviewed by Project Manager</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="col radio-checkbox-col radio-checkbox-col-2">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Module</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">To Be Moved</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"> <label
+                                            class="custom-control-label" for="">Disabled</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row testcaseid-description mb-3">
+                    <div class="col-lg-7">
+                        <div class="testcaseid-description__text mb-4">
+                            <h6 class="mb-3">Test Data</h6>
+                            <p>
+                                No test data available.</p>
+                        </div>
+
+                        <div class="testcaseid-description__text">
+                            <h6 class="mb-3">Cucumber Tags</h6>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim
+                                mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non
+                                deserunt ullamco est sit aliqua dolor do amet sint. mollit non ua dolor do amet sint.
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="testcaseid-description__text">
+                            <h6 class="mb-3">BDD Gherkin</h6>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim
+                                mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non ua
+                                dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                sint. Amet minim mollit non deserunt sint. Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Amet minim mollit mollit non ua dolor do amet sint. Amet minim
+                                mollit non deserunt ullamco est sit aliqua dolor do ametmollit non ua dolor dorunt
+                                ullamco est sit aliqua dolor do amet <span id="dots3"></span><span id="more3"
+                                    class="more-hide"> Amet minim mollit non ua dolor do amet sint. Amet minim mollit
+                                    non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non
+                                    deserunt sint.</span> <a onclick="myFunction(this,3)" class="see-more-toggle">See
+                                    More</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row testcaseid-description">
+                    <div class="col-lg-7">
+                        <div class="testcaseid-description__text ">
+                            <h6 class="mb-3">Steps</h6>
+                            <p>
+                            <ol>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Amet minim
+                                    mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                            </ol>
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="testcaseid-description__text">
+                            <h6 class="mb-3">Expected Result</h6>
+                            <p>
+                            <ol>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Amet minim
+                                    mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                                <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+                            </ol>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Add Test plan Section End -->
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Main Content Section End -->
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

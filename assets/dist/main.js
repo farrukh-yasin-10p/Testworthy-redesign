@@ -18120,9 +18120,10 @@ function assigned_to(a){
   list.style.display = a ;
 }
 
-function milestone_list(b){
-  var list = document.getElementById('milestone-list');
-  list.style.display = b;
+function milestone_list(e,b){
+  var x = document.getElementById(e);
+  x.style.display = b;
+
 }
 
 function testsuite_list(b){
@@ -18363,10 +18364,112 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 }
 );
 
-
 });
 
 
 // Populate the tree with some generic data
+
+
+
+
+function formsubmit(a){
+  a.preventDefault();
+
+  var t = document.getElementById('input-check');
+  var x = document.getElementById('input-warning-text');
+  var y = document.getElementById('tvalid');
+  var z1 = document.getElementById('input-list1');
+  var z2 = document.getElementById('input-list2');
+  var z3 = document.getElementById('input-list3');
+  var z4 = document.getElementById('input-list4');
+      if(t.value.length===0){
+        //alert("Please enter your name");
+        t.focus();
+        // t.style.background = "rgba(231, 30, 30, 0.06)";
+        // t.style.border = "1px solid #e71e1e";
+        t.classList.add("required");
+        x.classList.add("d-inline-block");
+        return false;
+      }
+
+      if(z1.value.length===0){
+        //alert("Please enter your name");
+        z1.focus();
+        // t.style.background = "rgba(231, 30, 30, 0.06)";
+        // t.style.border = "1px solid #e71e1e";
+        z1.classList.add("required");
+        //x.classList.add("d-inline-block");
+        return false;
+      }
+
+      if(z2.value.length===0){
+        z2.focus();
+        z2.classList.add("required");
+        return false;
+      }
+      if(z3.value.length===0){
+        z3.focus();
+        z3.classList.add("required");
+        return false;
+      }
+      if(z4.value.length===0){
+        z4.focus();
+        z4.classList.add("required");
+        return false;
+      }
+
+  if(y.value.length>256){
+    y.focus();
+      return false;
+  }
+      t.classList.remove("required");
+      x.classList.remove("d-inline-block");
+  } 
+
+  function ontitlechange(e){
+    var x = document.getElementById('input-warning-text');
+    e.classList.remove("required");
+    x.classList.remove("d-inline-block");
+  }
+
+
+
+
+
+
+  function textCount(e){
+    var x = document.getElementById('textCounter');
+    var y = document.getElementById('count-text');
+var z = document.getElementById('count-text-icon');
+   
+  y.innerText = e.value.length ;
+
+  if(e.value.length>256){
+    x.classList.add("warning-text");
+    z.classList.remove("d-none");
+    e.classList.add('required');
+  }
+else{
+  x.classList.remove("warning-text");
+  z.classList.add("d-none");
+  e.classList.remove('required');
+}
+  }
+
+  function myFunction(e,i) {
+    var dots = document.getElementById("dots"+i);
+    var moreText = document.getElementById("more"+i);
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      e.innerHTML = "See More"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      e.innerHTML = "See Less"; 
+      moreText.style.display = "inline";
+    }
+
+  }
 
 //# sourceMappingURL=main.js.map

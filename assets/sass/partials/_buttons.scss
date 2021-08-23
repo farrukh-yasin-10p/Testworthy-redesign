@@ -5,6 +5,7 @@
 .btn {
   cursor: pointer;
   border-radius: rem(30);
+
   // background: red !important;
   &[disabled],
   &.disabled {
@@ -52,8 +53,8 @@
   }
 
   &.btn-light-border {
-    border: rem(2) solid $grey-100;
-    color: $grey-100;
+    border: rem(2) solid $grey-300;
+    color: $grey-300;
     background-color: white;
 
     &:hover {
@@ -82,6 +83,15 @@
       background-color: darken(#f3c214, 20%);
 
     }
+  }
+
+  &.btn-icon {
+    font-size: 14px;
+    min-width: 190px;
+    min-height: 46px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 

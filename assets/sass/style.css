@@ -232,9 +232,9 @@
 }
 
 .btn.btn-secondary-border {
-  border: 0.125rem solid #1eaae7;
+  border: 0.125rem solid $secondary;
   background-color: white;
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .btn.btn-success-100 {
@@ -253,15 +253,15 @@
 }
 
 .btn.btn-light-border:hover {
-  background-color: #1eaae7;
-  border: 0.125rem solid #1eaae7;
+  background-color: $secondary;
+  border: 0.125rem solid $secondary;
   color: white;
 }
 
 .btn.btn-secondary-color {
-  background-color: #1eaae7;
+  background-color: $secondary;
   color: white;
-  border: 0.125rem solid #1eaae7;
+  border: 0.125rem solid $secondary;
 }
 
 .btn.btn-secondary-color:hover {
@@ -275,7 +275,7 @@
 .custom-control.custom-checkbox .custom-control-label::before {
   border-radius: 0.125rem;
   background-color: white;
-  border: 0.125rem solid #1eaae7;
+  border: 0.125rem solid $secondary;
 }
 
 .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
@@ -368,7 +368,7 @@ header {
     display: inline-block;
     padding-left: 0.9375rem;
     font-size: 1.25rem;
-    color: #1eaae7;
+    color: $secondary;
   }
 }
 
@@ -686,7 +686,7 @@ header {
 }
 
 .header-nav ul li a.active {
-  border-bottom: 0.25rem solid #1eaae7;
+  border-bottom: 0.25rem solid $secondary;
   font-weight: bold;
   color: black !important;
 }
@@ -742,7 +742,7 @@ header {
 
 .sidebar-hamburger span i {
   font-size: 1.25rem;
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .sidebar-menu {
@@ -769,11 +769,11 @@ header {
 }
 
 .sidebar-menu a:hover {
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .sidebar-menu a.active span:first-child {
-  background-color: #1eaae7;
+  background-color: $secondary;
   border-radius: 3.125rem;
   -webkit-box-shadow: 0 10px 31px 0 rgba(0, 96, 137, 0.16);
           box-shadow: 0 10px 31px 0 rgba(0, 96, 137, 0.16);
@@ -826,7 +826,7 @@ header {
 
 .owl-nav i {
   font-size: 1.5625rem;
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .collaborators {
@@ -865,7 +865,7 @@ header {
 }
 
 .collaborators .collaborators-tab a {
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .collaborators .collaborators-tab a:hover {
@@ -1013,9 +1013,9 @@ header {
 }
 
 .search-user input:focus {
-  border: 0.0625rem solid #1eaae7;
-  -webkit-box-shadow: 0 0 0.1875rem #1eaae7;
-          box-shadow: 0 0 0.1875rem #1eaae7;
+  border: 0.0625rem solid $secondary;
+  -webkit-box-shadow: 0 0 0.1875rem $secondary;
+          box-shadow: 0 0 0.1875rem $secondary;
   outline-offset: 0rem;
   outline: none;
 }
@@ -1034,7 +1034,7 @@ header {
   color: white;
   font-size: 0.75rem;
   padding: 0.9375rem 1.75rem;
-  background-color: #1eaae7;
+  background-color: $secondary;
   border-radius: 1.875rem;
 }
 
@@ -1183,7 +1183,7 @@ header {
 }
 
 .modal .modal-body .saved-tags span {
-  background-color: #1eaae7;
+  background-color: $secondary;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1258,7 +1258,7 @@ header {
 }
 
 .modal .modal-body .edit-tags span {
-  background-color: #1eaae7;
+  background-color: $secondary;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1587,7 +1587,7 @@ header {
 .confirm-complete .modal-footer span {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .confirm-complete .project-image {
@@ -1813,7 +1813,7 @@ header {
 }
 
 .edit_project button {
-  background-color: #1eaae7;
+  background-color: $secondary;
   border-radius: 3.125rem;
   -webkit-box-shadow: 0 10px 31px 0 rgba(0, 96, 137, 0.16);
           box-shadow: 0 10px 31px 0 rgba(0, 96, 137, 0.16);
@@ -1899,7 +1899,7 @@ header {
 }
 
 .chart-filter .tabs-filter .nav-link.active {
-  background-color: #1eaae7;
+  background-color: $secondary;
   color: white;
 }
 
@@ -1965,7 +1965,7 @@ header {
 }
 
 .test-row-text a {
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .test-row-text a:hover {
@@ -2862,7 +2862,7 @@ header {
 }
 
 .btn-tab .active {
-  background-color: #1eaae7;
+  background-color: $secondary;
   font-weight: 500;
 }
 
@@ -3225,7 +3225,7 @@ header {
 }
 
 .history-filter .tabs-filter .nav-link.active {
-  background-color: #1eaae7;
+  background-color: $secondary;
   color: white;
 }
 
@@ -3238,7 +3238,7 @@ header {
 }
 
 .history-row .changes-row button {
-  color: #1eaae7;
+  color: $secondary;
   border-radius: 1.25rem;
   padding-left: 1.0625rem;
   padding-right: 1.0625rem;
@@ -3351,7 +3351,7 @@ header {
   padding: 0.625rem 2.9375rem;
   border-radius: 1.875rem;
   font-size: 1rem;
-  background-color: #1eaae7;
+  background-color: $secondary;
   color: white;
   margin-left: 0.625rem;
   margin-bottom: 0.625rem;
@@ -3508,7 +3508,7 @@ header {
 
 .milestone-tabs .nav-link.active {
   background-color: #F9F9F9;
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .milestone-tabs-content .tab-pane {
@@ -3530,7 +3530,7 @@ header {
 .milestone-content-row .select-row-list .custom-checkbox label i {
   margin-right: 1.5rem;
   font-size: 1.875rem;
-  color: #1eaae7;
+  color: $secondary;
 }
 
 .milestone-content-row .select-row-list .custom-checkbox label::before {
@@ -3829,7 +3829,7 @@ header {
 }
 
 .gridboxes__boxes .mscases__cases--box3 .c100 span {
-  color: #1eaae7;
+  color: $secondary;
   top: -7px;
   left: 0;
   text-align: center;
@@ -3934,7 +3934,7 @@ header {
   width: 80px;
   height: 66px;
   font-size: 55px;
-  color: #1EAAE7;
+  color: $secondary;
   position: relative;
   top: 2px;
 }
@@ -3955,7 +3955,7 @@ header {
 .gridboxes__exic .cntnttxt a {
   font-size: 14px;
   font-weight: bold;
-  color: #1EAAE7;
+  color: $secondary;
   text-decoration: underline;
 }
 
@@ -3966,14 +3966,14 @@ header {
 
 .gridboxes__days .dated {
   font-size: 96px;
-  color: #1eaae7;
+  color: $secondary;
   line-height: 85px;
   font-weight: bold;
 }
 
 .gridboxes__days .days {
   font-size: 24px;
-  color: #1eaae7;
+  color: $secondary;
   font-weight: 600;
 }
 

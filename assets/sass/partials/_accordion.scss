@@ -3,39 +3,71 @@
 //===========================================
 .content-row {
   .test-case-list {
-    margin-right: 60px;
     .card {
       border: none;
       font-weight: normal;
       font-size: rem(16);
       color: #b4b7bb;
       position: relative;
-      
-    }
-    .parent {
       display: flex;
       flex-direction: row;
       position: relative;
-      // &:before{
-      //   content: "";
-      //   position: absolute;
-      //   width: 1px;
-      //   border-left: 1px dotted #1eaae7;
-      //   left: 21px;
-      //   height: 100%;
-      //   top: 22px;  
-      // }
-      .card-header {
-        position: relative;
-        // &:before{
-        //   content: "";
-        //   position: absolute;
-        //   width: 25px;
-        //   border-top: 1px dotted #1eaae7;
-        //   left: -25px;
-        //   height: 1px;
-        //   top: 22px;
-        // }
+      &:last-child {
+        .dot-container {
+          .dot.dot {
+            &::after {
+              height: 21px;
+            }
+          }
+          &:last-child {
+            .dot {
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      &-header {
+        background: transparent;
+      }
+      &-content {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      &-footer-btns {
+          border-bottom: 2px solid transparent;
+          margin-right: 10px;
+          margin-bottom: -1px;
+          font-size: 14px;
+          white-space: nowrap;
+            &:hover {
+              border-bottom: 2px solid $secondary;
+            }
+      }
+      .footer-btns-divider {
+        width: 2px;
+        height: 14px;
+        background: $secondary;
+        margin-right: 10px;
+      }
+      .add-case {
+        &-btn {
+          border: 1px solid $secondary;
+          color: $secondary;
+          border-radius: 10px;
+          padding: 4px 13px;
+          margin-right: 23px;
+          margin-left: 12px;
+          i {
+            font-size: 12px;
+          }
+        }
+        .icon-close {
+          font-size: 12px;
+          color: $danger;
+          cursor: pointer;
+        }
       }
       .circle-dots {
         white-space: nowrap;
@@ -46,12 +78,16 @@
           &:last-child {
             padding-right: 22px;
             &::before {
-              content: '';
-              height: 2px;
+              content: "";
+              border-bottom: 2px dashed $secondary;
               width: 100%;
-              background-color: #1eaae7;
               position: absolute;
-              top: 3px;
+              top: 21px;
+            }
+            .dot {
+              &::after {
+                top: 21px;
+              }
             }
           }
         }
@@ -62,26 +98,24 @@
           background: #1eaae7;
           border-radius: 30px;
           display: flex;
-
+          margin-top: 16.5px;
           &::after {
-            content: '';
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             height: 100%;
-            width: 2px;
             margin-bottom: -42px;
-            background: #1eaae7;
-            margin-top: 10px;
+            border-right: 2px dashed $secondary;
             margin-left: 4px;
           }
         }
       }
     }
+
     .row-head {
       color: #000;
     }
-    
+
     .select-row {
       background-color: #f9f9f9;
       border: solid 1px #ebecef;
@@ -105,11 +139,9 @@
     }
     .row-text-small {
       font-size: 12px;
-      white-space: nowrap;
     }
-    
 
-    .dots{
+    .dots {
       margin-left: -5px;
       img {
         width: 20px;
@@ -117,16 +149,20 @@
         &:last-child {
           margin-left: -13px;
         }
-      } 
+      }
     }
+  }
+  .card-list-header {
+    margin-bottom: 14px;
   }
 }
 
 .table {
   width: 100%;
+  margin-bottom: 0;
   .table-head {
-    .display-table{
-      border:1px solid #bfbfbf;
+    .display-table {
+      border: 1px solid #bfbfbf;
       border-radius: 10px;
     }
     color: #b4b7bb;
@@ -147,11 +183,11 @@
       color: $secondary;
     }
   }
-  .col1{
+  .col1 {
     width: 27px;
     min-width: 27px;
   }
-  .col2{
+  .col2 {
     width: 95px;
     min-width: 95px;
   }

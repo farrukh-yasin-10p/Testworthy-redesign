@@ -200,8 +200,8 @@
 
             &:hover {
                 color: #fff;
-                background:#1eaae7;
-                border: 1px solid #1eaae7;
+                background:$secondary;
+                border: 1px solid $secondary;
             }
         }
     }
@@ -450,7 +450,7 @@ form{
             }
 
             .last-item {
-                background:#1eaae7;
+                background:$secondary;
                 text-align:center;
 
                 &:hover {

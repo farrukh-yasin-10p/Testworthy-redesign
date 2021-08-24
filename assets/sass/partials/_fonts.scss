@@ -38,6 +38,10 @@ $icomoon-font-path: "./../fonts" !default;
 }
 
 $font-types: (
+    close: "\e924",
+    check: "\e922",
+    plus: "\e923",
+    Project: "\e921",
     more-vertical: "\e920",
     download: "\e91d",
     reports: "\e91e",
@@ -71,8 +75,6 @@ $font-types: (
     settings: "\e91a",
     users: "\e91b",
     milestone-2: "\e91c",
-    icon-plus: "\e923",
-
 );
 
 @each $type,

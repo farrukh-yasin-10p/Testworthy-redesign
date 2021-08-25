@@ -1,0 +1,50 @@
+// User Roles Scss start 
+.user-roles-section{
+  .sort-by {
+    .search-filter {
+      .search-input {
+        .search-icon {
+          right: rem(48);
+        }
+        .filter-icon{
+          position: absolute;
+          right: rem(16);
+          top: rem(10);
+        }
+        .saprater-left{
+          border-left: 1px solid $grey-lighter;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+.assign-icon{
+  width: 20px;
+}
+.content-row {
+  .select-row-list{
+    li:hover{
+      .user-edits{
+        .hover-row-edit{
+          text-align: center;
+        }
+        .date-hide{
+          display: none;
+        }
+      } 
+    }
+    .user-checkbox{
+      .custom-control-input{
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .user-control{
+        &::before , &::after{
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

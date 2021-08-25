@@ -1,1073 +1,1007 @@
-// Milestone Page CSS 
+// Milestone Page CSS
 
 // Add Project Section Start
 .sort-by {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: rem(90);
+
+  .search-filter {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    padding-top: rem(90);
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
 
-    .search-filter {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        position: relative;
-
-        img {
-            width: rem(20);
-        }
-
-        .border-line {
-            border-right: rem(1) solid $grey-light;
-            margin-right: rem(10);
-            margin-left: rem(6);
-        }
-
-        input {
-            font-size: rem(16);
-            padding: rem(10) rem(45) rem(10) rem(24);
-            border-radius: rem(30);
-            border: rem(1) solid rgba(227, 229, 233, .87);
-            outline: none;
-            // width: rem(320);
-          
-            background-color: #fff;
-            color: #aaa;
-
-            &::placeholder {
-                color: #aaa;
-            }
-        }
-        .search-milestone-width{
-            width: 34em;
-        }
-
-
-        .search-input {
-            position: relative;
-            margin-bottom: rem(10);
-
-
-            .search-icon {
-                position: absolute;
-                right: rem(16);
-                top: rem(10);
-            }
-
-        }
-
-        button {
-            padding: rem(10) rem(47);
-            border-radius: rem(30);
-            font-size: rem(16);
-            background-color: $secondary;
-            color: white;
-            margin-left: rem(10);
-            margin-bottom: rem(10);
-
-        }
+    img {
+      width: rem(20);
     }
 
+    .border-line {
+      border-right: rem(1) solid $grey-light;
+      margin-right: rem(10);
+      margin-left: rem(6);
+    }
 
+    input {
+      font-size: rem(16);
+      padding: rem(10) rem(45) rem(10) rem(24);
+      border-radius: rem(30);
+      border: rem(1) solid rgba(227, 229, 233, 0.87);
+      outline: none;
+      // width: rem(320);
 
-    .sort-by-text {
-        color: $grey-400;
+      background-color: #fff;
+      color: #aaa;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+    .search-milestone-width {
+      width: 34em;
+    }
+
+    .search-input {
+      position: relative;
+      margin-bottom: rem(10);
+
+      .search-icon {
+        position: absolute;
+        right: rem(16);
+        top: rem(10);
+      }
+    }
+
+    button {
+      padding: rem(10) rem(47);
+      border-radius: rem(30);
+      font-size: rem(16);
+      background-color: $secondary;
+      color: white;
+      margin-left: rem(10);
+      margin-bottom: rem(10);
+    }
+  }
+
+  .sort-by-text {
+    color: $grey-400;
+  }
+
+  .sort-by-filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: rem(12);
+    margin-top: rem(13);
+    padding-right: rem(10);
+
+    label {
+      margin: rem(0) rem(30) rem(0) rem(6);
+    }
+  }
+
+  .sort-by-date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: rem(5);
+    margin-bottom: rem(15);
+  }
+  .sorting-widht {
+    width: 0em;
+  }
+
+  .sort-by-tabs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: rem(42);
+    margin-bottom: rem(10);
+
+    button {
+      font-size: rem(12);
+
+      i {
+        margin-left: 3px;
+      }
+    }
+
+    .dropdown-menu {
+      margin-right: rem(120);
+      margin-bottom: rem(10);
+      padding: rem(10) rem(0);
+      font-size: rem(12);
+      border-radius: rem(10);
+      border: none;
+      box-shadow: $shadow3;
+      min-width: rem(0);
+
+      .dropdown-item {
+        padding: rem(10) rem(20);
+        color: black;
+
+        &:hover {
+          background-color: $filter;
+        }
+      }
+    }
+  }
+
+  @include mq("lg", max) {
+    .search-filter {
+      img {
+        width: rem(18);
+      }
+
+      input {
+        font-size: rem(14);
+        width: rem(290);
+      }
+
+      button {
+        font-size: rem(14);
+        padding: rem(8) rem(47);
+      }
     }
 
     .sort-by-filter {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+      label {
+        margin: rem(0) rem(20) rem(0) rem(6);
+      }
+    }
+  }
+
+  @include mq("sm", max) {
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    .search-filter {
+      justify-content: center;
+
+      input {
         font-size: rem(12);
-        margin-top: rem(13);
-        padding-right: rem(10);
+        margin-top: rem(10);
+      }
 
+      button {
+        font-size: rem(12);
+        padding: rem(7) rem(28);
+        margin-bottom: rem(10);
+      }
 
-        label {
-            margin: rem(0) rem(30) rem(0) rem(6);
+      .search-input {
+        .search-icon {
+          top: rem(18);
         }
-
-
+      }
     }
 
-
-    .sort-by-date {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: rem(5);
-        margin-bottom: rem(15);
-    }
-    .sorting-widht{
-        width: 0em;
+    .sort-by-filter {
+      justify-content: center;
+      padding-right: rem(0);
     }
 
     .sort-by-tabs {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-left: rem(42);
-        margin-bottom: rem(10);
-
-        button {
-            font-size: rem(12);
-
-            i {
-                margin-left: 3px;
-            }
-        }
-
-        .dropdown-menu {
-            margin-right: rem(120);
-            margin-bottom: rem(10);
-            padding: rem(10) rem(0);
-            font-size: rem(12);
-            border-radius: rem(10);
-            border: none;
-            box-shadow: $shadow3;
-            min-width: rem(0);
-
-
-
-            .dropdown-item {
-                padding: rem(10) rem(20);
-                color: black;
-
-                &:hover {
-                    background-color: $filter;
-                }
-            }
-        }
-
+      margin-left: rem(0);
     }
-
-    @include mq('lg', max) {
-
-        .search-filter {
-            img {
-                width: rem(18);
-            }
-
-            input {
-                font-size: rem(14);
-                width: rem(290);
-            }
-
-            button {
-                font-size: rem(14);
-                padding: rem(8) rem(47);
-            }
-
-        }
-
-        .sort-by-filter {
-            label {
-                margin: rem(0) rem(20) rem(0) rem(6);
-            }
-        }
-
-    }
-
-
-    @include mq('sm', max) {
-        display: block;
-        text-align: center;
-        justify-content: center;
-
-        .search-filter {
-            justify-content: center;
-
-            input {
-                font-size: rem(12);
-                margin-top: rem(10);
-            }
-
-            button {
-                font-size: rem(12);
-                padding: rem(7) rem(28);
-                margin-bottom: rem(10);
-
-            }
-
-            .search-input {
-                .search-icon {
-                    top: rem(18);
-                }
-            }
-        }
-
-        .sort-by-filter {
-            justify-content: center;
-            padding-right: rem(0);
-        }
-
-        .sort-by-tabs {
-            margin-left: rem(0);
-        }
-    }
+  }
 }
 
 // Add Project Section End
 
 .project-tabs {
+  ul {
+    margin-bottom: rem(0);
+  }
 
+  .nav-link {
+    color: $grey-light;
+    font-size: rem(18);
+    font-weight: bold;
 
-    ul {
-        margin-bottom: rem(0);
+    &.active {
+      background-color: $primary;
+      color: $secondary;
     }
-
-    .nav-link {
-        color: $grey-light;
-        font-size: rem(18);
-        font-weight: bold;
-
-        &.active {
-            background-color: $primary;
-            color: $secondary;
-        }
-    }
+  }
 }
 
 .tab-content {
-    .tab-pane {
-        height: auto;
-    }
+  .tab-pane {
+    height: auto;
+  }
 }
 
 //  Row Content Start
 .content-row {
-    .select-row-list {
-        .custom-checkbox {
-            label {
-                font-weight: normal;
-                font-size: rem(16);
-                display: flex;
-                align-items: center;
-                min-width: 0;
+  .select-row-list {
+    .custom-checkbox {
+      label {
+        font-weight: normal;
+        font-size: rem(16);
+        display: flex;
+        align-items: center;
+        min-width: 0;
 
-                i {
-                    margin-right: rem(24);
-                    font-size: rem(30);
-                    color: $secondary;
-                }
-
-                &::before {
-                    top: rem(10);
-                }
-
-                &::after {
-                    top: rem(10);
-                }
-
-
-                .text {
-                    white-space: nowrap;
-                    display: block;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-
-                    a {
-                        color: black;
-                    }
-                }
-            }
-
-            .custom-control-input {
-                top: 7px;
-            }
-
+        i {
+          margin-right: rem(24);
+          font-size: rem(30);
+          color: $secondary;
         }
 
-
-        .progress-icon {
-
-            margin-left: rem(38);
-            display: flex;
-
-            .icon-warning {
-                color: $danger;
-            }
-
-            .icon-complete-tick {
-                color: $success-light;
-            }
-
-            i {
-                font-size: rem(20);
-
-            }
+        &::before {
+          top: rem(10);
         }
 
-        .passed,
-        .creation-date,
-        .due-date {
-            font-size: rem(12);
+        &::after {
+          top: rem(10);
+        }
+
+        .text {
+          white-space: nowrap;
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          a {
             color: black;
+          }
         }
+      }
 
+      .custom-control-input {
+        top: 7px;
+      }
+    }
+
+    .progress-icon {
+      margin-left: rem(38);
+      display: flex;
+
+      .icon-warning {
+        color: $danger;
+      }
+
+      .icon-complete-tick {
+        color: $success-light;
+      }
+
+      i {
+        font-size: rem(20);
+      }
+    }
+
+    .passed,
+    .creation-date,
+    .due-date {
+      font-size: rem(12);
+      color: black;
+    }
+
+    .due-date {
+      min-width: 117px;
+    }
+
+    .creation-date {
+      min-width: 126px;
+    }
+
+    li {
+      @include card-box;
+      background-color: white;
+      margin-bottom: rem(20);
+      //padding: rem(20) rem(5) rem(20) rem(20);
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: #e7f3f8;
 
         .due-date {
-            min-width: 117px;
+          display: none;
         }
 
         .creation-date {
-            min-width: 126px;
-        }
-
-
-        li {
-            @include card-box;
-            background-color: white;
-            margin-bottom: rem(20);
-            //padding: rem(20) rem(5) rem(20) rem(20);
-            min-height: 80px;
-            display: flex;
-            align-items: center;
-
-            &:hover {
-                background-color: #e7f3f8;
-
-                .due-date {
-                    display: none;
-                }
-
-                .creation-date {
-                    //display: none;
-                }
-
-                .hover-row-edit {
-                    display: block;
-
-                    span {
-
-                        a {
-                            &:hover {
-                                color: black;
-
-                            }
-                        }
-                    }
-                }
-
-            }
-
-            .row {
-                width: 100%;
-                margin-left: 0px;
-                margin-right: 0px;
-            }
+          //display: none;
         }
 
         .hover-row-edit {
-            min-width: 117px;
-            display: none;
-            text-align: right;
+          display: block;
 
-            span {
-                margin-left: 20px;
-
-                &:first-child {
-                    margin-left: 0px;
-                }
-
-                a {
-                    color: $grey-300;
-                }
+          span {
+            a {
+              &:hover {
+                color: black;
+              }
             }
+          }
         }
+      }
 
-        .passed {
-            font-size: rem(12);
-
-            span {
-                &:first-child {
-                    width: 30px;
-                    display: inline-block;
-                    //text-align: center;
-                }
-            }
-        }
-
-        .progressBar {
-            width: 100%;
-        }
-
-        .progress {
-            height: rem(10);
-            border-radius: rem(50);
-        }
-
-        .progress-bar-success {
-            background-color: $green-light;
-        }
-
-        .progress-bar-danger {
-            background-color: $danger-light-100;
-        }
-
-        .progress-bar-warning {
-            background-color: $warning-light;
-        }
-
-        .progress-bar-dark {
-            background-color: $navy-light;
-        }
-
-        .progress-bar-info {
-            background-color: $blue-light;
-        }
-
-        .progress-bar-grey {
-            background-color: $grey-light-100;
-        }
-
+      .row {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
     }
 
+    .hover-row-edit {
+      min-width: 117px;
+      display: none;
+      text-align: right;
 
-    .select-row {
-        padding: rem(10) rem(35) rem(10) rem(20);
-        background-color: #eeeeee;
-        border-radius: rem(10);
-        font-weight: normal;
+      span {
+        margin-left: 20px;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        a {
+          color: $grey-300;
+        }
+      }
+    }
+
+    .passed {
+      font-size: rem(12);
+
+      span {
+        &:first-child {
+          width: 30px;
+          display: inline-block;
+          //text-align: center;
+        }
+      }
+    }
+
+    .progressBar {
+      width: 100%;
+    }
+
+    .progress {
+      height: rem(10);
+      border-radius: rem(50);
+    }
+
+    .progress-bar-success {
+      background-color: $green-light;
+    }
+
+    .progress-bar-danger {
+      background-color: $danger-light-100;
+    }
+
+    .progress-bar-warning {
+      background-color: $warning-light;
+    }
+
+    .progress-bar-dark {
+      background-color: $navy-light;
+    }
+
+    .progress-bar-info {
+      background-color: $blue-light;
+    }
+
+    .progress-bar-grey {
+      background-color: $grey-light-100;
+    }
+  }
+
+  .select-row {
+    padding: rem(10) rem(35) rem(10) rem(20);
+    background-color: #eeeeee;
+    border-radius: rem(10);
+    font-weight: normal;
+    font-size: rem(16);
+    color: #b4b7bb;
+
+    .row {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .creation-col {
+      margin-left: auto;
+      margin-right: 28px;
+    }
+
+    .due-date-col {
+      margin-right: 15px;
+    }
+
+    label {
+      span {
         font-size: rem(16);
-        color: #b4b7bb;
-
-        .row {
-            width: 100%;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-
-        .creation-col {
-            margin-left: auto;
-            margin-right: 28px;
-        }
-
-        .due-date-col {
-            margin-right: 15px;
-        }
-
-        label {
-            span {
-                font-size: rem(16);
-                font-weight: normal;
-            }
-        }
-
-        .progress_text {
-            margin-left: rem(16);
-        }
-
-        .row-icon {
-            display: none;
-        }
-
-        input:checked+.custom-control-label {
-            .row-head {
-                display: none;
-            }
-
-            .row-icon {
-                display: block;
-            }
-        }
+        font-weight: normal;
+      }
     }
 
-
-    @include mq('xxl', max) {
-        .select-row {
-            .due-date-col {
-                margin-right: 0px;
-            }
-
-            .creation-col {
-                margin-right: 0px;
-            }
-
-        }
-
-        .select-row-list {
-            .progress-icon {
-                margin-left: rem(25);
-            }
-
-            .hover-row-edit {
-                min-width: 75px;
-
-                span {
-                    margin-left: 10px;
-                }
-
-            }
-
-            .passed {
-                margin-left: rem(0);
-            }
-
-            .creation-date {
-                display: grid;
-                min-width: 75px;
-            }
-
-            .due-date {
-                display: grid;
-                min-width: 75px;
-            }
-        }
+    .progress_text {
+      margin-left: rem(16);
     }
 
-
-    @include mq('xl', max) {
-
-        .select-row {
-            .progress_text {
-                margin-left: rem(15);
-            }
-
-            .due-date-col {
-                margin-right: 0px;
-            }
-
-            .creation-col {
-                margin-right: 0px;
-            }
-
-        }
-
-        .select-row-list {
-            .progress-icon {
-                margin-left: rem(20);
-            }
-
-            .hover-row-edit {
-                min-width: 75px;
-
-                span {
-                    margin-left: 10px;
-                }
-
-            }
-
-            .passed {
-                margin-left: rem(0);
-            }
-
-            .creation-date {
-                //white-space: pre-line;
-                display: grid;
-                min-width: 75px;
-            }
-
-            .due-date {
-                //white-space: pre-line;
-                display: grid;
-                min-width: 75px;
-            }
-        }
+    .row-icon {
+      display: none;
     }
 
-    @include mq('lg', max) {
-        .select-row {
-            .creation-col {
-                margin-left: rem(0);
-            }
+    input:checked + .custom-control-label {
+      .row-head {
+        display: none;
+      }
 
-            .progress_text {
-                margin-left: rem(0);
+      .row-icon {
+        display: block;
+      }
+    }
+  }
 
-            }
+  @include mq("xxl", max) {
+    .select-row {
+      .due-date-col {
+        margin-right: 0px;
+      }
 
-            .row {
-                display: block;
-            }
-        }
-
-        .select-row-list {
-            .progressBar {
-                width: 60%;
-                margin-bottom: rem(10);
-                margin-top: rem(10);
-            }
-
-            .progress-icon {
-                margin-left: rem(60);
-            }
-
-            .passed {
-                margin-left: rem(0);
-                margin-bottom: rem(10);
-            }
-
-            .creation-date {
-                white-space: normal;
-                margin-bottom: rem(10);
-            }
-        }
-
+      .creation-col {
+        margin-right: 0px;
+      }
     }
 
-    @include mq('sm', max) {
+    .select-row-list {
+      .progress-icon {
+        margin-left: rem(25);
+      }
 
-        .select-row-list {
-            li {
-                padding-right: rem(20);
-            }
+      .hover-row-edit {
+        min-width: 75px;
+
+        span {
+          margin-left: 10px;
         }
+      }
 
+      .passed {
+        margin-left: rem(0);
+      }
+
+      .creation-date {
+        display: grid;
+        min-width: 75px;
+      }
+
+      .due-date {
+        display: grid;
+        min-width: 75px;
+      }
     }
+  }
+
+  @include mq("xl", max) {
+    .select-row {
+      .progress_text {
+        margin-left: rem(15);
+      }
+
+      .due-date-col {
+        margin-right: 0px;
+      }
+
+      .creation-col {
+        margin-right: 0px;
+      }
+    }
+
+    .select-row-list {
+      .progress-icon {
+        margin-left: rem(20);
+      }
+
+      .hover-row-edit {
+        min-width: 75px;
+
+        span {
+          margin-left: 10px;
+        }
+      }
+
+      .passed {
+        margin-left: rem(0);
+      }
+
+      .creation-date {
+        //white-space: pre-line;
+        display: grid;
+        min-width: 75px;
+      }
+
+      .due-date {
+        //white-space: pre-line;
+        display: grid;
+        min-width: 75px;
+      }
+    }
+  }
+
+  @include mq("lg", max) {
+    .select-row {
+      .creation-col {
+        margin-left: rem(0);
+      }
+
+      .progress_text {
+        margin-left: rem(0);
+      }
+
+      .row {
+        display: block;
+      }
+    }
+
+    .select-row-list {
+      .progressBar {
+        width: 60%;
+        margin-bottom: rem(10);
+        margin-top: rem(10);
+      }
+
+      .progress-icon {
+        margin-left: rem(60);
+      }
+
+      .passed {
+        margin-left: rem(0);
+        margin-bottom: rem(10);
+      }
+
+      .creation-date {
+        white-space: normal;
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  @include mq("sm", max) {
+    .select-row-list {
+      li {
+        padding-right: rem(20);
+      }
+    }
+  }
 }
 
-
-
 //  Row Content End
-
 
 /* Grid CSS */
 
 .content-grid::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 .gridboxes {
+  &__boxes {
+    flex-grow: 0;
+    margin: 10px 5px;
+    padding: 15px 16px 18px 21px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.03);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
 
-    &__boxes {
+    .ic-option {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin: 10px 20px 10px 0;
 
+      .icon-ic_option {
+        font-size: 20px;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+
+    .milestonetoggle {
+      padding: 10px 0 0;
+      margin: 10px 0 0;
+      border-top: 1px solid #eeeeee;
+
+      .submilestones {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      .collapsbutton {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .mscases {
+      margin-top: 30px;
+
+      .col-md-3 {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+      &__cases {
+        background: #f4f6f7;
+        overflow: hidden;
+        -ms-flex-positive: 0;
         flex-grow: 0;
-        margin: 10px 5px;
-        padding: 15px 16px 18px 21px;
-        border-radius: 30px;
-        background: #fff;
-        box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.03);
-        position: relative;
-        z-index: 1;
-        margin-bottom: 30px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding: 8px 5px;
 
-        .ic-option {
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            margin: 10px 20px 10px 0;
-
-            .icon-ic_option {
-                font-size: 20px;
-                color: #000;
-                cursor: pointer;
-            }
+        &--box1 {
+          @include case_box(#e71e1e, #ed8a8a);
         }
 
-        .milestonetoggle {
-
-            padding: 10px 0 0;
-            margin: 10px 0 0;
-            border-top: 1px solid #eeeeee;
-
-            .submilestones {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-            }
-
-            .collapsbutton {
-                display: flex;
-                align-items: flex-end;
-                justify-content: flex-end;
-                padding-right: 25px;
-                cursor: pointer;
-            }
+        &--box2 {
+          @include case_box(#f3c214, #ebd480);
         }
 
-        .mscases {
-
-            margin-top: 30px;
-
-            .col-md-3 {
-                padding-right: 5px;
-                padding-left: 5px;
-            }
-
-            &__cases {
-
-                background: #f4f6f7;
-                overflow: hidden;
-                -ms-flex-positive: 0;
-                flex-grow: 0;
-                border-radius: 15px;
-                margin-bottom: 10px;
-                padding: 8px 5px;
-
-                &--box1 {
-                    @include case_box(#E71E1E, #ed8a8a);
-                }
-
-                &--box2 {
-                    @include case_box(#f3c214, #ebd480);
-                }
-
-                &--box3 {
-                    @include case_box(#1eaae7, #88ceeb);
-                }
-
-                &--box4 {
-                    @include case_box(#1c4e63, #86a1ab);
-                }
-
-
-                .c100 {
-                    font-size: 50px;
-                    background-color: transparent;
-
-                    &:after {
-                        -webkit-box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 1);
-                        -moz-box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 1);
-                        box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 1);
-                    }
-
-                    span {
-                        top: -7px;
-                        left: 0;
-                        text-align: center;
-                        width: 4em;
-                        font-weight: 600;
-                        font-size: 13px;
-                    }
-
-                    .cases-rate {
-
-                        position: relative;
-                        left: 55px;
-                        top: 10px;
-
-                        h5 {
-                            font-size: 13px;
-                            padding: 0;
-                            margin: 0;
-                            font-weight: bold;
-                            color: #000;
-                        }
-
-                        h6 {
-                            font-size: 11px;
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        @include mq-only("xs", "ml") {
-                            display: none;
-                        }
-                    }
-                }
-            }
-
-            @include mq-only("xs", "ml") {
-                .c100 {
-                    font-size: 40px;
-                    float: none;
-                    margin: 0 auto;
-
-                    span {
-                        font-size: 11px;
-                    }
-                }
-            }
-        }
-    }
-
-    .progress {
-        height: rem(12);
-        border-radius: rem(10);
-    }
-
-    .progress-bar {
-        background: #24cc09;
-    }
-
-    &__exic {
-
-        .icon-milestone-icon {
-            width: 80px;
-            height: 66px;
-            font-size: 55px;
-            color: #1EAAE7;
-            position: relative;
-            top: 2px;
+        &--box3 {
+          @include case_box(#1eaae7, #88ceeb);
         }
 
-        .cntnttxt {
-            h4 {
-                font-family: Poppins;
-                font-size: 18px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.2;
-                letter-spacing: 0.44px;
-                text-align: left;
-                color: #000000;
-                margin: 7px 0 0 0;
-            }
-
-            a {
-                font-size: 14px;
-                font-weight: bold;
-                color: #1EAAE7;
-            }
-
-            label {
-                font-size: 12px;
-                padding-right: 10px;
-                color:#626263;
-            }
+        &--box4 {
+          @include case_box(#1c4e63, #86a1ab);
         }
 
+        .c100 {
+          font-size: 50px;
+          background-color: transparent;
 
-    }
+          &:after {
+            -webkit-box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 1);
+            -moz-box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 1);
+            box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 1);
+          }
 
-    &__days {
-
-        text-align: right;
-        margin-right: 10px;
-
-        .dated {
-            font-size: 96px;
-            color: #1eaae7;
-            line-height: 85px;
-            font-weight: bold;
-        }
-
-        .days {
-            font-size: 24px;
-            color: #1eaae7;
+          span {
+            top: -7px;
+            left: 0;
+            text-align: center;
+            width: 4em;
             font-weight: 600;
-        }
+            font-size: 13px;
+          }
 
-        .duedate {
-            font-size: 12px;
-            color: #626263;
-        }
+          .cases-rate {
+            position: relative;
+            left: 55px;
+            top: 10px;
 
-        @include mq-only("xs", "ml") {
-            .dated {
-                font-size: 50px;
-                line-height: 50px;
+            h5 {
+              font-size: 13px;
+              padding: 0;
+              margin: 0;
+              font-weight: bold;
+              color: #000;
             }
 
-            .days {
-                font-size: 12px;
-            }
-
-            .duedate {
-                font-size: 10px;
-            }
-        }
-
-        &--delay {
-            .dated {
-                color: #ed8a8a;
-            }
-
-            .days {
-                color: #ed8a8a;
-            }
-
-        }
-
-        &--complete {
-            .completeico {
-                min-height: 122px;
-                margin-right: 12px;
-
-                .icon-complete-tick {
-                    font-size: 60px;
-                    font-weight: bold;
-                    color: #92DC82;
-                }
-            }
-        }
-
-    }
-
-    &__progress-bar {
-        padding: 66px 0 0 0;
-
-        .passed {
-            margin-left: 0;
-            line-height: 14px;
-
-            span {
-
-                font-size: 14px;
-                font-weight: bold;
-                color: #000;
-
-                &:first-child {
-                    font-size: 18px;
-
-                    @include mq-only("xs", "ml") {
-                        font-size: 10px;
-                    }
-                }
-
+            h6 {
+              font-size: 11px;
+              margin: 0;
+              padding: 0;
             }
 
             @include mq-only("xs", "ml") {
-                span {
-                    font-size: 10px;
-                }
+              display: none;
             }
+          }
         }
+      }
+
+      @include mq-only("xs", "ml") {
+        .c100 {
+          font-size: 40px;
+          float: none;
+          margin: 0 auto;
+
+          span {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  .progress {
+    height: rem(12);
+    border-radius: rem(10);
+  }
+
+  .progress-bar {
+    background: #24cc09;
+  }
+
+  &__exic {
+    .icon-milestone-icon {
+      width: 80px;
+      height: 66px;
+      font-size: 55px;
+      color: #1eaae7;
+      position: relative;
+      top: 2px;
     }
 
-        .dropdown-menu {
-            padding: rem(10) rem(0);
-            font-size: rem(12);
-            margin-left: -140px;
-            margin-top: -12px;
+    .cntnttxt {
+      h4 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: 0.44px;
+        text-align: left;
+        color: #000000;
+        margin: 7px 0 0 0;
+      }
 
-            .dropdown-item {
-                padding: rem(10) rem(20);
-                color: black;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
+      a {
+        font-size: 14px;
+        font-weight: bold;
+        color: #1eaae7;
+      }
 
-                &:hover {
-                    background-color: $filter;
-                }
+      label {
+        font-size: 12px;
+        padding-right: 10px;
+        color: #626263;
+      }
+    }
+  }
 
+  &__days {
+    text-align: right;
+    margin-right: 10px;
 
-                i {
-                    font-size: 18px;
-                    margin-right: 10px;
-                    font-weight: 600;
-                }
-            }
+    .dated {
+      font-size: 96px;
+      color: #1eaae7;
+      line-height: 85px;
+      font-weight: bold;
+    }
+
+    .days {
+      font-size: 24px;
+      color: #1eaae7;
+      font-weight: 600;
+    }
+
+    .duedate {
+      font-size: 12px;
+      color: #626263;
+    }
+
+    @include mq-only("xs", "ml") {
+      .dated {
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      .days {
+        font-size: 12px;
+      }
+
+      .duedate {
+        font-size: 10px;
+      }
+    }
+
+    &--delay {
+      .dated {
+        color: #ed8a8a;
+      }
+
+      .days {
+        color: #ed8a8a;
+      }
+    }
+
+    &--complete {
+      .completeico {
+        min-height: 122px;
+        margin-right: 12px;
+
+        .icon-complete-tick {
+          font-size: 60px;
+          font-weight: bold;
+          color: #92dc82;
         }
-}
+      }
+    }
+  }
 
+  &__progress-bar {
+    padding: 66px 0 0 0;
+
+    .passed {
+      margin-left: 0;
+      line-height: 14px;
+
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+
+        &:first-child {
+          font-size: 18px;
+
+          @include mq-only("xs", "ml") {
+            font-size: 10px;
+          }
+        }
+      }
+
+      @include mq-only("xs", "ml") {
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    padding: rem(10) rem(0);
+    font-size: rem(12);
+    margin-left: -140px;
+    margin-top: -12px;
+
+    .dropdown-item {
+      padding: rem(10) rem(20);
+      color: black;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      &:hover {
+        background-color: $filter;
+      }
+
+      i {
+        font-size: 18px;
+        margin-right: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+}
 
 /* checkboxes */
 
-  
 .checkbox {
-    flex-grow: 0;
-    padding: 20px 16px 15px 20px;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
-    background-color: #f5f4f4;
-    position: relative;
-    top: -32px;
-    z-index: 9;
-    width: 92%;
-    left: 24px; 
+  flex-grow: 0;
+  padding: 20px 16px 15px 20px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+  background-color: #f5f4f4;
+  position: relative;
+  top: -32px;
+  z-index: 9;
+  width: 92%;
+  left: 24px;
 
-    .custom-scrollbar-css {
-        overflow-y: scroll;
-        height: 65px;
+  .custom-scrollbar-css {
+    overflow-y: scroll;
+    height: 65px;
+  }
+
+  label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-right: 40px;
+    margin-left: 20px;
+
+    &:before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0;
     }
 
-    label {
+    &:before {
+      background: url("/assets/images/inactive.png") left center no-repeat;
+      margin-left: 95%;
+      background-size: 18px;
+      background-position: 0 2px;
+    }
 
-        cursor: pointer;
-        display: block;
-        position: relative;
-        padding-right: 40px;
+    h5 {
+      font-size: 13px;
+      color: #626263;
+      margin-top: 5px;
+    }
+
+    .progress {
+      height: 8px;
+      margin-top: 10px;
+    }
+
+    .status {
+      font-size: 13px;
+      color: #626263;
+      margin-top: 2px;
+    }
+
+    .completeico {
+      margin-left: 20px;
+      color: #ccc;
+    }
+
+    &:hover {
+      .completeico {
         margin-left: 20px;
+        color: #949494;
+      }
+    }
 
-        &:before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            left: 0;
-        }
+    @include mq-only("xs", "ml") {
+      h5 {
+        font-size: 9px;
+      }
 
-        &:before {
-            background: url('/assets/images/inactive.png') left center no-repeat;
+      .status {
+        font-size: 9px;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked {
+      + {
+        label {
+          &:before {
+            background: url("/assets/images/check-circle.png") left center
+              no-repeat;
             margin-left: 95%;
             background-size: 18px;
             background-position: 0 2px;
+          }
         }
-
-        h5 {
-            font-size: 13px;
-            color: #626263;
-            margin-top: 5px;
-        }
-
-        .progress {
-            height: 8px;
-            margin-top: 10px;
-        }
-
-        .status {
-            font-size: 13px;
-            color: #626263;
-            margin-top: 2px;
-        }
-
-        .completeico {
-            margin-left: 20px;
-            color:#ccc;
-        }
-
-        &:hover {
-            .completeico {
-                margin-left: 20px;
-                color:#949494;
-            } 
-        }
-
-        @include mq-only("xs", "ml") {
-            h5 {
-                font-size: 9px;
-            }
-
-            .status {
-                font-size: 9px;
-            }
-        }
+      }
     }
-
-    input[type=checkbox] {
-        display: none;
-
-        &:checked {
-            + {
-                label {
-                    &:before {
-                        background: url('/assets/images/check-circle.png') left center no-repeat;
-                        margin-left: 95%;
-                        background-size: 18px;
-                        background-position: 0 2px;
-                    }
-                }
-            }
-        }
-    }
-
+  }
 }
-
 
 /* Custom Scrollbar using CSS */
 .custom-scrollbar-css {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 /* scrollbar width */
 .custom-scrollbar-css::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 /* scrollbar track */
 .custom-scrollbar-css::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* scrollbar handle */
 .custom-scrollbar-css::-webkit-scrollbar-thumb {
-    border-radius: 1rem;
-    background-color: #c4c4c4;
-    position: relative;
-    right: 20px;
+  border-radius: 1rem;
+  background-color: #c4c4c4;
+  position: relative;
+  right: 20px;
 }

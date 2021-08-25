@@ -1,0 +1,93 @@
+.integration-section {
+  .integrate {
+    padding-top: rem(44);
+  }
+
+  .projects-integrated {
+    font-size: rem(18);
+    color: $grey-400;
+  }
+
+  .select-row-list {
+    margin-top: 46px;
+    li {
+        .hover-row-edit{
+           margin-left: rem(11);
+          
+        }
+      .icon-pen {
+        color: $secondary;
+        font-size: rem(30);
+        margin-right: rem(24);
+      }
+      .values {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        span {
+          font-size: rem(14);
+        }
+      }
+    }
+  }
+
+
+
+  .search-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    img {
+      width: rem(20);
+    }
+
+    .border-line {
+      border-right: rem(1) solid $grey-light;
+      margin-right: rem(10);
+      margin-left: rem(6);
+    }
+
+    input {
+      font-size: rem(16);
+      padding: rem(10) rem(45) rem(10) rem(24);
+      border-radius: rem(30);
+      border: rem(1) solid rgba(227, 229, 233, 0.87);
+      outline: none;
+      // width: rem(320);
+
+      background-color: #fff;
+      color: #aaa;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+    .search-milestone-width {
+      width: 34em;
+    }
+
+    .search-input {
+      position: relative;
+      margin-bottom: rem(10);
+
+      .search-icon {
+        position: absolute;
+        right: rem(16);
+        top: rem(10);
+      }
+    }
+
+    button {
+      padding: rem(10) rem(47);
+      border-radius: rem(30);
+      font-size: rem(16);
+      background-color: $secondary;
+      color: white;
+      margin-left: rem(10);
+      margin-bottom: rem(10);
+    }
+  }
+}

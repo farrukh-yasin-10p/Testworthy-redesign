@@ -16,7 +16,7 @@
 // Add packages as per your requirement
 // package can be inlude via node_modules or manuallay from vendors folder
 
-//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 // or
 // @import "vendors/bootstrap";
 
@@ -34,6 +34,8 @@
 @import "partials/forms";
 @import "partials/dropdown";
 @import "partials/global";
+@import "partials/accordion";
+@import "partials/components";
 
 
 //===========================================

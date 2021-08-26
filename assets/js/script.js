@@ -389,6 +389,7 @@ $('.collapse').on('show.bs.collapse', function(){
  
   });
 
+
   $('#close-filter-btn').on("click",function(){
     $('#filter-col').hide();
     $('#open-filter-btn').removeAttr('hidden');
@@ -404,6 +405,26 @@ $('.collapse').on('show.bs.collapse', function(){
   });
 
 })
+
+// Test Case Hierarchy
+$('#close-hierarchy-btn').on("click",function(){
+  $('#open-hierarchy-btn').removeAttr('hidden');
+  $('#test-case-hierarchy').addClass("bg-banner");
+  $('#test-case-hierarchy').addClass("tree-style-margin-close");
+  $('#test-case-hierarchy').removeClass("tree-style-margin-open");
+  $('#hierarchy-col').attr('hidden',true);
+  $(this).attr('hidden' , true);
+});
+
+$('#open-hierarchy-btn').on("click",function(){
+  $('#close-hierarchy-btn').removeAttr('hidden');
+  $('#hierarchy-col').removeAttr('hidden');
+  $('#test-case-hierarchy').removeClass("bg-banner");
+  $('#test-case-hierarchy').removeClass("tree-style-margin-close");
+  $('#test-case-hierarchy').addClass("tree-style-margin-open");
+  $(this).attr('hidden' , true);
+});
+
 
 
 jQuery(function($) {

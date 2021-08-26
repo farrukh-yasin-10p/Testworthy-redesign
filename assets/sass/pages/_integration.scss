@@ -11,10 +11,9 @@
   .select-row-list {
     margin-top: 46px;
     li {
-        .hover-row-edit{
-           margin-left: rem(11);
-          
-        }
+      .hover-row-edit {
+        margin-left: rem(11);
+      }
       .icon-pen {
         color: $secondary;
         font-size: rem(30);
@@ -31,7 +30,59 @@
     }
   }
 
-
+  .switch {
+    position: relative;
+    width: 562px;
+    height: 56px;
+    border-radius: rem(30);
+    color: black;
+    input {
+      opacity: 1;
+      width: 0px;
+      height: 0px;
+      &:checked {
+        & + .slider {
+            justify-content: flex-start;
+          &::before {
+            transform: translateX(277px);
+            content: "Testworthy Configuration";
+          }
+        }
+      }
+    }
+    .slider {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #f4f5f9;
+      border-radius: rem(30);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: rem(49);
+      padding-right: rem(12);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      &::before {
+        border-radius: 30px;
+        position: absolute;
+        content: "Jira Configuration";
+        width: 281px;
+        height: 56px;
+        background-color: $secondary;
+        left: 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+    }
+  }
 
   .search-filter {
     display: flex;

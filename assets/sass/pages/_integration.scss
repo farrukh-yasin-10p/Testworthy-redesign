@@ -1,6 +1,72 @@
 .integration-section {
+  .integrated-with-testworthy {
+    display: none;
+  }
+
+  .integrate-form {
+    margin-top: rem(40);
+    display: none;
+    width: 100%;
+    padding: rem(41) rem(52) rem(46) rem(51);
+    border-radius: 30px;
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+    p {
+      color: $grey-light;
+      font-size: 18px;
+    }
+    .row {
+      &:nth-child(2) {
+        height: rem(76);
+      }
+    }
+    .integrate-form-field {
+      height: 100%;
+
+      label {
+        color: black;
+        font-size: rem(18);
+        margin-right: rem(47);
+      }
+
+      input {
+        padding: rem(10) rem(45) rem(10) rem(24);
+        background-color: $grey-light-200;
+        border-radius: rem(30);
+        border: none;
+        outline: none;
+        &::placeholder {
+          color: $grey-100;
+        }
+      }
+      .api-key-input-div {
+        position: relative;
+        background-color: $grey-light-200;
+        border-radius: rem(30);
+        padding-right: rem(24);
+        .divider {
+          display: block;
+          background-color: $grey-400;
+          width: rem(1);
+          height: rem(30);
+        }
+        input {
+          background-color: transparent;
+        }
+        i {
+          color: $grey-300;
+        }
+      }
+    }
+    .user-email-input-div {
+      label {
+        margin-right: rem(93);
+      }
+    }
+  }
   .integrate {
     padding-top: rem(44);
+    margin-bottom: rem(51);
   }
 
   .projects-integrated {
@@ -9,7 +75,7 @@
   }
 
   .select-row-list {
-    margin-top: 46px;
+    margin-top: rem(46);
     li {
       .hover-row-edit {
         margin-left: rem(11);
@@ -32,8 +98,8 @@
 
   .switch {
     position: relative;
-    width: 562px;
-    height: 56px;
+    width: rem(437);
+    height: rem(46);
     border-radius: rem(30);
     color: black;
     input {
@@ -42,9 +108,8 @@
       height: 0px;
       &:checked {
         & + .slider {
-            justify-content: flex-start;
           &::before {
-            transform: translateX(277px);
+            transform: translateX(222px);
             content: "Testworthy Configuration";
           }
         }
@@ -60,18 +125,18 @@
       background-color: #f4f5f9;
       border-radius: rem(30);
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
-      padding-left: rem(49);
-      padding-right: rem(12);
       -webkit-transition: 0.4s;
       transition: 0.4s;
+      padding-right: rem(15);
+      padding-left: rem(15);
       &::before {
-        border-radius: 30px;
+        border-radius: rem(30);
         position: absolute;
         content: "Jira Configuration";
-        width: 281px;
-        height: 56px;
+        width: rem(215);
+        height: rem(46);
         background-color: $secondary;
         left: 0;
         color: white;

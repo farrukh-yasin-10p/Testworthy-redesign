@@ -96,9 +96,10 @@
         <div class="container-fluid">
             <!-- Integration section start -->
             <section class="integration-section">
-                <div class="integrate mb-4">
+                <div class="integrate">
+                    <!-- Switch Section -->
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6">
                             <div>
                                 <label for="switch-input" class="switch">
                                     <input type="checkbox" id="switch-input">
@@ -108,8 +109,8 @@
                                     </span>
                                 </label>
                             </div>
-                            <div>
-                                <span class="projects-integrated">11 projects integrated</span>
+                            <div class="mt-4 ml-4 projects-integrated">
+                                <span>11 projects integrated with Jira</span>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -127,9 +128,52 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Switch section ends -->
+                    <!-- Integrate form -->
+
+                    <div class="integrate-form">
+                        <div class="row">
+                            <div class="col">
+                                <p>Enter the below email and API Key in the Jira plugin you will download from Atlassian
+                                    App Store.</p>
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div
+                                    class=" integrate-form-field user-email-input-div d-flex align-items-center flex-wrap">
+                                    <label for="user-email">User email</label>
+                                    <input class="" type="email" placeholder="myemail@example.com" id="user-email" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" integrate-form-field d-flex align-items-center flex-wrap ">
+                                    <label for="api-key">API Key</label>
+                                    <div class="api-key-input-div d-flex flex-wrap align-items-center">
+                                        <input class="" type="text" placeholder="myemail@example.com" id="api-key" />
+                                        <div class="d-flex align-items-center">
+                                            <span class=" trash-icon mr-1" data-toggle="tooltip" data-placement="top"
+                                                title="" data-original-title="copy"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
+                                            <span class="divider mr-1 ml-1"></span>
+
+                                            <span class="referesh-icon ml-1" data-toggle="tooltip" data-placement="top"
+                                                title="" data-original-title="Update API Key"><a href="#"
+                                                    data-toggle="modal" data-target="#update-api-key"><i
+                                                        class="icon-refresh"></i></a></span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Integrate form ends -->
                 </div>
                 <!-- Integrated projects table start   -->
-                <div class="tab-content " id="pills-tabContent">
+                <div class="tab-content integrated-with-jira " id="pills-tabContent">
                     <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
                         aria-labelledby="pills-row-tab">
 
@@ -397,6 +441,179 @@
 
 
                 </div>
+                <div class="tab-content integrated-with-testworthy " id="pills-tabContent">
+                    <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
+                        aria-labelledby="pills-row-tab">
+
+                        <div class="select-row ">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="progress_text">
+                                        <span>Projects</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-start">
+                                    <div class="progress_text text-align-right">
+                                        <span>Project Key</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="select-row-list">
+                            <ul>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--testplan-content-row End tab -->
+
+
+                    <!--Milestone-content-grid  Start tab -->
+                    <div class="content-grid tab-pane fade" id="pills-grid" role="tabpanel"
+                        aria-labelledby="pills-grid-tab">
+
+
+                        <h1>Grid </h1>
+
+                    </div>
+                    <!--Milestone-content-grid End tab -->
+
+
+                </div>
                 <!-- Integrated projects table end -->
                 <!-- Modal start -->
                 <section class="modal-section">
@@ -494,6 +711,87 @@
 
                 </section>
                 <!-- Modal End -->
+
+                <!-- Update project key modal -->
+                <div class="popup-section">
+                    <div class="modal fade confirm-modal" id="update-project-key" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+
+                            <!-- Modal mark project content Start-->
+                            <div class="modal-content confirm-project">
+                                <div class="modal-body-container px-5 pt-4  modal-shade">
+                                    <div class="">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Update Project Key</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure you want to update the Project Key?</p>
+                                            <div class="info">
+                                                <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                                                <p>After updating this Project Key, you will have to update your
+                                                    Projcect Key in the Jira Plugin as well to keep the project linked.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light-border"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary-color">Yes, Update Project
+                                        Key</button>
+                                </div>
+                            </div>
+
+                            <!-- Modal mark project content End-->
+                        </div>
+                    </div>
+                </div>
+                <!-- update api key modal end -->
+                <!-- Update project key modal -->
+                <div class="popup-section">
+                    <div class="modal fade confirm-modal" id="update-api-key" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+
+                            <!-- Modal mark project content Start-->
+                            <div class="modal-content confirm-project">
+                                <div class="modal-body-container px-5 pt-4  modal-shade">
+                                    <div class="">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Update API Key</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure you want to update the API Key?</p>
+                                            <div class="info">
+                                                <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                                                <p>After updating this API Key, you will have to update your
+                                                    API Key in the Jira Plugin as well to keep your accounts linked.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light-border"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary-color">Yes, Update API
+                                        Key</button>
+                                </div>
+                            </div>
+
+                            <!-- Modal mark project content End-->
+                        </div>
+                    </div>
+                </div>
+                <!-- update api key modal end -->
             </section>
             <!-- Integration section end -->
         </div>

@@ -837,11 +837,14 @@
     }
 }
 
-.testplan-modals {
-
-
+.tree-modal {
     .jstree-checkbox-selection {
         height: 450px;
+        overflow: auto;
+    }
+
+    .apply-filters-accordion {
+        max-height: 350px;
         overflow: auto;
     }
 
@@ -851,6 +854,12 @@
 
     .modal-body {
         padding-top: 0px;
+
+        .apply-filters {
+            border: 1px solid #c4c4c4;
+            border-left: none;
+            min-width: 245px;
+        }
 
         .custom-checkbox {
             label {
@@ -1009,9 +1018,9 @@
 
         .tree-section {
             padding: 15px;
-            border: 1px solid #c4c4c4;
-            border-left: none;
-            min-width: 245px;
+            // border: 1px solid #c4c4c4;
+            // border-left: none;
+            // min-width: 245px;
 
             span {
                 font-size: 14px;
@@ -1323,6 +1332,7 @@ a .jstree-themeicon {
             overflow: auto;
             padding-right: 10px;
 
+
             .accordion {
                 font-size: 12px;
                 border-bottom: 1px solid $grey-300;
@@ -1336,7 +1346,7 @@ a .jstree-themeicon {
                 }
 
                 .search-list {
-                    width: 90%;
+                    width: 88%;
                 }
 
                 .form-control {
@@ -1369,4 +1379,73 @@ a .jstree-themeicon {
     .custom-control label {
         font-weight: normal;
     }
+}
+
+// Testsuites tree modal
+.testsuites-tree-modal {
+    .btn-tab-tree {
+        width: auto;
+        background-color: #f4f5f9;
+
+        .btn {
+            min-width: 170px;
+            height: 44px;
+            border-radius: 30px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 10px;
+
+        .search-list {
+            width: 97%;
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        .cases-selection__body {
+            height: 330px;
+            overflow: auto;
+        }
+
+        .login-auth__head span {
+
+            font-weight: normal;
+        }
+
+        .apply-filters {
+            &__head {
+                margin-bottom: 33px;
+            }
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        position: static;
+
+        .search-list {
+            font-size: 12px;
+            position: static;
+        }
+    }
+
+    .jstree-checkbox-selection {
+        height: 380px;
+        overflow: auto;
+    }
+
+    .apply-filters-accordion {
+        max-height: 300px;
+        overflow: auto;
+    }
+
+    .input-search-list {
+        .selectuser {
+            font-size: 14px;
+            border-radius: 10px;
+        }
+    }
+
 }

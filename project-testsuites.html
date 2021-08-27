@@ -2363,7 +2363,7 @@
                                                             <span>Select - <a href="#">All</a> <a
                                                                     href="#">None</a></span>
                                                         </div>
-                                                        <div id="jstree">
+                                                        <div id="jstree1">
                                                         </div>
                                                     </div>
                                                     <div class="apply-filters">
@@ -2386,7 +2386,9 @@
                                                                         data-target="#testsuites-filter-modal">All
                                                                         groups &
                                                                         tests</a>
-                                                                    <a class="dropdown-item" href="#">Selected groups &
+                                                                    <a class="dropdown-item" href="#"
+                                                                        data-toggle="modal"
+                                                                        data-target="#testsuites-tree">Selected groups &
                                                                         subgroups</a>
                                                                     <a class="dropdown-item" href="#">Selected Group
                                                                         Only</a>
@@ -2429,6 +2431,484 @@
 
 
             <!-- Testsuites Modal Section Start-->
+
+
+            <!--  Tree Modal Start -->
+            <section class="modal-section testsuites-tree-section tree-modal-section">
+                <!--Modal Add testplan Start-->
+                <div class="modal testsuites-tree-modal tree-modal" id="testsuites-tree" tabindex="-1" role="dialog"
+                    aria-labelledby="testsuites-treeLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+
+                        <!--Modal tree content  Start-->
+                        <div class="modal-content tree-modal-content testsuites-tree-content">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="modal-side-color">
+                                    </div>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Select Cases</h4>
+                                            <div class="btn-tab btn-tab-tree ml-auto" id="tab-toggle">
+                                                <button class="btn shadow-none active"><a href=""> Copy
+                                                        Cases</a></button>
+                                                <button class="btn btn2 shadow-none "><a href=""> Move
+                                                        Cases</a></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="selected-cases">
+                                                <span>22 out of 170 cases selected</span>
+                                            </div>
+                                            <div class="input-search-list mb-4">
+                                                <input type="text" class="selectuser form-control"
+                                                    onclick="milestone_list('milestone-list7','block')"
+                                                    ondblclick="milestone_list('milestone-list7','none')"
+                                                    placeholder="Select Source">
+                                                <div class="search-list assigned-to-users common-list"
+                                                    id="milestone-list7" style="display: block;">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 1</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-4 cases-selection tree-section">
+                                                    <div class="cases-selection__head">
+                                                        <span>Select - <a href="#">All</a> <a href="#">None</a></span>
+                                                    </div>
+                                                    <div id="jstree">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-sm-8 pl-0 pr-0">
+                                                    <div class="row d-flex">
+                                                        <div class=" login-auth flex-1 tree-section ">
+                                                            <div class="login-auth__head mb-3">
+                                                                <span>Tutorial</span>
+                                                            </div>
+
+                                                            <div class="cases-selection__head">
+                                                                <span>Select - <a href="#">All</a> <a
+                                                                        href="#">None</a></span>
+                                                            </div>
+
+                                                            <div id="event_result" class="cases-selection__body">
+                                                            </div>
+
+                                                            <div class="filter-open-button">
+                                                                <button id="close-filter-btn"
+                                                                    class="btn btn-secondary-color close-btn">
+                                                                    <i class="icon-chevron-right"></i>
+                                                                </button>
+
+                                                                <button id="open-filter-btn"
+                                                                    class="btn btn-secondary-color open-btn" hidden>
+                                                                    <i class="icon-left-chevron"></i>
+                                                                    Filters
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div id="filter-col" class=" apply-filters tree-section ">
+
+                                                            <div class="apply-filters__head">
+                                                                <div class="dropdown dropdown-xs">
+                                                                    <button class="btn btn-secondary-color "
+                                                                        id="dropdownMenuLink2" data-toggle="dropdown"
+                                                                        aria-haspopup="true" aria-expanded="false">Apply
+                                                                        Filters
+                                                                        <i class="icon-chevron-down"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink2">
+                                                                        <a class="dropdown-item" href="#">Set
+                                                                            Selection</a>
+                                                                        <a class="dropdown-item" href="#">Add to
+                                                                            Selection</a>
+                                                                        <a class="dropdown-item" href="#">Remove from
+                                                                            Selection</a>
+
+                                                                    </div>
+                                                                </div>
+                                                                <span data-toggle="tooltip" data-placement="top"
+                                                                    title="Reset Filters" data-original-title=""><i
+                                                                        class="icon-refresh"></i></span>
+                                                            </div>
+
+                                                            <div class="apply-filters-accordion">
+                                                                <div class="accordion" id="accordionExample1">
+
+                                                                    <div class="accordion__head" id="heading1">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse1"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse1">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Automation Type</span>
+                                                                    </div>
+
+                                                                    <div id="collapse1" class="collapse "
+                                                                        aria-labelledby="heading1"
+                                                                        data-parent="#accordionExample1">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="accordion" id="accordionExample2">
+
+                                                                    <div class="accordion__head" id="headingOne">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse2"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse2">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Created By</span>
+                                                                    </div>
+
+                                                                    <div id="collapse2" class="collapse "
+                                                                        aria-labelledby="heading2"
+                                                                        data-parent="#accordionExample2">
+                                                                        <div class="accordion-body">
+                                                                            <input type="text"
+                                                                                class="selectuser form-control"
+                                                                                onclick="milestone_list('milestone-list8','block')"
+                                                                                ondblclick="milestone_list('milestone-list8','none')"
+                                                                                placeholder="">
+                                                                            <div class="search-list assigned-to-users common-list"
+                                                                                id="milestone-list8">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <div
+                                                                                            class="milestone-list-items">
+                                                                                            <span class="name">Milestone
+                                                                                                1</span>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div
+                                                                                            class="milestone-list-items">
+                                                                                            <span class="name">Milestone
+                                                                                                2</span>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div
+                                                                                            class="milestone-list-items">
+                                                                                            <span class="name">Milestone
+                                                                                                1</span>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="accordion" id="accordionExample3">
+
+                                                                    <div class="accordion__head" id="headingOne">
+                                                                        <button class="btn shadow-none p-0 "
+                                                                            id="tree-caret-button" type="button"
+                                                                            data-toggle="collapse"
+                                                                            data-target="#collapse3"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse3">
+                                                                            <i class="icon-caret-right "></i>
+                                                                        </button>
+                                                                        <span>Created On</span>
+                                                                    </div>
+
+                                                                    <div id="collapse3" class="collapse"
+                                                                        aria-labelledby="heading3"
+                                                                        data-parent="#accordionExample3">
+                                                                        <div
+                                                                            class="accordion-body accordion-date-filter ">
+                                                                            <div class="date-picker">
+                                                                                <input type="text" name="daterange"
+                                                                                    value="01/01/2018 - 01/15/2018"
+                                                                                    id="clear_input" hidden>
+                                                                                <span><a href="javascript: void(0)"
+                                                                                        id="clear_cross" class="clear"
+                                                                                        onclick="clear_date_tree(this)"
+                                                                                        hidden>×</a><a
+                                                                                        href="javascript: void(0)"
+                                                                                        id="daterange"><i
+                                                                                            class="icon-date-icon"></i></a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="accordion" id="accordionExample4">
+
+                                                                    <div class="accordion__head" id="heading4">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse4"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse4">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Priority</span>
+                                                                    </div>
+
+                                                                    <div id="collapse4" class="collapse "
+                                                                        aria-labelledby="heading4"
+                                                                        data-parent="#accordionExample4">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+
+                                                                <div class="accordion" id="accordionExample5">
+
+                                                                    <div class="accordion__head" id="heading5">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse5"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse5">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Status</span>
+                                                                    </div>
+
+                                                                    <div id="collapse5" class="collapse "
+                                                                        aria-labelledby="heading5"
+                                                                        data-parent="#accordionExample5">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="accordion" id="accordionExample6">
+
+                                                                    <div class="accordion__head" id="heading6">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse6"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse6">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Title</span>
+                                                                    </div>
+
+                                                                    <div id="collapse6" class="collapse "
+                                                                        aria-labelledby="heading6"
+                                                                        data-parent="#accordionExample6">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="accordion" id="accordionExample7">
+
+                                                                    <div class="accordion__head" id="heading7">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse7"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse7">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Type</span>
+                                                                    </div>
+
+                                                                    <div id="collapse7" class="collapse "
+                                                                        aria-labelledby="heading7"
+                                                                        data-parent="#accordionExample7">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div id="empty-div" class="filter-empty-box" hidden>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row testsuites-tree-footer modal-footer align-items-start">
+
+
+                                            <div class="input-search-list col-md-4 pl-0">
+                                                <input type="text" class="selectuser form-control"
+                                                    onclick="milestone_list('milestone-list9','block')"
+                                                    ondblclick="milestone_list('milestone-list9','none')"
+                                                    placeholder="Copy ...">
+                                                <div class="search-list assigned-to-users common-list"
+                                                    id="milestone-list9" style="display: block;">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 1</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-search-list col">
+                                                <input type="text" class="selectuser form-control"
+                                                    onclick="milestone_list('milestone-list10','block')"
+                                                    ondblclick="milestone_list('milestone-list10','none')"
+                                                    placeholder="Append To">
+                                                <div class="search-list assigned-to-users common-list"
+                                                    id="milestone-list10" style="display: block;">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 1</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="footer-tree-btns col-md-auto">
+                                                <button type="button" class="btn btn-light-border mr-2"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-secondary-color">Copy</button>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal testplan-tree content  End-->
+                    </div>
+                </div>
+                <!--Add modal End-->
+            </section>
+            <!--  Tree Modal End -->
+
+            <!--  Filter Modal Start -->
             <section class="modal-section">
 
                 <!--Modal Filter-->
@@ -2575,12 +3055,12 @@
                                                         <div class="accordion-body accordion-date-filter ">
                                                             <div class="date-picker">
                                                                 <input type="text" name="daterange"
-                                                                    value="01/01/2018 - 01/15/2018" id="clear_input"
-                                                                    hidden="">
-                                                                <span><a href="javascript: void(0)" id="clear_cross"
-                                                                        class="clear" onclick="clear_date_tree(this)"
+                                                                    value="01/01/2018 - 01/15/2018" id="clear_input2"
+                                                                    hidden>
+                                                                <span><a href="javascript: void(0)" id="clear_cross3"
+                                                                        class="clear" onclick="clear_date(this)"
                                                                         hidden="">×</a><a href="javascript: void(0)"
-                                                                        id="daterange"><i
+                                                                        id="daterange2"><i
                                                                             class="icon-date-icon"></i></a>
                                                                 </span>
                                                             </div>
@@ -2933,11 +3413,6 @@
 
                                             </div>
 
-
-
-
-
-
                                         </div>
                                         <div class="modal-footer ">
                                             <button type="button" class="btn btn-light-border"
@@ -2956,7 +3431,7 @@
                 <!-- modal End-->
 
             </section>
-
+            <!--  Filter Modal End -->
 
             <!-- Testsuites Modal Section End-->
 

@@ -18079,6 +18079,17 @@ $(function () {
   });
 });
 
+$(function () {
+  $('#daterange2').daterangepicker({
+    opens: 'center'
+  }, 
+  function (start, end, label) {
+    $('#clear_cross3').removeAttr('hidden');
+    $('input[name="daterange"]').removeAttr('hidden');
+    $('input[name="daterange"]').val(start.format('MM/DD/YYYY')+' - '+end.format('MM/DD/YYYY'));
+    // console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
 
 $(function () {
   $('#single-date').daterangepicker({
@@ -18350,12 +18361,15 @@ jQuery(function($) {
   // js tree library
 $('#jstree').jstree(tree_data);
 $('#jstree').jstree({core:{multiple : false}});
+$('#jstree1').jstree(tree_data);
+$('#jstree1').jstree({core:{multiple : false}});
 
 
 
 // Try to check all boxes, here it works. Why.
 $("#btn").click(function(){
     checkAll($("#jstree"));
+    checkAll($("#jstree1"));
 })
 
 $('#jstree').on("select_node.jstree", function (e, data1) { 

@@ -37,12 +37,21 @@ $icomoon-font-path: "./../fonts" !default;
     font-display: block;
 }
 
-$font-types: (
-    close: "\e924",
-    check: "\e922",
+$font-types: (close: "\e92e",
+    check: "\e92f",
+    left-chevron: "\e92d",
+    caret-right: "\e92a",
+    chevron-down: "\e92b",
+    caret-down2: "\e92c",
+    caret-right-lg: "\e928",
+    caret-down: "\e929",
+    kabab-menu: "\e922",
+    test-cases: "\e924",
+    active: "\e925",
+    arrow-left: "\e926",
+    chevron-right: "\e927",
     plus: "\e923",
     Project: "\e921",
-    more-vertical: "\e920",
     download: "\e91d",
     reports: "\e91e",
     testcases: "\e91f",
@@ -75,6 +84,7 @@ $font-types: (
     settings: "\e91a",
     users: "\e91b",
     milestone-2: "\e91c",
+
 );
 
 @each $type,

@@ -32,9 +32,11 @@
 @import "partials/classes";
 @import "partials/buttons";
 @import "partials/forms";
+@import "partials/dropdown";
 @import "partials/global";
 @import "partials/accordion";
 @import "partials/components";
+
 
 //===========================================
 // -Partials End
@@ -65,6 +67,7 @@
 @import "pages/project-testplan";
 @import "pages/milestone-innerpage";
 @import "pages/project-listing";
+@import "pages/project-testcases";
 
 //===========================================
 // -Pages End

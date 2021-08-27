@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link rel="stylesheet" href="./assets/dist/style.css">
+    <title>Testworthy</title>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="sticky-top">
+        <div class="head-logo">
+            <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu-btn">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="header-back">
+            <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
+                    <a href="#">Integration</a>
+                </span></label>
+
+        </div>
+        <div class="user ml-auto">
+            <div class="user-group">
+                <div class="user-text">
+                    <span>Hello,</span><strong> Ahmed</strong>
+                    <br>
+                    <p class="text-right">Admin</p>
+                </div>
+                <div class="user-icon">
+                    <span><img src="./assets/images/user-icon.png" alt=""></span>
+                </div>
+            </div>
+            <div class="caret-down">
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Integration</a>
+                        <a class="dropdown-item" href="#">Subscription</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- side bar section start  -->
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-hamburger">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="index.html"><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
+                <li><a href=""><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
+                <li><a href="integration.html" class="active"><span><i class="icon-integration"></i></span>
+                        <span>Integration</span></a></li>
+                <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
+                <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- side bar section end -->
+    <!-- Main content -->
+
+    <div class="main-content">
+        <div class="container-fluid">
+            <!-- Integration section start -->
+            <section class="integration-section">
+                <div class="integrate">
+                    <!-- Switch Section -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <label for="switch-input" class="switch">
+                                    <input type="checkbox" id="switch-input">
+                                    <span class="slider">
+                                        <span>Jira Configuration</span>
+                                        <span>Testworthy Configuration</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="mt-4 ml-4 projects-integrated">
+                                <span>11 projects integrated with Jira</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="search-filter">
+                                <div class="search-input">
+                                    <input type="text" placeholder="Search Projects, Assignee">
+                                    <span class="search-icon">
+                                        <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
+                                    </span>
+                                </div>
+                                <button type="button" class="btn" data-toggle="modal"
+                                    data-target="#integrate-with-jira">Integrate with Jira
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Switch section ends -->
+                    <!-- Integrate form -->
+
+                    <div class="integrate-form">
+                        <div class="row">
+                            <div class="col">
+                                <p>Enter the below email and API Key in the Jira plugin you will download from Atlassian
+                                    App Store.</p>
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div
+                                    class=" integrate-form-field user-email-input-div d-flex align-items-center flex-wrap">
+                                    <label for="user-email">User email</label>
+                                    <input class="" type="email" placeholder="myemail@example.com" id="user-email" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" integrate-form-field d-flex align-items-center flex-wrap ">
+                                    <label for="api-key">API Key</label>
+                                    <div class="api-key-input-div d-flex flex-wrap align-items-center">
+                                        <input class="" type="text" placeholder="myemail@example.com" id="api-key" />
+                                        <div class="d-flex align-items-center">
+                                            <span class=" trash-icon mr-1" data-toggle="tooltip" data-placement="top"
+                                                title="" data-original-title="copy"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
+                                            <span class="divider mr-1 ml-1"></span>
+
+                                            <span class="referesh-icon ml-1" data-toggle="tooltip" data-placement="top"
+                                                title="" data-original-title="Update API Key"><a href="#"
+                                                    data-toggle="modal" data-target="#update-api-key"><i
+                                                        class="icon-refresh"></i></a></span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Integrate form ends -->
+                </div>
+                <!-- Integrated projects table start   -->
+                <div class="tab-content integrated-with-jira " id="pills-tabContent">
+                    <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
+                        aria-labelledby="pills-row-tab">
+
+                        <div class="select-row ">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="progress_text">
+                                        <span>Projects</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="progress_text">
+                                        <span>Integration</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="progress_text">
+                                        <span>Username</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="progress_text">
+                                        <span>URL</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="progress_text">
+                                        <span>API Key</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="select-row-list">
+                            <ul>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-4 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+
+
+                                        <div class="col-md-2 col-div">
+                                            <div class="values">
+                                                <span>Jira</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-div ">
+                                            <div class="values">
+                                                <span>AhmedAli@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-div">
+                                            <div class="values">
+                                                <span><a href="">https://10pearls.atlassian.net</a></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center col-div ">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-4 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+
+
+                                        <div class="col-md-2 col-div">
+                                            <div class="values">
+                                                <span>Jira</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-div ">
+                                            <div class="values">
+                                                <span>AhmedAli@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-div">
+                                            <div class="values">
+                                                <span><a href="">https://10pearls.atlassian.net</a></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center col-div ">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-4 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+
+
+                                        <div class="col-md-2 col-div">
+                                            <div class="values">
+                                                <span>Jira</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-div ">
+                                            <div class="values">
+                                                <span>AhmedAli@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-div">
+                                            <div class="values">
+                                                <span><a href="">https://10pearls.atlassian.net</a></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center col-div ">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-4 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+
+
+                                        <div class="col-md-2 col-div">
+                                            <div class="values">
+                                                <span>Jira</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-div ">
+                                            <div class="values">
+                                                <span>AhmedAli@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-div">
+                                            <div class="values">
+                                                <span><a href="">https://10pearls.atlassian.net</a></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center col-div ">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-4 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+
+
+                                        <div class="col-md-2 col-div">
+                                            <div class="values">
+                                                <span>Jira</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-div ">
+                                            <div class="values">
+                                                <span>AhmedAli@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-div">
+                                            <div class="values">
+                                                <span><a href="">https://10pearls.atlassian.net</a></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center col-div ">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit">
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
+                                                <span class="trash-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Delete"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--testplan-content-row End tab -->
+
+
+                    <!--Milestone-content-grid  Start tab -->
+                    <div class="content-grid tab-pane fade" id="pills-grid" role="tabpanel"
+                        aria-labelledby="pills-grid-tab">
+
+
+                        <h1>Grid </h1>
+
+                    </div>
+                    <!--Milestone-content-grid End tab -->
+
+
+                </div>
+                <div class="tab-content integrated-with-testworthy " id="pills-tabContent">
+                    <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
+                        aria-labelledby="pills-row-tab">
+
+                        <div class="select-row ">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="progress_text">
+                                        <span>Projects</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-start">
+                                    <div class="progress_text text-align-right">
+                                        <span>Project Key</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="select-row-list">
+                            <ul>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="row d-flex align-items-center flex-wrap">
+                                        <div class="col-md-8 d-flex align-items-center col-div">
+                                            <span>
+                                                <i class="icon-pen"></i>
+                                            </span>
+                                            <span>Test Project</span>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center col-div text-align-right">
+                                            <div class="values">
+                                                <span>BgD1RC0qShCC4gtGXgD182C
+                                            </div>
+                                            <div class="hover-row-edit"> <span class="clipboard-icon"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="copy"><a href="#"><i
+                                                            class="icon-trash"></i></a></span>
+                                                <span class="referesh-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Update Project Key"><a href="#"
+                                                        data-toggle="modal" data-target="#update-project-key"><i
+                                                            class="icon-refresh"></i></a></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--testplan-content-row End tab -->
+
+
+                    <!--Milestone-content-grid  Start tab -->
+                    <div class="content-grid tab-pane fade" id="pills-grid" role="tabpanel"
+                        aria-labelledby="pills-grid-tab">
+
+
+                        <h1>Grid </h1>
+
+                    </div>
+                    <!--Milestone-content-grid End tab -->
+
+
+                </div>
+                <!-- Integrated projects table end -->
+                <!-- Modal start -->
+                <section class="modal-section">
+
+                    <!--Modal Add  Start-->
+                    <div class="modal  " id="integrate-with-jira" tabindex="-1" role="dialog"
+                        aria-labelledby="add-milestoneLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="modal-side-color">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="modal-body-container pr-4 pt-4 pb-4">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="exampleModalLabel">Integrate</h4>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true" class="close_cross">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>Project*</h6>
+                                                    </div>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <div class="mt-2 d-flex justify-content-end">
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="The username of a user who has permission to create issues on your Jira.">
+                                                            <i class="icon-info-icon"></i>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>Jira User Name*</h6>
+
+                                                    </div>
+                                                    <input type="email" placeholder="Ahmedali@example.com"
+                                                        class="input_field">
+                                                    <div class="mt-2 d-flex justify-content-end">
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="You can use an API token to authenticate a script or other process with an Atlassian cloud product. Please click Here for details">
+                                                            <i class="icon-info-icon"></i>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>API Key*</h6>
+                                                    </div>
+                                                    <textarea name="" id="" cols="2" rows="4"></textarea>
+                                                    <div class="d-flex justify-content-end">
+                                                        <span data-toggle="tooltip" data-placement="top"
+                                                            title="The web address for your case references (requirements or user stories, e.g). Use id as the placeholder for the actual reference ID.">
+                                                            <i class="icon-info-icon"></i>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="text-info-icon">
+                                                        <h6>URL*</h6>
+                                                    </div>
+                                                    <input type="url" placeholder="https://10pearls.atlassian.net"
+                                                        class="input_field">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-light-border"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-secondary-color">Integrate with
+                                                    Jira
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Add modal End-->
+
+
+
+                </section>
+                <!-- Modal End -->
+
+                <!-- Update project key modal -->
+                <div class="popup-section">
+                    <div class="modal fade confirm-modal" id="update-project-key" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+
+                            <!-- Modal mark project content Start-->
+                            <div class="modal-content confirm-project">
+                                <div class="modal-body-container px-5 pt-4  modal-shade">
+                                    <div class="">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Update Project Key</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure you want to update the Project Key?</p>
+                                            <div class="info">
+                                                <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                                                <p>After updating this Project Key, you will have to update your
+                                                    Projcect Key in the Jira Plugin as well to keep the project linked.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light-border"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary-color">Yes, Update Project
+                                        Key</button>
+                                </div>
+                            </div>
+
+                            <!-- Modal mark project content End-->
+                        </div>
+                    </div>
+                </div>
+                <!-- update api key modal end -->
+                <!-- Update project key modal -->
+                <div class="popup-section">
+                    <div class="modal fade confirm-modal" id="update-api-key" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+
+                            <!-- Modal mark project content Start-->
+                            <div class="modal-content confirm-project">
+                                <div class="modal-body-container px-5 pt-4  modal-shade">
+                                    <div class="">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Update API Key</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure you want to update the API Key?</p>
+                                            <div class="info">
+                                                <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                                                <p>After updating this API Key, you will have to update your
+                                                    API Key in the Jira Plugin as well to keep your accounts linked.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light-border"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary-color">Yes, Update API
+                                        Key</button>
+                                </div>
+                            </div>
+
+                            <!-- Modal mark project content End-->
+                        </div>
+                    </div>
+                </div>
+                <!-- update api key modal end -->
+            </section>
+            <!-- Integration section end -->
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</body>
+
+</html>

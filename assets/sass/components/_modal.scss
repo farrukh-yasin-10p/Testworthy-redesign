@@ -1449,3 +1449,158 @@ a .jstree-themeicon {
     }
 
 }
+
+
+//Testsuites Split Screen Modal 
+
+.testsuites-splitscreen {
+    .modal-dialog {
+        max-width: 700px;
+    }
+
+    .modal-content {
+        min-width: unset;
+    }
+
+    .modal-body-container {
+        margin: 0;
+        padding: 25px;
+
+    }
+}
+
+.split-screen-modal {
+
+    .modal-header {
+        font-size: 17px;
+        font-weight: 600;
+        border-bottom: 1px solid $grey-300;
+        padding: 0;
+
+        i {
+            font-size: 18px;
+            font-weight: 600;
+            color: $grey-300;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    .modal-body {
+        padding: 0 0 30px 0;
+        max-height: 80vh;
+        overflow: auto;
+
+        h6 {
+            font-size: 14px;
+        }
+
+        .search-list {
+            z-index: 999;
+            width: 90%;
+            margin-top: 0;
+        }
+    }
+
+    .splitscreen-listbox {
+
+        &__list {
+            border: 1px solid $grey-200;
+            border-radius: 10px;
+            padding: 15px 25px;
+            color: $grey-100;
+            font-size: 12px;
+
+            ul {
+                padding-left: 20px;
+                margin-bottom: 0;
+            }
+
+            li {
+                list-style: disc;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .modal-body-text-row {
+        font-size: 14px;
+
+        span {
+            color: $grey-500;
+        }
+
+        .split-screen-view-text {
+            &:last-child {
+                flex: 2;
+            }
+        }
+    }
+
+    .radio-checkbox-col {
+        .radio-btns label {
+            font-size: 14px;
+        }
+
+        .custom-control.custom-checkbox label {
+            font-size: 14px;
+            padding-top: 2px;
+        }
+    }
+
+
+    input.form-control {
+        font-size: 14px;
+        border-radius: 10px;
+        color: $grey-100;
+
+        &::placeholder {
+            color: $grey-100;
+        }
+    }
+
+    .save-btn {
+        font-size: 14px;
+        border-radius: 10px;
+
+        i {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+
+    .edit-splitscreen-content {
+        .modal-header {
+            border: none;
+        }
+    }
+}
+
+// Test Suites Add Section Modal
+.add-section-modal {
+    .modal-body {
+        .image-thumbnail {
+            padding: 10px;
+
+            i {
+                font-size: 65px;
+            }
+        }
+
+        .search-list {
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        .form-control {
+            font-size: 14px;
+        }
+    }
+
+}

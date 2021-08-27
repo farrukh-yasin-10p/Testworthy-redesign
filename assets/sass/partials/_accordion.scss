@@ -127,6 +127,23 @@
           }
         }
       }
+
+      .hover-row-edit {
+        display: none;
+
+
+        span {
+          margin-right: 15px;
+        }
+
+        a {
+          color: $grey-300;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
     }
 
     .row-head {
@@ -222,6 +239,16 @@
   .col2 {
     width: 95px;
     min-width: 95px;
+  }
+
+  .display-table-icons {
+    &:hover {
+      background-color: $sky-light;
+
+      .hover-row-edit {
+        display: flex;
+      }
+    }
   }
 }
 

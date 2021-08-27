@@ -140,7 +140,19 @@
             width: 95%;
             margin-top: rem(-15);
         }
+        .dropdown-box{
+            position: relative;
 
+            .dropdown-list{
+                position: absolute;
+                top : 50px;
+                margin-top: 0;
+                width: 100%;
+            }
+        }
+        .modal-search-list{
+            margin-top: rem(16);
+        }
         .add-circle-icon {
             text-align: right;
 
@@ -154,7 +166,7 @@
             box-shadow: none;
             border-radius: unset;
             margin-top: 15px;
-            min-height: 360px;
+            min-height: 220px;
 
             table {
                 table-layout: fixed;
@@ -193,10 +205,10 @@
                     position: relative;
 
                     tr {
-                        border: 1px #ccc solid;
+                        border: 1px #ebecef solid;
                         border-radius: 10px;
                         display: block;
-                        margin: 5px;
+                        margin: 0px 5px 5px 0;
 
                         &:hover {
                             .hover-row-edit {
@@ -345,7 +357,7 @@
             }
         }
 
-    }
+    } 
 
     @include mq('sm', max) {
         .col-md-10 {
@@ -727,3 +739,124 @@
 
     }
 }
+
+
+/* Add Configuraion */
+.add-configuration-content {
+    
+    .icon-warning {
+        color: #e71e1e;
+    }
+
+    .input_field.required{
+        background:rgba(231, 30, 30, 0.06);
+        border: 2px solid #e71e1e;
+    }
+
+    .modal-body{
+        padding-top:0;
+
+        th,td{
+
+            padding:8px 10px;
+
+            .custom-checkbox {
+                margin-left:5px;
+            }
+  
+        }
+
+        .search-list.collab {
+            .checks{
+                width:60px;
+            }
+        }
+         
+        .custom-checkbox {
+            margin-bottom:0;
+        }
+    }
+
+    .config{
+        width: 260px;
+    }
+
+    .group {
+        width: 260px;
+        position: relative;
+
+        .trash-icon {
+            position: absolute;
+            right:20px;
+            top:12px;
+            display: none;
+
+            .icon-trash {
+                color:#c4c4c4;
+            }
+        }
+
+        &:hover{  
+            .trash-icon {
+               display: block; 
+            }
+        } 
+    }
+ 
+
+    .panel{ 
+        border-bottom: 1px solid #ebebeb;
+
+        .text-info-icon {
+            span {
+                font-size: 13px;
+                color: #e71e1e;
+            }
+        }
+    }
+
+    .panel-title {
+ 
+            margin-bottom:0; 
+            
+            a{
+                display: block;
+                text-decoration: none;
+                color: #000;
+                font-size: 18px; 
+                padding:20px 0 25px;
+
+                &[aria-expanded="true"]{
+                    background:url(/assets/images/accordian-active.png) no-repeat 99%;
+                    background-size: 20px;
+                     
+                }
+                
+                &[aria-expanded="false"]{
+                    background:url(/assets/images/add-circle.png) no-repeat right;
+                    background-size: 35px; 
+                }
+    
+            }
+        }
+         
+    }
+ 
+
+    .addgroup,.addconfig {
+        .btn {
+            margin-left: 20px;
+            width: 150px;
+            border: 1px solid #969ba0;
+
+            &:hover {
+                border:1px solid #1eaae7
+            }
+        }
+    }
+ 
+
+
+    
+
+    

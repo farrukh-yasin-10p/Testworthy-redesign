@@ -68,6 +68,59 @@
 }
 
 
+.profile-img-name{
+  text-align: right;
+  max-width: 130px;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile-name-styling{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+}
+.small-styling{
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  color: #7a7e88;
+}
+.progress-padding{
+  padding-top: 10px;
+  // width: 100%;
+}
+.progress-color{
+  background-color: #24cc09;
+  
+}
+.progressBar {
+  width: 100%;
+}
+
+.progress-hieght{
+  height: 12px;
+}
+
+.progress-row{
+  align-items: center;
+}
+.scrollbar-height{
+  height: 180px;
+  // overflow-x: scroll;
+}
+.checkbox-sizing{
+  top: -54px;
+  width: 96%;
+  left: 9px;
+}
+.text-plan-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 // Search list Class End 
 
 
@@ -124,6 +177,36 @@
 
 .valign-top {
   vertical-align: top;
+}
+
+.wd350{
+  min-width: 350px;
+}
+
+.error-msg{
+  .input_field.required{
+    background:rgba(231, 30, 30, 0.06);
+    border: 2px solid #e71e1e;
+  }
+  .text {
+    font-size: 13px;
+    color: #e71e1e;
+  }
+  .icon-warning {
+    color: #e71e1e;
+  }
+}
+
+.radio-disc {
+  display: block;
+  font-size: 14px;
+  color: #a4a4a4;
+}
+
+hr {
+  &.radio-bdr {
+    margin:25px 40px;
+  }
 }
 
 // Tooltip End 

@@ -263,11 +263,13 @@
                 }
 
                 &::before {
-                    top: rem(10);
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
 
                 &::after {
-                    top: rem(10);
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
 
 
@@ -284,7 +286,8 @@
             }
 
             .custom-control-input {
-                top: 7px;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
         }

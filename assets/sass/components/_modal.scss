@@ -52,7 +52,7 @@
             float: right;
         }
 
-        .input_field {
+        .input_field,select {
             width: 100%;
             font-size: rem(12);
             padding: rem(10) rem(11);
@@ -141,7 +141,19 @@
             width: 95%;
             margin-top: rem(-15);
         }
+        .dropdown-box{
+            position: relative;
 
+            .dropdown-list{
+                position: absolute;
+                top : 50px;
+                margin-top: 0;
+                width: 100%;
+            }
+        }
+        .modal-search-list{
+            margin-top: rem(16);
+        }
         .add-circle-icon {
             text-align: right;
 

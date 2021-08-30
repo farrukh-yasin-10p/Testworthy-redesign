@@ -18052,10 +18052,11 @@ function clear_date(a){
   y.value = "";
   y.hidden = true;
   a.hidden = true;
+
 }
 
-function clear_date2(b){
-  var z  = document.getElementById('clear_input3');
+function clear_date2(b) {
+  var z = document.getElementById("clear_input3");
   z.value = "";
   z.hidden = true;
   b.hidden = true;
@@ -18068,15 +18069,19 @@ function clear_date_tree(c){
 }
 
 $(function () {
-  $('#daterange').daterangepicker({
-    opens: 'center'
-  }, 
-  function (start, end, label) {
-    $('#clear_cross').removeAttr('hidden');
-    $('input[name="daterange"]').removeAttr('hidden');
-    $('input[name="daterange"]').val(start.format('MM/DD/YYYY')+' - '+end.format('MM/DD/YYYY'));
-    // console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-  });
+  $("#daterange").daterangepicker(
+    {
+      opens: "center",
+    },
+    function (start, end, label) {
+      $("#clear_cross").removeAttr("hidden");
+      $('input[name="daterange"]').removeAttr("hidden");
+      $('input[name="daterange"]').val(
+        start.format("MM/DD/YYYY") + " - " + end.format("MM/DD/YYYY")
+      );
+      // console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    }
+  );
 });
 
 $(function () {
@@ -18092,42 +18097,44 @@ $(function () {
 });
 
 $(function () {
-  $('#single-date').daterangepicker({
-    opens: 'left',
-    singleDatePicker: true
-  }, 
-  function (start, end, label) {
-    $('#clear_cross2').removeAttr('hidden');
-    $('input[name="single-date"]').removeAttr('hidden');
-    $('input[name="single-date"]').val(start.format('MM/DD/YYYY'));
-  });
+  $("#single-date").daterangepicker(
+    {
+      opens: "left",
+      singleDatePicker: true,
+    },
+    function (start, end, label) {
+      $("#clear_cross2").removeAttr("hidden");
+      $('input[name="single-date"]').removeAttr("hidden");
+      $('input[name="single-date"]').val(start.format("MM/DD/YYYY"));
+    }
+  );
 });
 
-
-
 // Carousel Section Search List
-function searchList(a){
-    var list = document.getElementById('list_search');
-    list.style.display = a ;
+function searchList(a) {
+  var list = document.getElementById("list_search");
+  list.style.display = a;
 }
-
 
 // Edit Project Search List
-function edit_searchList(a){
-  var list = document.getElementById('list_search_edit');
-  list.style.display = a ;
+function edit_searchList(a) {
+  var list = document.getElementById("list_search_edit");
+  list.style.display = a;
 
-  var list1 = document.getElementById('list_search_edit1');
-  list1.style.display = a ;
+  var list1 = document.getElementById("list_search_edit1");
+  list1.style.display = a;
 
-  var list2 = document.getElementById('list_search_edit2');
-  list2.style.display = a ;
+  var list2 = document.getElementById("list_search_edit2");
+  list2.style.display = a;
 }
 
-
 // assigned user Search List
-function assigned_to(a){
-  var list = document.getElementById('selectuser');
+function assigned_to(a) {
+  var list = document.getElementById("selectuser");
+  list.style.display = a;
+}
+function assigned_to_role(a){
+  var list = document.getElementById('selectrole');
   list.style.display = a ;
 }
 
@@ -18137,18 +18144,19 @@ function milestone_list(e,b){
 
 }
 
-function testsuite_list(b){
-  var list = document.getElementById('testsuite_list');
+function testsuite_list(b) {
+  var list = document.getElementById("testsuite_list");
   list.style.display = b;
 }
 
-
 //Tooltip
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-toggle="tooltip"]')
+);
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 //set all your datepickers inputs
 // $("#feRouteDate").datepicker({
@@ -18156,15 +18164,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 //   //maxDate: 0
 // });
 
-
 //You can show datepicker on click on the calendar icon
-$(".ic-date").on("click", function(){
-  $(this).siblings("input").datepicker("show");    
+$(".ic-date").on("click", function () {
+  $(this).siblings("input").datepicker("show");
 });
 
-
 /* Top Nav Bar */
-
 
 // $(window).scroll(function() {
 //   if ($(this).scrollTop()>100)
@@ -18179,69 +18184,72 @@ $(".ic-date").on("click", function(){
 //    }
 // });
 
- 
-
-
 //==================//
 
-var labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-  ];
+var labels = ["January", "February", "March", "April", "May", "June"];
 
 var data = {
   labels: labels,
   datasets: [
     {
-      label: 'Retest',
-      backgroundColor: 'rgb(243, 194, 20)',
-      borderColor: 'rgb(243, 194, 20)',
+      label: "Retest",
+      backgroundColor: "rgb(243, 194, 20)",
+      borderColor: "rgb(243, 194, 20)",
       data: [2, 13, 15, 21, 6, 30, 43],
-      fill: true
-      
+      fill: true,
     },
     {
-      label: 'Failed',
-      backgroundColor: 'rgb(231, 30, 30)',
-      borderColor: 'rgb(231, 30, 30)',
+      label: "Failed",
+      backgroundColor: "rgb(231, 30, 30)",
+      borderColor: "rgb(231, 30, 30)",
       data: [2, 13, 15, 21, 6, 30, 43],
-      fill: true
+      fill: true,
     },
     {
-      label: 'Partial',
-      backgroundColor: 'rgb(30, 170, 231)',
-      borderColor: 'rgb(30, 170, 231)',
+      label: "Partial",
+      backgroundColor: "rgb(30, 170, 231)",
+      borderColor: "rgb(30, 170, 231)",
       data: [0, 20, 2, 8, 15, 26, 25],
-      fill: true
+      fill: true,
     },
     {
-      label: 'Passed',
-      backgroundColor: 'rgb(36, 204, 9)',
-      borderColor: 'rgb(36, 204, 9)',
+      label: "Passed",
+      backgroundColor: "rgb(36, 204, 9)",
+      borderColor: "rgb(36, 204, 9)",
       data: [0, 10, 5, 2, 20, 30, 45],
-      fill: true
-  },
-  ]
+      fill: true,
+    },
+  ],
 };
 
+// integration Switch functionality
 
-
+$("#switch-input").click(function () {
+  if ($("#switch-input").prop("checked") === true) {
+    $(".integrated-with-jira").css("display", "none");
+    $(".integrated-with-testworthy").css("display", "block");
+    $('.integrate-form ').css('display', 'block');
+    $('.projects-integrated ').css('display', 'none');
+  }else{
+    $(".integrated-with-jira").css("display", "block");
+    $(".integrated-with-testworthy").css("display", "none");
+    $('.integrate-form ').css('display', 'none');
+  }
+});
 
 $(document).ready(function () {
-  
+  $('[data-toggle="popover"]').popover({ trigger: "hover" });
 
-  
   // Owl Carousel Query
-  $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      items:1,
-      nav: true,
-      navText : ["<i class='fas fa-caret-left'></i>","<i class='fas fa-caret-right'></i>"]
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    items: 1,
+    nav: true,
+    navText: [
+      "<i class='fas fa-caret-left'></i>",
+      "<i class='fas fa-caret-right'></i>",
+    ],
   });
    // Owl Carousel Query End
 
@@ -18251,41 +18259,41 @@ if(chartvar){
   var ctx = chartvar.getContext('2d');
   ctx.height = 300;
   var myChart = new Chart(ctx, {
-      type: 'line',
-      data: data,
-      options: {
-          maintainAspectRatio: false,
-        responsive: true,
-        plugins: {
-          // title: {
-          //   display: true,
-          //   text: (ctx) => 'Chart.js Line Chart - stacked='
-          // },
-          tooltip: {
-            mode: 'index'
+    type: "line",
+    data: data,
+    options: {
+      maintainAspectRatio: false,
+      responsive: true,
+      plugins: {
+        // title: {
+        //   display: true,
+        //   text: (ctx) => 'Chart.js Line Chart - stacked='
+        // },
+        tooltip: {
+          mode: "index",
+        },
+      },
+      interaction: {
+        mode: "nearest",
+        axis: "x",
+        intersect: false,
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: "Month",
           },
         },
-        interaction: {
-          mode: 'nearest',
-          axis: 'x',
-          intersect: false
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Month'
-            }
+        y: {
+          stacked: true,
+          title: {
+            display: true,
+            text: "Value",
           },
-          y: {
-            stacked: true,
-            title: {
-              display: true,
-              text: 'Value'
-            }
-          }
-        }
-      }
+        },
+      },
+    },
   });
 
 }
@@ -18506,5 +18514,21 @@ else{
     }
 
   }
+  // Test Changes & History Tabs Toggle
+  $("#tab-toggle button:first-child").addClass("active");
+  $(".tab-details").hide();
+  $(".tab-details:first").show();
+
+  // Click function
+  $("#tab-toggle button").click(function () {
+    $("#tab-toggle button").removeClass("active");
+    $(this).addClass("active");
+    $(".tab-details").hide();
+
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).fadeIn();
+    return false;
+  });
+  // Test Changes & History Tabs Toggle End
 
 //# sourceMappingURL=main.js.map

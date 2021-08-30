@@ -65,17 +65,7 @@
             color: white;
             margin-left: rem(10);
             margin-bottom: rem(10);
-            &.grey-color {
-                border: rem(2) solid $grey-100;
-                color: $grey-100;
-                background-color: white;
-            }
 
-            &:hover {
-                background:#1eaae7;
-                border: rem(2) solid #1eaae7;
-                color: #fff;
-            }
         }
     }
 
@@ -129,7 +119,7 @@
         }
 
         .dropdown-menu {
-            margin-right: rem(76);
+            margin-right: rem(120);
             margin-bottom: rem(10);
             padding: rem(10) rem(0);
             font-size: rem(12);
@@ -263,13 +253,11 @@
                 }
 
                 &::before {
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: rem(10);
                 }
 
                 &::after {
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: rem(10);
                 }
 
 
@@ -286,8 +274,7 @@
             }
 
             .custom-control-input {
-                top: 50%;
-                transform: translateY(-50%);
+                top: 7px;
             }
 
         }
@@ -334,7 +321,7 @@
             background-color: white;
             margin-bottom: rem(20);
             //padding: rem(20) rem(5) rem(20) rem(20);
-            min-height: 90px;
+            min-height: 80px;
             display: flex;
             align-items: center;
 
@@ -645,9 +632,10 @@
 .gridboxes {
 
     &__boxes {
+
         flex-grow: 0;
-        margin: 10px 0px;
-        padding: 15px 30px 15px 30px;
+        margin: 10px 5px;
+        padding: 15px 16px 18px 21px;
         border-radius: 30px;
         background: #fff;
         box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.03);
@@ -659,65 +647,19 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            margin: 0px 0px 0px 0;
-            font-size: 13px;
+            margin: 10px 20px 10px 0;
 
             .icon-ic_option {
                 font-size: 20px;
                 color: #000;
                 cursor: pointer;
             }
-
-            .dropdown-item{
-                i {
-                    font-size:16px;
-                    font-weight: bold;
-                    position:relative;
-                    top:4px;
-                }
-                
-                span {
-                    font-size: 12px;
-                    padding: 0 5px;
-                }
-            }
-            
-        }
-
-        .profile-img-name{
-
-            .completeico {
-                position: relative;
-                right:25px;
-                top:12px;
-                font-size: 25px;
-                color:#24cc09;
-            }
-
-            .unassigned {
-                position: relative;
-                top:10px;
-                font-size: 30px;
-                color:#1eaae7;
-                min-height: 94px;
-            }
-        }
-        
-        .profile-img {
-            width:55px;
-            height:55px; 
-            border-radius:50px;
-            overflow:hidden;
-
-            img {
-                width: 100%;
-            }
         }
 
         .milestonetoggle {
 
-            padding: 20px 0 0;
-            margin: 15px 0 0;
+            padding: 10px 0 0;
+            margin: 10px 0 0;
             border-top: 1px solid #eeeeee;
 
             .submilestones {
@@ -730,30 +672,11 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
-                padding-right: 0px;
-                > span {
-                    display: flex;
-                    transform: rotate(180deg);
-                    cursor: pointer;
-                    transition: 0.3s;
-                    &[aria-expanded="true"] {
-                        transform: rotate(0deg);
-                    }
-                }
-            }
-            .icon-accordion-down {
-                font-size: 24px;
+                padding-right: 25px;
+                cursor: pointer;
             }
         }
-        .icon-clipboard, .icon-test-run{
-            width: 80px;
-            height: 66px;
-            font-size: 55px;
-            color: #1EAAE7;
-            position: relative;
-            top: 2px;
-        }
-        
+
         .mscases {
 
             margin-top: 30px;
@@ -761,12 +684,6 @@
             .col-md-3 {
                 padding-right: 5px;
                 padding-left: 5px;
-                &:first-child {
-                    padding-left: 0;
-                }
-                &:last-child {
-                    padding-right: 0;
-                }
             }
 
             &__cases {
@@ -780,19 +697,19 @@
                 padding: 8px 5px;
 
                 &--box1 {
-                    @include case_box($danger, $danger-light-100);
+                    @include case_box(#E71E1E, #ed8a8a);
                 }
 
                 &--box2 {
-                    @include case_box($warning, $warning-light);
+                    @include case_box(#f3c214, #ebd480);
                 }
 
                 &--box3 {
-                    @include case_box($sky-blue-200, lighten($sky-blue-100, 10));
+                    @include case_box(#1eaae7, #88ceeb);
                 }
 
                 &--box4 {
-                    @include case_box(darken($sky-blue-200, 30), $navy-light);
+                    @include case_box(#1c4e63, #86a1ab);
                 }
 
 
@@ -894,7 +811,6 @@
                 font-size: 14px;
                 font-weight: bold;
                 color: #1EAAE7;
-                text-decoration: underline;
             }
 
             label {
@@ -1032,121 +948,106 @@
 
 /* checkboxes */
 
-.collape-section {
+  
+.checkbox {
+    flex-grow: 0;
+    padding: 20px 16px 15px 20px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+    background-color: #f5f4f4;
     position: relative;
-    top: -62px;
-    .collape-section-inner {
-        flex-grow: 0;
-        padding: 60px 16px 15px 28px;
-        border-radius: 0 0 30px 30px;
-        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
-        background-color: #f5f4f4;
-        z-index: 0;
-        width: 100%;
+    top: -32px;
+    z-index: 9;
+    width: 92%;
+    left: 24px; 
 
+    .custom-scrollbar-css {
+        overflow-y: scroll;
+        height: 65px;
+    }
 
-        // top: -54px;
-        // width: 96%;
-        // left: 9px;
+    label {
 
-        .custom-scrollbar-css {
-            overflow-y: scroll;
-            // height: 120px;
-            &::-webkit-scrollbar {
-                width: 7px;
-              }
-               
-              &::-webkit-scrollbar-track {
-                box-shadow: none;
-              }
-               
-              &::-webkit-scrollbar-thumb {
-                background-color: #c4c4c4;
-                border: 0;
-              }
+        cursor: pointer;
+        display: block;
+        position: relative;
+        padding-right: 40px;
+        margin-left: 20px;
+
+        &:before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 0;
         }
 
-        label {
+        &:before {
+            background: url('/assets/images/inactive.png') left center no-repeat;
+            margin-left: 95%;
+            background-size: 18px;
+            background-position: 0 2px;
+        }
 
-            cursor: pointer;
-            display: block;
-            position: relative;
-            padding-right: 70px;
-            margin-left: 0px;
-            margin-bottom: 20px;
+        h5 {
+            font-size: 13px;
+            color: #626263;
+            margin-top: 5px;
+        }
 
-            &:before {
-                content: "";
-                width: 24px;
-                height: 24px;
-                position: absolute;
-                left: 0;
-                background: url('/assets/images/check-circle.png') left center no-repeat;
-                opacity: 0.4;
-                margin-left: 93%;
-                background-size: 95%;
-                background-position: 0 2px;
-            }
+        .progress {
+            height: 8px;
+            margin-top: 10px;
+        }
 
+        .status {
+            font-size: 13px;
+            color: #626263;
+            margin-top: 2px;
+        }
 
+        .completeico {
+            margin-left: 20px;
+            color:#ccc;
+        }
+
+        &:hover {
+            .completeico {
+                margin-left: 20px;
+                color:#949494;
+            } 
+        }
+
+        @include mq-only("xs", "ml") {
             h5 {
-                font-size: 14px;
-                color: #626263;
-                margin-top: 5px;
-            }
-
-            .progress {
-                height: 8px;
-                margin-top: 10px;
+                font-size: 9px;
             }
 
             .status {
-                font-size: 14px;
-                color: #626263;
-                margin-top: 2px;
-                white-space: nowrap;
-            }
-
-            .completeico {
-                margin-left: 20px;
-                color:#ccc;
-            }
-
-            &:hover {
-                .completeico {
-                    margin-left: 20px;
-                    color:#949494;
-                } 
-            }
-
-            @include mq-only("xs", "ml") {
-                h5 {
-                    font-size: 9px;
-                }
-
-                .status {
-                    font-size: 9px;
-                }
+                font-size: 9px;
             }
         }
+    }
 
-        input[type=checkbox] {
-            display: none;
+    input[type=checkbox] {
+        display: none;
 
-            &:checked {
-                + {
-                    label {
-                        &:before {
-                            // background: url('/assets/images/check-circle.png') left center no-repeat;
-                            opacity: 1;
-                        }
+        &:checked {
+            + {
+                label {
+                    &:before {
+                        background: url('/assets/images/check-circle.png') left center no-repeat;
+                        margin-left: 95%;
+                        background-size: 18px;
+                        background-position: 0 2px;
                     }
                 }
             }
         }
-
     }
-}  
+
+}
+
 
 /* Custom Scrollbar using CSS */
 .custom-scrollbar-css {

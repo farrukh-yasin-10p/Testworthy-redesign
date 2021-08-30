@@ -347,6 +347,7 @@
       .slice {
         .bar {
           border:.09em solid $boxborder;
+          position: relative;
           z-index: 1; 
         }
       }

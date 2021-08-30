@@ -6,7 +6,6 @@ function clear_date(a){
   y.value = "";
   y.hidden = true;
   a.hidden = true;
-
 }
 
 function clear_date2(b){
@@ -61,29 +60,6 @@ function edit_searchList(a){
   var list2 = document.getElementById('list_search_edit2');
   list2.style.display = a ;
 }
-
-
-// assigned user Search List
-function assigned_to(a){
-  var list = document.getElementById('selectuser');
-  list.style.display = a ;
-}
-function assigned_to_role(a){
-  var list = document.getElementById('selectrole');
-  list.style.display = a ;
-}
-
-function milestone_list(b){
-  var list = document.getElementById('milestone-list');
-  list.style.display = b;
-}
-
-function testsuite_list(b){
-  var list = document.getElementById('testsuite_list');
-  list.style.display = b;
-}
-
-//
 
 //Tooltip
 
@@ -171,9 +147,6 @@ var data = {
 };
 
 $(document).ready(function () {
-
-  $('[data-toggle="popover"]').popover({ trigger: "hover" }); 
-  
   // Owl Carousel Query
   $('.owl-carousel').owlCarousel({
       loop:true,

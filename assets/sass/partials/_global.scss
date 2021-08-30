@@ -76,19 +76,6 @@ a:hover {
   border: 3px solid #ffffff;
 }
 
-.passed {
-  width: 130px;
-  font-weight: 600;
-  font-size: rem(18);
-  white-space: nowrap;
-  &.is-gridview { 
-    text-align: right;
-  }
-  span:last-child {
-    font-size: rem(14);
-  }
-}
-
 // Make images easier to work with
 // img {
 //   // max-width: 100%;

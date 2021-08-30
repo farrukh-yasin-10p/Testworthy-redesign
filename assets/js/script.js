@@ -6,6 +6,7 @@ function clear_date(a) {
   y.value = "";
   y.hidden = true;
   a.hidden = true;
+
 }
 
 function clear_date2(b) {
@@ -67,6 +68,10 @@ function edit_searchList(a) {
 function assigned_to(a) {
   var list = document.getElementById("selectuser");
   list.style.display = a;
+}
+function assigned_to_role(a){
+  var list = document.getElementById('selectrole');
+  list.style.display = a ;
 }
 
 function milestone_list(b) {

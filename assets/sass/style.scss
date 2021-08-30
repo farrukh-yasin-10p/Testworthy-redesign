@@ -16,7 +16,7 @@
 // Add packages as per your requirement
 // package can be inlude via node_modules or manuallay from vendors folder
 
-//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 // or
 // @import "vendors/bootstrap";
 
@@ -32,7 +32,11 @@
 @import "partials/classes";
 @import "partials/buttons";
 @import "partials/forms";
+@import "partials/dropdown";
 @import "partials/global";
+@import "partials/accordion";
+@import "partials/components";
+
 
 //===========================================
 // -Partials End
@@ -63,6 +67,7 @@
 @import "pages/project-testplan";
 @import "pages/milestone-innerpage";
 @import "pages/project-listing";
+@import "pages/project-testcases";
 @import "pages/integration";
 @import "pages/user-roles-default";
 

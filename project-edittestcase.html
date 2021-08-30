@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <!-- My custom Scrollbar -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="./assets/dist/style.css">
+    <title>Testworthy</title>
+
+</head>
+
+<body>
+    <!-- Header Section start -->
+
+    <header class="sticky-top">
+        <div class="head-logo">
+            <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu-btn">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="header-back">
+            <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
+                    <a href="#">Exelon</a>
+                    </spam></label>
+            <div class="breadCrumb">
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="#">Test Suites & Cases</a> </h6>
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="#">Smoke Checklist - Converter and Editor</a> </h6>
+                <span><img src="./assets/images/chevron-right.png" alt="" class="img-fluid">
+                </span>
+                <h6><a href="#">Edit Test Case</a> </h6>
+            </div>
+
+        </div>
+        <div class="user ml-auto">
+            <div class="user-group">
+                <div class="user-text">
+                    <span>Hello,</span><strong> Ahmed</strong>
+                    <br>
+                    <p class="text-right">Admin</p>
+                </div>
+                <div class="user-icon">
+                    <span><img src="./assets/images/user-icon.png" alt=""></span>
+                </div>
+            </div>
+            <div class="caret-down">
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Integration</a>
+                        <a class="dropdown-item" href="#">Subscription</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Sidebar Section Start -->
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-hamburger">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a>
+                </li>
+                <li><a href="" class="active"><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
+                <li><a href=""><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
+                <li><a href=""><span><i class="icon-integration"></i></span> <span>Integration</span></a>
+                </li>
+                <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
+                <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sidebar Section End -->
+
+
+    <!-- Main Content Section Start -->
+
+    <div class="main-content">
+        <!-- Page Nav Section Start -->
+        <div class="page-nav ">
+            <div class="header-nav">
+                <ul>
+                    <li><a href="./index.html" class="">Overview</a></li>
+                    <li><a href="./project-milestone.html">Milestones</a> </li>
+                    <li><a href="./project-testplan.html" class="">Test Plan</a> </li>
+                    <li><a href="./project-testrun.html" class="">Test Run & Results</a> </li>
+                    <li><a href="#" class="active">Test Suites & Cases</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Page Nav Section End -->
+        <div class="container-fluid">
+
+
+            <!-- Edit Test Case Section -->
+            <section class="testplan-section addtestplan testcases">
+                <!--Edit Test Case Start-->
+                <div class="sort-by">
+                    <div class="row">
+                        <div class="col-lg-12 mb-3">
+                            <div>
+                                <h4 class="font-weight-bold">Edit Test Case</h4>
+                            </div>
+                            <div class="breadCrumb">
+                                <a href="#" class="breadCrumb__text">Exelon</a>
+                                <span class="breadCrumb__icon"><i class="icon-chevron-right"></i>
+                                </span>
+                                <a href="#" class="breadCrumb__text">Smoke Checklist - Converter and Editor</a>
+                                <span class="breadCrumb__icon"><i class="icon-chevron-right"></i>
+                                </span>
+                                <a href="#" class="breadCrumb__text">Converter</a>
+                                <span class="breadCrumb__icon"><i class="icon-chevron-right"></i>
+                                </span>
+                                <a href="#" class="breadCrumb__text">Home Site Selection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Edit Test Case End-->
+                <div class="form-section mt-2">
+                    <form onsubmit="formsubmit(event)">
+                        <div class="row">
+                            <div class="col error-msg">
+                                <div class="text-info-icon">
+                                    <div>
+                                        <h6>Title *</h6>
+                                    </div>
+                                    <div>
+                                        <span class="pr-2 mb-1 d-none text" id="input-warning-text">
+                                            <i class="icon-warning"></i> Required field
+                                        </span>
+                                        <!-- <span data-toggle="tooltip" data-placement="top"
+                                            title="Ex: All supported browsers or operating system/database combinations.">
+                                            <i class="icon-info-icon"></i>
+                                        </span> -->
+                                    </div>
+                                </div>
+                                <input type="text" onchange="ontitlechange(this)" id="input-check"
+                                    class="form-control input_field " placeholder="Test Run 05/28/2021">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 error-msg">
+                                <div class="text-info-icon">
+                                    <div>
+                                        <h6>Estimate</h6>
+                                    </div>
+                                    <!-- <div>
+                                        <span class="pr-2 mb-1 d-inline-block text">
+                                            <i class="icon-warning"></i> Required field
+                                        </span>
+                                        <span data-toggle="tooltip" data-placement="top"
+                                            title="Ex: All supported browsers or operating system/database combinations.">
+                                            <i class="icon-info-icon"></i>
+                                        </span>
+                                    </div> -->
+                                </div>
+                                <input type="text" class="form-control input_field " placeholder="Ex : 8 m ">
+                            </div>
+
+                            <div class="col">
+                                <div class="text-info-icon">
+                                    <h6>Section *</h6>
+                                    <!-- <span data-toggle="tooltip" data-placement="top"
+                                        title="Lorem ipsum dolor sit amet.">
+                                        <i class="icon-info-icon"></i>
+                                    </span> -->
+                                </div>
+
+                                <input id="input-list1" type="text" class="selectuser form-control"
+                                    onclick="milestone_list('milestone-list4','block')"
+                                    ondblclick="milestone_list('milestone-list4','none')"
+                                    placeholder="Type or Select a milestone...">
+                                <div class="search-list assigned-to-users common-list" id="milestone-list4">
+                                    <ul>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="last-item">
+                                            <div class="milestone-list-items">
+                                                <a href="javascript:;">
+                                                    <i class="icon-icon-plus"></i> Add Milestone
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-info-icon">
+                                    <h6>Milestone *</h6>
+                                    <!-- <span data-toggle="tooltip" data-placement="top"
+                                        title="Lorem ipsum dolor sit amet.">
+                                        <i class="icon-info-icon"></i>
+                                    </span> -->
+                                </div>
+
+                                <input id="input-list2" type="text" class="selectuser form-control"
+                                    onclick="milestone_list('milestone-list3','block')"
+                                    ondblclick="milestone_list('milestone-list3','none')"
+                                    placeholder="Type or Select a milestone...">
+                                <div class="search-list assigned-to-users common-list" id="milestone-list3">
+                                    <ul>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="last-item">
+                                            <div class="milestone-list-items">
+                                                <a href="javascript:;">
+                                                    <i class="icon-icon-plus"></i> Add Milestone
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 error-msg">
+                                <div class="text-info-icon">
+                                    <div>
+                                        <h6>Reference</h6>
+                                    </div>
+                                    <!-- <div>
+                                        <span class="pr-2 mb-1 d-inline-block text">
+                                            <i class="icon-warning"></i> Required field
+                                        </span>
+                                        <span data-toggle="tooltip" data-placement="top"
+                                            title="Ex: All supported browsers or operating system/database combinations.">
+                                            <i class="icon-info-icon"></i>
+                                        </span>
+                                    </div> -->
+                                </div>
+                                <input type="text" class="form-control input_field " placeholder="Ex : 8 m ">
+                            </div>
+
+                            <div class="col">
+                                <div class="text-info-icon">
+                                    <h6>Type *</h6>
+                                    <!-- <span data-toggle="tooltip" data-placement="top"
+                                        title="Lorem ipsum dolor sit amet.">
+                                        <i class="icon-info-icon"></i>
+                                    </span> -->
+                                </div>
+
+                                <input id="input-list3" type="text" class="selectuser form-control"
+                                    onclick="milestone_list('milestone-list1','block')"
+                                    ondblclick="milestone_list('milestone-list1','none')"
+                                    placeholder="Type or Select a milestone...">
+                                <div class="search-list assigned-to-users common-list" id="milestone-list1">
+                                    <ul>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="last-item">
+                                            <div class="milestone-list-items">
+                                                <a href="javascript:;">
+                                                    <i class="icon-icon-plus"></i> Add Milestone
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-info-icon">
+                                    <h6>Priority *</h6>
+                                    <!-- <span data-toggle="tooltip" data-placement="top"
+                                        title="Lorem ipsum dolor sit amet.">
+                                        <i class="icon-info-icon"></i>
+                                    </span> -->
+                                </div>
+
+                                <input id="input-list4" type="text" class="selectuser form-control"
+                                    onclick="milestone_list('milestone-list2','block')"
+                                    ondblclick="milestone_list('milestone-list2','none')"
+                                    placeholder="Type or Select a milestone...">
+                                <div class="search-list assigned-to-users common-list" id="milestone-list2">
+                                    <ul>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="milestone-list-items">
+                                                <span class="name">Milestone 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="last-item">
+                                            <div class="milestone-list-items">
+                                                <a href="javascript:;">
+                                                    <i class="icon-icon-plus"></i> Add Milestone
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-info-icon">
+                                        <h6>Description</h6>
+                                        <!-- <span data-toggle="tooltip" data-placement="top"
+                                            title="Use Shift+Enter to change the line in the below fields.">
+                                            <i class="icon-info-icon"></i>
+                                        </span> -->
+                                    </div>
+                                    <div id="textCounter" class="text-counter-warning">
+                                        <span class="mr-2"><i class="icon-warning d-none"
+                                                id="count-text-icon"></i></span>
+                                        <span id="count-text">0</span><span>/256
+                                            characters</span>
+                                    </div>
+                                </div>
+
+                                <textarea id="tvalid" placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe" onkeyup="textCount(this)"></textarea>
+
+                            </div>
+                            <div class="col radio-checkbox-col">
+                                <div class="radio-btns">
+                                    <input type="radio">
+                                    <label for="">To Automate</label>
+                                </div>
+
+                                <div class="radio-btns">
+                                    <input type="radio">
+                                    <label for="">Automated</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Reviewed by QA Lead</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Reviewed by QA Manager</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Reviewed by Project Manager</label>
+                                </div>
+
+                            </div>
+
+                            <div class="col radio-checkbox-col">
+
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Smoke</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Regression</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Module</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">To Be Moved</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox"> <label
+                                        class="custom-control-label" for="">Disabled</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-info-icon">
+                                    <h6>Preconditions</h6>
+                                </div>
+                                <textarea placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe"></textarea>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-info-icon">
+                                    <h6>Test Data</h6>
+                                </div>
+                                <textarea placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-info-icon">
+                                    <h6>Steps</h6>
+                                </div>
+                                <textarea placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe"></textarea>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-info-icon">
+                                    <h6>Expected Result</h6>
+                                </div>
+                                <textarea placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-info-icon">
+                                    <h6>BDD Gherkin</h6>
+                                </div>
+                                <textarea placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe"></textarea>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-info-icon">
+                                    <h6>Cucumber Tags</h6>
+                                </div>
+                                <textarea placeholder="Describe the purpose of your test plan"
+                                    class="form-control describe"></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row testplans-list">
+                            <div class="col-12">
+                                <div class="modal-footer formrelative">
+                                    <button type="button" class="btn btn-light-border"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-secondary-color">Save & edit next</button>
+                                    <button type="button" class="btn btn-secondary-color">Save Test Case</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+            <!-- Add Test plan Section End -->
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Main Content Section End -->
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

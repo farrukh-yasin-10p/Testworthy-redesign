@@ -1,0 +1,391 @@
+//===========================================
+// -Accordion start
+//===========================================
+.content-row {
+  .test-case-list {
+    .card {
+      border: none;
+      font-weight: normal;
+      font-size: rem(16);
+      color: #b4b7bb;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      &:last-child {
+        .dot-container {
+          .dot.dot {
+            &::after {
+              height: 21px;
+            }
+          }
+
+          &:last-child {
+            .dot {
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      &-header {
+        background: transparent;
+      }
+
+      &-content {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      &-footer-btns {
+        border-bottom: 2px solid transparent;
+        margin-right: 10px;
+        margin-bottom: -1px;
+        font-size: 14px;
+        white-space: nowrap;
+
+        &:hover {
+          border-bottom: 2px solid $secondary;
+        }
+      }
+
+      .footer-btns-divider {
+        width: 2px;
+        height: 14px;
+        background: $secondary;
+        margin-right: 10px;
+      }
+
+      .add-case {
+        &-btn {
+          border: 1px solid $secondary;
+          color: $secondary;
+          border-radius: 10px;
+          padding: 4px 13px;
+          margin-right: 23px;
+          margin-left: 12px;
+
+          i {
+            font-size: 12px;
+          }
+        }
+
+        .icon-close {
+          font-size: 12px;
+          color: $danger;
+          cursor: pointer;
+        }
+      }
+
+      .circle-dots {
+        white-space: nowrap;
+        display: flex;
+
+        .dot-container {
+          padding-right: 10px;
+          position: relative;
+
+          &:last-child {
+            padding-right: 22px;
+
+            &::before {
+              content: "";
+              border-bottom: 2px dashed $secondary;
+              width: 100%;
+              position: absolute;
+              top: 21px;
+            }
+
+            .dot {
+              &::after {
+                top: 21px;
+              }
+            }
+          }
+        }
+
+        .dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #1eaae7;
+          border-radius: 30px;
+          display: flex;
+          margin-top: 16.5px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            margin-bottom: -42px;
+            border-right: 2px dashed $secondary;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .hover-row-edit {
+        display: none;
+
+
+        span {
+          margin-right: 15px;
+        }
+
+        a {
+          color: $grey-300;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .row-head {
+      color: #000;
+    }
+
+    .select-row {
+      background-color: #f9f9f9;
+      border: solid 1px #ebecef;
+
+      label {
+        span {
+          &.row-text {
+            font-size: 12px;
+            padding-left: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .icons-sec {
+      a {
+        color: #939394;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+
+    .row-text-small {
+      font-size: 12px;
+    }
+
+    .dots {
+      margin-left: -5px;
+
+      img {
+        width: 20px;
+        opacity: 0.6;
+
+        &:last-child {
+          margin-left: -13px;
+        }
+      }
+    }
+  }
+
+  .card-list-header {
+    margin-bottom: 14px;
+  }
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0;
+
+  .table-head {
+    .display-table {
+      border: 1px solid #bfbfbf;
+      border-radius: 10px;
+    }
+
+    color: #b4b7bb;
+  }
+
+  .display-table {
+    display: table;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .table-cell {
+    display: table-cell;
+  }
+
+  .table-body {
+    overflow: scroll;
+    max-height: 350px;
+    max-width: 100%;
+
+    a {
+      color: $secondary;
+    }
+  }
+
+  .col1 {
+    width: 27px;
+    min-width: 27px;
+  }
+
+  .col2 {
+    width: 95px;
+    min-width: 95px;
+  }
+
+  .display-table-icons {
+    &:hover {
+      background-color: $sky-light;
+
+      .hover-row-edit {
+        display: flex;
+      }
+    }
+  }
+}
+
+//===========================================
+// -Accordion end
+//===========================================
+
+.test-case-wrapper {
+  .test-case-tree {
+    border: 1px solid $sky-light;
+    padding: 25px 10px 25px 30px;
+    margin-right: -30px;
+    height: 800px;
+    position: relative;
+    border-radius: 25px 0px 0px 25px;
+  }
+
+  .tree-style-margin-open {
+    margin-left: 35px;
+  }
+
+  .tree-style-margin-close {
+    margin-left: 70px;
+  }
+
+  .open-btn {
+    position: absolute;
+    left: -65px;
+    top: 50%;
+    z-index: 1;
+    min-width: 100px;
+    height: 38px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .close-btn {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+  }
+
+  .jstree-textbox {
+    min-width: 160px;
+
+    .jstree-text {
+      max-width: 100px;
+      font-size: 12px;
+    }
+  }
+
+  .jstree-checkbox-selection {
+    height: 550px;
+    overflow: auto;
+  }
+
+
+  .bg-banner {
+    background-color: $sky-light;
+  }
+
+  .cases-selection {
+    &__head {
+      font-size: 14px;
+      margin-bottom: 20px;
+
+      a {
+        color: $secondary;
+
+        &:first-child {
+          padding-right: 5px;
+          border-right: 2px solid #000;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 40px;
+
+      h6 {
+        font-size: 18px;
+        margin-bottom: 0px;
+        font-weight: 600;
+      }
+
+      span {
+        font-size: 12px;
+        color: $secondary-text-color;
+      }
+    }
+  }
+
+  .apply-filters {
+    position: absolute;
+    bottom: 25px;
+
+    &__head {
+      display: flex;
+    }
+
+    .btn-icon {
+      min-width: 140px;
+      min-height: 36px;
+    }
+
+    .refresh-btn {
+      border-radius: 25px;
+      padding: 5px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .dropdown-xs {
+      .dropdown-menu {
+        font-size: 10px;
+        min-width: unset;
+
+        a {
+          padding: 5px 10px;
+          ;
+        }
+      }
+    }
+  }
+}

@@ -68,54 +68,62 @@
 }
 
 
-.profile-img-name{
+.profile-img-name {
   text-align: right;
   max-width: 130px;
   display: flex;
   justify-content: flex-end;
 }
-.profile-name-styling{
+
+.profile-name-styling {
   font-size: 14px;
   padding: 0;
   margin: 0;
   font-weight: bold;
   color: #000;
 }
-.small-styling{
+
+.small-styling {
   font-size: 11px;
   margin: 0;
   padding: 0;
   color: #7a7e88;
 }
-.progress-padding{
+
+.progress-padding {
   padding-top: 10px;
   // width: 100%;
 }
-.progress-color{
+
+.progress-color {
   background-color: #24cc09;
-  
+
 }
+
 .progressBar {
   width: 100%;
 }
 
-.progress-hieght{
+.progress-hieght {
   height: 12px;
 }
 
-.progress-row{
+.progress-row {
   align-items: center;
 }
-.scrollbar-height{
+
+.scrollbar-height {
   height: 180px;
   // overflow-x: scroll;
 }
-.checkbox-sizing{
+
+.checkbox-sizing {
   top: -54px;
   width: 96%;
   left: 9px;
 }
-.text-plan-cards{
+
+.text-plan-cards {
   display: flex;
   flex-wrap: wrap;
 }
@@ -179,19 +187,21 @@
   vertical-align: top;
 }
 
-.wd350{
+.wd350 {
   min-width: 350px;
 }
 
-.error-msg{
-  .input_field.required{
-    background:rgba(231, 30, 30, 0.06);
+.error-msg {
+  .input_field.required {
+    background: rgba(231, 30, 30, 0.06);
     border: 2px solid #e71e1e;
   }
+
   .text {
     font-size: 13px;
     color: #e71e1e;
   }
+
   .icon-warning {
     color: #e71e1e;
   }
@@ -205,11 +215,21 @@
 
 hr {
   &.radio-bdr {
-    margin:25px 40px;
+    margin: 25px 40px;
   }
 }
 
 // Tooltip End 
 //===========================================
+
+// Card box 
+.card-box {
+  border: rem(2) solid white;
+  background-color: white;
+  border-radius: rem(20);
+  padding: rem(15) rem(20);
+  box-shadow: 0 rem(4) rem(6) 0 rgba(62, 73, 84, 0.04);
+}
+
 // -Helper Classes end
 //===========================================

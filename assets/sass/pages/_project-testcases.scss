@@ -179,4 +179,40 @@
 
 .testsuites-section {
     padding-top: 75px;
+
+    .sort-by-text {
+        a {
+            color: $secondary;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    .sort-by {
+        .sort-by-tabs .dropdown-menu {
+            min-width: 150px;
+
+            .dropdown-item {
+                padding: 5px 20px;
+            }
+        }
+    }
+
+}
+
+.reports-dropdown-btn {
+    display: flex;
+    align-items: flex-end;
+
+    .transform-icon {
+        transform: rotateY(180deg);
+        display: flex;
+        margin-right: 5px;
+    }
+
+    .angle-down-icon {
+        margin-bottom: -3px;
+    }
 }

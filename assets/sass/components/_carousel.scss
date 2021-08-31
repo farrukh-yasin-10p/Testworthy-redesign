@@ -235,3 +235,99 @@
         }
     }
 }
+
+// Card Carousel Section 
+
+.card-carousel-section {
+    .carousel-card {
+        padding: 15px;
+        background-color: $secondary-light;
+        border-radius: 30px;
+    }
+
+    .carousel-card__text {
+        padding: 0px 15px;
+        margin-bottom: 10px;
+
+        .card-date {
+            font-size: 10px;
+            color: #666666;
+        }
+
+        .card-progress-text {
+            font-size: 12px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        h6 {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    }
+
+    .owl-stage-outer {
+        padding: 0 18px;
+    }
+
+    .progress {
+        background-color: white;
+        height: 6px;
+        width: 152px;
+        border-radius: 30px;
+        margin-right: 10px;
+    }
+
+    .progress-bar-success {
+        background-color: $success-light;
+    }
+
+
+    .avatars {
+        border-top: 2px solid white;
+        padding-top: 20px;
+        text-align: center;
+        //min-width: 300px;
+        position: relative;
+    }
+
+    .avatar {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        transition: transform 250ms;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        &.remainings {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            background: white;
+            color: #c4c4c4;
+            font-size: 12px;
+            text-align: center;
+            transition: transform 0ms;
+
+            &:hover {
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    .avatar:not(:first-child) {
+        margin-left: -24px;
+    }
+
+}

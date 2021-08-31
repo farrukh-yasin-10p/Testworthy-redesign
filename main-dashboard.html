@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link rel="stylesheet" href="./assets/dist/style.css">
+    <title>Testworthy</title>
+
+</head>
+
+<body>
+    <!-- Header Section start -->
+
+    <header class="sticky-top">
+        <div class="head-logo">
+            <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu-btn">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+
+        <div class="user ml-auto">
+            <div class="user-group">
+                <div class="user-text">
+                    <span>Hello,</span><strong> Ahmed</strong>
+                    <br>
+                    <p class="text-right">Admin</p>
+                </div>
+                <div class="user-icon">
+                    <span><img src="./assets/images/user-icon.png" alt=""></span>
+                </div>
+            </div>
+            <div class="caret-down">
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Sidebar Section Start -->
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-hamburger">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="main-dashboard.html" class="active"><span><i class="icon-dashboard"></i></span>
+                        <span>Dashboard</span></a>
+                </li>
+                <li><a href="index.html"><span><i class="icon-pen"></i></span> <span>Projects</span></a>
+                </li>
+                <li><a href="user-role-default.html"><span><i class="icon-users"></i></span><span>Users &
+                            Roles</span></a>
+                </li>
+                <li><a href="integration.html"><span><i class="icon-integration"></i></span>
+                        <span>Integration</span></a></li>
+                <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
+                <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sidebar Section End -->
+
+
+    <!-- Main Content Section Start -->
+
+    <div class="main-content">
+        <div class="container-fluid">
+            <section class="main-dashboard-section">
+
+                <div class="sort-by pt-4 d-block">
+                    <div class="row welcome-msg">
+                        <div class="col-md-12">
+                            <div class="welcome-msg__text pl-3">
+                                <h4 class="font-weight-bold">Hey Ahmed</h4>
+                                <span>Welcome to your dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Report Section Start -->
+                <div class="row report-row mt-5">
+                    <div class="col-md-8">
+                        <div class="chart-box">
+                            <div class="row mb-3">
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="chart-heading">
+                                        <h6>Recent Activity</h6>
+                                        <span>This graph indicates the activity in th project.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto col-md-6 ml-auto">
+                                    <div class="chart-date">
+                                        <div class="date-picker">
+                                            <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" hidden
+                                                id="clear_input" />
+                                            <span><a href="javascript: void(0)" hidden id="clear_cross" class="clear"
+                                                    onclick="clear_date(this)">×</a><a href="javascript: void(0)"
+                                                    id="daterange"><i class="icon-date-icon"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto">
+                                    <div class="chart-filter">
+                                        <ul class="tabs-filter">
+                                            <li>
+                                                <a href="#" class="nav-link ">2 weeks</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link ">1 Months</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link ">2 Months</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link active">3 Months</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="chart">
+                                <canvas id="myChart" width="400" height="400"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="report-box">
+                            <img src="./assets/images/report-banner.png" alt="report-banner" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- Report Section End -->
+
+
+                <div class="row project-section mt-5">
+                    <div class="col-md-12">
+                        <div class="project-section__card card-box">
+                            <div class="project-section__text d-flex justify-content-between align-items-center mb-4">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font-weight-bold mr-5">Projects</h6>
+                                    <a href="#" class="font-weight-bold">View All</a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font-weight-bold mr-1">29</h6>
+                                    <span class="mr-3">Total Projects</span>
+                                    <span class="round-add-icon" data-toggle="tooltip" data-placement="top" title=""
+                                        data-original-title="Icon">
+                                        <a href="">
+                                            <i class="icon-plus"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="project-section__carousel card-carousel-section">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="row mb-3">
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text ">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row mb-3">
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text ">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="carousel-card">
+                                                    <div class="carousel-card__text">
+
+                                                        <span class="card-date">29th April 2020</span>
+                                                        <h6 class="mb-5 font-weight-bold">Testworthy Version One</h6>
+                                                        <span
+                                                            class="font-weight-bold card-progress-text">Progress</span>
+
+                                                        <div
+                                                            class="progressBar d-flex align-items-center justify-content-between">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success"
+                                                                    role="progressbar" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width:45%">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="font-weight-bold">45%</h6>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="carousel-card__avatars avatars">
+
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/80">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/90">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/100">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar" data-toggle="tooltip" data-placement="top"
+                                                            title="" data-original-title="Ahmed Ali | Tester">
+                                                            <img src="https://picsum.photos/70">
+                                                        </span>
+                                                        <span class="avatar remainings">
+                                                            +10
+                                                        </span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Milestone Section Start -->
+                <div class="row milestone-section  mt-5">
+                    <div class="col-xl-8">
+                        <div class="milestone">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="milestone-text-secttion">
+                                        <div class="milestone-head">
+                                            <h6>Milestones</h6>
+                                        </div>
+                                        <div class="milestone-text-row">
+                                            <div class="milestone-bar d-inline-block">
+                                                <span class="bar1"></span>
+                                            </div>
+                                            <div class="milestone-text d-inline-block">
+                                                <div class="milestone-progress-head">
+                                                    <h6>
+                                                        Execution web - Sprint 51
+                                                    </h6>
+                                                    <!-- <i class="icon-complete-tick"></i> -->
+                                                </div>
+                                                <span>2 Sub-milestones</span>
+                                            </div>
+                                        </div>
+                                        <div class="milestone-text-row">
+                                            <div class="milestone-bar d-inline-block">
+                                                <span class="bar2"></span>
+                                            </div>
+                                            <div class="milestone-text d-inline-block">
+                                                <div class="milestone-progress-head">
+                                                    <h6>
+                                                        milestone 2
+                                                    </h6>
+                                                    <!-- <i class="icon-complete-tick"></i> -->
+                                                </div>
+                                                <span>2 Sub-milestones</span>
+                                            </div>
+                                        </div>
+                                        <div class="milestone-text-row">
+                                            <div class="milestone-bar d-inline-block">
+                                                <span class="bar3"></span>
+                                            </div>
+                                            <div class="milestone-text d-inline-block">
+                                                <div class="milestone-progress-head">
+                                                    <h6>
+                                                        milestone 3
+                                                    </h6>
+                                                    <!-- <i class="icon-complete-tick"></i> -->
+                                                </div>
+                                                <span>2 Sub-milestones</span>
+                                            </div>
+                                        </div>
+                                        <div class="milestone-text-row">
+                                            <div class="milestone-bar d-inline-block">
+                                                <span class="bar4"></span>
+                                            </div>
+                                            <div class="milestone-text d-inline-block">
+                                                <div class="milestone-progress-head">
+                                                    <h6>
+                                                        milestone 4
+                                                    </h6>
+                                                    <!-- <i class="icon-complete-tick"></i> -->
+                                                </div>
+                                                <span>2 Sub-milestones</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row boxes-row">
+                                        <div class="col-md-6 milestone-box">
+                                            <div class="milestone-box1">
+                                                <div class="c100 p90 white">
+                                                    <span>05</span>
+                                                    <span class="text">Days left</span>
+                                                    <div class="slice">
+                                                        <div class="bar"></div>
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 milestone-box">
+                                            <div class="milestone-box2">
+                                                <div class="c100 p60 white">
+                                                    <span>15</span>
+                                                    <span class="text">Days left</span>
+                                                    <div class="slice">
+                                                        <div class="bar"></div>
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 milestone-box">
+                                            <div class="milestone-box3">
+                                                <div class="c100 p70 white">
+                                                    <span>25</span>
+                                                    <span class="text">Days left</span>
+                                                    <div class="slice">
+                                                        <div class="bar"></div>
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 milestone-box">
+                                            <div class="milestone-box4">
+                                                <div class="c100 p30 blue">
+                                                    <span>01</span>
+                                                    <span class="text">Days left</span>
+                                                    <div class="slice">
+                                                        <div class="bar"></div>
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <div class="collaborators">
+                            <div class="row mb-2 ">
+                                <div class="col-md-12">
+                                    <div class="collaborators-tab">
+                                        <h6>Collaborators</h6>
+                                        <a href="#"><span>View All</span> </a>
+                                        <div class="d-flex">
+                                            <h6>10</h6>
+                                            <span class="head_span pl-1">Collaborators</span>
+                                        </div>
+                                        <a href=""> <span><img src="./assets/images/trash.png"
+                                                    alt="delete-icon"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <div class="profile-icon text-center">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox101" value="option101">
+                                                        <label class="custom-control-label" for="inlineCheckbox101">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anoosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status inactive"></span>
+                                                    <div class="custom-control custom-checkbox active-chkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox102" value="option102">
+                                                        <label class="custom-control-label" for="inlineCheckbox102">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Osama</h6>
+                                                <span>Tester</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox103" value="option103">
+                                                        <label class="custom-control-label" for="inlineCheckbox103">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Umer</h6>
+                                                <span>Tester</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox104" value="option104">
+                                                        <label class="custom-control-label" for="inlineCheckbox104">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Maryam</h6>
+                                                <span>Tester</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status inactive"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox105" value="option105">
+                                                        <label class="custom-control-label" for="inlineCheckbox105">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Samad</h6>
+                                                <span>Tester</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox active-chkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox106" value="option106">
+                                                        <label class="custom-control-label" for="inlineCheckbox106">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Sarah</h6>
+                                                <span>Tester</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status inactive"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox107" value="option107">
+                                                        <label class="custom-control-label" for="inlineCheckbox107">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox108" value="option108">
+                                                        <label class="custom-control-label" for="inlineCheckbox108">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status inactive"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox109" value="option109">
+                                                        <label class="custom-control-label" for="inlineCheckbox109">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox110" value="option110">
+                                                        <label class="custom-control-label" for="inlineCheckbox110">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status inactive"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox111" value="option111">
+                                                        <label class="custom-control-label" for="inlineCheckbox111">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="profile-icon">
+                                                <span class="profile-img "> <span class="status active"></span>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            id="inlineCheckbox112" value="option112">
+                                                        <label class="custom-control-label" for="inlineCheckbox112">
+                                                    </div>
+                                                    <div class="image-round">
+                                                        <img src="./assets/images/user-icon.png" alt="user-icon">
+                                                    </div>
+                                                </span>
+                                                <h6>Anosha</h6>
+                                                <span>Admin</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="search-box">
+                                        <div class="search-user d-flex ">
+                                            <button type="button" class="btn shadow-none active Collablist"
+                                                data-toggle="modal" data-target="#CollaboratorModal">Add
+                                                Collaborators</button>
+                                        </div>
+                                        <div class="search-list" id="list_search">
+                                            <ul>
+                                                <li>
+                                                    <div class="search-list-items">
+                                                        <img src="./assets/images/user-icon.png" alt="">
+                                                        <span class="name">Salman Ahmed</span>
+                                                        <span class="email">salmanahmed@example.com</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="search-list-items">
+                                                        <img src="./assets/images/user-icon.png" alt="">
+                                                        <span class="name">Salman Ahmed</span>
+                                                        <span class="email">salman.ahmed@example.com fff</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="search-list-items">
+                                                        <img src="./assets/images/user-icon.png" alt="">
+                                                        <span class="name">Salman Ahmed</span>
+                                                        <span class="email">salman..ahmed@example.com dd</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Milestone Section End -->
+
+            </section>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Main Content Section End -->
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,1777 +1,1812 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--font awesome-->
-    <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Owl Carousel Links -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
-      rel="stylesheet" />
-    <!-- My custom Scrollbar -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="./assets/dist/style.css">
-    <title>Testworthy</title>
-  </head>
-  <body>
-    <!-- Header Section start -->
-    <header class="sticky-top">
-      <div class="head-logo">
-        <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
-      </div>
-      <div class="mobile-menu-btn">
-        <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
-      </div>
-      <div class="header-back">
-        <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
-        <a href="#">User and Roles</a>
-        </spam></label>
-      </div>
-      <div class="user ml-auto">
-        <div class="user-group">
-          <div class="user-text">
-            <span>Hello,</span><strong> Ahmed</strong>
-            <br>
-            <p class="text-right">Admin</p>
-          </div>
-          <div class="user-icon">
-            <span><img src="./assets/images/user-icon.png" alt=""></span>
-          </div>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--font awesome-->
+  <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Owl Carousel Links -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- My custom Scrollbar -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="./assets/dist/style.css">
+  <title>Testworthy</title>
+</head>
+
+<body>
+  <!-- Header Section start -->
+  <header class="sticky-top">
+    <div class="head-logo">
+      <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
+    </div>
+    <div class="mobile-menu-btn">
+      <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+    </div>
+    <div class="header-back">
+      <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
+          <a href="#">User and Roles</a>
+          </spam></label>
+    </div>
+    <div class="user ml-auto">
+      <div class="user-group">
+        <div class="user-text">
+          <span>Hello,</span><strong> Ahmed</strong>
+          <br>
+          <p class="text-right">Admin</p>
         </div>
-        <div class="caret-down">
-          <div class="dropdown">
-            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Integration</a>
-              <a class="dropdown-item" href="#">Subscription</a>
-              <a class="dropdown-item" href="#">Profile</a>
-              <a class="dropdown-item" href="#">Change Password</a>
-              <a class="dropdown-item" href="#">Log Out</a>
-            </div>
-          </div>
+        <div class="user-icon">
+          <span><img src="./assets/images/user-icon.png" alt=""></span>
         </div>
       </div>
-    </header>
-    <!-- Header Section End -->
-    <!-- Sidebar Section Start -->
-    <input type="checkbox" id="nav-toggle">
-    <div class="sidebar">
-      <div class="sidebar-hamburger">
-        <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
-      </div>
-      <div class="sidebar-menu">
-        <ul>
-          <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a>
-          </li>
-          <li><a href="" ><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
-          <li><a href="" class="active"><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
-          <li><a href=""><span><i class="icon-integration"></i></span> <span>Integration</span></a>
-          </li>
-          <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
-          <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
-        </ul>
+      <div class="caret-down">
+        <div class="dropdown">
+          <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Integration</a>
+            <a class="dropdown-item" href="#">Subscription</a>
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Change Password</a>
+            <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Sidebar Section End -->
-    <!-- Main Content Section Start -->
-    <div class="main-content">
-      <div class="container-fluid">
-        <!-- Add Test plan Section -->
-        <section class="user-roles-section">
-          <!--Add test plan Start-->
-          <div class="sort-by mb-1 pt-4 d-block">
-            <div class="row">
-              <div class="col-lg-6 mb-3">
-                <div>
-                  <h4 class="font-weight-bold">Users & Roles</h4>
-                </div>
-                <div class="sort-by-text">
-                  <span>50 active users and 15 inactive users.</span>
-                </div>
+  </header>
+  <!-- Header Section End -->
+  <!-- Sidebar Section Start -->
+  <input type="checkbox" id="nav-toggle">
+  <div class="sidebar">
+    <div class="sidebar-hamburger">
+      <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a>
+        </li>
+        <li><a href=""><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
+        <li><a href="" class="active"><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
+        <li><a href=""><span><i class="icon-integration"></i></span> <span>Integration</span></a>
+        </li>
+        <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
+        <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Sidebar Section End -->
+  <!-- Main Content Section Start -->
+  <div class="main-content">
+    <div class="container-fluid">
+      <!-- Add Test plan Section -->
+      <section class="user-roles-section">
+        <!--Add test plan Start-->
+        <div class="sort-by mb-1 pt-4 d-block">
+          <div class="row">
+            <div class="col-lg-6 mb-3">
+              <div>
+                <h4 class="font-weight-bold">Users & Roles</h4>
               </div>
-              <div class="col-lg-6 ">
-                <div class="search-filter">
-                  <div class="searchbar-filter mr-2">
-                    <input type="text" placeholder="Search User">
-                    <span class="icon search">
+              <div class="sort-by-text">
+                <span>50 active users and 15 inactive users.</span>
+              </div>
+            </div>
+            <div class="col-lg-6 ">
+              <div class="search-filter">
+                <div class="searchbar-filter mr-2">
+                  <input type="text" placeholder="Search User">
+                  <span class="icon search">
                     <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
-                    </span>
-                    <span class="icon filter  saprater-left">
-                    <a href="#"><img src="./assets/images/filter-img.png" alt="search-icon"></a>
-                    </span>
-                  </div>
-                  <button class="btn m-0" data-toggle="modal" data-target="#add-user">Add User</button>
+                  </span>
+                  <span class="icon filter  saprater-left">
+                    <a href="#" data-toggle="modal" data-target="#filter-modal"><img
+                        src="./assets/images/filter-img.png" alt="search-icon"></a>
+                  </span>
                 </div>
-                <div class=" row sort-by-filter">
-                  <div class="sort-by-tabs">
-                    <div class="dropdown">
-                      <button class="btn shadow-none " type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn m-0" data-toggle="modal" data-target="#add-user">Add User</button>
+              </div>
+              <div class=" row sort-by-filter">
+                <div class="sort-by-tabs">
+                  <div class="dropdown">
+                    <button class="btn shadow-none " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
                       Sort by <i class="fas fa-angle-down"></i>
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Recently Updated</a> 
-                        <a class="dropdown-item" href="#">Creation Date</a>
-                      </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Recently Updated</a>
+                      <a class="dropdown-item" href="#">Creation Date</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--Add Test Plan End-->
-          <!--testplan-tabs Content -->
-          <div class="tab-content " id="pills-tabContent">
-            <!--testplan-content-row Start tab -->
-            <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
-              aria-labelledby="pills-row-tab">
-              <div class="select-row ">
-                <div class="row">
-                  <div class="col-md-auto flex-1">
-                    <div class="custom-control custom-checkbox ">
-                      <input class="custom-control-input " type="checkbox" id="inlineCheckbox4"
-                        value="option4">
-                      <label class="custom-control-label" for="inlineCheckbox4">
+        </div>
+        <!--Add Test Plan End-->
+        <!--testplan-tabs Content -->
+        <div class="tab-content " id="pills-tabContent">
+          <!--testplan-content-row Start tab -->
+          <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
+            aria-labelledby="pills-row-tab">
+            <div class="select-row ">
+              <div class="row">
+                <div class="col-md-auto flex-1">
+                  <div class="custom-control custom-checkbox ">
+                    <input class="custom-control-input " type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="custom-control-label" for="inlineCheckbox4">
                       <span class="row-head">Username
                       </span>
                       <span class="row-icon">
-                      <span class="trash-icon mr-4" data-toggle="tooltip" data-placement="top"
-                        title="Delete"><a href="#" data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash text-dark"></i></a></span>
-                      <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                        title="Assign User to Project"><a href="#" data-toggle="modal" data-target="#edit-name">
-                          <img class="assign-icon" src="./assets/images/assignuserto.png">
-                        </a></span>
+                        <span class="trash-icon mr-4" data-toggle="tooltip" data-placement="top" title="Delete"><a
+                            href="#" data-toggle="modal" data-target="#ms-completeModal"><i
+                              class="icon-trash text-dark"></i></a></span>
+                        <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                          title="Assign User to Project"><a href="#" data-toggle="modal" data-target="#select-project">
+                            <img class="assign-icon" src="./assets/images/assignuserto.png">
+                          </a></span>
                       </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-md-auto flex-1">
-                    <div>
-                      <span>Email</span>
-                    </div>
-                  </div>
-                  <div class="col-md-auto flex-1">
-                    <div>
-                      <span>Assigned Project</span>
-                    </div>
-                  </div>
-                  <div class="col-md-auto flex-1">
-                    <div>
-                      <span>Roles</span>
-                    </div>
-                  </div>
-                  <div class="col-md-auto flex-1">
-                    <div>
-                      <span>Last login</span>
-                    </div>
+                    </label>
                   </div>
                 </div>
-              </div>
-              <div class="select-row-list">
-                <ul class="pt-3" >
-                  <li class="open-li">
-                    <div class="row no-gutters align-items-center justfiy-content-around">
-                      <div class="col-md-auto flex-1">
-                        <div class="custom-control custom-checkbox user-checkbox ">
-                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
-                            value="option6">
-                          <label class="custom-control-label user-control" for="inlineCheckbox6">
-                            <div class="profile-icon p-0 text-center">
-                              <span class="profile-img "> <span class="status active"></span>
-                                <div class="image-round">
-                                  <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
-                                </div>
-                              </span>
-                            </div>
-                            <span class="user-text p-0 pl-3">Salman Ahmad</span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          salmanahmad@ymail.com
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Exelon, HughesNet, Eplug ...
-                         </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Admin 
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <div class="hover-row-edit text-left">
-                          <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
-                          <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                            title="Delete"><a href="#" data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
-                        </div>
-                        <span class="due-date user-text p-0">
-                          April 22nd, 2021, 2:30 pm 
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="open-li">
-                    <div class="row no-gutters align-items-center justfiy-content-around">
-                      <div class="col-md-auto flex-1">
-                        <div class="custom-control custom-checkbox user-checkbox ">
-                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
-                            value="option6">
-                          <label class="custom-control-label user-control" for="inlineCheckbox6">
-                            <div class="profile-icon p-0 text-center">
-                              <span class="profile-img "> <span class="status inactive"></span>
-                                <div class="image-round">
-                                  <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
-                                </div>
-                              </span>
-                            </div>
-                            <span class="user-text p-0 pl-3">Salman Ahmad</span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          salmanahmad@ymail.com
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Exelon, HughesNet, Eplug ...
-                         </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Admin 
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <div class="hover-row-edit text-left">
-                          <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
-                          <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                            title="Delete"><a href="#" data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
-                        </div>
-                        <span class="due-date user-text p-0">
-                          April 22nd, 2021, 2:30 pm 
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="open-li">
-                    <div class="row no-gutters align-items-center justfiy-content-around">
-                      <div class="col-md-auto flex-1">
-                        <div class="custom-control custom-checkbox user-checkbox ">
-                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
-                            value="option6">
-                          <label class="custom-control-label user-control" for="inlineCheckbox6">
-                            <div class="profile-icon p-0 text-center">
-                              <span class="profile-img "> <span class="status active"></span>
-                                <div class="image-round">
-                                  <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
-                                </div>
-                              </span>
-                            </div>
-                            <span class="user-text p-0 pl-3">Salman Ahmad</span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          salmanahmad@ymail.com
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Exelon, HughesNet, Eplug ...
-                         </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Admin 
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <div class="hover-row-edit text-left">
-                          <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
-                          <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                            title="Delete"><a href="#" data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
-                        </div>
-                        <span class="due-date user-text p-0">
-                          April 22nd, 2021, 2:30 pm 
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="open-li">
-                    <div class="row no-gutters align-items-center justfiy-content-around">
-                      <div class="col-md-auto flex-1">
-                        <div class="custom-control custom-checkbox user-checkbox ">
-                          <input class="custom-control-input" type="checkbox" id="inlineCheckbox6"
-                            value="option6">
-                          <label class="custom-control-label user-control" for="inlineCheckbox6">
-                            <div class="profile-icon p-0 text-center">
-                              <span class="profile-img "> <span class="status inactive"></span>
-                                <div class="image-round">
-                                  <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
-                                </div>
-                              </span>
-                            </div>
-                            <span class="user-text p-0 pl-3">Salman Ahmad</span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          salmanahmad@ymail.com
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Exelon, HughesNet, Eplug ...
-                         </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <span class="user-text p-0">
-                          Admin 
-                        </span>
-                      </div>
-                      <div class="col-md-auto flex-1">
-                        <div class="hover-row-edit text-left">
-                          <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                            title="Edit"><a href="#" data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
-                          <span class="trash-icon" data-toggle="tooltip" data-placement="top"
-                            title="Delete"><a href="#" data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
-                        </div>
-                        <span class="due-date user-text p-0">
-                          April 22nd, 2021, 2:30 pm 
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--testplan-content-row End tab -->
-            <!--Milestone-content-grid  Start tab -->
-            <div class="content-grid tab-pane fade" id="pills-grid" role="tabpanel"
-              aria-labelledby="pills-grid-tab">
-              <div class="row text-plan-cards">
-                <div class="col-md-6">
-                  <div class="gridboxes__boxes">
-                    <div class="row ic-option">
-                      <div class="dropdown">
-                        <button class="btn shadow-none px-0" type="button"
-                          id="dropdownMenuButton" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
-                        <i class="icon-ic_option"></i></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                          <span>Delete Test plan</span></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col">
-                        <div class="gridboxes__exic">
-                          <div class="d-flex align-items-center">
-                            <span><i class="icon-clipboard"></i></span>
-                            <div class="cntnttxt pl-4">
-                              <h4>
-                              Test Plan - Sprint 51 </h3>
-                              <span class="small-styling">Created on : 31/04/21</span>
-                              <a href="javascript:;">View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col profile-img-name">
-                        <div class="completeico">
-                          <i class="icon-complete-tick"></i>
-                        </div>
-                        <div class="">
-                          <div class="profile-img"><img src="/assets/images/test.jpeg" alt=""></div>
-                          <div class="profile-name-styling">Ahmed</div>
-                          <div class="small-styling">Tester</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row  progress-row progress-padding">
-                      <div class="col d-flex align-items-center">
-                        <div class="progressBar">
-                          <div class="progress progress-hieght">
-                            <div class="progress-color progress-bar-success"
-                              role="progressbar" aria-valuenow="65"
-                              aria-valuemin="0" aria-valuemax="100"
-                              style="width:65%">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="passed is-gridview">
-                          <span>65%</span>
-                          <span>Passed</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mscases">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box1">
-                              <div class="c100 p24">
-                                <span>24%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Failed</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box2">
-                              <div class="c100 p9">
-                                <span>9%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Retest</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box3">
-                              <div class="c100 p13">
-                                <span>13%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Partial</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box4">
-                              <div class="c100 p21">
-                                <span>21%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Blocked</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="milestonetoggle">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <div class="submilestones">3 Test Runs</div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="collapsbutton">
-                            <span data-toggle="collapse" data-target="#mslist1">
-                            <i class="icon-accordion-down"></i>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="mslist1" class="collapse collape-section">
-                    <div class="row gridboxes__progress-bar--milestoneprogress">
-                      <div class="col-md-12">
-                        <div class="collape-section-inner checkboxsizing box1">
-                          <div class="custom-scrollbar-css scrollbar-height">
-                            <input id="box1-check1" type="checkbox" name="check"
-                              value="box1-check1">
-                            <label for="box1-check1">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 lorem..</h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color progress-color "
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check2" type="checkbox" name="check"
-                              value="box1-check2">
-                            <label for="box1-check2">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check3" type="checkbox" name="check"
-                              value="box1-check3">
-                            <label for="box1-check3">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check4" type="checkbox" name="check"
-                              value="box1-check4">
-                            <label for="box1-check4">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="gridboxes__boxes">
-                    <div class="row ic-option">
-                      <div class="dropdown">
-                        <button class="btn shadow-none px-0" type="button"
-                          id="dropdownMenuButton" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
-                        <i class="icon-ic_option"></i></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#edit-name"><i class="icon-ic_edit"></i>
-                          <span>Edit Test plan</span></a>
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-completeModal"><i
-                            class="icon-complete-tick"></i>
-                          <span>Mark as Complete</span></a>
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                          <span>Delete Test plan</span></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col">
-                        <div class="gridboxes__exic">
-                          <div class="d-flex align-items-center">
-                            <span><i class="icon-clipboard"></i></span>
-                            <div class="cntnttxt pl-4">
-                              <h4>
-                              Test Plan - Sprint 51 </h3>
-                              <span class="small-styling">Created on : 31/04/21</span>
-                              <a href="javascript:;">View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col profile-img-name">
-                        <div class="">
-                          <div class=""><img src="/assets/images/user-icon.png" alt=""></div>
-                          <div class="profile-name-styling">Ahmed</div>
-                          <div class="small-styling">Tester</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row  progress-row progress-padding">
-                      <div class="col d-flex align-items-center">
-                        <div class="progressBar">
-                          <div class="progress progress-hieght">
-                            <div class="progress-color progress-bar-success"
-                              role="progressbar" aria-valuenow="65"
-                              aria-valuemin="0" aria-valuemax="100"
-                              style="width:65%">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="passed is-gridview">
-                          <span>65%</span>
-                          <span>Passed</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mscases">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box1">
-                              <div class="c100 p24">
-                                <span>24%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Failed</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box2">
-                              <div class="c100 p9">
-                                <span>9%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Retest</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box3">
-                              <div class="c100 p13">
-                                <span>13%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Partial</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box4">
-                              <div class="c100 p21">
-                                <span>21%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Blocked</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="milestonetoggle">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <div class="submilestones">3 Test Runs</div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="collapsbutton">
-                            <span data-toggle="collapse" data-target="#mslist2">
-                            <i class="icon-accordion-down"></i>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="mslist2" class="collapse collape-section">
-                    <div class="row gridboxes__progress-bar--milestoneprogress">
-                      <div class="col-md-12">
-                        <div class="collape-section-inner checkboxsizing box1">
-                          <div class="custom-scrollbar-css scrollbar-height">
-                            <input id="box1-check1" type="checkbox" name="check"
-                              value="box1-check1">
-                            <label for="box1-check1">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 lorem..</h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color progress-color "
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check2" type="checkbox" name="check"
-                              value="box1-check2">
-                            <label for="box1-check2">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check3" type="checkbox" name="check"
-                              value="box1-check3">
-                            <label for="box1-check3">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check4" type="checkbox" name="check"
-                              value="box1-check4">
-                            <label for="box1-check4">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-auto flex-1">
+                  <div>
+                    <span>Email</span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="gridboxes__boxes">
-                    <div class="row ic-option">
-                      <div class="dropdown">
-                        <button class="btn shadow-none  px-0" type="button"
-                          id="dropdownMenuButton" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
-                        <i class="icon-ic_option"></i></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#edit-name"><i class="icon-ic_edit"></i>
-                          <span>Edit Test plan</span></a>
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-completeModal"><i
-                            class="icon-complete-tick"></i>
-                          <span>Mark as Complete</span></a>
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                          <span>Delete Test plan</span></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col">
-                        <div class="gridboxes__exic">
-                          <div class="d-flex align-items-center">
-                            <span><i class="icon-clipboard"></i></span>
-                            <div class="cntnttxt pl-4">
-                              <h4>
-                              Test Plan - Sprint 51 </h3>
-                              <span class="small-styling">Created on : 31/04/21</span>
-                              <a href="javascript:;">View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col profile-img-name">
-                        <div class="">
-                          <div class="unassigned">
-                            <i class="icon-unassigned"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row  progress-row progress-padding">
-                      <div class="col d-flex align-items-center">
-                        <div class="progressBar">
-                          <div class="progress progress-hieght">
-                            <div class="progress-color progress-bar-success"
-                              role="progressbar" aria-valuenow="65"
-                              aria-valuemin="0" aria-valuemax="100"
-                              style="width:65%">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="passed is-gridview">
-                          <span>65%</span>
-                          <span>Passed</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mscases">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box1">
-                              <div class="c100 p24">
-                                <span>24%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Failed</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box2">
-                              <div class="c100 p9">
-                                <span>9%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Retest</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box3">
-                              <div class="c100 p13">
-                                <span>13%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Partial</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box4">
-                              <div class="c100 p21">
-                                <span>21%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Blocked</h5>
-                                  <h6>6 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="milestonetoggle">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <div class="submilestones">3 Test Runs</div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="collapsbutton">
-                            <span data-toggle="collapse" data-target="#mslist3">
-                            <i class="icon-accordion-down"></i>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-auto flex-1">
+                  <div>
+                    <span>Assigned Project</span>
                   </div>
-                  <div id="mslist3" class="collapse collape-section">
-                    <div class="row gridboxes__progress-bar--milestoneprogress">
-                      <div class="col-md-12">
-                        <div class="collape-section-inner checkboxsizing box1">
-                          <div class="custom-scrollbar-css scrollbar-height">
-                            <input id="box1-check1" type="checkbox" name="check"
-                              value="box1-check1">
-                            <label for="box1-check1">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 lorem..</h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color progress-color "
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check2" type="checkbox" name="check"
-                              value="box1-check2">
-                            <label for="box1-check2">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check3" type="checkbox" name="check"
-                              value="box1-check3">
-                            <label for="box1-check3">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check4" type="checkbox" name="check"
-                              value="box1-check4">
-                            <label for="box1-check4">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+                <div class="col-md-auto flex-1">
+                  <div>
+                    <span>Roles</span>
                   </div>
-                  <div class="gridboxes__boxes">
-                    <div class="row ic-option">
-                      <div class="dropdown">
-                        <button class="btn shadow-none px-0" type="button"
-                          id="dropdownMenuButton" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
-                        <i class="icon-ic_option"></i></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#edit-milestone"><i class="icon-ic_edit"></i>
-                          <span>Edit Test plan</span></a>
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-completeModal"><i
-                            class="icon-complete-tick"></i>
-                          <span>Mark as Complete</span></a>
-                          <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#ms-deleteModal"><i class="icon-trash"></i>
-                          <span>Delete Test plan</span></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col">
-                        <div class="gridboxes__exic">
-                          <div class="d-flex align-items-center">
-                            <span><i class="icon-clipboard"></i></span>
-                            <div class="cntnttxt pl-4">
-                              <h4>
-                              Test Plan - Sprint 51 </h3>
-                              <span class="small-styling">Created on : 31/04/21</span>
-                              <a href="javascript:;">View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col profile-img-name">
-                        <div class="">
-                          <div class=""><img src="/assets/images/user-icon.png" alt=""></div>
-                          <div class="profile-name-styling">Ahmed</div>
-                          <div class="small-styling">Tester</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row  progress-row progress-padding">
-                      <div class="col d-flex align-items-center">
-                        <div class="progressBar">
-                          <div class="progress progress-hieght">
-                            <div class="progress-color progress-bar-success"
-                              role="progressbar" aria-valuenow="65"
-                              aria-valuemin="0" aria-valuemax="100"
-                              style="width:0%">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="passed is-gridview">
-                          <span>0%</span>
-                          <span>Passed</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mscases">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box1">
-                              <div class="c100 p24">
-                                <span>0%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Failed</h5>
-                                  <h6>0 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box2">
-                              <div class="c100 p9">
-                                <span>0%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Retest</h5>
-                                  <h6>0 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box3">
-                              <div class="c100 p13">
-                                <span>0%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Partial</h5>
-                                  <h6>0 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="mscases__cases mscases__cases--box4">
-                              <div class="c100 p21">
-                                <span>0%</span>
-                                <div class="slice">
-                                  <div class="bar"></div>
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="cases-rate">
-                                  <h5>Blocked</h5>
-                                  <h6>0 Cases</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="milestonetoggle">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <div class="submilestones">3 Test Runs</div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="collapsbutton">
-                            <span data-toggle="collapse" data-target="#mslist4">
-                            <i class="icon-accordion-down"></i>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="mslist4" class="collapse collape-section">
-                    <div class="row gridboxes__progress-bar--milestoneprogress">
-                      <div class="col-md-12">
-                        <div class="collape-section-inner checkboxsizing box1">
-                          <div class="custom-scrollbar-css scrollbar-height">
-                            <input id="box1-check1" type="checkbox" name="check"
-                              value="box1-check1">
-                            <label for="box1-check1">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 lorem..</h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color progress-color "
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check2" type="checkbox" name="check"
-                              value="box1-check2">
-                            <label for="box1-check2">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check3" type="checkbox" name="check"
-                              value="box1-check3">
-                            <label for="box1-check3">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                            <input id="box1-check4" type="checkbox" name="check"
-                              value="box1-check4">
-                            <label for="box1-check4">
-                              <span class="row">
-                                <span class="col-md-4">
-                                  <h5 class="text-truncate">Test Run 1 </h5>
-                                </span>
-                                <div class="progressBar col-md-6">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success progress-color"
-                                      role="progressbar" aria-valuenow="65"
-                                      aria-valuemin="0" aria-valuemax="100"
-                                      style="width:25%">
-                                    </div>
-                                  </div>
-                                </div>
-                                <span class="col-md-2 pl-0">
-                                <span class="status">
-                                25% passed
-                                </span>
-                                </span>
-                              </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+                <div class="col-md-auto flex-1">
+                  <div>
+                    <span>Last login</span>
                   </div>
                 </div>
               </div>
             </div>
-            <!--Milestone-content-grid End tab -->
-          </div>
-          <!--Milestone-tabs Content End -->
-        </section>
-        <!-- Add Test plan Section End -->
-        <!-- Modal Section -->
-        <section class="popup-section">
-          <!--Delete Modal Start-->
-          <div class="modal fade confirm-modal" id="ms-deleteModal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <!-- Modal delete project content Start-->
-              <div class="modal-content confirm-project">
-                <div class="modal-body-container px-5 pt-4  modal-shade">
-                  <div class="">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">Confirmation</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true" class="close_cross">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Are you sure you want to delete this milestone?</p>
-                      <h6>Execution Web - Sprint 51</h6>
-                      <div class="info">
-                        <span><img src="./assets/images/info.png" alt="info-icon"></span>
-                        <p>This also unlinks this milestone from all test runs & plans and cannot be
-                          undone (no test runs & plans are deleted).
-                        </p>
+            <div class="select-row-list">
+              <ul class="pt-3">
+                <li class="open-li">
+                  <div class="row no-gutters align-items-center justfiy-content-around">
+                    <div class="col-md-auto flex-1">
+                      <div class="custom-control custom-checkbox user-checkbox ">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="custom-control-label user-control" for="inlineCheckbox6">
+                          <div class="profile-icon p-0 text-center">
+                            <span class="profile-img "> <span class="status active"></span>
+                              <div class="image-round">
+                                <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
+                              </div>
+                            </span>
+                          </div>
+                          <span class="user-text p-0 pl-3">Salman Ahmad</span>
+                        </label>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-secondary-color">Delete Test plan</button>
-                </div>
-              </div>
-              <!-- Modal delete project content End-->
-              <!-- Modal delete complete content Start-->
-              <div class="modal-content confirm-complete">
-                <div class="modal-body-container px-5 pt-4  modal-shade">
-                  <div class="">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true" class="close_cross">&times;</span>
-                      </button>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        salmanahmad@ymail.com
+                      </span>
                     </div>
-                    <div class="modal-body">
-                      <div class="project-image text-center">
-                        <img src="./assets/images/delete-project.png" alt="">
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Exelon, HughesNet, Eplug ...
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Admin
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <div class="hover-row-edit text-left">
+                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
+                            data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
+                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"
+                            data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
+                      </div>
+                      <span class="due-date user-text p-0">
+                        April 22nd, 2021, 2:30 pm
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="open-li">
+                  <div class="row no-gutters align-items-center justfiy-content-around">
+                    <div class="col-md-auto flex-1">
+                      <div class="custom-control custom-checkbox user-checkbox ">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="custom-control-label user-control" for="inlineCheckbox6">
+                          <div class="profile-icon p-0 text-center">
+                            <span class="profile-img "> <span class="status inactive"></span>
+                              <div class="image-round">
+                                <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
+                              </div>
+                            </span>
+                          </div>
+                          <span class="user-text p-0 pl-3">Salman Ahmad</span>
+                        </label>
                       </div>
                     </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        salmanahmad@ymail.com
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Exelon, HughesNet, Eplug ...
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Admin
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <div class="hover-row-edit text-left">
+                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
+                            data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
+                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"
+                            data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
+                      </div>
+                      <span class="due-date user-text p-0">
+                        April 22nd, 2021, 2:30 pm
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer text-center">
-                  <span><img src="./assets/images/check-blue.png" alt="check-icon">
-                  <span>Milestone Deleted</span>
-                  </span>
-                </div>
-              </div>
-              <!-- Modal delete complete content End-->
+                </li>
+                <li class="open-li">
+                  <div class="row no-gutters align-items-center justfiy-content-around">
+                    <div class="col-md-auto flex-1">
+                      <div class="custom-control custom-checkbox user-checkbox ">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="custom-control-label user-control" for="inlineCheckbox6">
+                          <div class="profile-icon p-0 text-center">
+                            <span class="profile-img "> <span class="status active"></span>
+                              <div class="image-round">
+                                <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
+                              </div>
+                            </span>
+                          </div>
+                          <span class="user-text p-0 pl-3">Salman Ahmad</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        salmanahmad@ymail.com
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Exelon, HughesNet, Eplug ...
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Admin
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <div class="hover-row-edit text-left">
+                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
+                            data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
+                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"
+                            data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
+                      </div>
+                      <span class="due-date user-text p-0">
+                        April 22nd, 2021, 2:30 pm
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="open-li">
+                  <div class="row no-gutters align-items-center justfiy-content-around">
+                    <div class="col-md-auto flex-1">
+                      <div class="custom-control custom-checkbox user-checkbox ">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="custom-control-label user-control" for="inlineCheckbox6">
+                          <div class="profile-icon p-0 text-center">
+                            <span class="profile-img "> <span class="status inactive"></span>
+                              <div class="image-round">
+                                <img width="40px" height="40px" src="./assets/images/user-icon.png" alt="user-icon">
+                              </div>
+                            </span>
+                          </div>
+                          <span class="user-text p-0 pl-3">Salman Ahmad</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        salmanahmad@ymail.com
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Exelon, HughesNet, Eplug ...
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <span class="user-text p-0">
+                        Admin
+                      </span>
+                    </div>
+                    <div class="col-md-auto flex-1">
+                      <div class="hover-row-edit text-left">
+                        <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
+                            data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
+                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"
+                            data-toggle="modal" data-target="#ms-completeModal"><i class="icon-trash"></i></a></span>
+                      </div>
+                      <span class="due-date user-text p-0">
+                        April 22nd, 2021, 2:30 pm
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <!--Delete modal End-->
-          <section class="modal-section">
-            <!--Modal Add  Start-->
-            <div class="modal  milestone-modals" id="edit-name" tabindex="-1" role="dialog"
-              aria-labelledby="add-milestoneLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <!--Modal assign project Start-->
-                <div class="modal-content edit-project">
-                  <div class="row">
-                    <div class="col-md-2">
-                      <div class="modal-side-color">
+          <!--testplan-content-row End tab -->
+          <!--Milestone-content-grid  Start tab -->
+          <div class="content-grid tab-pane fade" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+            <div class="row text-plan-cards">
+              <div class="col-md-6">
+                <div class="gridboxes__boxes">
+                  <div class="row ic-option">
+                    <div class="dropdown">
+                      <button class="btn shadow-none px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
+                        <i class="icon-ic_option"></i></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-deleteModal"><i
+                            class="icon-trash"></i>
+                          <span>Delete Test plan</span></a>
                       </div>
                     </div>
-                    <div class="col-md-10">
-                      <div class="modal-body-container pr-4 pt-4 pb-4">
-                        <div class="modal-header">
-                          <h4 class="modal-title" id="exampleModalLabel">Select Project </h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="close_cross">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="mb-4">
-                            <h6>Project *</h6>
-                            <form action="">
-                              <input type="text" class="selectuser form-control" onclick="assigned_to('block')" ondblclick="assigned_to('none')" placeholder="Type or select a user">
-                              <div class="search-list assigned-to-users modal-search-list" id="selectuser">
-                                  <ul>
-                                    <li>
-                                     <span>Exelon</span>
-                                    </li>
-                                    <li>
-                                      <span>Eplug </span>
-                                    </li>
-                                    <li>
-                                      <span>Testworthy </span>
-                                    </li>
-                                  </ul>
-                              </div>
-                            </form>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <div class="gridboxes__exic">
+                        <div class="d-flex align-items-center">
+                          <span><i class="icon-clipboard"></i></span>
+                          <div class="cntnttxt pl-4">
+                            <h4>
+                              Test Plan - Sprint 51 </h3>
+                              <span class="small-styling">Created on : 31/04/21</span>
+                              <a href="javascript:;">View Details</a>
                           </div>
-                        </div>  
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                          <button type="button" class="btn btn-secondary-color">Assign User to Project</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col profile-img-name">
+                      <div class="completeico">
+                        <i class="icon-complete-tick"></i>
+                      </div>
+                      <div class="">
+                        <div class="profile-img"><img src="/assets/images/test.jpeg" alt=""></div>
+                        <div class="profile-name-styling">Ahmed</div>
+                        <div class="small-styling">Tester</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  progress-row progress-padding">
+                    <div class="col d-flex align-items-center">
+                      <div class="progressBar">
+                        <div class="progress progress-hieght">
+                          <div class="progress-color progress-bar-success" role="progressbar" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="passed is-gridview">
+                        <span>65%</span>
+                        <span>Passed</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mscases">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box1">
+                            <div class="c100 p24">
+                              <span>24%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Failed</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box2">
+                            <div class="c100 p9">
+                              <span>9%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Retest</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box3">
+                            <div class="c100 p13">
+                              <span>13%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Partial</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box4">
+                            <div class="c100 p21">
+                              <span>21%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Blocked</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!--Modal assign project End-->
-
-                  <!--Modal add user Start-->
-                  <div class="modal-content save-project">
+                  <div class="milestonetoggle">
                     <div class="row">
-                      <div class="col-md-2">
-                        <div class="modal-side-color">
+                      <div class="col-md-9">
+                        <div class="submilestones">3 Test Runs</div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="collapsbutton">
+                          <span data-toggle="collapse" data-target="#mslist1">
+                            <i class="icon-accordion-down"></i>
+                          </span>
                         </div>
                       </div>
-                      <div class="col-md-10">
-                        <div class="modal-body-container pr-4 pt-4 pb-4">
-                          <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel">Edit User </h4>
-                            <span class="alert-box">
-                              <img src="./assets/images/check-success.png" alt="check_icon">
-                              <span>Changes saved!</span>
-                          </span>
-                          </div>
-                          <div class="modal-body">
-                            <form action="">
-                              <div class="row no-gutters">
-                                <div class="col">
-                                  <div class="mb-4">
-                                    <div class="text-info-icon">
-                                      <h6>First Name *</h6>
-                                      <span data-toggle="tooltip" data-placement="top" title="" data-original-title="User First Name">
-                                          <i class="icon-info-icon"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="First Name">
-                                  </div>
-                                  <div class="mb-4">
-                                    <div class="text-info-icon">
-                                      <h6>Last Name *</h6>
-                                      <span data-toggle="tooltip" data-placement="top" title="" data-original-title="User Last Name">
-                                          <i class="icon-info-icon"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Last Name">
-                                  </div>
-                                  <div class="mb-4">
-                                    <div class="text-info-icon">
-                                      <h6>Email *</h6>
-                                    </div>
-                                    <input type="email" class="form-control" placeholder="Email">
-                                  </div>
-                                  <div class="mb-4">
-                                    <div class="text-info-icon">
-                                      <h6>Role *</h6>
-                                    </div>
-                                    <div class="dropdown-box">
-                                      <input type="text" class="selectuser form-control" onclick="assigned_to_role('block')" ondblclick="assigned_to_role('none')" placeholder="Type or select a user">
-                                      <div class="search-list dropdown-list assigned-to-users modal-search-list" id="selectrole">
-                                          <ul>
-                                            <li>
-                                            <span>Admin</span>
-                                            </li>
-                                            <li>
-                                              <span>Developer</span>
-                                            </li>
-                                            <li>
-                                              <span>Designer </span>
-                                            </li>
-                                          </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <h6>Project *</h6>
-                                    <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
-                                      <ul>
-                                        <li>
-                                          <span class="justify-content-center">
-                                            <label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
-                                        </li>
-                                        <li>
-                                          <span class="justify-content-center"><label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
-                                        </li>
-                                        <li>
-                                          <span class="justify-content-center"><label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
-                                        </li>
-                                        <li>
-                                          <span class="justify-content-center"><label for="" class="tag-label">Project Name </label> <a href="">×</a></span>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <div class="search-list w-100" id="list_search_edit" style="display: none;">
-                                    <ul>
-                                      <li>
-                                        <div class="search-list-items">
-                                          <span class="name">Project Name</span>    
-                                        </div>
-                                      </li>
-                                      <li>
-                                        <div class="search-list-items">
-                                          <span class="name">Project Name</span>    
-                                        </div>
-                                      </li>
-                                      <li>
-                                        <div class="search-list-items">
-                                          <span class="name">Project Name</span>    
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="custom-control-label" for="inlineCheckbox1">This user is active</label>
+                    </div>
+                  </div>
+                </div>
+                <div id="mslist1" class="collapse collape-section">
+                  <div class="row gridboxes__progress-bar--milestoneprogress">
+                    <div class="col-md-12">
+                      <div class="collape-section-inner checkboxsizing box1">
+                        <div class="custom-scrollbar-css scrollbar-height">
+                          <input id="box1-check1" type="checkbox" name="check" value="box1-check1">
+                          <label for="box1-check1">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 lorem..</h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color progress-color "
+                                    role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:25%">
                                   </div>
                                 </div>
                               </div>
-
-                            </form>
-                          </div>  
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-secondary-color">Edit User</button>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check2" type="checkbox" name="check" value="box1-check2">
+                          <label for="box1-check2">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check3" type="checkbox" name="check" value="box1-check3">
+                          <label for="box1-check3">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check4" type="checkbox" name="check" value="box1-check4">
+                          <label for="box1-check4">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gridboxes__boxes">
+                  <div class="row ic-option">
+                    <div class="dropdown">
+                      <button class="btn shadow-none px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
+                        <i class="icon-ic_option"></i></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit-name"><i
+                            class="icon-ic_edit"></i>
+                          <span>Edit Test plan</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-completeModal"><i
+                            class="icon-complete-tick"></i>
+                          <span>Mark as Complete</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-deleteModal"><i
+                            class="icon-trash"></i>
+                          <span>Delete Test plan</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <div class="gridboxes__exic">
+                        <div class="d-flex align-items-center">
+                          <span><i class="icon-clipboard"></i></span>
+                          <div class="cntnttxt pl-4">
+                            <h4>
+                              Test Plan - Sprint 51 </h3>
+                              <span class="small-styling">Created on : 31/04/21</span>
+                              <a href="javascript:;">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col profile-img-name">
+                      <div class="">
+                        <div class=""><img src="/assets/images/user-icon.png" alt=""></div>
+                        <div class="profile-name-styling">Ahmed</div>
+                        <div class="small-styling">Tester</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  progress-row progress-padding">
+                    <div class="col d-flex align-items-center">
+                      <div class="progressBar">
+                        <div class="progress progress-hieght">
+                          <div class="progress-color progress-bar-success" role="progressbar" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="passed is-gridview">
+                        <span>65%</span>
+                        <span>Passed</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mscases">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box1">
+                            <div class="c100 p24">
+                              <span>24%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Failed</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box2">
+                            <div class="c100 p9">
+                              <span>9%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Retest</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box3">
+                            <div class="c100 p13">
+                              <span>13%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Partial</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box4">
+                            <div class="c100 p21">
+                              <span>21%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Blocked</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!--Modal add user suss End-->
-              </div>
-            </div>
-            <div class="modal  milestone-modals" id="add-user" tabindex="-1" role="dialog"
-            aria-labelledby="add-milestoneLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <!--Modal edit user start-->
-                <div class="modal-content edit-project">
-                  <div class="row">
-                    <div class="col-md-2">
-                      <div class="modal-side-color">
+                  <div class="milestonetoggle">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="submilestones">3 Test Runs</div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="collapsbutton">
+                          <span data-toggle="collapse" data-target="#mslist2">
+                            <i class="icon-accordion-down"></i>
+                          </span>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-10">
-                      <div class="modal-body-container pr-4 pt-4 pb-4">
-                        <div class="modal-header">
-                          <h4 class="modal-title" id="exampleModalLabel">Add User </h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="close_cross">&times;</span>
-                          </button>
+                  </div>
+                </div>
+                <div id="mslist2" class="collapse collape-section">
+                  <div class="row gridboxes__progress-bar--milestoneprogress">
+                    <div class="col-md-12">
+                      <div class="collape-section-inner checkboxsizing box1">
+                        <div class="custom-scrollbar-css scrollbar-height">
+                          <input id="box1-check1" type="checkbox" name="check" value="box1-check1">
+                          <label for="box1-check1">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 lorem..</h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color progress-color "
+                                    role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check2" type="checkbox" name="check" value="box1-check2">
+                          <label for="box1-check2">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check3" type="checkbox" name="check" value="box1-check3">
+                          <label for="box1-check3">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check4" type="checkbox" name="check" value="box1-check4">
+                          <label for="box1-check4">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
                         </div>
-                        <div class="modal-body">
-                          <form action="">
-                            <div class="row no-gutters">
-                              <div class="col">
-                                <div class="mb-4">
-                                  <div class="text-info-icon">
-                                    <h6>First Name *</h6>
-                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="User First Name">
-                                        <i class="icon-info-icon"></i>
-                                    </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="gridboxes__boxes">
+                  <div class="row ic-option">
+                    <div class="dropdown">
+                      <button class="btn shadow-none  px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
+                        <i class="icon-ic_option"></i></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit-name"><i
+                            class="icon-ic_edit"></i>
+                          <span>Edit Test plan</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-completeModal"><i
+                            class="icon-complete-tick"></i>
+                          <span>Mark as Complete</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-deleteModal"><i
+                            class="icon-trash"></i>
+                          <span>Delete Test plan</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <div class="gridboxes__exic">
+                        <div class="d-flex align-items-center">
+                          <span><i class="icon-clipboard"></i></span>
+                          <div class="cntnttxt pl-4">
+                            <h4>
+                              Test Plan - Sprint 51 </h3>
+                              <span class="small-styling">Created on : 31/04/21</span>
+                              <a href="javascript:;">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col profile-img-name">
+                      <div class="">
+                        <div class="unassigned">
+                          <i class="icon-unassigned"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  progress-row progress-padding">
+                    <div class="col d-flex align-items-center">
+                      <div class="progressBar">
+                        <div class="progress progress-hieght">
+                          <div class="progress-color progress-bar-success" role="progressbar" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="passed is-gridview">
+                        <span>65%</span>
+                        <span>Passed</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mscases">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box1">
+                            <div class="c100 p24">
+                              <span>24%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Failed</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box2">
+                            <div class="c100 p9">
+                              <span>9%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Retest</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box3">
+                            <div class="c100 p13">
+                              <span>13%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Partial</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box4">
+                            <div class="c100 p21">
+                              <span>21%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Blocked</h5>
+                                <h6>6 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="milestonetoggle">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="submilestones">3 Test Runs</div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="collapsbutton">
+                          <span data-toggle="collapse" data-target="#mslist3">
+                            <i class="icon-accordion-down"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="mslist3" class="collapse collape-section">
+                  <div class="row gridboxes__progress-bar--milestoneprogress">
+                    <div class="col-md-12">
+                      <div class="collape-section-inner checkboxsizing box1">
+                        <div class="custom-scrollbar-css scrollbar-height">
+                          <input id="box1-check1" type="checkbox" name="check" value="box1-check1">
+                          <label for="box1-check1">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 lorem..</h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color progress-color "
+                                    role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:25%">
                                   </div>
-                                  <input type="text" class="form-control" placeholder="First Name">
                                 </div>
-                                <div class="mb-4">
-                                  <div class="text-info-icon">
-                                    <h6>Last Name *</h6>
-                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="User Last Name">
-                                        <i class="icon-info-icon"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Last Name">
-                                </div>
-                                <div class="mb-4">
-                                  <div class="text-info-icon">
-                                    <h6>Email *</h6>
-                                  </div>
-                                  <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="mb-4">
-                                  <div class="text-info-icon">
-                                    <h6>Role *</h6>
-                                  </div>
-                                  <div class="dropdown-box">
-                                    <input type="text" class="selectuser form-control" onclick="assigned_to_role('block')" ondblclick="assigned_to_role('none')" placeholder="Type or select a user">
-                                    <div class="search-list dropdown-list assigned-to-users modal-search-list" id="selectrole">
-                                        <ul>
-                                          <li>
-                                          <span>Admin</span>
-                                          </li>
-                                          <li>
-                                            <span>Developer</span>
-                                          </li>
-                                          <li>
-                                            <span>Designer </span>
-                                          </li>
-                                        </ul>
-                                    </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check2" type="checkbox" name="check" value="box1-check2">
+                          <label for="box1-check2">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
                                   </div>
                                 </div>
-                                <div class="mb-3">
-                                  <h6>Project *</h6>
-                                  <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check3" type="checkbox" name="check" value="box1-check3">
+                          <label for="box1-check3">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check4" type="checkbox" name="check" value="box1-check4">
+                          <label for="box1-check4">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gridboxes__boxes">
+                  <div class="row ic-option">
+                    <div class="dropdown">
+                      <button class="btn shadow-none px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="-132, 0">
+                        <i class="icon-ic_option"></i></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit-milestone"><i
+                            class="icon-ic_edit"></i>
+                          <span>Edit Test plan</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-completeModal"><i
+                            class="icon-complete-tick"></i>
+                          <span>Mark as Complete</span></a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ms-deleteModal"><i
+                            class="icon-trash"></i>
+                          <span>Delete Test plan</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <div class="gridboxes__exic">
+                        <div class="d-flex align-items-center">
+                          <span><i class="icon-clipboard"></i></span>
+                          <div class="cntnttxt pl-4">
+                            <h4>
+                              Test Plan - Sprint 51 </h3>
+                              <span class="small-styling">Created on : 31/04/21</span>
+                              <a href="javascript:;">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col profile-img-name">
+                      <div class="">
+                        <div class=""><img src="/assets/images/user-icon.png" alt=""></div>
+                        <div class="profile-name-styling">Ahmed</div>
+                        <div class="small-styling">Tester</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  progress-row progress-padding">
+                    <div class="col d-flex align-items-center">
+                      <div class="progressBar">
+                        <div class="progress progress-hieght">
+                          <div class="progress-color progress-bar-success" role="progressbar" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="passed is-gridview">
+                        <span>0%</span>
+                        <span>Passed</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mscases">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box1">
+                            <div class="c100 p24">
+                              <span>0%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Failed</h5>
+                                <h6>0 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box2">
+                            <div class="c100 p9">
+                              <span>0%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Retest</h5>
+                                <h6>0 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box3">
+                            <div class="c100 p13">
+                              <span>0%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Partial</h5>
+                                <h6>0 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="mscases__cases mscases__cases--box4">
+                            <div class="c100 p21">
+                              <span>0%</span>
+                              <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                              </div>
+                              <div class="cases-rate">
+                                <h5>Blocked</h5>
+                                <h6>0 Cases</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="milestonetoggle">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="submilestones">3 Test Runs</div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="collapsbutton">
+                          <span data-toggle="collapse" data-target="#mslist4">
+                            <i class="icon-accordion-down"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="mslist4" class="collapse collape-section">
+                  <div class="row gridboxes__progress-bar--milestoneprogress">
+                    <div class="col-md-12">
+                      <div class="collape-section-inner checkboxsizing box1">
+                        <div class="custom-scrollbar-css scrollbar-height">
+                          <input id="box1-check1" type="checkbox" name="check" value="box1-check1">
+                          <label for="box1-check1">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 lorem..</h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color progress-color "
+                                    role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check2" type="checkbox" name="check" value="box1-check2">
+                          <label for="box1-check2">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check3" type="checkbox" name="check" value="box1-check3">
+                          <label for="box1-check3">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                          <input id="box1-check4" type="checkbox" name="check" value="box1-check4">
+                          <label for="box1-check4">
+                            <span class="row">
+                              <span class="col-md-4">
+                                <h5 class="text-truncate">Test Run 1 </h5>
+                              </span>
+                              <div class="progressBar col-md-6">
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success progress-color" role="progressbar"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="col-md-2 pl-0">
+                                <span class="status">
+                                  25% passed
+                                </span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Milestone-content-grid End tab -->
+        </div>
+        <!--Milestone-tabs Content End -->
+      </section>
+      <!-- Add Test plan Section End -->
+      <!-- Modal Section -->
+      <section class="popup-section">
+        <!--Delete Modal Start-->
+        <div class="modal fade confirm-modal" id="ms-deleteModal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <!-- Modal delete project content Start-->
+            <div class="modal-content confirm-project">
+              <div class="modal-body-container px-5 pt-4  modal-shade">
+                <div class="">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Confirmation</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="close_cross">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Are you sure you want to delete this milestone?</p>
+                    <h6>Execution Web - Sprint 51</h6>
+                    <div class="info">
+                      <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                      <p>This also unlinks this milestone from all test runs & plans and cannot be
+                        undone (no test runs & plans are deleted).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary-color">Delete Test plan</button>
+              </div>
+            </div>
+            <!-- Modal delete project content End-->
+            <!-- Modal delete complete content Start-->
+            <div class="modal-content confirm-complete">
+              <div class="modal-body-container px-5 pt-4  modal-shade">
+                <div class="">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="close_cross">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-image text-center">
+                      <img src="./assets/images/delete-project.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer text-center">
+                <span><img src="./assets/images/check-blue.png" alt="check-icon">
+                  <span>Milestone Deleted</span>
+                </span>
+              </div>
+            </div>
+            <!-- Modal delete complete content End-->
+          </div>
+        </div>
+        <!--Delete modal End-->
+        <section class="modal-section">
+          <!--Modal Add  Start-->
+          <div class="modal  milestone-modals" id="edit-name" tabindex="-1" role="dialog"
+            aria-labelledby="add-milestoneLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <!--Modal add user Start-->
+              <div class="modal-content save-project">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Edit User </h4>
+                        <span class="alert-box">
+                          <img src="./assets/images/check-success.png" alt="check_icon">
+                          <span>Changes saved!</span>
+                        </span>
+                      </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="row no-gutters">
+                            <div class="col">
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>First Name *</h6>
+                                  <span data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="User First Name">
+                                    <i class="icon-info-icon"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="First Name">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Last Name *</h6>
+                                  <span data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="User Last Name">
+                                    <i class="icon-info-icon"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Email *</h6>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Role *</h6>
+                                </div>
+                                <div class="dropdown-box">
+                                  <input type="text" class="selectuser form-control" onclick="assigned_to_role('block')"
+                                    ondblclick="assigned_to_role('none')" placeholder="Type or select a user">
+                                  <div class="search-list dropdown-list assigned-to-users modal-search-list"
+                                    id="selectrole">
                                     <ul>
                                       <li>
-                                        <span class="justify-content-center">
-                                          <label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
+                                        <span>Admin</span>
                                       </li>
                                       <li>
-                                        <span class="justify-content-center"><label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
+                                        <span>Developer</span>
                                       </li>
                                       <li>
-                                        <span class="justify-content-center"><label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
-                                      </li>
-                                      <li>
-                                        <span class="justify-content-center"><label for="" class="tag-label">Project Name </label> <a href="">×</a></span>
+                                        <span>Designer </span>
                                       </li>
                                     </ul>
                                   </div>
                                 </div>
-                                <div class="search-list w-100" id="list_search_edit" style="display: none;">
+                              </div>
+                              <div class="mb-3">
+                                <h6>Project *</h6>
+                                <div class="edit-tags" onclick="edit_searchList('block')"
+                                  ondblclick="edit_searchList('none')">
                                   <ul>
                                     <li>
-                                      <div class="search-list-items">
-                                        <span class="name">Project Name</span>    
-                                      </div>
+                                      <span class="justify-content-center">
+                                        <label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
                                     </li>
                                     <li>
-                                      <div class="search-list-items">
-                                        <span class="name">Project Name</span>    
-                                      </div>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project
+                                          Name</label> <a href="">×</a></span>
                                     </li>
                                     <li>
-                                      <div class="search-list-items">
-                                        <span class="name">Project Name</span>    
-                                      </div>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project
+                                          Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project Name
+                                        </label> <a href="">×</a></span>
                                     </li>
                                   </ul>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                  <input class="custom-control-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  <label class="custom-control-label" for="inlineCheckbox1">This user is active</label>
-                                </div>
+                              </div>
+                              <div class="search-list w-100" id="list_search_edit" style="display: none;">
+                                <ul>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox1"
+                                  value="option1">
+                                <label class="custom-control-label" for="inlineCheckbox1">This user is active</label>
                               </div>
                             </div>
+                          </div>
 
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Edit User</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal add user suss End-->
+            </div>
+          </div>
+          <div class="modal  milestone-modals" id="select-project" tabindex="-1" role="dialog"
+            aria-labelledby="add-milestoneLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <!--Modal assign project Start-->
+              <div class="modal-content edit-project">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Select Project </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="close_cross">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-4">
+                          <h6>Project *</h6>
+                          <form action="">
+                            <input type="text" class="selectuser form-control" onclick="assigned_to('block')"
+                              ondblclick="assigned_to('none')" placeholder="Type or select a user">
+                            <div class="search-list assigned-to-users modal-search-list" id="selectuser">
+                              <ul>
+                                <li>
+                                  <span>Exelon</span>
+                                </li>
+                                <li>
+                                  <span>Eplug </span>
+                                </li>
+                                <li>
+                                  <span>Testworthy </span>
+                                </li>
+                              </ul>
+                            </div>
                           </form>
-                        </div>  
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                          <button type="button" class="btn btn-secondary-color">Edit User</button>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <!--Modal edit user end End-->
-              </div>
-            </div>
-            <!--Add modal End-->
-          </section>
-          <!--Mark Complete Modal Start-->
-          <div class="modal fade confirm-modal" id="ms-completeModal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <!-- Modal mark project content Start-->
-              <div class="modal-content confirm-project">
-                <div class="modal-body-container px-5 pt-4  modal-shade">
-                  <div class="">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">Confirmation</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true" class="close_cross">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Are you sure you want to mark this milestone as completed?</p>
-                      <h6>Execution Web - Sprint 51</h6>
-                      <div class="info">
-                        <span><img src="./assets/images/info.png" alt="info-icon"></span>
-                        <p>Marking this milestone as complete is a permanent action and can not be
-                          undone.
-                        </p>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Assign User to Project</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-secondary-color">Mark as complete</button>
+              </div>
+              <!--Modal assign project End-->
+            </div>
+          </div>
+          <!--Modal Filter-->
+          <div class="modal  testsuites-modals" id="filter-modal" tabindex="-1" role="dialog"
+            aria-labelledby="testsuites-filter-modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+
+              <!--Modal testsuites-filter-modal content  Start-->
+              <div class="modal-content filter-modal-content">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Filter</h4>
+                        <button class="btn refresh-btn ml-auto" data-toggle="tooltip" data-placement="top"
+                          data-original-title="Reset Filters"><i class="icon-refresh"></i></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="close_cross">&times;</span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <small class="text-black d-block mb-4">
+                          <strong>
+                            Roles
+                          </strong>
+                        </small>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Admin</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Tester</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Project Manager (PM)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4 pb-2">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Clients</label>
+                        </div>
+                        <small class="text-black d-block mb-4">
+                          <strong>
+                            Status
+                          </strong>
+                        </small>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Active</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Inactive</label>
+                        </div>
+                      </div>
+                      <div class="modal-footer ">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Apply Filter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!--Modal Testsuites-modal content  End-->
+
+            </div>
+          </div>
+          <!-- modal End-->
+          <div class="modal  milestone-modals" id="add-user" tabindex="-1" role="dialog"
+            aria-labelledby="add-milestoneLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <!--Modal edit user start-->
+              <div class="modal-content edit-project">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Add User </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="close_cross">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="row no-gutters">
+                            <div class="col">
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>First Name *</h6>
+                                  <span data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="User First Name">
+                                    <i class="icon-info-icon"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="First Name">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Last Name *</h6>
+                                  <span data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="User Last Name">
+                                    <i class="icon-info-icon"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Email *</h6>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Role *</h6>
+                                </div>
+                                <div class="dropdown-box">
+                                  <input type="text" class="selectuser form-control" onclick="assigned_to_role('block')"
+                                    ondblclick="assigned_to_role('none')" placeholder="Type or select a user">
+                                  <div class="search-list dropdown-list assigned-to-users modal-search-list"
+                                    id="selectrole">
+                                    <ul>
+                                      <li>
+                                        <span>Admin</span>
+                                      </li>
+                                      <li>
+                                        <span>Developer</span>
+                                      </li>
+                                      <li>
+                                        <span>Designer </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <h6>Project *</h6>
+                                <div class="edit-tags" onclick="edit_searchList('block')"
+                                  ondblclick="edit_searchList('none')">
+                                  <ul>
+                                    <li>
+                                      <span class="justify-content-center">
+                                        <label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project
+                                          Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project
+                                          Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project Name
+                                        </label> <a href="">×</a></span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="search-list w-100" id="list_search_edit" style="display: none;">
+                                <ul>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox1"
+                                  value="option1">
+                                <label class="custom-control-label" for="inlineCheckbox1">This user is active</label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Edit User</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- Modal mark project content End-->
+              <!--Modal edit user end End-->
+            </div>
+          </div>
+          <!--Add modal End-->
         </section>
-        <!--End Add Milestone Section -->
-      </div>
+        <!--Mark Complete Modal Start-->
+        <div class="modal fade confirm-modal" id="ms-completeModal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <!-- Modal mark project content Start-->
+            <div class="modal-content confirm-project">
+              <div class="modal-body-container px-5 pt-4  modal-shade">
+                <div class="">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Confirmation</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="close_cross">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Are you sure you want to mark this milestone as completed?</p>
+                    <h6>Execution Web - Sprint 51</h6>
+                    <div class="info">
+                      <span><img src="./assets/images/info.png" alt="info-icon"></span>
+                      <p>Marking this milestone as complete is a permanent action and can not be
+                        undone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary-color">Mark as complete</button>
+              </div>
+            </div>
+            <!-- Modal mark project content End-->
+      </section>
+      <!--End Add Milestone Section -->
     </div>
-    <!-- Main Content Section End -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+  </div>
+  <!-- Main Content Section End -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>

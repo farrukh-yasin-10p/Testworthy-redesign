@@ -147,29 +147,26 @@
                         <i class="icon-reports transform-icon"></i> <i class="fas fa-angle-down angle-down-icon"
                             aria-hidden="true"></i>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Activity Summary</a>
                         <a class="dropdown-item" href="#">Status Summary</a>
                         <a class="dropdown-item" href="#">Defects Summary</a>
-
-                    </div>
+                    </div> -->
                 </div>
 
-                <!-- <div class="dropdown dropmenu " data-toggle="tooltip" data-original-title="Download Report">
+                <div class="dropdown dropmenu " data-toggle="tooltip" data-original-title="Download Report">
                     <button class="btn shadow-none pt-0 pb-1 btn-icon-dropdown" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="icon-download"> <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        <i class="icon-download"></i> <i class="fas fa-angle-down"></i>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Activity Summary</a>
                         <a class="dropdown-item" href="#">Status Summary</a>
                         <a class="dropdown-item" href="#">Defects Summary</a>
+                    </div> -->
+                </div>
 
-                    </div>
-                </div> -->
 
-                <span class="mx-3 d-inline-block" data-toggle="tooltip" title="" data-original-title="download"><a
-                        href="" class="d-inline-block"><i class="icon-download"></i></a></span>
                 <span class="mx-3 d-inline-block" data-toggle="tooltip" title="" data-original-title="Edit"><a href=""
                         data-toggle="modal" data-target="#edit-name" class="d-inline-block"><i
                             class="icon-ic_edit"></i></a></span>
@@ -4492,9 +4489,9 @@
                                         <div class="modal-header">
                                             <h4 class="modal-title" id="exampleModalLabel">Select Cases</h4>
                                             <div class="btn-tab btn-tab-tree ml-auto" id="tab-toggle">
-                                                <button class="btn shadow-none active"><a href=""> Copy
+                                                <button class="btn shadow-none active"><a href="#tab1"> Copy
                                                         Cases</a></button>
-                                                <button class="btn btn2 shadow-none "><a href=""> Move
+                                                <button class="btn btn2 shadow-none "><a href="#tab2"> Move
                                                         Cases</a></button>
                                             </div>
                                         </div>
@@ -4815,18 +4812,8 @@
                                                                         aria-labelledby="heading6"
                                                                         data-parent="#accordionExample6">
                                                                         <div class="accordion-body ">
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input class="custom-control-input"
-                                                                                    type="checkbox">
-                                                                                <label class="custom-control-label"
-                                                                                    for="">Smoke</label><br>
-                                                                            </div>
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input class="custom-control-input"
-                                                                                    type="checkbox">
-                                                                                <label class="custom-control-label"
-                                                                                    for="">Regression</label><br>
-                                                                            </div>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Title">
                                                                         </div>
                                                                     </div>
 
@@ -4878,7 +4865,8 @@
 
                                         </div>
 
-                                        <div class="row testsuites-tree-footer modal-footer align-items-start">
+                                        <div id="tab1"
+                                            class="row testsuites-tree-footer modal-footer align-items-start tab-details">
 
 
                                             <div class="input-search-list col-md-4 pl-0">
@@ -4902,6 +4890,74 @@
                                                         <li>
                                                             <div class="milestone-list-items">
                                                                 <span class="name">Copy cases, sections and all
+                                                                    parents</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-search-list col">
+                                                <input type="text" class="selectuser form-control"
+                                                    onclick="milestone_list('milestone-list10','block')"
+                                                    ondblclick="milestone_list('milestone-list10','none')"
+                                                    placeholder="Append To">
+                                                <div class="search-list assigned-to-users common-list"
+                                                    id="milestone-list10" style="display: block;">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 1</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Source 2</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="footer-tree-btns col-md-auto">
+                                                <button type="button" class="btn btn-light-border mr-2"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-secondary-color">Copy</button>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div id="tab2"
+                                            class="row testsuites-tree-footer modal-footer align-items-start tab-details">
+
+
+                                            <div class="input-search-list col-md-4 pl-0">
+                                                <input type="text" class="selectuser form-control"
+                                                    onclick="milestone_list('milestone-list9','block')"
+                                                    ondblclick="milestone_list('milestone-list9','none')"
+                                                    placeholder="Copy ...">
+                                                <div class="search-list assigned-to-users common-list"
+                                                    id="milestone-list9" style="display: block;">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Move cases only</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Move cases and sections</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="milestone-list-items">
+                                                                <span class="name">Move cases, sections and all
                                                                     parents</span>
                                                             </div>
                                                         </li>

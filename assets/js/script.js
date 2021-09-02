@@ -238,4 +238,15 @@ $('#tab-toggle button').click(function(){
 });
 // Test Changes & History Tabs Toggle End
 
+
+})
+
+// Sort test suites
+function sortTestSuites(){
+  $('.test-suites-section .date-status').css('display', 'block')
+}
+
+$('.test-suites-section .daterangepicker .drp-buttons .applybtn').click(function(){
+  console.log('hello')
+  $('.test-suites-section .date-status').css('display', 'block');
 })

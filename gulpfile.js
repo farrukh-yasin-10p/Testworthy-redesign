@@ -44,7 +44,6 @@ gulp.task("js", () => {
     ])
     .pipe(sourcemaps.init())
     .pipe(concat("main.js"))
-    .pipe(uglify())
     .pipe(sourcemaps.write(src.mapPath))
     .pipe(gulp.dest(src.distPath))
     .pipe(browsersync.reload({ stream: true }));

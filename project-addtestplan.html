@@ -27,7 +27,10 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css">
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="./assets/dist/style.css">
     <title>Testworthy</title>
 
@@ -122,7 +125,7 @@
                     <li><a href="./project-milestone.html">Milestones</a> </li>
                     <li><a href="#" class="active">Test Plan</a> </li>
                     <li><a href="#" class="">Test Run & Results</a> </li>
-                    <li><a href="#" class="">Test Suites & Cases</a> </li> 
+                    <li><a href="#" class="">Test Suites & Cases</a> </li>
                 </ul>
             </div>
         </div>
@@ -142,7 +145,7 @@
                         </div>
 
                         <div class="col-lg-6 ">
-                           &nbsp;
+                            &nbsp;
                         </div>
 
                     </div>
@@ -157,123 +160,134 @@
                     <!--testplan-content-row Start tab -->
                     <div class="content-row tab-pane fade show active" id="pills-row" role="tabpanel"
                         aria-labelledby="pills-row-tab">
-                        
-                    
+
+
                         <div class="form-section">
                             <form>
                                 <div class="row">
-                                  <div class="col">
-                                    <div class="text-info-icon">
-                                        <h6>Name *</h6>
-                                    </div>  
-                                    <input type="text" class="form-control" placeholder="Ex: All supported browsers or operating system/database combinations.">
-                                  </div>
-                                  <div class="col">
-                                    <div class="text-info-icon">
-                                        <h6>Milestone</h6>
-                                        <span data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet.">
-                                            <i class="icon-info-icon"></i>
-                                        </span>
-                                    </div>  
-                                      
-                                    <input type="text" class="selectuser form-control" onclick="milestone_list('block')" ondblclick="milestone_list('none')" placeholder="Type or Select a milestone...">
-                                    <div class="search-list assigned-to-users common-list" id="milestone-list">
-                                            <ul>
-                                              <li>
-                                                <div class="milestone-list-items">
-                                                  <span class="name">Milestone 1</span> 
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <div class="milestone-list-items">
-                                                    <span class="name">Milestone 2</span> 
-                                                  </div>
-                                              </li>
-                                              <li class="last-item">
-                                                <div class="milestone-list-items">
-                                                    <a href="javascript:;">
-                                                        <i class="icon-icon-plus"></i> Add Milestone
-                                                    </a>
-                                                </div>
-                                              </li>
-                                            </ul>
+                                    <div class="col">
+                                        <div class="text-info-icon">
+                                            <h6>Name *</h6>
+                                        </div>
+                                        <input type="text" class="form-control"
+                                            placeholder="Ex: All supported browsers or operating system/database combinations.">
                                     </div>
+                                    <div class="col">
+                                        <div class="text-info-icon">
+                                            <h6>Milestone</h6>
+                                            <span data-toggle="tooltip" data-placement="top"
+                                                title="Lorem ipsum dolor sit amet.">
+                                                <i class="icon-info-icon"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="selectuser form-control"
+                                            onclick="milestone_list('milestone-list6','block')"
+                                            ondblclick="milestone_list('milestone-list6','none')" placeholder="">
+                                        <div class="search-list assigned-to-users common-list" id="milestone-list6">
+                                            <ul>
+                                                <li>
+                                                    <div class="milestone-list-items">
+                                                        <span class="name">Milestone 1</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="milestone-list-items">
+                                                        <span class="name">Milestone 2</span>
+                                                    </div>
+                                                </li>
+                                                <li class="last-item">
+                                                    <div class="milestone-list-items">
+                                                        <a href="javascript:;">
+                                                            <i class="icon-plus"></i> Add Milestone
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                  </div>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
                                         <div class="text-info-icon">
                                             <h6>Description</h6>
-                                            <span data-toggle="tooltip" data-placement="top" title="Use Shift+Enter to change the line in the below fields.">
+                                            <span data-toggle="tooltip" data-placement="top"
+                                                title="Use Shift+Enter to change the line in the below fields.">
                                                 <i class="icon-info-icon"></i>
                                             </span>
-                                        </div>  
-                                        <textarea placeholder="Describe the purpose of your test plan" class="form-control describe" ></textarea>
+                                        </div>
+                                        <textarea placeholder="Describe the purpose of your test plan"
+                                            class="form-control describe"></textarea>
                                     </div>
                                     <div class="col">
                                         <div class="text-info-icon">
                                             <h6>Assigned to</h6>
-                                            <span data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet.">
+                                            <span data-toggle="tooltip" data-placement="top"
+                                                title="Lorem ipsum dolor sit amet.">
                                                 <i class="icon-info-icon"></i>
                                             </span>
-                                        </div>  
-                                         
-                                        <input type="text" class="selectuser form-control" onclick="assigned_to('block')" ondblclick="assigned_to('none')" placeholder="Type or select a user">
+                                        </div>
+
+                                        <input type="text" class="selectuser form-control"
+                                            onclick="assigned_to('block')" ondblclick="assigned_to('none')"
+                                            placeholder="Type or select a user">
                                         <div class="search-list assigned-to-users" id="selectuser">
                                             <ul>
-                                              <li>
-                                                <div class="search-list-items">
-                                                  <img src="./assets/images/user-icon.png" alt="">
-                                                  <span class="name">Salman Ahmed</span>
-                                                  <span class="email">salmanahmed@example.com</span>
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <div class="search-list-items">
-                                                  <img src="./assets/images/user-icon.png" alt="">
-                                                  <span class="name">Salman Ahmed</span>
-                                                  <span class="email">salman.ahmed@example.com fff</span>
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <div class="search-list-items">
-                                                  <img src="./assets/images/user-icon.png" alt="">
-                                                  <span class="name">Salman Ahmed</span>
-                                                  <span class="email">salman..ahmed@example.com dd</span>
-                                                </div>
-                                              </li>
+                                                <li>
+                                                    <div class="search-list-items">
+                                                        <img src="./assets/images/user-icon.png" alt="">
+                                                        <span class="name">Salman Ahmed</span>
+                                                        <span class="email">salmanahmed@example.com</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="search-list-items">
+                                                        <img src="./assets/images/user-icon.png" alt="">
+                                                        <span class="name">Salman Ahmed</span>
+                                                        <span class="email">salman.ahmed@example.com fff</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="search-list-items">
+                                                        <img src="./assets/images/user-icon.png" alt="">
+                                                        <span class="name">Salman Ahmed</span>
+                                                        <span class="email">salman..ahmed@example.com dd</span>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
-                                        
+
                                         <div class="text-info-icon">
                                             <h6>Suite *</h6>
-                                            <span data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet.">
+                                            <span data-toggle="tooltip" data-placement="top"
+                                                title="Lorem ipsum dolor sit amet.">
                                                 <i class="icon-info-icon"></i>
                                             </span>
-                                        </div>  
-                                        
-                                        <input type="text" class="selectuser form-control" onclick="testsuite_list('block')" ondblclick="testsuite_list('none')" placeholder="Type or select a suite">
+                                        </div>
+
+                                        <input type="text" class="selectuser form-control"
+                                            onclick="testsuite_list('block')" ondblclick="testsuite_list('none')"
+                                            placeholder="Type or select a suite">
                                         <div class="search-list common-list" id="testsuite_list">
-                                                <ul>
+                                            <ul>
                                                 <li>
                                                     <div class="test-suite-list-items">
-                                                    <span class="name">Smoke Checklist - IOS - Execution </span> 
+                                                        <span class="name">Smoke Checklist - IOS - Execution </span>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="test-suite-list-items">
-                                                        <span class="name">Smoke Checklist - IOS - Execution </span> 
+                                                        <span class="name">Smoke Checklist - IOS - Execution </span>
                                                     </div>
                                                 </li>
                                                 <li class="last-item">
                                                     <div class="test-suite-list-items">
                                                         <a href="javascript:;">
-                                                            <i class="icon-icon-plus"></i> Add Test Suite
+                                                            <i class="icon-plus"></i> Add Test Suite
                                                         </a>
                                                     </div>
                                                 </li>
-                                                </ul>
+                                            </ul>
                                         </div>
 
                                     </div>
@@ -281,273 +295,329 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        
+
                                         <div class="empty-posts">
                                             <div class="row">
                                                 <div class="col-11">
                                                     <div class="boxes">
                                                         <i class="icon-info-icon"></i>
                                                         <div class="text-caption">
-                                                            <h4>There are currently no existing test runs in this test plan. Please add a test run.</h4>
-                                                            <h5>Testworthy automatically starts a corresponding test run</h5>
-                                                        </div> 
-                                                    </div>   
+                                                            <h4>There are currently no existing test runs in this test
+                                                                plan. Please add a test run.</h4>
+                                                            <h5>Testworthy automatically starts a corresponding test run
+                                                            </h5>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-1">
                                                     <div class="add-circle-icon">
-                                                        <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add Test Run">
-                                                            <i class="icon-icon-plus"></i>
-                                                        </a>    
+                                                        <a href="javascript:;" data-toggle="tooltip"
+                                                            data-placement="top" title=""
+                                                            data-original-title="Add Test Run">
+                                                            <i class="icon-plus"></i>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-  
+
                                     </div>
                                 </div>
 
 
                             </form>
                         </div>
- 
+
 
                         <div class="date-status">
                             <div>Test Runs</div>
                             <div class="add-circle-icon">
-                                <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add Test Run"> 
-                                    <i class="icon-icon-plus"></i>
-                                </a>    
+                                <a href="javascript:;" data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="Add Test Run">
+                                    <i class="icon-plus"></i>
+                                </a>
                             </div>
                         </div>
 
-                        
 
-                            <div class="testplans-list">
-                                <table class="table">
-                                  <thead>
+
+                        <div class="testplans-list">
+                            <table class="table">
+                                <thead>
                                     <tr>
-                                      <th class="checks">
-                                        <div class="custom-control custom-checkbox ">
-                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall" value="option0all">
-                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
-                                        </div>
-                                      </th>
-                                      <th class="names">Name</th>
-                                      <th class="cases">Cases</th>
-                                      <th class="configuration">Configuration</th>
-                                      <th class="assignedto">Assigned to</th>
-                                      <th class="suites">Suite</th>
+                                        <th class="checks">
+                                            <div class="custom-control custom-checkbox ">
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckboxall" value="option0all">
+                                                <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                            </div>
+                                        </th>
+                                        <th class="names">Name</th>
+                                        <th class="cases">Cases</th>
+                                        <th class="configuration">Configuration</th>
+                                        <th class="assignedto">Assigned to</th>
+                                        <th class="suites">Suite</th>
                                     </tr>
-        
-                                  </thead>
-                                </table>
-        
-                                <table class="table">
-                                  <tbody class="bodylist">
-                                   
+
+                                </thead>
+                            </table>
+
+                            <table class="table">
+                                <tbody class="bodylist">
+
                                     <tr>
-                                        
+
                                         <td class="checks">
                                             <div class="custom-control custom-checkbox ">
-                                            <input class="custom-control-input" type="checkbox" id="inlineCheckboxall" value="option0all">
-                                            <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckboxall" value="option0all">
+                                                <label class="custom-control-label" for="inlineCheckboxall"> </label>
                                             </div>
                                         </td>
                                         <td class="names">Test Run 04/28/2021 Thunder
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#edit-namedesc" ><i class="icon-ic_edit"></i></a>    
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#edit-namedesc"><i
+                                                        class="icon-ic_edit"></i></a>
                                             </span>
                                         </td>
-                                        <td class="cases">22 Selected 
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#edit-case" ><i class="icon-ic_edit"></i></a>
+                                        <td class="cases">22 Selected
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#testplan-tree"><i
+                                                        class="icon-ic_edit"></i></a>
                                             </span>
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#add-configuration" ><i class="icon-ic_edit"></i></a>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i
+                                                        class="icon-ic_edit"></i></a>
                                             </span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
-                                                <span class="name">Ahmed <label>Tester</label></span> 
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                    <a href="#" data-toggle="modal" data-target="#edit-assignedto" ><i class="icon-ic_edit"></i></a>
+                                                <span class="name">Ahmed <label>Tester</label></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit">
+                                                    <a href="#" data-toggle="modal" data-target="#edit-assignedto"><i
+                                                            class="icon-ic_edit"></i></a>
                                                 </span>
                                             </figure>
                                         </td>
                                         <td class="suites">
-                                             
-                                                <span data-toggle="popover" 
-                                                        data-placement="bottom" 
-                                                        data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
-                                                        Smoke Checkliist - IOS - Execution
-                                                </span>   
-                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-    
+
+                                            <span data-toggle="popover" data-placement="bottom"
+                                                data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+                                                Smoke Checkliist - IOS - Execution
+                                            </span>
+                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Delete"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
+
                                         </td>
-                                        
+
                                     </tr>
 
                                     <tr>
-                                        
+
                                         <td class="checks">
                                             <div class="custom-control custom-checkbox ">
-                                            <input class="custom-control-input" type="checkbox" id="inlineCheckboxall" value="option0all">
-                                            <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckboxall" value="option0all">
+                                                <label class="custom-control-label" for="inlineCheckboxall"> </label>
                                             </div>
                                         </td>
                                         <td class="names">Test Run 04/28/2021 Thunder
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="cases">22 Selected
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#" data-toggle="modal"
+                                                    data-target="#testplan-tree"><i class="icon-ic_edit"></i></a></span>
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
-                                                <span class="name">Ahmed <label>Tester</label></span> 
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="name">Ahmed <label>Tester</label></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
                                             </figure>
                                         </td>
-                                        <td class="suites"> 
-                                            <span data-toggle="popover" 
-                                                    data-placement="bottom" 
-                                                    data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
-                                                    Smoke Checkliist - IOS - Execution
-                                            </span>   
-                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-                                    </td>
-                                        
+                                        <td class="suites">
+                                            <span data-toggle="popover" data-placement="bottom"
+                                                data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+                                                Smoke Checkliist - IOS - Execution
+                                            </span>
+                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Delete"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
+                                        </td>
+
                                     </tr>
-                                    
+
                                     <tr>
-                                        
+
                                         <td class="checks">
                                             <div class="custom-control custom-checkbox ">
-                                            <input class="custom-control-input" type="checkbox" id="inlineCheckboxall" value="option0all">
-                                            <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckboxall" value="option0all">
+                                                <label class="custom-control-label" for="inlineCheckboxall"> </label>
                                             </div>
                                         </td>
                                         <td class="names">Test Run 04/28/2021 Thunder
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="cases">22 Selected
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#" data-toggle="modal"
+                                                    data-target="#testplan-tree"><i class="icon-ic_edit"></i></a></span>
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i
+                                                        class="icon-ic_edit"></i></a>
                                             </span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
-                                                <span class="name">Ahmed <label>Tester</label></span> 
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="name">Ahmed <label>Tester</label></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
                                             </figure>
                                         </td>
-                                        <td class="suites"> 
-                                                <span data-toggle="popover" 
-                                                        data-placement="bottom" 
-                                                        data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
-                                                        Smoke Checkliist - IOS - Execution
-                                                </span>   
-                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-    
+                                        <td class="suites">
+                                            <span data-toggle="popover" data-placement="bottom"
+                                                data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+                                                Smoke Checkliist - IOS - Execution
+                                            </span>
+                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Delete"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
+
                                         </td>
-                                        
+
                                     </tr>
 
                                     <tr>
-                                        
+
                                         <td class="checks">
                                             <div class="custom-control custom-checkbox ">
-                                            <input class="custom-control-input" type="checkbox" id="inlineCheckboxall" value="option0all">
-                                            <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckboxall" value="option0all">
+                                                <label class="custom-control-label" for="inlineCheckboxall"> </label>
                                             </div>
                                         </td>
                                         <td class="names">Test Run 04/28/2021 Thunder
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="cases">22 Selected
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#" data-toggle="modal"
+                                                    data-target="#testplan-tree"><i class="icon-ic_edit"></i></a></span>
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
-                                                <span class="name">Ahmed <label>Tester</label></span> 
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="name">Ahmed <label>Tester</label></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
                                             </figure>
                                         </td>
-                                        <td class="suites"> 
-                                                <span data-toggle="popover" 
-                                                        data-placement="bottom" 
-                                                        data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
-                                                        Smoke Checkliist - IOS - Execution
-                                                </span>   
-                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
+                                        <td class="suites">
+                                            <span data-toggle="popover" data-placement="bottom"
+                                                data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+                                                Smoke Checkliist - IOS - Execution
+                                            </span>
+                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Delete"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
 
                                         </td>
-                                        
+
                                     </tr>
 
                                     <tr>
-                                        
+
                                         <td class="checks">
                                             <div class="custom-control custom-checkbox ">
-                                            <input class="custom-control-input" type="checkbox" id="inlineCheckboxall" value="option0all">
-                                            <label class="custom-control-label" for="inlineCheckboxall"> </label>
+                                                <input class="custom-control-input" type="checkbox"
+                                                    id="inlineCheckboxall" value="option0all">
+                                                <label class="custom-control-label" for="inlineCheckboxall"> </label>
                                             </div>
                                         </td>
                                         <td class="names">Test Run 04/28/2021 Thunder
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="cases">22 Selected
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit"><a href="#" data-toggle="modal"
+                                                    data-target="#testplan-tree"><i class="icon-ic_edit"></i></a></span>
 
                                         </td>
                                         <td class="configuration">IOS, Android
-                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
-                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i class="icon-ic_edit"></i></a></span>
+                                            <span class="edit-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Edit">
+                                                <a href="#" data-toggle="modal" data-target="#add-configuration"><i
+                                                        class="icon-ic_edit"></i></a></span>
                                         </td>
                                         <td class="assignedto">
                                             <figure><img src="./assets/images/user-icon.png" alt="">
-                                                <span class="name">Ahmed <label>Tester</label></span> 
-                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><a href="#"><i class="icon-ic_edit"></i></a></span>
+                                                <span class="name">Ahmed <label>Tester</label></span>
+                                                <span class="edit-icon" data-toggle="tooltip" data-placement="top"
+                                                    title="" data-original-title="Edit"><a href="#"><i
+                                                            class="icon-ic_edit"></i></a></span>
                                             </figure>
                                         </td>
-                                        <td class="suites"> 
-                                            <span data-toggle="popover" 
-                                                    data-placement="bottom" 
-                                                    data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
-                                                    Smoke Checkliist - IOS - Execution
-                                            </span>   
-                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-                                    </td>
-                                        
-                                    </tr>
-         
-                                  </tbody>
-        
-                                </table>
+                                        <td class="suites">
+                                            <span data-toggle="popover" data-placement="bottom"
+                                                data-content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+                                                Smoke Checkliist - IOS - Execution
+                                            </span>
+                                            <span class="trash-icon" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Delete"><a href="#"><i
+                                                        class="icon-trash"></i></a></span>
+                                        </td>
 
-                                <div class="modal-footer formrelative">
-                                    <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-secondary-color">Add Test Plan</button>
-                                  </div>
-        
-                              </div>
-  
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                            <div class="modal-footer formrelative">
+                                <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-secondary-color">Add Test Plan</button>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <!--testplan-content-row End tab -->
@@ -572,8 +642,424 @@
 
 
 
+            <!-- Modal Section -->
+            <section class="modal-section testplan-tree-section tree-modal-section">
+                <!--Modal Add testplan Start-->
+                <div class="modal  testplan-modals tree-modal " id="testplan-tree" tabindex="-1" role="dialog"
+                    aria-labelledby="testplan-treeLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
 
- 
+                        <!--Modal tree content  Start-->
+                        <div class="modal-content testplan-tree-content tree-modal-content">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="modal-side-color">
+                                    </div>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Select Cases</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="selected-cases">
+                                                <span>22 out of 170 cases selected</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4 cases-selection tree-section">
+                                                    <div class="cases-selection__head">
+                                                        <span>Select - <a href="#">All</a> <a href="#">None</a></span>
+                                                    </div>
+                                                    <div id="jstree">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-sm-8 pl-0">
+                                                    <div class="row d-flex">
+                                                        <div class=" login-auth flex-1 tree-section ">
+                                                            <div class="login-auth__head mb-3">
+                                                                <span>Login -
+                                                                    <span class="dropdown dropdown-xs">
+                                                                        <a href="#" role="button" id="dropdownMenuLink1"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">Authentication</a>
+                                                                        <div class="dropdown-menu "
+                                                                            aria-labelledby="dropdownMenuLink1">
+                                                                            <a class="dropdown-item"
+                                                                                href="#">Installation</a>
+                                                                            <a class="dropdown-item"
+                                                                                href="#">Tutorial</a>
+                                                                            <a class="dropdown-item" href="#">Role
+                                                                                Permissions</a>
+                                                                            <a class="dropdown-item" href="#">Section
+                                                                                5</a>
+                                                                            <a class="dropdown-item" href="#">Build
+                                                                                Verion 2</a>
+                                                                            <a class="dropdown-item" href="#">Deep
+                                                                                Linking</a>
+                                                                        </div>
+                                                                    </span>
+
+                                                                    <i class="icon-chevron-right"></i> <span
+                                                                        class="ellipsis-dots">....</span> <i
+                                                                        class="icon-chevron-right"></i> <a
+                                                                        href="#">Build
+                                                                        Version
+                                                                        2</a> <i class="icon-chevron-right"></i> <a
+                                                                        href="#">Deep
+                                                                        Linking</a>
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="cases-selection__head">
+                                                                <span>Select - <a href="#">All</a> <a
+                                                                        href="#">None</a></span>
+                                                            </div>
+
+                                                            <div id="event_result" class="cases-selection__body">
+                                                            </div>
+
+                                                            <div class="filter-open-button">
+                                                                <button id="close-filter-btn"
+                                                                    class="btn btn-secondary-color close-btn">
+                                                                    <i class="icon-chevron-right"></i>
+                                                                </button>
+
+                                                                <button id="open-filter-btn"
+                                                                    class="btn btn-secondary-color open-btn" hidden>
+                                                                    <i class="icon-left-chevron"></i>
+                                                                    Filters
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div id="filter-col" class=" apply-filters tree-section ">
+
+                                                            <div class="apply-filters__head">
+                                                                <div class="dropdown dropdown-xs">
+                                                                    <button class="btn btn-secondary-color "
+                                                                        id="dropdownMenuLink2" data-toggle="dropdown"
+                                                                        aria-haspopup="true" aria-expanded="false">Apply
+                                                                        Filters
+                                                                        <i class="icon-chevron-down"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink2">
+                                                                        <a class="dropdown-item" href="#">Set
+                                                                            Selection</a>
+                                                                        <a class="dropdown-item" href="#">Add to
+                                                                            Selection</a>
+                                                                        <a class="dropdown-item" href="#">Remove from
+                                                                            Selection</a>
+
+                                                                    </div>
+                                                                </div>
+                                                                <span data-toggle="tooltip" data-placement="top"
+                                                                    title="Reset Filters" data-original-title=""><i
+                                                                        class="icon-refresh"></i></span>
+                                                            </div>
+
+                                                            <div class="apply-filters-accordion">
+
+                                                                <div class="accordion" id="accordionExample1">
+
+                                                                    <div class="accordion__head" id="heading1">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse1"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse1">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Automation Type</span>
+                                                                    </div>
+
+                                                                    <div id="collapse1" class="collapse "
+                                                                        aria-labelledby="heading1"
+                                                                        data-parent="#accordionExample1">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="accordion" id="accordionExample2">
+
+                                                                    <div class="accordion__head" id="headingOne">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse2"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse2">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Created By</span>
+                                                                    </div>
+
+                                                                    <div id="collapse2" class="collapse "
+                                                                        aria-labelledby="heading2"
+                                                                        data-parent="#accordionExample2">
+                                                                        <div class="accordion-body">
+                                                                            <input type="text"
+                                                                                class="selectuser form-control"
+                                                                                onclick="milestone_list('milestone-list5','block')"
+                                                                                ondblclick="milestone_list('milestone-list5','none')"
+                                                                                placeholder="">
+                                                                            <div class="search-list assigned-to-users common-list"
+                                                                                id="milestone-list5">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <div
+                                                                                            class="milestone-list-items">
+                                                                                            <span class="name">Milestone
+                                                                                                1</span>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div
+                                                                                            class="milestone-list-items">
+                                                                                            <span class="name">Milestone
+                                                                                                2</span>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div
+                                                                                            class="milestone-list-items">
+                                                                                            <span class="name">Milestone
+                                                                                                1</span>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="accordion" id="accordionExample3">
+
+                                                                    <div class="accordion__head" id="headingOne">
+                                                                        <button class="btn shadow-none p-0 "
+                                                                            id="tree-caret-button" type="button"
+                                                                            data-toggle="collapse"
+                                                                            data-target="#collapse3"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse3">
+                                                                            <i class="icon-caret-right "></i>
+                                                                        </button>
+                                                                        <span>Created On</span>
+                                                                    </div>
+
+                                                                    <div id="collapse3" class="collapse"
+                                                                        aria-labelledby="heading3"
+                                                                        data-parent="#accordionExample3">
+                                                                        <div
+                                                                            class="accordion-body accordion-date-filter ">
+                                                                            <div class="date-picker">
+                                                                                <input type="text" name="daterange"
+                                                                                    value="01/01/2018 - 01/15/2018"
+                                                                                    id="clear_input" hidden>
+                                                                                <span><a href="javascript: void(0)"
+                                                                                        id="clear_cross" class="clear"
+                                                                                        onclick="clear_date_tree(this)"
+                                                                                        hidden>×</a><a
+                                                                                        href="javascript: void(0)"
+                                                                                        id="daterange"><i
+                                                                                            class="icon-date-icon"></i></a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="accordion" id="accordionExample4">
+
+                                                                    <div class="accordion__head" id="heading4">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse4"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse4">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Priority</span>
+                                                                    </div>
+
+                                                                    <div id="collapse4" class="collapse "
+                                                                        aria-labelledby="heading4"
+                                                                        data-parent="#accordionExample4">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+
+                                                                <div class="accordion" id="accordionExample5">
+
+                                                                    <div class="accordion__head" id="heading5">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse5"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse5">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Status</span>
+                                                                    </div>
+
+                                                                    <div id="collapse5" class="collapse "
+                                                                        aria-labelledby="heading5"
+                                                                        data-parent="#accordionExample5">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="accordion" id="accordionExample6">
+
+                                                                    <div class="accordion__head" id="heading6">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse6"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse6">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Title</span>
+                                                                    </div>
+
+                                                                    <div id="collapse6" class="collapse "
+                                                                        aria-labelledby="heading6"
+                                                                        data-parent="#accordionExample6">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="accordion" id="accordionExample7">
+
+                                                                    <div class="accordion__head" id="heading7">
+                                                                        <button class="btn shadow-none p-0"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#collapse7"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapse7">
+                                                                            <i class="icon-caret-right"></i>
+                                                                        </button>
+                                                                        <span>Type</span>
+                                                                    </div>
+
+                                                                    <div id="collapse7" class="collapse "
+                                                                        aria-labelledby="heading7"
+                                                                        data-parent="#accordionExample7">
+                                                                        <div class="accordion-body ">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Smoke</label><br>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input class="custom-control-input"
+                                                                                    type="checkbox">
+                                                                                <label class="custom-control-label"
+                                                                                    for="">Regression</label><br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                        <div id="empty-div" class="filter-empty-box" hidden>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-light-border"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary-color">Select</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal testplan-tree content  End-->
+                    </div>
+                </div>
+                <!--Add modal End-->
+            </section>
+
+
+
+
+
 
             <!-- Modal Section -->
 
@@ -601,156 +1087,181 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
- 
+
                                             <div id="accordion" class="panel-group">
 
                                                 <div class="panel addgroup">
-                                                  <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                    <a href="#panelBodyOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
-                                                        Add a new group
-                                                    </a>
-                                                    </h4>
-                                                  </div>
-                                                  <div id="panelBodyOne" class="panel-collapse collapse in">
-                                                    <div class="panel-body">
-                                                        
-                                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                            <input type="text" placeholder="Operating System" class="input_field">
-                                                            <button type="button" class="btn btn-light-border" data-dismiss="modal">
-                                                                Add
-                                                            </button>
-                                                        </div>
-
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a href="#panelBodyOne" class="accordion-toggle"
+                                                                data-toggle="collapse" data-parent="#accordion"
+                                                                aria-expanded="false">
+                                                                Add a new group
+                                                            </a>
+                                                        </h4>
                                                     </div>
-                                                  </div>
-                                                </div>
+                                                    <div id="panelBodyOne" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
 
-                                                <div class="panel addconfig">
-                                                  <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                    <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false
-                                                    ">
-                                                        Add Configuration 
-                                                    </a>
-                                                    
-                                                    </h4>
-                                                  </div>
-                                                  <div id="panelBodyTwo" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        
-                                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                            <div class="date">
-                                                                <div class="text-info-icon">
-                                                                    <h6>Configuration *</h6>
-                                                                    <span>
-                                                                        <i class="icon-warning"></i> Required field
-                                                                    </span>
-                                                                </div>
-            
-                                                                <input type="text" placeholder="Windows 10, iOS 8 or Firefox" class="input_field required">
-                                                            </div>
-                                                            <div class="date">
-                                                                <div class="text-info-icon">
-                                                                    <h6>Group *</h6> 
-                                                                </div>
-            
-                                                                <select class="input_field selectuser">
-                                                                    <option value="Operating System">
-                                                                        Operating System
-                                                                    </option>
-                                                                </select>
-
-                                                            </div>
-
-                                                        </div>
-                                                        
-                                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                           <div class="mb-3">&nbsp;</div>
-                                                           <div class="mb-3">
-                                                                <button type="button" class="btn btn-light-border" data-dismiss="modal">
+                                                            <div
+                                                                class="mb-3 d-flex justify-content-between align-items-center">
+                                                                <input type="text" placeholder="Operating System"
+                                                                    class="input_field">
+                                                                <button type="button" class="btn btn-light-border"
+                                                                    data-dismiss="modal">
                                                                     Add
                                                                 </button>
                                                             </div>
-                                                        </div> 
-                                                             
-                                                        
 
-
+                                                        </div>
                                                     </div>
-                                                  </div>
                                                 </div>
-                                               
+
+                                                <div class="panel addconfig">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a href="#panelBodyTwo" class="accordion-toggle collapsed"
+                                                                data-toggle="collapse" data-parent="#accordion"
+                                                                aria-expanded="false
+                                                    ">
+                                                                Add Configuration
+                                                            </a>
+
+                                                        </h4>
+                                                    </div>
+                                                    <div id="panelBodyTwo" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+
+                                                            <div
+                                                                class="mb-3 d-flex justify-content-between align-items-center">
+                                                                <div class="date">
+                                                                    <div class="text-info-icon">
+                                                                        <h6>Configuration *</h6>
+                                                                        <span>
+                                                                            <i class="icon-warning"></i> Required field
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <input type="text"
+                                                                        placeholder="Windows 10, iOS 8 or Firefox"
+                                                                        class="input_field required">
+                                                                </div>
+                                                                <div class="date">
+                                                                    <div class="text-info-icon">
+                                                                        <h6>Group *</h6>
+                                                                    </div>
+
+                                                                    <select class="input_field selectuser">
+                                                                        <option value="Operating System">
+                                                                            Operating System
+                                                                        </option>
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div
+                                                                class="mb-3 d-flex justify-content-between align-items-center">
+                                                                <div class="mb-3">&nbsp;</div>
+                                                                <div class="mb-3">
+                                                                    <button type="button" class="btn btn-light-border"
+                                                                        data-dismiss="modal">
+                                                                        Add
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                              
+
                                             <div class="search-list collab">
                                                 <table class="table">
-                                                  <thead>
-                                                    <tr>
-                                                      <th class="checks">
-                                                        <div class="custom-control custom-checkbox ">
-                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
-                                                            value="option0all">
-                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
-                                                        </div>
-                                                      </th>
-                                                      <th class="config">Configuration</th>
-                                                      <th class="group">Group</th> 
-                                                    </tr>
-                        
-                                                  </thead>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="checks">
+                                                                <div class="custom-control custom-checkbox ">
+                                                                    <input class="custom-control-input" type="checkbox"
+                                                                        id="inlineCheckboxall" value="option0all">
+                                                                    <label class="custom-control-label"
+                                                                        for="inlineCheckboxall"> </label>
+                                                                </div>
+                                                            </th>
+                                                            <th class="config">Configuration</th>
+                                                            <th class="group">Group</th>
+                                                        </tr>
+
+                                                    </thead>
                                                 </table>
-                        
+
                                                 <table class="table">
-                                                  <tbody>
-                                                    
-                                                    <tr>
-                                                      <td class="checks">
-                                                        <div class="custom-control custom-checkbox ">
-                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
-                                                            value="option0all">
-                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
-                                                        </div>
-                                                      </td>
-                                                      <td class="config">iPhone 7</td>
-                                                      <td class="group">Devices
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-                                                      </td> 
-                                                    </tr>
+                                                    <tbody>
 
-                                                    <tr>
-                                                      <td class="checks">
-                                                        <div class="custom-control custom-checkbox ">
-                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
-                                                            value="option0all">
-                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
-                                                        </div>
-                                                      </td>
-                                                      <td class="config">iPhone 7</td>
-                                                      <td class="group">Devices
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-                                                      </td> 
-                                                    </tr>
+                                                        <tr>
+                                                            <td class="checks">
+                                                                <div class="custom-control custom-checkbox ">
+                                                                    <input class="custom-control-input" type="checkbox"
+                                                                        id="inlineCheckboxall" value="option0all">
+                                                                    <label class="custom-control-label"
+                                                                        for="inlineCheckboxall"> </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="config">iPhone 7</td>
+                                                            <td class="group">Devices
+                                                                <span class="trash-icon" data-toggle="tooltip"
+                                                                    data-placement="top" title=""
+                                                                    data-original-title="Delete"><a href="#"><i
+                                                                            class="icon-trash"></i></a></span>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr>
-                                                      <td class="checks">
-                                                        <div class="custom-control custom-checkbox ">
-                                                          <input class="custom-control-input" type="checkbox" id="inlineCheckboxall"
-                                                            value="option0all">
-                                                          <label class="custom-control-label" for="inlineCheckboxall"> </label>
-                                                        </div>
-                                                      </td>
-                                                      <td class="config">iPhone 7</td>
-                                                      <td class="group">Devices
-                                                        <span class="trash-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><a href="#"><i class="icon-trash"></i></a></span>
-                                                      </td> 
-                                                    </tr>
-                        
-                                                  </tbody>
-                        
+                                                        <tr>
+                                                            <td class="checks">
+                                                                <div class="custom-control custom-checkbox ">
+                                                                    <input class="custom-control-input" type="checkbox"
+                                                                        id="inlineCheckboxall" value="option0all">
+                                                                    <label class="custom-control-label"
+                                                                        for="inlineCheckboxall"> </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="config">iPhone 7</td>
+                                                            <td class="group">Devices
+                                                                <span class="trash-icon" data-toggle="tooltip"
+                                                                    data-placement="top" title=""
+                                                                    data-original-title="Delete"><a href="#"><i
+                                                                            class="icon-trash"></i></a></span>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="checks">
+                                                                <div class="custom-control custom-checkbox ">
+                                                                    <input class="custom-control-input" type="checkbox"
+                                                                        id="inlineCheckboxall" value="option0all">
+                                                                    <label class="custom-control-label"
+                                                                        for="inlineCheckboxall"> </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="config">iPhone 7</td>
+                                                            <td class="group">Devices
+                                                                <span class="trash-icon" data-toggle="tooltip"
+                                                                    data-placement="top" title=""
+                                                                    data-original-title="Delete"><a href="#"><i
+                                                                            class="icon-trash"></i></a></span>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+
                                                 </table>
                                             </div>
-                                             
+
                                         </div>
                                         <div class="modal-footer ">
                                             <button type="button" class="btn btn-light-border"
@@ -766,7 +1277,7 @@
 
                     </div>
                 </div>
-                 
+
                 <div class="modal  milestone-modals" id="edit-namedesc" tabindex="-1" role="dialog"
                     aria-labelledby="edit-milestoneLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -800,7 +1311,7 @@
                                                 <input type="text" placeholder="Test Run 04/28/2021 Thunder"
                                                     class="input_field">
                                             </div>
-   
+
                                             <div class="mb-3">
                                                 <div class="text-info-icon">
                                                     <h6>Description</h6>
@@ -813,7 +1324,7 @@
 
                                                 <textarea name="" id="" cols="2" rows="4"></textarea>
                                             </div>
-  
+
                                         </div>
                                         <div class="modal-footer ">
                                             <button type="button" class="btn btn-light-border"
@@ -837,70 +1348,73 @@
                         <!--Modal add-milestone content  Start-->
                         <div class="modal-content edit-project">
                             <div class="row">
-                              <div class="col-md-2">
-                                <div class="modal-side-color">
-                                </div>
-                              </div>
-                              <div class="col-md-10">
-                                <div class="modal-body-container pr-4 pt-4 pb-4">
-                                  <div class="modal-header">
-                                    <h4 class="modal-title" id="exampleModalLabel">Edit User</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true" class="close_cross">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                       
-                                    <div class="mb-3">
-                                      <h6>Assigned to</h6>
-                                      <div class="edit-tags" onclick="edit_searchList('block')" ondblclick="edit_searchList('none')">
-                                        <ul>
-                                          <li>
-                                            <span>
-                                              <img src="./assets/images/user-icon.png" alt=""> <label for="" class="tag-label">Ahmed
-                                                Ali</label> <a href="">×</a></span>
-                                          </li>
-                                            
-                                        </ul>
-                                      </div>
+                                <div class="col-md-2">
+                                    <div class="modal-side-color">
                                     </div>
-              
-                                    <div class="search-list" id="list_search_edit">
-                                      <ul>
-                                        <li>
-                                          <div class="search-list-items">
-                                            <img src="./assets/images/user-icon.png" alt="">
-                                            <span class="name">Salman Ahmed</span>
-                                            <span class="email">salmanahmed@example.com</span>
-                                          </div>
-                                        </li>
-                                        <li>
-                                          <div class="search-list-items">
-                                            <img src="./assets/images/user-icon.png" alt="">
-                                            <span class="name">Salman Ahmed</span>
-                                            <span class="email">salman.ahmed@example.com fff</span>
-                                          </div>
-                                        </li>
-                                        <li>
-                                          <div class="search-list-items">
-                                            <img src="./assets/images/user-icon.png" alt="">
-                                            <span class="name">Salman Ahmed</span>
-                                            <span class="email">salman..ahmed@example.com dd</span>
-                                          </div>
-                                        </li>
-                                      </ul>
-                                    </div>
-               
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-secondary-color">Save Changes</button>
-                                  </div>
                                 </div>
-                              </div>
+                                <div class="col-md-10">
+                                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Edit User</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="close_cross">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="mb-3">
+                                                <h6>Assigned to</h6>
+                                                <div class="edit-tags" onclick="edit_searchList('block')"
+                                                    ondblclick="edit_searchList('none')">
+                                                    <ul>
+                                                        <li>
+                                                            <span>
+                                                                <img src="./assets/images/user-icon.png" alt=""> <label
+                                                                    for="" class="tag-label">Ahmed
+                                                                    Ali</label> <a href="">×</a></span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="search-list" id="list_search_edit">
+                                                <ul>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <img src="./assets/images/user-icon.png" alt="">
+                                                            <span class="name">Salman Ahmed</span>
+                                                            <span class="email">salmanahmed@example.com</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <img src="./assets/images/user-icon.png" alt="">
+                                                            <span class="name">Salman Ahmed</span>
+                                                            <span class="email">salman.ahmed@example.com fff</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="search-list-items">
+                                                            <img src="./assets/images/user-icon.png" alt="">
+                                                            <span class="name">Salman Ahmed</span>
+                                                            <span class="email">salman..ahmed@example.com dd</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light-border"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary-color">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-              
-                          </div>
+
+                        </div>
                         <!--Modal add-milestone content  End-->
 
                     </div>
@@ -908,7 +1422,7 @@
 
 
 
-                
+
                 <!--Add modal End-->
 
 
@@ -917,7 +1431,7 @@
 
 
             <section class="popup-section">
- 
+
                 <!--Delete Modal Start-->
                 <div class="modal fade confirm-modal" id="ms-deleteModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1068,7 +1582,7 @@
                     </div>
                 </div>
                 <!--Mark Complete modal End-->
- 
+
 
             </section>
 
@@ -1097,6 +1611,9 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

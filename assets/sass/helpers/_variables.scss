@@ -39,6 +39,8 @@ $danger: #e71e1e;
 $danger-light: #feebeb;
 $scroll-color: #e4e4e4;
 $grey: rgba(255, 255, 255, 0.22);
+$secondary-text-color:#767677;
+$grey-lighter:#e7e8ec;
 
 // Compass utilities
 
@@ -52,10 +54,11 @@ $primary-color-green: #15c7a8;
 $primary-color-orange: #eb7d4b;
 $primary-color-white: #ffffff;
 $primary-color-span: #3c4761;
+$link-color: $sky-blue-200;
 
-// box shadow
-$shadow: 2px 2px 5px rgba(192, 192, 192, 0.2);
-$shadow2: 0 10px 31px 0 rgba(0, 96, 137, 0.16);
+// box shadow 
+$shadow:2px 2px 5px rgba(192, 192, 192, 0.2);
+$shadow2 :0 10px 31px 0 rgba(0, 96, 137, 0.16);
 $shadow3: 0 10px 49px 0 rgba(0, 0, 0, 0.13);
 
 // Typography Family

@@ -89,6 +89,18 @@ a:hover {
   }
 }
 
+.flex-1 {
+  flex: 1 !important;
+}
+
+.text-black {
+  color: black;
+}
+
+.tooltip-inner {
+  max-width: rem(461);
+}
+
 // Make images easier to work with
 // img {
 //   // max-width: 100%;

@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bd48405e16.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link rel="stylesheet" href="./assets/dist/style.css">
+    <title>Testworthy</title>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="sticky-top">
+        <div class="head-logo">
+            <a href="#"><img src="./assets/images/Testworthy.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu-btn">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="header-back header-settings">
+            <label for=""><a href="#" class="arrow-back"><img src="./assets/images/arrow-left.png" alt=""> </a> <span>
+                    <a href="#">Settings</a>
+                </span></label>
+
+        </div>
+        <div class="user ml-auto">
+            <div class="user-group">
+                <div class="user-text">
+                    <span>Hello,</span><strong> Ahmed</strong>
+                    <br>
+                    <p class="text-right">Admin</p>
+                </div>
+                <div class="user-icon">
+                    <span><img src="./assets/images/user-icon.png" alt=""></span>
+                </div>
+            </div>
+            <div class="caret-down">
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Integration</a>
+                        <a class="dropdown-item" href="#">Subscription</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- side bar section start  -->
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-hamburger">
+            <label for="nav-toggle"><span><i class="fas fa-bars"></i></span></label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="index.html"><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
+                <li><a href=""><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
+                <li><a href="integration.html"><span><i class="icon-integration"></i></span>
+                        <span>Integration</span></a></li>
+                <li><a href="settings.html" class="active"> <span><i class="icon-settings"></i></span>
+                        <span>Settings</span></a></li>
+                <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- side bar section end -->
+    <!-- Main content -->
+
+    <div class="main-content">
+        <div class="container-fluid">
+            <!-- Settings section start -->
+
+            <div class="settings-personal">
+                <div class="mt-4 mb-2">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-auto mb-3">
+                            <div>
+                                <h4 class="font-weight-bold">Hey, Ahmed</h4>
+                            </div>
+
+                            <div class="edit-text p-none">
+                                <p>Change your profile settings and preferences here.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row tab-details" id="tab1">
+                    <div class="col-md-12">
+                        <div class="setting-tabs mb-4">
+                            <ul class="nav tabs custom-tabs nav-pills border_class" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-personal-info" data-toggle="pill"
+                                        href="#pills-personal" role="tab" aria-controls="pills-personal"
+                                        aria-selected="true">
+                                        Personal info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-login-security" data-toggle="pill" href="#pills-login"
+                                        role="tab" aria-controls="pills-login" aria-selected="false"> Login &
+                                        Security</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-subscription-card" data-toggle="pill"
+                                        href="#pills-subscription" role="tab" aria-controls="pills-subscription"
+                                        aria-selected="false"> Subscription & Card Payment </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <!-- Personal Info Starts -->
+                            <div class="tab-pane  show active" id="pills-personal" role="tabpanel"
+                                aria-labelledby="pills-personal-info">
+
+                                <div class="row mb-4 mt-5">
+                                    <div class="col-md-3 mt-4">
+                                        <div class="report-box">
+                                            <img src="./assets/images/personal-main.svg" alt="report-banner"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="report-box">
+                                            <div class="mb-4">
+                                                <h6>Firt Name*</h6>
+                                                <input type="text" value="Ahmed" class="form-control input_field"
+                                                    placeholder="">
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <h6>Last Name*</h6>
+                                                <input type="text" value="Ali" class="form-control input_field"
+                                                    placeholder="">
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <h6>Email Address*</h6>
+                                                <input type="text" value="Ahmedali@example.com"
+                                                    class="form-control input_field disabled" placeholder="" disabled>
+                                            </div>
+
+
+                                            <div class="mb-4">
+                                                <h6>Job Title*</h6>
+                                                <input type="text" class="form-control input_field" placeholder="">
+                                            </div>
+
+
+                                            <div class="mb-2">
+                                                <h6>Organization*</h6>
+                                                <input type="text" class="form-control input_field" placeholder="">
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 mt-4 centered d-aligned">
+                                        <div class="avatar-wrap">
+                                            <div class="edit_image">
+                                                <button type="button" class="btn" data-toggle="modal"
+                                                    data-target="#imageModal">
+
+                                                    <img alt="" src="./assets/images/edit-icon.svg"></button>
+                                            </div>
+
+                                            <div class="image-box thumbnail d-none">
+                                                <img src="./assets/images/avatar.svg" alt="report-banner"
+                                                    class="img-fluid">
+                                            </div>
+
+                                            <div class="image-box ">
+                                                <img src="./assets/images/avatar-1.svg" alt="report-banner"
+                                                    class="img-fluid">
+                                            </div>
+
+
+                                            <span class="validate">
+                                                Maximum File Size: 10 Mb<br>
+                                                Acceptable formats: <br>
+                                                JPEG, PNG, JPG and BMP
+                                            </span>
+
+                                            <span class="validate validate-unsp  d-none">
+                                                Unsupported file format.<br>
+                                                Acceptable formats:<br> JPEG, PNG, JPG and BMP
+                                            </span>
+
+
+
+                                            <span class="validate validate-err  d-none">
+                                                File size exceeds limit. <br>
+                                                Maximum File Size: 10 Mb
+                                            </span>
+                                        </div>
+
+                                        <div class="btn btn-svchanges">
+                                            <button type="button" class="btn btn-secondary-color">Save
+                                                Changes</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Personal Info End  -->
+
+                            <!-- Login & Security End  -->
+
+                            <div class="tab-pane " id="pills-login" role="tabpanel"
+                                aria-labelledby="pills-login-security">
+                                <div class="row mb-4 mt-5">
+                                    <div class="col-md-5">
+                                        <div class="report-box">
+                                            <div class="mb-5">
+                                                <h5 class="secuirty-innerheading">Change Password</h5>
+                                            </div>
+                                            <div class="mb-4">
+                                                <h6>Current Password *</h6>
+                                                <input type="text" value="Password12345!"
+                                                    class="form-control input_field" placeholder="">
+                                            </div>
+                                            <div class="mb-4">
+                                                <h6>New Password *</h6>
+                                                <input type="password" value="AhmedAli1234"
+                                                    class="form-control input_field" placeholder="">
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <h6>Confirm Password *</h6>
+                                                <input type="password" value="AhmedAli1234"
+                                                    class="form-control input_field" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        <!-- Login & Security End  -->
+
+                        <!-- Subscription & Card Payment Starts  -->
+
+                        <div class="tab-pane " id="pills-subscription" role="tabpanel"
+                            aria-labelledby="pills-subscription-card">
+                            <div class="row mt-5">
+                                <div class="col-md-12">
+                                    <div class="date-status">
+                                        <span>Tuesday,April 30th,2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 changes-row">
+                                <div class="col-md-8">
+                                    <div class="btn-text">
+                                        <button class="btn btn-warning-color shadow-none">Retest</button>
+                                        <span>Verify Password strength for forget password.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="icon-user-text">
+                                        <div class="icon-user">
+                                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                                        </div>
+                                        <div class="text-user">
+                                            <strong>Ahmed</strong>
+                                            <br>
+                                            <p>Tester</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="tested-time">
+                                        <span>Tested</span>
+                                        <p>5:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row  mb-4 changes-row">
+                                <div class="col-md-8">
+                                    <div class="btn-text">
+                                        <button class="btn btn-warning-color shadow-none">Retest</button>
+                                        <span>Verify Password strength for forget password.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="icon-user-text">
+                                        <div class="icon-user">
+                                            <span><img src="./assets/images/user-icon.png" alt=""></span>
+                                        </div>
+                                        <div class="text-user">
+                                            <strong>Ahmed</strong>
+                                            <br>
+                                            <p>Tester</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="tested-time">
+                                        <span>Tested</span>
+                                        <p>5:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subscription & Card Payment Starts  -->
+
+                    </div> <!-- Tab Content end   -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings section end -->
+    </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</body>
+
+</html>

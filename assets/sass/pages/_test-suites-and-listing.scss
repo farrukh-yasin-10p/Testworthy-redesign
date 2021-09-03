@@ -1,0 +1,72 @@
+.test-suites-section {
+  .sort-by {
+    .row {
+      width: 100%;
+    }
+  }
+  .date-status {
+    display: none;
+  }
+
+  .select-row-list {
+    margin-top: rem(31);
+    li {
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+
+  .run-test {
+    width: 151px;
+    border: 1px solid $grey-200;
+    color: $grey-200;
+  }
+
+  .gridboxes {
+    &__boxes {
+      .description-row {
+        height: rem(120);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .profile-img-name {
+        max-width: inherit;
+      }
+      .icon-test-case {
+        width: rem(80);
+        height: rem(66);
+        font-size: rem(55);
+        color: #1eaae7;
+        position: relative;
+        top: rem(2);
+      }
+      .creation-date {
+        font-size: 12px;
+        color: #626263;
+        margin-right: rem(11);
+      }
+
+      .gridbox-description {
+        font-size: rem(14);
+        color: $grey-600;
+        margin-bottom: rem(10);
+      }
+      .cases-and-sections {
+        &:nth-child(1) {
+          margin-right: rem(130);
+        }
+        span {
+          color: $secondary;
+          &:nth-child(1) {
+            font-size: rem(36);
+          }
+          &:nth-child(2) {
+            font-size: rem(18);
+          }
+        }
+      }
+    }
+  }
+}

@@ -64,6 +64,13 @@
     }
   }
 
+  &.btn-light {
+    //border: rem(2) solid $grey-300;
+    color: $grey-300;
+    background-color: $primary-100;
+    color: black;
+  }
+
   &.btn-secondary-color {
     background-color: $secondary;
     color: white;

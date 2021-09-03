@@ -18096,6 +18096,7 @@ $(function () {
   });
 });
 
+
 $(function () {
   $("#single-date").daterangepicker(
     {
@@ -18245,12 +18246,14 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     items: 1,
+    smartSpeed: 800,
     nav: true,
     navText: [
       "<i class='fas fa-caret-left'></i>",
       "<i class='fas fa-caret-right'></i>",
     ],
   });
+
    // Owl Carousel Query End
 
 
@@ -18530,5 +18533,54 @@ else{
     return false;
   });
   // Test Changes & History Tabs Toggle End
+
+
+  //Report btn toggle
+  function reportbtn(a){
+     var input = document.getElementById('report-input'); 
+     input.removeAttribute('hidden');
+      a.hidden = true;
+
+  }
+
+
+// Project Cards Carousel 
+  jQuery("#carousel").owlCarousel({
+    //autoplay: true,
+    lazyLoad: true,
+    loop: true,
+    margin: 10,
+     /*
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    */
+    navText: [
+      "<i class='fas fa-caret-left'></i>",
+      "<i class='fas fa-caret-right'></i>",
+    ],
+    responsiveClass: true,
+    autoHeight: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+  
+      600: {
+        items: 2
+      },
+  
+      1024: {
+        items: 3
+      },
+  
+      1366: {
+        items: 4
+      }
+    }
+  });
+
 
 //# sourceMappingURL=main.js.map

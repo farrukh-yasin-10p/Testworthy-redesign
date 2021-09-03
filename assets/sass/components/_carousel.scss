@@ -238,16 +238,23 @@
 
 // Card Carousel Section 
 
-.card-carousel-section {
-    .carousel-card {
-        padding: 15px;
-        background-color: $secondary-light;
-        border-radius: 30px;
+.project-section__carousel {
+    .owl-nav {
+        left: -18px;
+        width: 103%;
     }
+}
 
-    .carousel-card__text {
-        padding: 0px 15px;
-        margin-bottom: 10px;
+.carousel-card {
+    padding: 15px;
+    background-color: $secondary-light;
+    border-radius: 30px;
+
+    &__text {
+
+        padding: 0px 15px 10px 15px;
+        border-bottom: 2px solid #fff;
+
 
         .card-date {
             font-size: 10px;
@@ -264,10 +271,7 @@
             margin-bottom: 0;
             font-size: 16px;
         }
-    }
 
-    .owl-stage-outer {
-        padding: 0 18px;
     }
 
     .progress {
@@ -284,11 +288,15 @@
 
 
     .avatars {
-        border-top: 2px solid white;
-        padding-top: 20px;
+        padding-top: 15px;
         text-align: center;
-        //min-width: 300px;
         position: relative;
+        max-width: 250px;
+        overflow: hidden;
+        margin: 0 auto;
+        white-space: nowrap;
+        display: block;
+
     }
 
     .avatar {
@@ -329,5 +337,4 @@
     .avatar:not(:first-child) {
         margin-left: -24px;
     }
-
 }

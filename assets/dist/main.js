@@ -18322,6 +18322,18 @@ $('#tab-toggle button').click(function(){
 
 // Test Changes & History Tabs Toggle End
 
+
+})
+
+// Sort test suites
+function sortTestSuites(){
+  $('.test-suites-section .date-status').css('display', 'block')
+}
+
+$('.test-suites-section .daterangepicker .drp-buttons .applybtn').click(function(){
+  console.log('hello')
+  $('.test-suites-section .date-status').css('display', 'block');
+})
 // js tree 
 $('.collapse').on('show.bs.collapse', function(){
   $(this).parent().find(".icon-caret-right").removeClass("icon-caret-right").addClass("icon-caret-down");
@@ -18344,8 +18356,6 @@ $('.collapse').on('show.bs.collapse', function(){
     $('#empty-div').attr('hidden',true);
     $(this).attr('hidden' , true);
   });
-
-})
 
 // Test Case Hierarchy
 $('#close-hierarchy-btn').on("click",function(){

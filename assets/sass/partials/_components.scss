@@ -32,3 +32,50 @@
         }
     }
 }
+
+// Input list dropdown
+.input-dropdown-list {
+
+    .selectuser {
+        border-radius: 30px;
+        width: 195px;
+        height: 44px;
+        background: url(/assets/images/chevron-down.svg) no-repeat 92%;
+        background-size: 20px;
+
+
+        &::placeholder {
+            color: #aaa;
+        }
+    }
+
+    .search-list {
+        max-height: none;
+
+        ul {
+            min-width: 193px;
+        }
+
+        .custom-control label {
+            font-size: 12px;
+            font-weight: normal;
+            padding-left: 0;
+        }
+
+        .last-item {
+            font-size: 14px;
+            background-color: $secondary;
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    .dropdown-list-wrapper {
+        max-height: 210px;
+        overflow-y: auto;
+    }
+
+}

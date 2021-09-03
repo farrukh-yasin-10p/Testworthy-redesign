@@ -1634,5 +1634,24 @@ a .jstree-themeicon {
         min-width: 195px;
     }
 
+}
 
+//Edit testssuite Modal
+.edittestsuite-modal {
+    .modal-body {
+        .edittestsuite-modal-input {
+            input {
+                &::placeholder {
+                    color: black;
+                }
+            }
+
+            textarea {
+                &::placeholder {
+                    color: black;
+                }
+            }
+        }
+
+    }
 }

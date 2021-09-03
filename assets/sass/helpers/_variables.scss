@@ -6,38 +6,39 @@
 
 // define your vars or override bootstrap vars
 $default: red;
-$primary: #F9F9F9;
+$primary: #f9f9f9;
 $secondary: #1eaae7;
 $alternate: cyan;
 $grey-light: #bfbfbf;
-$filter : #f1f1f1;
-$success-100 : #2bc16f;
-$danger-100 : #ff2e2e;
-$warning : #f3c214;
-$warning-light : #F3DB84;
-$navy-light : #86A1AB;
-$grey-100 : #aaaaaa;
-$grey-200 : #969ba0;
-$grey-300 : #c4c4c4;
-$grey-400 : #b4b7bb;
-$grey-500 : #9c9c9c;
-$grey-light-100 :#DCDCDD;
-$grey-light-200 : #eeeeee;
-$navy-blue : #204f6e;
-$blue-light : #89D0EE;
-$danger-light-100:#ED8A8A;
-$blue : #204496;
-$sky-blue : #108be3;
-$sky-blue-100 : #42c6ff;
-$sky-blue-200 : #1eb6e7;
-$sky-light : #e7f3f8;
-$success-light : #24cc09;
-$success-200 : #2bc155;
-$green-light :#92dc82;
-$danger:#e71e1e;
-$danger-light : #feebeb;
-$scroll-color : #e4e4e4;
-$grey:rgba(255, 255, 255, 0.22);
+$filter: #f1f1f1;
+$success-100: #2bc16f;
+$danger-100: #ff2e2e;
+$warning: #f3c214;
+$warning-light: #f3db84;
+$navy-light: #86a1ab;
+$grey-100: #aaaaaa;
+$grey-200: #969ba0;
+$grey-300: #c4c4c4;
+$grey-400: #b4b7bb;
+$grey-500: #9c9c9c;
+$grey-600: #a4a4a4;
+$grey-light-100: #dcdcdd;
+$grey-light-200: #eeeeee;
+$navy-blue: #204f6e;
+$blue-light: #89d0ee;
+$danger-light-100: #ed8a8a;
+$blue: #204496;
+$sky-blue: #108be3;
+$sky-blue-100: #42c6ff;
+$sky-blue-200: #1eb6e7;
+$sky-light: #e7f3f8;
+$success-light: #24cc09;
+$success-200: #2bc155;
+$green-light: #92dc82;
+$danger: #e71e1e;
+$danger-light: #feebeb;
+$scroll-color: #e4e4e4;
+$grey: rgba(255, 255, 255, 0.22);
 $secondary-text-color:#767677;
 $grey-lighter:#e7e8ec;
 $secondary-light:rgba(30, 170, 231, 0.2);
@@ -57,31 +58,29 @@ $primary-color-green: #15c7a8;
 $primary-color-orange: #eb7d4b;
 $primary-color-white: #ffffff;
 $primary-color-span: #3c4761;
-
+$link-color: $sky-blue-200;
 
 // box shadow 
 $shadow:2px 2px 5px rgba(192, 192, 192, 0.2);
 $shadow2 :0 10px 31px 0 rgba(0, 96, 137, 0.16);
 $shadow3: 0 10px 49px 0 rgba(0, 0, 0, 0.13);
 
-
-
 // Typography Family
-$font-default: 'Poppins',
-sans-serif;
-$font-primary: 'Poppins',
-sans-serif;
+$font-default: "Poppins", sans-serif;
+$font-primary: "Poppins", sans-serif;
 
 $font-path: "../fonts";
 
 // define your Break Points or override bootstrap Break Points
-$grid-breakpoints: (xs: 0,
+$grid-breakpoints: (
+  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   ml: 1100px,
   xl: 1200px,
-  xxl:1368px);
+  xxl: 1368px,
+);
 
 // ===========================================
 // -Variables end

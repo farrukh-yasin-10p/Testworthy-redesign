@@ -75,12 +75,12 @@
     </div>
     <div class="sidebar-menu">
       <ul>
-        <li><a href="main-dashboard.html"><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a></li>
-        <li><a href="index.html"><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
-        <li><a href="user-role-default.html" class="active"><span><i class="icon-users"></i></span><span>Users &
-              Roles</span></a></li>
-        <li><a href="integration.html"><span><i class="icon-integration"></i></span>
-            <span>Integration</span></a></li>
+        <li><a href=""><span><i class="icon-dashboard"></i></span> <span>Dashboard</span></a>
+        </li>
+        <li><a href=""><span><i class="icon-pen"></i></span> <span>Projects</span></a></li>
+        <li><a href="" class="active"><span><i class="icon-users"></i></span><span>Users & Roles</span></a></li>
+        <li><a href=""><span><i class="icon-integration"></i></span> <span>Integration</span></a>
+        </li>
         <li><a href=""> <span><i class="icon-settings"></i></span> <span>Settings</span></a></li>
         <li><a href=""><span><i class="icon-help"></i></span> <span>Help</span></a></li>
       </ul>
@@ -105,16 +105,17 @@
             </div>
             <div class="col-lg-6 ">
               <div class="search-filter">
-                <div class="searchbar-filter">
+                <div class="searchbar-filter mr-2">
                   <input type="text" placeholder="Search User">
                   <span class="icon search">
                     <a href="#"><img src="./assets/images/search.png" alt="search-icon"></a>
                   </span>
                   <span class="icon filter  saprater-left">
-                    <a href="#"><img src="./assets/images/filter-img.png" alt="search-icon"></a>
+                    <a href="#" data-toggle="modal" data-target="#filter-modal"><img
+                        src="./assets/images/filter-img.png" alt="search-icon"></a>
                   </span>
                 </div>
-                <button class="btn" onclick="location.href = 'project-addtestplan.html';">Add User</button>
+                <button class="btn m-0" data-toggle="modal" data-target="#add-user">Add User</button>
               </div>
               <div class=" row sort-by-filter">
                 <div class="sort-by-tabs">
@@ -141,40 +142,40 @@
             aria-labelledby="pills-row-tab">
             <div class="select-row ">
               <div class="row">
-                <div class="col-md-auto flex-fill">
+                <div class="col-md-auto flex-1">
                   <div class="custom-control custom-checkbox ">
                     <input class="custom-control-input " type="checkbox" id="inlineCheckbox4" value="option4">
                     <label class="custom-control-label" for="inlineCheckbox4">
                       <span class="row-head">Username
                       </span>
                       <span class="row-icon">
-                        <span class="trash-icon " data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"
-                            data-toggle="modal" data-target="#ms-completeModal"><i
+                        <span class="trash-icon mr-4" data-toggle="tooltip" data-placement="top" title="Delete"><a
+                            href="#" data-toggle="modal" data-target="#ms-completeModal"><i
                               class="icon-trash text-dark"></i></a></span>
                         <span class="edit-icon" data-toggle="tooltip" data-placement="top"
-                          title="Assign User to Project"><a href="#" data-toggle="modal" data-target="#edit-name">
+                          title="Assign Users to Project"><a href="#" data-toggle="modal" data-target="#select-project">
                             <img class="assign-icon" src="./assets/images/assignuserto.png">
                           </a></span>
                       </span>
                     </label>
                   </div>
                 </div>
-                <div class="col-md-auto flex-fill">
+                <div class="col-md-auto flex-1">
                   <div>
                     <span>Email</span>
                   </div>
                 </div>
-                <div class="col-md-auto flex-fill">
+                <div class="col-md-auto flex-1">
                   <div>
                     <span>Assigned Project</span>
                   </div>
                 </div>
-                <div class="col-md-auto flex-fill">
+                <div class="col-md-auto flex-1">
                   <div>
                     <span>Roles</span>
                   </div>
                 </div>
-                <div class="col-md-auto flex-fill">
+                <div class="col-md-auto flex-1">
                   <div>
                     <span>Last login</span>
                   </div>
@@ -185,7 +186,7 @@
               <ul class="pt-3">
                 <li class="open-li">
                   <div class="row no-gutters align-items-center justfiy-content-around">
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="custom-control custom-checkbox user-checkbox ">
                         <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
                         <label class="custom-control-label user-control" for="inlineCheckbox6">
@@ -200,22 +201,22 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         salmanahmad@ymail.com
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Exelon, HughesNet, Eplug ...
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Admin
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="hover-row-edit text-left">
                         <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
                             data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
@@ -230,7 +231,7 @@
                 </li>
                 <li class="open-li">
                   <div class="row no-gutters align-items-center justfiy-content-around">
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="custom-control custom-checkbox user-checkbox ">
                         <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
                         <label class="custom-control-label user-control" for="inlineCheckbox6">
@@ -245,22 +246,22 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         salmanahmad@ymail.com
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Exelon, HughesNet, Eplug ...
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Admin
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="hover-row-edit text-left">
                         <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
                             data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
@@ -275,7 +276,7 @@
                 </li>
                 <li class="open-li">
                   <div class="row no-gutters align-items-center justfiy-content-around">
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="custom-control custom-checkbox user-checkbox ">
                         <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
                         <label class="custom-control-label user-control" for="inlineCheckbox6">
@@ -290,22 +291,22 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         salmanahmad@ymail.com
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Exelon, HughesNet, Eplug ...
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Admin
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="hover-row-edit text-left">
                         <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
                             data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
@@ -320,7 +321,7 @@
                 </li>
                 <li class="open-li">
                   <div class="row no-gutters align-items-center justfiy-content-around">
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="custom-control custom-checkbox user-checkbox ">
                         <input class="custom-control-input" type="checkbox" id="inlineCheckbox6" value="option6">
                         <label class="custom-control-label user-control" for="inlineCheckbox6">
@@ -335,22 +336,22 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         salmanahmad@ymail.com
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Exelon, HughesNet, Eplug ...
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <span class="user-text p-0">
                         Admin
                       </span>
                     </div>
-                    <div class="col-md-auto flex-fill">
+                    <div class="col-md-auto flex-1">
                       <div class="hover-row-edit text-left">
                         <span class="edit-icon" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"
                             data-toggle="modal" data-target="#edit-name"><i class="icon-ic_edit"></i></a></span>
@@ -1359,182 +1360,6 @@
           <div class="modal  milestone-modals" id="edit-name" tabindex="-1" role="dialog"
             aria-labelledby="add-milestoneLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <!--Modal assign project Start-->
-              <div class="modal-content edit-project">
-                <div class="row">
-                  <div class="col-md-2">
-                    <div class="modal-side-color">
-                    </div>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="modal-body-container pr-4 pt-4 pb-4">
-                      <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Select Project </h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="close_cross">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="mb-4">
-                          <h6>Project *</h6>
-                          <form action="">
-                            <input type="text" class="selectuser form-control" onclick="assigned_to('block')"
-                              ondblclick="assigned_to('none')" placeholder="Type or select a user">
-                            <div class="search-list assigned-to-users modal-search-list" id="selectuser">
-                              <ul>
-                                <li>
-                                  <span>Exelon</span>
-                                </li>
-                                <li>
-                                  <span>Eplug </span>
-                                </li>
-                                <li>
-                                  <span>Testworthy </span>
-                                </li>
-                              </ul>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-secondary-color">Assign User to Project</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Modal assign project End-->
-              <!--Modal edit user start-->
-              <div class="modal-content edit-project">
-                <div class="row">
-                  <div class="col-md-2">
-                    <div class="modal-side-color">
-                    </div>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="modal-body-container pr-4 pt-4 pb-4">
-                      <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Add User </h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="close_cross">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form action="">
-                          <div class="row no-gutters">
-                            <div class="col">
-                              <div class="mb-4">
-                                <div class="text-info-icon">
-                                  <h6>First Name *</h6>
-                                  <span data-toggle="tooltip" data-placement="top" title=""
-                                    data-original-title="User First Name">
-                                    <i class="icon-info-icon"></i>
-                                  </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="First Name">
-                              </div>
-                              <div class="mb-4">
-                                <div class="text-info-icon">
-                                  <h6>Last Name *</h6>
-                                  <span data-toggle="tooltip" data-placement="top" title=""
-                                    data-original-title="User Last Name">
-                                    <i class="icon-info-icon"></i>
-                                  </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Last Name">
-                              </div>
-                              <div class="mb-4">
-                                <div class="text-info-icon">
-                                  <h6>Email *</h6>
-                                </div>
-                                <input type="email" class="form-control" placeholder="Email">
-                              </div>
-                              <div class="mb-4">
-                                <div class="text-info-icon">
-                                  <h6>Role *</h6>
-                                </div>
-                                <div class="dropdown-box">
-                                  <input type="text" class="selectuser form-control" onclick="assigned_to_role('block')"
-                                    ondblclick="assigned_to_role('none')" placeholder="Type or select a user">
-                                  <div class="search-list dropdown-list assigned-to-users modal-search-list"
-                                    id="selectrole">
-                                    <ul>
-                                      <li>
-                                        <span>Admin</span>
-                                      </li>
-                                      <li>
-                                        <span>Developer</span>
-                                      </li>
-                                      <li>
-                                        <span>Designer </span>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3">
-                                <h6>Project *</h6>
-                                <div class="edit-tags" onclick="edit_searchList('block')"
-                                  ondblclick="edit_searchList('none')">
-                                  <ul>
-                                    <li>
-                                      <span class="justify-content-center">
-                                        <label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
-                                    </li>
-                                    <li>
-                                      <span class="justify-content-center"><label for="" class="tag-label">Project
-                                          Name</label> <a href="">×</a></span>
-                                    </li>
-                                    <li>
-                                      <span class="justify-content-center"><label for="" class="tag-label">Project
-                                          Name</label> <a href="">×</a></span>
-                                    </li>
-                                    <li>
-                                      <span class="justify-content-center"><label for="" class="tag-label">Project Name
-                                        </label> <a href="">×</a></span>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="search-list w-100" id="list_search_edit" style="display: none;">
-                                <ul>
-                                  <li>
-                                    <div class="search-list-items">
-                                      <span class="name">Project Name</span>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="search-list-items">
-                                      <span class="name">Project Name</span>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="search-list-items">
-                                      <span class="name">Project Name</span>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox1"
-                                  value="option1">
-                                <label class="custom-control-label" for="inlineCheckbox1">This user is active</label>
-                              </div>
-                            </div>
-                          </div>
-
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-secondary-color">Edit User</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Modal edit user end End-->
               <!--Modal add user Start-->
               <div class="modal-content save-project">
                 <div class="row">
@@ -1606,7 +1431,7 @@
                               </div>
                               <div class="mb-3">
                                 <h6>Project *</h6>
-                                <div class="edit-tags" onclick="edit_searchList('block')"
+                                <div class="edit-tags selectuser" onclick="edit_searchList('block')"
                                   ondblclick="edit_searchList('none')">
                                   <ul>
                                     <li>
@@ -1666,6 +1491,265 @@
                 </div>
               </div>
               <!--Modal add user suss End-->
+            </div>
+          </div>
+          <div class="modal  milestone-modals" id="select-project" tabindex="-1" role="dialog"
+            aria-labelledby="add-milestoneLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <!--Modal assign project Start-->
+              <div class="modal-content edit-project">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Select Project </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="close_cross">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-4">
+                          <h6>Project *</h6>
+                          <form action="">
+                            <input type="text" class="selectuser form-control" onclick="assigned_to('block')"
+                              ondblclick="assigned_to('none')" placeholder="Type or select a user">
+                            <div class="search-list assigned-to-users modal-search-list" id="selectuser">
+                              <ul>
+                                <li>
+                                  <span>Exelon</span>
+                                </li>
+                                <li>
+                                  <span>Eplug </span>
+                                </li>
+                                <li>
+                                  <span>Testworthy </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Assign User to Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal assign project End-->
+            </div>
+          </div>
+          <!--Modal Filter-->
+          <div class="modal  testsuites-modals" id="filter-modal" tabindex="-1" role="dialog"
+            aria-labelledby="testsuites-filter-modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+
+              <!--Modal testsuites-filter-modal content  Start-->
+              <div class="modal-content filter-modal-content">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Filter</h4>
+                        <button class="btn refresh-btn ml-auto" data-toggle="tooltip" data-placement="top"
+                          data-original-title="Reset Filters"><i class="icon-refresh"></i></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="close_cross">&times;</span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <small class="text-black d-block mb-4">
+                          <strong>
+                            Roles
+                          </strong>
+                        </small>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Admin</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Tester</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Project Manager (PM)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4 pb-2">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Clients</label>
+                        </div>
+                        <small class="text-black d-block mb-4">
+                          <strong>
+                            Status
+                          </strong>
+                        </small>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Active</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox">
+                          <label class="custom-control-label" for="">Inactive</label>
+                        </div>
+                      </div>
+                      <div class="modal-footer ">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Apply Filter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!--Modal Testsuites-modal content  End-->
+
+            </div>
+          </div>
+          <!-- modal End-->
+          <div class="modal  milestone-modals" id="add-user" tabindex="-1" role="dialog"
+            aria-labelledby="add-milestoneLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <!--Modal edit user start-->
+              <div class="modal-content edit-project">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="modal-side-color">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="modal-body-container pr-4 pt-4 pb-4">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Add User </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="close_cross">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="row no-gutters">
+                            <div class="col">
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>First Name *</h6>
+                                  <span data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="User First Name">
+                                    <i class="icon-info-icon"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="First Name">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Last Name *</h6>
+                                  <span data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="User Last Name">
+                                    <i class="icon-info-icon"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Email *</h6>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="mb-4">
+                                <div class="text-info-icon">
+                                  <h6>Role *</h6>
+                                </div>
+                                <div class="dropdown-box">
+                                  <input type="text" class="selectuser form-control" onclick="assigned_to_role('block')"
+                                    ondblclick="assigned_to_role('none')" placeholder="Type or select a user">
+                                  <div class="search-list dropdown-list assigned-to-users modal-search-list"
+                                    id="selectrole">
+                                    <ul>
+                                      <li>
+                                        <span>Admin</span>
+                                      </li>
+                                      <li>
+                                        <span>Developer</span>
+                                      </li>
+                                      <li>
+                                        <span>Designer </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <h6>Project *</h6>
+                                <div class="edit-tags selectuser" onclick="edit_searchList('block')"
+                                  ondblclick="edit_searchList('none')">
+                                  <ul>
+                                    <li>
+                                      <span class="justify-content-center">
+                                        <label for="" class="tag-label">Project Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project
+                                          Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project
+                                          Name</label> <a href="">×</a></span>
+                                    </li>
+                                    <li>
+                                      <span class="justify-content-center"><label for="" class="tag-label">Project Name
+                                        </label> <a href="">×</a></span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="search-list w-100" id="list_search_edit1">
+                                <ul>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="search-list-items">
+                                      <span class="name">Project Name</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="inlineCheckbox1"
+                                  value="option1">
+                                <label class="custom-control-label" for="inlineCheckbox1">This user is active</label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light-border" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary-color">Add User</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal edit user end End-->
             </div>
           </div>
           <!--Add modal End-->

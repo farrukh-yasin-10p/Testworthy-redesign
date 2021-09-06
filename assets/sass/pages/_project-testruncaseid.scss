@@ -1,0 +1,70 @@
+html {
+    overflow-y: scroll;
+}
+
+// // Test Run Case Id Page CSS 
+
+.testruncaseid-wrap {
+    .text-small {
+        font-size: 12px;
+        font-weight: 500;
+        color: $grey-400;
+    }
+
+    .testruncaseid {
+        .btn {
+            flex: 0 0 9em;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .select-row {
+        padding: .625rem 2.1875rem .625rem 1.25rem;
+        background-color: $grey-light-200;
+        border-radius: .625rem;
+        font-weight: normal;
+        font-size: 1rem;
+        color: $grey-400;
+
+        span {
+            @include mq('md', max) {
+                font-size: 0.9rem;
+            } 
+        }
+    }
+
+    .row {
+        .changes-row {
+            padding: 5px 0;
+        }
+    }
+
+    .icon-accordion-down {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .testruncaseid-details {
+        p {
+            font-size: 19px;
+        }
+    }
+
+    .btn.btn-icon {
+        justify-content: space-evenly;
+    }
+
+    .pl-2-5 {
+        padding-left: 2.5rem!important;
+    }
+
+    .pl-4r {
+        // @include mq('md', min) {
+        @include mq-only("md", "xl") {
+            padding-left: 4rem!important;
+        } 
+    }
+
+}

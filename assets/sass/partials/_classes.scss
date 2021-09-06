@@ -225,11 +225,11 @@ hr {
 
 // Card box 
 .card-box {
-  border: rem(2) solid white;
+  border: 2px solid white;
   background-color: white;
-  border-radius: rem(20);
-  padding: rem(15) rem(20);
-  box-shadow: 0 rem(4) rem(6) 0 rgba(62, 73, 84, 0.04);
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px 0 rgba(62, 73, 84, 0.04);
 }
 
 // -Helper Classes end

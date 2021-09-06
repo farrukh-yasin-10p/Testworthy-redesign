@@ -1,0 +1,90 @@
+.reports-innerpage-section {
+    padding-top: 90px;
+
+    .sort-by-text {
+        .heading-text {
+            font-size: 24px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .desc-text {
+            font-size: 12px;
+        }
+    }
+}
+
+.btn-toggle-wrapper {
+    display: inline-flex;
+    height: 48px;
+    border-radius: 30px;
+    align-items: center;
+    width: auto;
+    background-color: #f4f5f9;
+
+    &__btns {
+        height: 48px;
+    }
+
+    button {
+        border-radius: 30px;
+    }
+}
+
+.reports-tab-section {
+    .report-col__text {
+        font-size: 12px;
+    }
+
+    .assigned-to {
+        font-size: 12px;
+    }
+
+    .assigned-to-profile {
+        margin-right: 15px;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    li:hover {
+        .hover-hide {
+            display: none;
+        }
+    }
+
+    .custom-checkbox label {
+        padding-left: 25px;
+
+        i.transform-icon {
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+        }
+    }
+
+    .select-row-list li {
+        border: none;
+        border-radius: 30px;
+    }
+
+}
+
+
+.reports-caseboxes {
+    color: $secondary;
+    border-radius: 30px;
+
+    &__text {
+        span {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        i {
+            font-size: 35px;
+        }
+    }
+}

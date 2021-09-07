@@ -135,14 +135,14 @@
 }
 
 @mixin active-status {
-  height: rem(11);
-  width: rem(11);
-  border-radius: rem(15);
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
   flex-grow: 0;
-  bottom: rem(0);
+  bottom: 0px;
   position: absolute;
-  right: rem(-1);
-  box-shadow: 0 rem(4) rem(9) 0 rgba(30, 170, 231, 0.56);
+  right: 1px;
+  box-shadow: 0 4px 9px 0 rgba(30, 170, 231, 0.56);
 }
 
 
@@ -328,32 +328,33 @@
   }
 }
 
-@mixin case_box($boxcol,$boxborder) {
-     
+@mixin case_box($boxcol, $boxborder) {
+
   .c100 {
-      font-size: 50px;
-      background-color: transparent;
+    font-size: 50px;
+    background-color: transparent;
 
-      span {
-          color: $boxcol; 
-          top: -7px;
-          left: 0;
-          text-align: center;
-          width: 4em;
-          font-weight: 600;
-          font-size: 13px;            
-      }
-
-      .slice {
-        .bar {
-          border:.09em solid $boxborder;
-          z-index: 1; 
-        }
-      }
-
+    span {
+      color: $boxcol;
+      top: -7px;
+      left: 0;
+      text-align: center;
+      width: 4em;
+      font-weight: 600;
+      font-size: 13px;
     }
-  
+
+    .slice {
+      .bar {
+        border: .09em solid $boxborder;
+        z-index: 1;
+      }
+    }
+
+  }
+
 }
+
 //===========================================
 // -Mixins end
 //===========================================

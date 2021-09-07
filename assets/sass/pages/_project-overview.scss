@@ -32,6 +32,7 @@
     a {
         color: black;
         padding: 0.525rem 1.25rem;
+
         &:hover {
             background-color: $filter;
         }
@@ -118,7 +119,8 @@
     }
 }
 
-.dropup, .dropdown {
+.dropup,
+.dropdown {
     .ellipsis {
         padding-top: rem(6);
         margin-left: rem(10);
@@ -174,8 +176,9 @@
         font-weight: bold;
         margin-bottom: rem(0);
     }
+
     span {
-        font-size: rem(12);
+        font-size: rem(10);
         color: $grey-200;
     }
 }
@@ -263,6 +266,7 @@
     .chart-date {
         display: flex;
         justify-content: flex-end;
+        width: 40px;
 
         span {
 
@@ -279,7 +283,7 @@
 
             input {
                 padding: 11px 0px 11px 10px;
-                font-size: 10px;
+                font-size: 8px;
             }
 
             .clear {

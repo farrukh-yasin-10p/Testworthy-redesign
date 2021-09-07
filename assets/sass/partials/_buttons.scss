@@ -27,7 +27,6 @@
 
     &:hover {
       background-color: darken($grey-100, 20%);
-
     }
   }
 
@@ -48,7 +47,6 @@
 
     &:hover {
       background-color: darken($success-100, 20%);
-
     }
   }
 
@@ -71,7 +69,6 @@
 
     &:hover {
       background-color: darken($secondary, 20%);
-
     }
   }
 
@@ -81,7 +78,6 @@
 
     &:hover {
       background-color: darken(#f3c214, 20%);
-
     }
   }
 
@@ -93,8 +89,47 @@
     justify-content: space-around;
     align-items: center;
   }
-}
 
+  &.btn-status {
+    width: rem(114);
+    height: rem(34);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    font-weight: lighter;
+    span {
+      font-size: 16px;
+    }
+    &:focus {
+      outline: none;
+    }
+    i {
+      color: white;
+    }
+    &.passed {
+      background-color: $passed;
+    }
+    &.failed {
+      background-color: $failed;
+    }
+    &.retest{
+      background-color: $warning;
+    }
+    &.partial{
+      background-color: $secondary;
+    }
+    &.blocked{
+      background-color: $dark-blue;
+    }
+    &.untested{
+      background-color: $grey-light-300;
+    }
+
+  }
+}
 
 //===========================================
 // -Buttons end
